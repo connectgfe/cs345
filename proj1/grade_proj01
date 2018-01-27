@@ -1,0 +1,213 @@
+#! /bin/bash
+
+
+# NOTE: I added LC_ALL=C because in some other locales, 'sort' does very
+#       strange things!  See:
+#   https://www.gnu.org/software/coreutils/faq/coreutils-faq.html#Sort-does-not-sort-in-normal-order_0021
+export LC_ALL=C
+
+
+TIME_LIMIT=10     # in seconds
+
+
+#if [[ $(ls -1 test_* 2>/dev/null) == "" ]]
+#then
+#  echo "No files named test_\* were found.  The grading script cannot run." 1>&2
+#  exit 1
+#fi
+
+#if [[ $(ls -1 test_*.c 2>/dev/null) == "" ]]
+#then
+#  echo "No files named test_*.c were found.  The grading script cannot run." 1>&2
+#  exit 1
+#fi
+
+#if [[ $(ls -1 test_mergeSort_* 2>/dev/null) == "" ]]
+#then
+#  echo "No files named test_mergeSort_* were found.  The grading script cannot run." 1>&2
+#  exit 1
+#fi
+
+
+
+if [[ ! -f Proj01_TestDriver.java ]]
+then
+  echo "ERROR: Proj01_TestDriver.java does not exist.  The grading script cannot continue." 1>&2
+  exit 1
+fi
+
+
+
+echo "Compiling *.java ..."
+
+# BUGFIX:
+#
+# It appears that Java does *NOT* remove old .class files when compilation
+# fails.  So we had a student who had an old, buggy implementation of the
+# code (which compiled).  When they changed it to a new (non-compiling)
+# version, javac (correctly) fails to compile the code but (maddeningly)
+# leaves the old .class files around.  So, when the code runs, the student
+# sees the old behavior, for reasons that they don't understand.
+rm $(ls -1 *.class | grep -v _example_) 2>/dev/null
+
+# BUGFIX:
+#
+# When there is an error which breaks some (but not all) of the files, javac
+# will abort *all* of the builds.  So we had a student who lost *all* of his
+# testcase points because *some* testcases were broken.  So we'd like to
+# build all of the files individually.
+#
+# However, doing it that way (by default) is likely to be quite slow.  So
+# we will instead only fall back on that plan when the original compile
+# fails.
+javac *.java || {
+  echo "--- JAVA COMPILE FAILURE ---"
+  echo "javac reported some errors while building your code.  (See the output above.)"
+  echo "This script will now re-run javac on each file, one at a time, in hopes of"
+  echo "succeeding in building some of the testcases."
+  echo
+  echo "In order to not clutter up the script output, this rebuild will *NOT* print"
+  echo "out any error messages; refer to the output above to see why javac failed."
+  echo
+  echo "This process is likely to be slow; if you want, you can use Ctrl-C to kill"
+  echo "this rebuild operation."
+  echo "----------------------------"
+
+  ls -1 *.java 2>&1 | xargs -r -n1 javac 1>/dev/null 2>&1
+}
+
+
+if [[ ! -f Proj01_TestDriver.class ]]
+then
+  echo "ERROR: The TestDriver class could not be compiled (see the errors above).  The grading script cannot continue." 1>&2
+  exit 1
+fi
+
+
+
+SORT_ALGOS="BubbleSort InsertionSort QuickSort MergeSort MergeSortBottomUp"
+TEST=Proj01_TestDriver
+
+
+ATTEMPTED=0
+PASSED=0
+
+for ALGO in ${SORT_ALGOS}
+do
+  for IN in $(ls -1 *.dat | rev | cut -f2- -d'.' | rev)
+  do
+    echo "--------------------------------------------------"
+    echo "| Testing $ALGO on input data $IN.dat ..."
+    echo "--------------------------------------------------"
+
+    ATTEMPTED=$(( ATTEMPTED+5 ))
+
+
+    # run the testcase.  Capture stdout and stderr.  If we pass the basic
+    # test, then we'll run the algorithms in the 'trace' mode, for the last
+    # 20% of the score for this input data.
+
+    # these are the 4 log files we'll create
+    e=logs.$IN.example.stdout
+    s=logs.$IN.student.stdout
+    et=logs.$IN.example_trace.stdout
+    st=logs.$IN.student_trace.stdout
+
+    # clean up the old files
+    rm $e $e $st $st 2>/dev/null
+
+
+    java $TEST $ALGO example <$IN.dat &>$e
+
+    # Sometimes, student programs enter infinite loops, and chew up *WAY* too
+    # much space for the log.  So we crop the file; the size is defined based
+    # on the length of the example output file.
+    #
+    # measure the size of the example output file; we'll only allow that many
+    # lines.  And we'll chop every line at no more than 1000 characters.
+    LINE_LIMIT=$(wc -l $e | cut -f1 -d' ')
+    LINE_LIMIT=$(( LINE_LIMIT*2 ))
+
+    timeout -k $TIME_LIMIT $TIME_LIMIT java $TEST $ALGO <$IN.dat 2>&1 | head -n${LINE_LIMIT} | cut -c-1000 >$s
+    RC=$?
+
+    # Diagnose student timeouts with a message that makes it clear.  Otherwise
+    # I get lots of Piazza posts about it.  :(
+    if [[ $RC = 124 ]]
+    then
+      echo "TESTCASE FAILED: timeout!"
+      continue
+    elif [[ $RC != 0 ]]
+    then
+      echo "TESTCASE FAILED: nonzero exit status $RC"
+      continue
+    fi
+
+    # compare stdout
+    if [[ $(diff $e $s) == "" ]]
+    then
+      #echo "stdout compare OK."
+      PASSED=$(( PASSED+4 ))
+      rm $e $s
+    else
+      echo "TESTCASE FAILED: stdout miscompare!"
+      echo "--- diff output: ---"
+      diff $e $s
+      continue
+    fi
+
+
+    # if we get here, we passed the basic testcase output comparison - so we'll
+    # run both things again, with 'trace' turned on, for the last few points.
+
+
+    java $TEST $ALGO example trace <$IN.dat &>$et
+
+    # Sometimes, student programs enter infinite loops, and chew up *WAY* too
+    # much space for the log.  So we crop the file; the size is defined based
+    # on the length of the example output file.
+    #
+    # measure the size of the example output file; we'll only allow that many
+    # lines.  And we'll chop every line at no more than 1000 characters.
+    LINE_LIMIT=$(wc -l $et | cut -f1 -d' ')
+    LINE_LIMIT=$(( LINE_LIMIT*2 ))
+
+    timeout -k $TIME_LIMIT $TIME_LIMIT java $TEST $ALGO trace <$IN.dat 2>&1 | head -n${LINE_LIMIT} | cut -c-1000 >$st
+    RC=$?
+
+    # Diagnose student timeouts with a message that makes it clear.  Otherwise
+    # I get lots of Piazza posts about it.  :(
+    if [[ $RC = 124 ]]
+    then
+      echo "TESTCASE FAILED: timeout when 'trace' was turned on!"
+      continue
+    elif [[ $RC != 0 ]]
+    then
+      echo "TESTCASE FAILED: nonzero exit status $RC when 'trace' was turned on"
+      continue
+    fi
+
+    # compare stdout
+    if [[ $(diff $et $st) == "" ]]
+    then
+      echo "Testcase passed."
+      PASSED=$(( PASSED+1 ))
+      rm $et $st
+    else
+      echo "The testcase passed the basic sort test - but FAILED the comparison when 'trace' was turned on"
+      echo "--- diff output: ---"
+      diff $et $st
+      continue
+    fi
+  done
+
+  echo
+done
+
+
+SCORE_SO_FAR=$(( 60*PASSED / ATTEMPTED ))
+
+echo "----------------------------"
+echo "AUTOMATED SCORE: $SCORE_SO_FAR / 60"
+echo "----------------------------"
+
