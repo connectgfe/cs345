@@ -9,22 +9,40 @@ public class Proj01_Main{
   public static void main(String[] args){
 
 
-//    int[] vals = { 1, 343, 2, 23, 865, 32, 8};
 
     int[] vals = readInput();
 
+//    Proj01_BubbleSort.sort(vals);
+//    Proj01_InsertionSort.sort_trace(vals);
 
 
+
+    for( int value : vals){
+       System.out.printf("%d ",value);
+    }
+    System.out.println();  
+
+
+    Proj01_MergeSort.sort(vals);
+
+    for( int value : vals){
+       System.out.printf("%d ",value);
+    }
+    System.out.println();  
+
+
+
+
+/*
     Proj01_BubbleSort test1 = new Proj01_BubbleSort();
     Proj01_InsertionSort test2 = new Proj01_InsertionSort();
-
-
-
     System.out.println("BUBBLE");    
     test1.sort(vals);
     System.out.println("INSERT");
-
     test2.sort(vals);
+*/
+
+
 
 
 

@@ -85,7 +85,7 @@ fi
 
 
 
-SORT_ALGOS="Proj01_BubbleSort Proj01_InsertionSort QuickSort MergeSort MergeSortBottomUp"
+SORT_ALGOS="BubbleSort InsertionSort QuickSort MergeSort MergeSortBottomUp"
 TEST=Proj01_TestDriver
 
 
