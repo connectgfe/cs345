@@ -41,7 +41,7 @@ public class Proj01_BubbleSort{
     for(int i=0;i<arr.length-1;i++){     
 
        int temp; 
-       if(arr[i+1]>arr[i]){
+       if(arr[i+1]<arr[i]){
          
           temp=arr[i];
           arr[i]=arr[i+1];

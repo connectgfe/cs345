@@ -16,8 +16,16 @@ public class Proj01_Main{
 
 
     Proj01_BubbleSort test1 = new Proj01_BubbleSort();
-  
+    Proj01_InsertionSort test2 = new Proj01_InsertionSort();
+
+
+
+    System.out.println("BUBBLE");    
     test1.sort(vals);
+    System.out.println("INSERT");
+
+    test2.sort(vals);
+
 
 
   }
