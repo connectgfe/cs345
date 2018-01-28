@@ -23,7 +23,10 @@ public class Proj01_Main{
     System.out.println();  
 
 
-    Proj01_MergeSort.sort(vals);
+//    Proj01_MergeSort.sort(vals);
+     Proj01_QuickSort.sort(vals);
+
+
 
     for( int value : vals){
        System.out.printf("%d ",value);

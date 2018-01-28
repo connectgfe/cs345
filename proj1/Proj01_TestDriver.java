@@ -40,11 +40,11 @@ public class Proj01_TestDriver
 			System.out.printf("    BubbleSort\n");
 			System.out.printf("    InsertionSort\n");
 
-/*
-			System.out.printf("    QuickSort\n");
+
+//			System.out.printf("    QuickSort\n");
 			System.out.printf("    MergeSort\n");
-			System.out.printf("    MergeSortBottomUp\n");
-*/
+//			System.out.printf("    MergeSortBottomUp\n");
+
 
 	
 
@@ -89,7 +89,7 @@ public class Proj01_TestDriver
 			else
 				Proj01_QuickSort.sort(vals);
 			break;
-
+*/
 		case "MergeSort":
 			if (ex && trace)
 				Proj01_example_MergeSort.sort_trace(vals);
@@ -100,7 +100,7 @@ public class Proj01_TestDriver
 			else
 				Proj01_MergeSort.sort(vals);
 			break;
-
+/*
 		case "MergeSortBottomUp":
 			if (ex && trace)
 				Proj01_example_MergeSortBottomUp.sort_trace(vals);

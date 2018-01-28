@@ -94,7 +94,10 @@ PASSED=0
 
 for ALGO in ${SORT_ALGOS}
 do
-  for IN in $(ls -1 *.dat | rev | cut -f2- -d'.' | rev)
+#  for IN in $(ls -1 *.dat | rev | cut -f2- -d'.' | rev)
+  for IN in $(ls -1 test1.dat | rev | cut -f2- -d'.' | rev)
+ 
+
   do
     echo "--------------------------------------------------"
     echo "| Testing $ALGO on input data $IN.dat ..."

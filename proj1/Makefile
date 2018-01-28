@@ -3,7 +3,7 @@ all:
 	javac Proj01_Main.java
 	javac Proj01_InsertionSort.java
 	javac Proj01_MergeSort.java
-
+	javac Proj01_QuickSort.java
 
 
 run:
