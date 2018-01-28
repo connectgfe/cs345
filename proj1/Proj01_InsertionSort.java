@@ -29,7 +29,6 @@ public class Proj01_InsertionSort{
    
    public static int[] sortIt(int[] arr, int swap, int val){
 
-//    if(swap==arr.length){ return arr;}
 
      for(int i=0;i<swap;i++){
 

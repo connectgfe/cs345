@@ -6,4 +6,9 @@ all:
 
 run:
 	java Proj01_Main < test1.dat
+	java Proj01_Main < test2.dat
+	java Proj01_Main < test3.dat
+	java Proj01_Main < test4.dat
+	java Proj01_Main < test5.dat
+	java Proj01_Main < test6.dat
 	

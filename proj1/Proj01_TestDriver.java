@@ -38,13 +38,13 @@ public class Proj01_TestDriver
 			System.out.printf("SYNTAX: [sortType] example? trace?\n");
 			System.out.printf("  Available sorts:\n");
 			System.out.printf("    BubbleSort\n");
-
-
 			System.out.printf("    InsertionSort\n");
+
+/*
 			System.out.printf("    QuickSort\n");
 			System.out.printf("    MergeSort\n");
 			System.out.printf("    MergeSortBottomUp\n");
-
+*/
 
 	
 
@@ -54,7 +54,7 @@ public class Proj01_TestDriver
 
 
 		/* what algorithm should we run? */
-/*
+
 		switch(args[0])
 		{
 		case "BubbleSort":
@@ -78,7 +78,7 @@ public class Proj01_TestDriver
 			else
 				Proj01_InsertionSort.sort(vals);
 			break;
-
+/*
 		case "QuickSort":
 			if (ex && trace)
 				Proj01_example_QuickSort.sort_trace(vals);
@@ -111,9 +111,10 @@ public class Proj01_TestDriver
 			else
 				Proj01_MergeSortBottomUp.sort(vals);
 			break;
+*/
 		}
 
-*/
+
 
 		// dump out the values after the sort has ended
 		if (trace)

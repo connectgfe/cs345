@@ -29,7 +29,6 @@ public class Proj01_BubbleSort{
 
    public static void sort_trace(int[] vals){
 
-
    
    }
 
