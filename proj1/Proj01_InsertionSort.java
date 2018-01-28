@@ -47,7 +47,7 @@ public class Proj01_InsertionSort{
         }
 
      }
-   
+
     return arr;
 
    }
@@ -61,6 +61,8 @@ public class Proj01_InsertionSort{
 
           arr[swap]=arr[i];
           arr[i]=val;
+
+          System.out.println("swap("+swap+","+i+")");
           break;
         }
      
@@ -72,11 +74,12 @@ public class Proj01_InsertionSort{
 
           swap = i+1;
           val = arr[i+1]; 
-          return sortIt(arr,swap,val);
+          return sortItTrace(arr,swap,val);
         }
 
      }
 
+    System.out.println();   
     return arr;
 
    }

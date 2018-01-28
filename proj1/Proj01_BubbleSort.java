@@ -23,9 +23,9 @@ public class Proj01_BubbleSort{
 
 
    public static void sort_trace(int[] vals){
-
+ 
       int[] out2=sortItTrace(vals);
-
+ 
    
    }
 
@@ -43,17 +43,24 @@ public class Proj01_BubbleSort{
           arr[i]=arr[i+1];
           arr[i+1]=temp; 
           cnt++;
+
+//      System.out.println("swap("+i+","+(i+1)+")");
+
        }  
  
 //      System.out.println(arr[i]);
 
     }
 
+
+
+
      if(cnt==0){return arr;}
 
      return sortIt(arr);
 
    }
+
 
    public static int[] sortItTrace(int[] arr){
 
@@ -68,18 +75,28 @@ public class Proj01_BubbleSort{
           arr[i]=arr[i+1];
           arr[i+1]=temp; 
           cnt++;
-          System.out.println("swap("+i+","+(i+1)+")");
+
+      System.out.println("swap("+i+","+(i+1)+")");
+
        }  
  
 //      System.out.println(arr[i]);
 
     }
 
-     if(cnt==0){return arr;}
 
-     return sortIt(arr);
+
+
+     if(cnt==0){
+      System.out.println();
+     return arr;}
+
+     return sortItTrace(arr);
 
    }
+
+
+
 
 
 

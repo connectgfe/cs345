@@ -13,25 +13,27 @@ public class Proj01_Main{
     int[] vals = readInput();
 
 //    Proj01_BubbleSort.sort(vals);
-//    Proj01_InsertionSort.sort_trace(vals);
+//    Proj01_BubbleSort.sort_trace(vals);
+
+
+    Proj01_InsertionSort.sort_trace(vals);
 
 
 
     for( int value : vals){
-       System.out.printf("%d ",value);
+       System.out.printf("%d\n",value);
     }
-    System.out.println();  
 
 
 //    Proj01_MergeSort.sort(vals);
-     Proj01_QuickSort.sort(vals);
+//     Proj01_QuickSort.sort(vals);
 
 
 
     for( int value : vals){
-       System.out.printf("%d ",value);
+//       System.out.printf("%d ",value);
     }
-    System.out.println();  
+//    System.out.println();  
 
 
 
@@ -64,9 +66,9 @@ public class Proj01_Main{
 		for (int i=0; i<vals.length; i++)
 			vals[i] = vals_in.get(i);
 
-//		for (int v: vals)
-//			System.out.printf("%d\n", v);
-//		System.out.printf("\n");
+		for (int v: vals)
+			System.out.printf("%d\n", v);
+		System.out.printf("\n");
 
 		return vals;
 	}

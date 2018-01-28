@@ -95,7 +95,7 @@ PASSED=0
 for ALGO in ${SORT_ALGOS}
 do
 #  for IN in $(ls -1 *.dat | rev | cut -f2- -d'.' | rev)
-  for IN in $(ls -1 test1.dat | rev | cut -f2- -d'.' | rev)
+  for IN in $(ls -1 *.dat | rev | cut -f2- -d'.' | rev)
  
 
   do
@@ -155,7 +155,7 @@ do
     else
       echo "TESTCASE FAILED: stdout miscompare!"
       echo "--- diff output: ---"
-      diff $e $s
+#      diff $e $s
       continue
     fi
 
@@ -199,7 +199,7 @@ do
     else
       echo "The testcase passed the basic sort test - but FAILED the comparison when 'trace' was turned on"
       echo "--- diff output: ---"
-      diff $et $st
+#      diff $et $st
       continue
     fi
   done
