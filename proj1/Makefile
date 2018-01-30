@@ -4,7 +4,7 @@ all:
 	javac Proj01_InsertionSort.java
 	javac Proj01_MergeSort.java
 	javac Proj01_QuickSort.java
-
+	javac Proj01_MergeSortBottomUp.java
 
 run:
 	java Proj01_Main < test1.dat

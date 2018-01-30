@@ -10,7 +10,9 @@ public class Proj01_MergeSort{
 
    public static void sort(int[] vals){
 
-      sortIt(vals,0, vals.length-1);
+//      sortIt(vals,0, vals.length-1);
+//      sortItB(vals);
+          sort3(vals);
 
    }
 
@@ -19,6 +21,87 @@ public class Proj01_MergeSort{
 
 
    }
+
+
+
+private static void merge3(int[] a, int[] aux, int lo, int mid, int hi)
+{
+ for (int k = lo; k <= hi; k++)
+ aux[k] = a[k];
+ int i = lo, j = mid+1;
+ for (int k = lo; k <= hi; k++)
+ {
+ if (i > mid) a[k] = aux[j++];
+ else if (j > hi) a[k] = aux[i++];
+ else if ((aux[j] < aux[i])) a[k] = aux[j++];
+ else a[k] = aux[i++];
+ }
+}
+
+ public static void sort3(int[] a)
+ {
+ int N = a.length;
+ int[] aux = new int[N];
+ for (int sz = 1; sz < N; sz = sz+sz)
+ for (int lo = 0; lo < N-sz; lo += sz+sz)
+ merge3(a, aux,lo, lo+sz-1, Math.min(lo+sz+sz-1, N-1));
+ }
+
+
+
+
+
+
+    public static void sortItB(int[] arr){
+
+      int w;
+      int[] tmp = new int[arr.length];
+
+      for( w =1; w < arr.length; w = 2*w ){
+
+          int i;
+          for( i =0; i< arr.length-w; i = i + 2*w){
+
+            int l, m, r;
+
+            l=i;
+            m= i +w;
+            r= i + 2*w;
+
+            mergeB(arr,l,m,r,tmp);
+
+          }
+
+         for(i =0;i<arr.length;i++){
+
+             arr[i]=tmp[i];
+         }
+
+      }
+
+    }
+
+
+  public static void mergeB(int[] arr,int l, int r, int e, int[] tmp){
+
+       int i=l; int j= r; int k;
+      
+       for(k =l; k<e; k++){
+
+         if(i<r &&(j>e || arr[i]<=arr[j])) {
+
+            tmp[k]= arr[i];
+            i = i+1; 
+          }else{
+
+            tmp[k]= arr[j];
+            j = j+1; 
+         }
+
+       }
+
+  }
+
 
 
    public static void sortIt(int[] arr, int a, int b){
@@ -33,7 +116,7 @@ public class Proj01_MergeSort{
      merge(arr,a,j,b);
 
      }
-     
+    
 
    }
 

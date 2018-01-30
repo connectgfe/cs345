@@ -16,7 +16,7 @@ public class Proj01_Main{
 //    Proj01_BubbleSort.sort_trace(vals);
 
 
-    Proj01_InsertionSort.sort_trace(vals);
+//    Proj01_InsertionSort.sort_trace(vals);
 
 
 
@@ -24,14 +24,19 @@ public class Proj01_Main{
        System.out.printf("%d\n",value);
     }
 
+//    int[] temp = new int[vals.length];
+//    testM.sort(vals,temp);
 
+      Proj01_MergeSortBottomUp.sort(vals);
 //    Proj01_MergeSort.sort(vals);
 //     Proj01_QuickSort.sort(vals);
+
+//      Merge.sort(vals);
 
 
 
     for( int value : vals){
-//       System.out.printf("%d ",value);
+       System.out.printf("%d ",value);
     }
 //    System.out.println();  
 
@@ -66,9 +71,9 @@ public class Proj01_Main{
 		for (int i=0; i<vals.length; i++)
 			vals[i] = vals_in.get(i);
 
-		for (int v: vals)
-			System.out.printf("%d\n", v);
-		System.out.printf("\n");
+//		for (int v: vals)
+//			System.out.printf("%d\n", v);
+//		System.out.printf("\n");
 
 		return vals;
 	}
