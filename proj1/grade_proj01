@@ -155,7 +155,7 @@ do
     else
       echo "TESTCASE FAILED: stdout miscompare!"
       echo "--- diff output: ---"
-#      diff $e $s
+      diff $e $s
       continue
     fi
 

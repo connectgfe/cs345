@@ -1,0 +1,25 @@
+2
+122
+2
+33
+3
+443
+
+doing insertion sort: start=0 end=4
+swap(1,2)
+swap(2,3)
+doing insertion sort: start=4 end=6
+merge: start=0 mid=4 end=6
+  merge values: 2 3   (left)
+  merge values: 2 3   (left)
+  merge values: 33 3   (right)
+  merge values: 33 443   (left)
+  merge values: 122 443   (left)
+  (flush right side)
+
+2
+2
+3
+33
+122
+443

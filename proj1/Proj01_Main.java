@@ -24,10 +24,12 @@ public class Proj01_Main{
        System.out.printf("%d\n",value);
     }
 
-//    int[] temp = new int[vals.length];
-//    testM.sort(vals,temp);
+//    Proj01_InsertionSort.sort(vals); 
+    Proj01_InsertionSort.sort_trace(vals); 
 
-      Proj01_MergeSortBottomUp.sort(vals);
+
+
+//      Proj01_MergeSortBottomUp.sort(vals);
 //    Proj01_MergeSort.sort(vals);
 //     Proj01_QuickSort.sort(vals);
 
@@ -36,9 +38,9 @@ public class Proj01_Main{
 
 
     for( int value : vals){
-       System.out.printf("%d ",value);
+       System.out.printf("%d\n ",value);
     }
-//    System.out.println();  
+    System.out.println();  
 
 
 

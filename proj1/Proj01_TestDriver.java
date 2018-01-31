@@ -57,6 +57,7 @@ public class Proj01_TestDriver
 
 		switch(args[0])
 		{
+
 		case "BubbleSort":
 			if (ex && trace)
 				Proj01_example_BubbleSort.sort_trace(vals);
@@ -100,7 +101,7 @@ public class Proj01_TestDriver
 			else
 				Proj01_MergeSort.sort(vals);
 			break;
-/*
+
 		case "MergeSortBottomUp":
 			if (ex && trace)
 				Proj01_example_MergeSortBottomUp.sort_trace(vals);
@@ -111,7 +112,7 @@ public class Proj01_TestDriver
 			else
 				Proj01_MergeSortBottomUp.sort(vals);
 			break;
-*/
+
 		}
 
 

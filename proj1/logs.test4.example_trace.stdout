@@ -1,0 +1,136 @@
+-884557
+-583237
+-228493
+-789
+-669
+-627
+-569
+-466
+-240
+-189
+-122
+-9
+-8
+-7
+-7
+-5
+-4
+-2
+0
+0
+0
+0
+1
+2
+3
+4
+7
+10
+10
+223
+517
+953173
+
+doing insertion sort: start=0 end=4
+doing insertion sort: start=4 end=8
+doing insertion sort: start=8 end=12
+doing insertion sort: start=12 end=16
+doing insertion sort: start=16 end=20
+doing insertion sort: start=20 end=24
+doing insertion sort: start=24 end=28
+doing insertion sort: start=28 end=32
+merge: start=0 mid=4 end=8
+  merge values: -884557 -669   (left)
+  merge values: -583237 -669   (left)
+  merge values: -228493 -669   (left)
+  merge values: -789 -669   (left)
+  (flush right side)
+merge: start=8 mid=12 end=16
+  merge values: -240 -8   (left)
+  merge values: -189 -8   (left)
+  merge values: -122 -8   (left)
+  merge values: -9 -8   (left)
+  (flush right side)
+merge: start=16 mid=20 end=24
+  merge values: -4 0   (left)
+  merge values: -2 0   (left)
+  merge values: 0 0   (left)
+  merge values: 0 0   (left)
+  (flush right side)
+merge: start=24 mid=28 end=32
+  merge values: 3 10   (left)
+  merge values: 4 10   (left)
+  merge values: 7 10   (left)
+  merge values: 10 10   (left)
+  (flush right side)
+merge: start=0 mid=8 end=16
+  merge values: -884557 -240   (left)
+  merge values: -583237 -240   (left)
+  merge values: -228493 -240   (left)
+  merge values: -789 -240   (left)
+  merge values: -669 -240   (left)
+  merge values: -627 -240   (left)
+  merge values: -569 -240   (left)
+  merge values: -466 -240   (left)
+  (flush right side)
+merge: start=16 mid=24 end=32
+  merge values: -4 3   (left)
+  merge values: -2 3   (left)
+  merge values: 0 3   (left)
+  merge values: 0 3   (left)
+  merge values: 0 3   (left)
+  merge values: 0 3   (left)
+  merge values: 1 3   (left)
+  merge values: 2 3   (left)
+  (flush right side)
+merge: start=0 mid=16 end=32
+  merge values: -884557 -4   (left)
+  merge values: -583237 -4   (left)
+  merge values: -228493 -4   (left)
+  merge values: -789 -4   (left)
+  merge values: -669 -4   (left)
+  merge values: -627 -4   (left)
+  merge values: -569 -4   (left)
+  merge values: -466 -4   (left)
+  merge values: -240 -4   (left)
+  merge values: -189 -4   (left)
+  merge values: -122 -4   (left)
+  merge values: -9 -4   (left)
+  merge values: -8 -4   (left)
+  merge values: -7 -4   (left)
+  merge values: -7 -4   (left)
+  merge values: -5 -4   (left)
+  (flush right side)
+
+-884557
+-583237
+-228493
+-789
+-669
+-627
+-569
+-466
+-240
+-189
+-122
+-9
+-8
+-7
+-7
+-5
+-4
+-2
+0
+0
+0
+0
+1
+2
+3
+4
+7
+10
+10
+223
+517
+953173

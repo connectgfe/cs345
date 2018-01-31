@@ -62,7 +62,7 @@ public class Proj01_InsertionSort{
           arr[swap]=arr[i];
           arr[i]=val;
 
-          System.out.println("swap("+swap+","+i+")");
+          System.out.println("swap("+i+","+swap+")");
           break;
         }
      

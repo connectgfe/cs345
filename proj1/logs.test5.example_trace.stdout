@@ -1,0 +1,177 @@
+916098
+169134
+916
+908
+697
+695
+399
+182
+9
+9
+9
+9
+8
+8
+7
+6
+6
+5
+1
+0
+0
+0
+0
+0
+0
+0
+-2
+-7
+-9
+-78
+-82
+-845
+
+doing insertion sort: start=0 end=4
+swap(0,1)
+swap(1,2)
+swap(0,1)
+swap(2,3)
+swap(1,2)
+swap(0,1)
+doing insertion sort: start=4 end=8
+swap(4,5)
+swap(5,6)
+swap(4,5)
+swap(6,7)
+swap(5,6)
+swap(4,5)
+doing insertion sort: start=8 end=12
+doing insertion sort: start=12 end=16
+swap(13,14)
+swap(12,13)
+swap(14,15)
+swap(13,14)
+swap(12,13)
+doing insertion sort: start=16 end=20
+swap(16,17)
+swap(17,18)
+swap(16,17)
+swap(18,19)
+swap(17,18)
+swap(16,17)
+doing insertion sort: start=20 end=24
+doing insertion sort: start=24 end=28
+swap(25,26)
+swap(24,25)
+swap(26,27)
+swap(25,26)
+swap(24,25)
+doing insertion sort: start=28 end=32
+swap(28,29)
+swap(29,30)
+swap(28,29)
+swap(30,31)
+swap(29,30)
+swap(28,29)
+merge: start=0 mid=4 end=8
+  merge values: 908 182   (right)
+  merge values: 908 399   (right)
+  merge values: 908 695   (right)
+  merge values: 908 697   (right)
+  (flush left side)
+merge: start=8 mid=12 end=16
+  merge values: 9 6   (right)
+  merge values: 9 7   (right)
+  merge values: 9 8   (right)
+  merge values: 9 8   (right)
+  (flush left side)
+merge: start=16 mid=20 end=24
+  merge values: 0 0   (left)
+  merge values: 1 0   (right)
+  merge values: 1 0   (right)
+  merge values: 1 0   (right)
+  merge values: 1 0   (right)
+  (flush left side)
+merge: start=24 mid=28 end=32
+  merge values: -7 -845   (right)
+  merge values: -7 -82   (right)
+  merge values: -7 -78   (right)
+  merge values: -7 -9   (right)
+  (flush left side)
+merge: start=0 mid=8 end=16
+  merge values: 182 6   (right)
+  merge values: 182 7   (right)
+  merge values: 182 8   (right)
+  merge values: 182 8   (right)
+  merge values: 182 9   (right)
+  merge values: 182 9   (right)
+  merge values: 182 9   (right)
+  merge values: 182 9   (right)
+  (flush left side)
+merge: start=16 mid=24 end=32
+  merge values: 0 -845   (right)
+  merge values: 0 -82   (right)
+  merge values: 0 -78   (right)
+  merge values: 0 -9   (right)
+  merge values: 0 -7   (right)
+  merge values: 0 -2   (right)
+  merge values: 0 0   (left)
+  merge values: 0 0   (left)
+  merge values: 0 0   (left)
+  merge values: 0 0   (left)
+  merge values: 0 0   (left)
+  merge values: 1 0   (right)
+  merge values: 1 0   (right)
+  (flush left side)
+merge: start=0 mid=16 end=32
+  merge values: 6 -845   (right)
+  merge values: 6 -82   (right)
+  merge values: 6 -78   (right)
+  merge values: 6 -9   (right)
+  merge values: 6 -7   (right)
+  merge values: 6 -2   (right)
+  merge values: 6 0   (right)
+  merge values: 6 0   (right)
+  merge values: 6 0   (right)
+  merge values: 6 0   (right)
+  merge values: 6 0   (right)
+  merge values: 6 0   (right)
+  merge values: 6 0   (right)
+  merge values: 6 1   (right)
+  merge values: 6 5   (right)
+  merge values: 6 6   (left)
+  merge values: 7 6   (right)
+  (flush left side)
+
+-845
+-82
+-78
+-9
+-7
+-2
+0
+0
+0
+0
+0
+0
+0
+1
+5
+6
+6
+7
+8
+8
+9
+9
+9
+9
+182
+399
+695
+697
+908
+916
+169134
+916098

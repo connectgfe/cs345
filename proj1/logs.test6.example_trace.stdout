@@ -1,0 +1,167 @@
+-1
+-354576
+-5
+-5
+-571
+-6
+-709515
+-8
+-803
+-811
+-862483
+-9
+-915514
+0
+0
+0
+1
+143
+2
+21310
+390
+4
+4
+401786
+8
+862
+9
+9
+9
+905
+979938
+993747
+
+doing insertion sort: start=0 end=4
+swap(0,1)
+swap(1,2)
+swap(2,3)
+doing insertion sort: start=4 end=8
+swap(5,6)
+swap(4,5)
+swap(6,7)
+doing insertion sort: start=8 end=12
+swap(8,9)
+swap(9,10)
+swap(8,9)
+doing insertion sort: start=12 end=16
+doing insertion sort: start=16 end=20
+swap(17,18)
+doing insertion sort: start=20 end=24
+swap(20,21)
+swap(21,22)
+doing insertion sort: start=24 end=28
+swap(25,26)
+swap(26,27)
+doing insertion sort: start=28 end=32
+merge: start=0 mid=4 end=8
+  merge values: -354576 -709515   (right)
+  merge values: -354576 -571   (left)
+  merge values: -5 -571   (right)
+  merge values: -5 -8   (right)
+  merge values: -5 -6   (right)
+  (flush left side)
+merge: start=8 mid=12 end=16
+  merge values: -862483 -915514   (right)
+  merge values: -862483 0   (left)
+  merge values: -811 0   (left)
+  merge values: -803 0   (left)
+  merge values: -9 0   (left)
+  (flush right side)
+merge: start=16 mid=20 end=24
+  merge values: 1 4   (left)
+  merge values: 2 4   (left)
+  merge values: 143 4   (right)
+  merge values: 143 4   (right)
+  merge values: 143 390   (left)
+  merge values: 21310 390   (right)
+  merge values: 21310 401786   (left)
+  (flush right side)
+merge: start=24 mid=28 end=32
+  merge values: 8 9   (left)
+  merge values: 9 9   (left)
+  merge values: 9 9   (left)
+  merge values: 862 9   (right)
+  merge values: 862 905   (left)
+  (flush right side)
+merge: start=0 mid=8 end=16
+  merge values: -709515 -915514   (right)
+  merge values: -709515 -862483   (right)
+  merge values: -709515 -811   (left)
+  merge values: -354576 -811   (left)
+  merge values: -571 -811   (right)
+  merge values: -571 -803   (right)
+  merge values: -571 -9   (left)
+  merge values: -8 -9   (right)
+  merge values: -8 0   (left)
+  merge values: -6 0   (left)
+  merge values: -5 0   (left)
+  merge values: -5 0   (left)
+  merge values: -1 0   (left)
+  (flush right side)
+merge: start=16 mid=24 end=32
+  merge values: 1 8   (left)
+  merge values: 2 8   (left)
+  merge values: 4 8   (left)
+  merge values: 4 8   (left)
+  merge values: 143 8   (right)
+  merge values: 143 9   (right)
+  merge values: 143 9   (right)
+  merge values: 143 9   (right)
+  merge values: 143 862   (left)
+  merge values: 390 862   (left)
+  merge values: 21310 862   (right)
+  merge values: 21310 905   (right)
+  merge values: 21310 979938   (left)
+  merge values: 401786 979938   (left)
+  (flush right side)
+merge: start=0 mid=16 end=32
+  merge values: -915514 1   (left)
+  merge values: -862483 1   (left)
+  merge values: -709515 1   (left)
+  merge values: -354576 1   (left)
+  merge values: -811 1   (left)
+  merge values: -803 1   (left)
+  merge values: -571 1   (left)
+  merge values: -9 1   (left)
+  merge values: -8 1   (left)
+  merge values: -6 1   (left)
+  merge values: -5 1   (left)
+  merge values: -5 1   (left)
+  merge values: -1 1   (left)
+  merge values: 0 1   (left)
+  merge values: 0 1   (left)
+  merge values: 0 1   (left)
+  (flush right side)
+
+-915514
+-862483
+-709515
+-354576
+-811
+-803
+-571
+-9
+-8
+-6
+-5
+-5
+-1
+0
+0
+0
+1
+2
+4
+4
+8
+9
+9
+9
+143
+390
+862
+905
+21310
+401786
+979938
+993747

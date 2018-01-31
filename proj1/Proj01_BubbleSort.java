@@ -79,16 +79,11 @@ public class Proj01_BubbleSort{
       System.out.println("swap("+i+","+(i+1)+")");
 
        }  
- 
-//      System.out.println(arr[i]);
 
     }
 
 
-
-
      if(cnt==0){
-      System.out.println();
      return arr;}
 
      return sortItTrace(arr);

@@ -1,0 +1,163 @@
+0
+0
+28672
+1145
+645
+1150
+995
+2481
+3713
+2469
+4228
+2396
+4111
+2941
+3086
+1161
+653
+1166
+1003
+2497
+3721
+2485
+4236
+2412
+4119
+0
+6426
+
+doing insertion sort: start=0 end=4
+swap(2,3)
+doing insertion sort: start=4 end=8
+swap(5,6)
+doing insertion sort: start=8 end=12
+swap(8,9)
+swap(10,11)
+swap(9,10)
+swap(8,9)
+doing insertion sort: start=12 end=16
+swap(12,13)
+swap(13,14)
+swap(14,15)
+swap(13,14)
+swap(12,13)
+doing insertion sort: start=16 end=20
+swap(17,18)
+doing insertion sort: start=20 end=24
+swap(20,21)
+swap(22,23)
+swap(21,22)
+swap(20,21)
+doing insertion sort: start=24 end=27
+swap(24,25)
+merge: start=0 mid=4 end=8
+  merge values: 0 645   (left)
+  merge values: 0 645   (left)
+  merge values: 1145 645   (right)
+  merge values: 1145 995   (right)
+  merge values: 1145 1150   (left)
+  merge values: 28672 1150   (right)
+  merge values: 28672 2481   (right)
+  (flush left side)
+merge: start=8 mid=12 end=16
+  merge values: 2396 1161   (right)
+  merge values: 2396 2941   (left)
+  merge values: 2469 2941   (left)
+  merge values: 3713 2941   (right)
+  merge values: 3713 3086   (right)
+  merge values: 3713 4111   (left)
+  merge values: 4228 4111   (right)
+  (flush left side)
+merge: start=16 mid=20 end=24
+  merge values: 653 2412   (left)
+  merge values: 1003 2412   (left)
+  merge values: 1166 2412   (left)
+  merge values: 2497 2412   (right)
+  merge values: 2497 2485   (right)
+  merge values: 2497 3721   (left)
+  (flush right side)
+merge: start=0 mid=8 end=16
+  merge values: 0 1161   (left)
+  merge values: 0 1161   (left)
+  merge values: 645 1161   (left)
+  merge values: 995 1161   (left)
+  merge values: 1145 1161   (left)
+  merge values: 1150 1161   (left)
+  merge values: 2481 1161   (right)
+  merge values: 2481 2396   (right)
+  merge values: 2481 2469   (right)
+  merge values: 2481 2941   (left)
+  merge values: 28672 2941   (right)
+  merge values: 28672 3086   (right)
+  merge values: 28672 3713   (right)
+  merge values: 28672 4111   (right)
+  merge values: 28672 4228   (right)
+  (flush left side)
+merge: start=16 mid=24 end=27
+  merge values: 653 0   (right)
+  merge values: 653 4119   (left)
+  merge values: 1003 4119   (left)
+  merge values: 1166 4119   (left)
+  merge values: 2412 4119   (left)
+  merge values: 2485 4119   (left)
+  merge values: 2497 4119   (left)
+  merge values: 3721 4119   (left)
+  merge values: 4236 4119   (right)
+  merge values: 4236 6426   (left)
+  (flush right side)
+merge: start=0 mid=16 end=27
+  merge values: 0 0   (left)
+  merge values: 0 0   (left)
+  merge values: 645 0   (right)
+  merge values: 645 653   (left)
+  merge values: 995 653   (right)
+  merge values: 995 1003   (left)
+  merge values: 1145 1003   (right)
+  merge values: 1145 1166   (left)
+  merge values: 1150 1166   (left)
+  merge values: 1161 1166   (left)
+  merge values: 2396 1166   (right)
+  merge values: 2396 2412   (left)
+  merge values: 2469 2412   (right)
+  merge values: 2469 2485   (left)
+  merge values: 2481 2485   (left)
+  merge values: 2941 2485   (right)
+  merge values: 2941 2497   (right)
+  merge values: 2941 3721   (left)
+  merge values: 3086 3721   (left)
+  merge values: 3713 3721   (left)
+  merge values: 4111 3721   (right)
+  merge values: 4111 4119   (left)
+  merge values: 4228 4119   (right)
+  merge values: 4228 4236   (left)
+  merge values: 28672 4236   (right)
+  merge values: 28672 6426   (right)
+  (flush left side)
+
+0
+0
+0
+645
+653
+995
+1003
+1145
+1150
+1161
+1166
+2396
+2412
+2469
+2481
+2485
+2497
+2941
+3086
+3713
+3721
+4111
+4119
+4228
+4236
+6426
+28672

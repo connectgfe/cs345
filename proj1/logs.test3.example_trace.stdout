@@ -1,0 +1,799 @@
+7
+-439
+5
+337
+0
+-8
+0
+-10
+-2
+-43
+884
+-3
+879
+329
+3
+10
+0
+5
+-37
+0
+6
+910
+33
+-6
+180058
+0
+-4
+646
+2
+-10
+-3
+-691657
+0
+-802
+0
+-498
+-879086
+4
+0
+-2
+625516
+-6
+-9
+9
+-368
+-9
+0
+6
+-6
+-639426
+0
+-4
+-3
+-743175
+0
+0
+-474627
+373
+-4
+-993
+-972
+-6
+-6
+-3
+8
+36
+7
+-7
+276082
+-6
+6
+757
+425638
+-860666
+514
+0
+1
+165
+963
+-1
+-961
+10
+-7
+1
+-3
+3
+-772437
+-2
+-2
+255684
+895583
+-83138
+-10
+-8
+698
+627167
+-43
+1
+501308
+-7
+-837942
+
+doing insertion sort: start=0 end=4
+swap(0,1)
+swap(1,2)
+doing insertion sort: start=4 end=8
+swap(4,5)
+swap(6,7)
+swap(5,6)
+swap(4,5)
+doing insertion sort: start=8 end=12
+swap(8,9)
+swap(10,11)
+swap(9,10)
+doing insertion sort: start=12 end=16
+swap(12,13)
+swap(13,14)
+swap(12,13)
+swap(14,15)
+swap(13,14)
+doing insertion sort: start=16 end=20
+swap(17,18)
+swap(16,17)
+swap(18,19)
+doing insertion sort: start=20 end=24
+swap(21,22)
+swap(22,23)
+swap(21,22)
+swap(20,21)
+doing insertion sort: start=24 end=28
+swap(24,25)
+swap(25,26)
+swap(24,25)
+swap(26,27)
+doing insertion sort: start=28 end=32
+swap(28,29)
+swap(29,30)
+swap(30,31)
+swap(29,30)
+swap(28,29)
+doing insertion sort: start=32 end=36
+swap(32,33)
+swap(34,35)
+swap(33,34)
+doing insertion sort: start=36 end=40
+swap(37,38)
+swap(38,39)
+swap(37,38)
+doing insertion sort: start=40 end=44
+swap(40,41)
+swap(41,42)
+swap(40,41)
+swap(42,43)
+doing insertion sort: start=44 end=48
+doing insertion sort: start=48 end=52
+swap(48,49)
+swap(50,51)
+doing insertion sort: start=52 end=56
+swap(52,53)
+doing insertion sort: start=56 end=60
+swap(57,58)
+swap(58,59)
+swap(57,58)
+doing insertion sort: start=60 end=64
+doing insertion sort: start=64 end=68
+swap(65,66)
+swap(64,65)
+swap(66,67)
+swap(65,66)
+swap(64,65)
+doing insertion sort: start=68 end=72
+swap(68,69)
+swap(69,70)
+swap(70,71)
+doing insertion sort: start=72 end=76
+swap(72,73)
+swap(73,74)
+swap(74,75)
+swap(73,74)
+doing insertion sort: start=76 end=80
+swap(78,79)
+swap(77,78)
+swap(76,77)
+doing insertion sort: start=80 end=84
+swap(81,82)
+swap(82,83)
+doing insertion sort: start=84 end=88
+swap(85,86)
+swap(84,85)
+swap(86,87)
+doing insertion sort: start=88 end=92
+swap(90,91)
+swap(89,90)
+swap(88,89)
+doing insertion sort: start=92 end=96
+doing insertion sort: start=96 end=100
+swap(98,99)
+swap(97,98)
+doing insertion sort: start=100 end=101
+merge: start=0 mid=4 end=8
+  merge values: -439 -10   (left)
+  merge values: 5 -10   (right)
+  merge values: 5 -8   (right)
+  merge values: 5 0   (right)
+  merge values: 5 0   (right)
+  (flush left side)
+merge: start=8 mid=12 end=16
+  merge values: -43 3   (left)
+  merge values: -3 3   (left)
+  merge values: -2 3   (left)
+  merge values: 884 3   (right)
+  merge values: 884 10   (right)
+  merge values: 884 329   (right)
+  merge values: 884 879   (right)
+  (flush left side)
+merge: start=16 mid=20 end=24
+  merge values: -37 -6   (left)
+  merge values: 0 -6   (right)
+  merge values: 0 6   (left)
+  merge values: 0 6   (left)
+  merge values: 5 6   (left)
+  (flush right side)
+merge: start=24 mid=28 end=32
+  merge values: -4 -691657   (right)
+  merge values: -4 -10   (right)
+  merge values: -4 -3   (left)
+  merge values: 0 -3   (right)
+  merge values: 0 2   (left)
+  merge values: 646 2   (right)
+  (flush left side)
+merge: start=32 mid=36 end=40
+  merge values: -802 -879086   (right)
+  merge values: -802 -2   (left)
+  merge values: -498 -2   (left)
+  merge values: 0 -2   (right)
+  merge values: 0 0   (left)
+  merge values: 0 0   (left)
+  (flush right side)
+merge: start=40 mid=44 end=48
+  merge values: -9 -368   (right)
+  merge values: -9 -9   (left)
+  merge values: -6 -9   (right)
+  merge values: -6 0   (left)
+  merge values: 9 0   (right)
+  merge values: 9 6   (right)
+  (flush left side)
+merge: start=48 mid=52 end=56
+  merge values: -639426 -743175   (right)
+  merge values: -639426 -3   (left)
+  merge values: -6 -3   (left)
+  merge values: -4 -3   (left)
+  merge values: 0 -3   (right)
+  merge values: 0 0   (left)
+  (flush right side)
+merge: start=56 mid=60 end=64
+  merge values: -474627 -972   (left)
+  merge values: -993 -972   (left)
+  merge values: -4 -972   (right)
+  merge values: -4 -6   (right)
+  merge values: -4 -6   (right)
+  merge values: -4 -3   (left)
+  merge values: 373 -3   (right)
+  (flush left side)
+merge: start=64 mid=68 end=72
+  merge values: -7 -6   (left)
+  merge values: 7 -6   (right)
+  merge values: 7 6   (right)
+  merge values: 7 757   (left)
+  merge values: 8 757   (left)
+  merge values: 36 757   (left)
+  (flush right side)
+merge: start=72 mid=76 end=80
+  merge values: -860666 -1   (left)
+  merge values: 0 -1   (right)
+  merge values: 0 1   (left)
+  merge values: 514 1   (right)
+  merge values: 514 165   (right)
+  merge values: 514 963   (left)
+  merge values: 425638 963   (right)
+  (flush left side)
+merge: start=80 mid=84 end=88
+  merge values: -961 -772437   (right)
+  merge values: -961 -3   (left)
+  merge values: -7 -3   (left)
+  merge values: 1 -3   (right)
+  merge values: 1 -2   (right)
+  merge values: 1 3   (left)
+  merge values: 10 3   (right)
+  (flush left side)
+merge: start=88 mid=92 end=96
+  merge values: -83138 -10   (left)
+  merge values: -2 -10   (right)
+  merge values: -2 -8   (right)
+  merge values: -2 698   (left)
+  merge values: 255684 698   (right)
+  merge values: 255684 627167   (left)
+  merge values: 895583 627167   (right)
+  (flush left side)
+merge: start=96 mid=100 end=101
+  merge values: -43 -837942   (right)
+  (flush left side)
+merge: start=0 mid=8 end=16
+  merge values: -439 -43   (left)
+  merge values: -10 -43   (right)
+  merge values: -10 -3   (left)
+  merge values: -8 -3   (left)
+  merge values: 0 -3   (right)
+  merge values: 0 -2   (right)
+  merge values: 0 3   (left)
+  merge values: 0 3   (left)
+  merge values: 5 3   (right)
+  merge values: 5 10   (left)
+  merge values: 7 10   (left)
+  merge values: 337 10   (right)
+  merge values: 337 329   (right)
+  merge values: 337 879   (left)
+  (flush right side)
+merge: start=16 mid=24 end=32
+  merge values: -37 -691657   (right)
+  merge values: -37 -10   (left)
+  merge values: -6 -10   (right)
+  merge values: -6 -4   (left)
+  merge values: 0 -4   (right)
+  merge values: 0 -3   (right)
+  merge values: 0 0   (left)
+  merge values: 0 0   (left)
+  merge values: 5 0   (right)
+  merge values: 5 2   (right)
+  merge values: 5 646   (left)
+  merge values: 6 646   (left)
+  merge values: 33 646   (left)
+  merge values: 910 646   (right)
+  merge values: 910 180058   (left)
+  (flush right side)
+merge: start=32 mid=40 end=48
+  merge values: -879086 -368   (left)
+  merge values: -802 -368   (left)
+  merge values: -498 -368   (left)
+  merge values: -2 -368   (right)
+  merge values: -2 -9   (right)
+  merge values: -2 -9   (right)
+  merge values: -2 -6   (right)
+  merge values: -2 0   (left)
+  merge values: 0 0   (left)
+  merge values: 0 0   (left)
+  merge values: 0 0   (left)
+  merge values: 4 0   (right)
+  merge values: 4 6   (left)
+  (flush right side)
+merge: start=48 mid=56 end=64
+  merge values: -743175 -474627   (left)
+  merge values: -639426 -474627   (left)
+  merge values: -6 -474627   (right)
+  merge values: -6 -993   (right)
+  merge values: -6 -972   (right)
+  merge values: -6 -6   (left)
+  merge values: -4 -6   (right)
+  merge values: -4 -6   (right)
+  merge values: -4 -4   (left)
+  merge values: -3 -4   (right)
+  merge values: -3 -3   (left)
+  merge values: 0 -3   (right)
+  merge values: 0 373   (left)
+  merge values: 0 373   (left)
+  merge values: 0 373   (left)
+  (flush right side)
+merge: start=64 mid=72 end=80
+  merge values: -7 -860666   (right)
+  merge values: -7 -1   (left)
+  merge values: -6 -1   (left)
+  merge values: 6 -1   (right)
+  merge values: 6 0   (right)
+  merge values: 6 1   (right)
+  merge values: 6 165   (left)
+  merge values: 7 165   (left)
+  merge values: 8 165   (left)
+  merge values: 36 165   (left)
+  merge values: 757 165   (right)
+  merge values: 757 514   (right)
+  merge values: 757 963   (left)
+  merge values: 276082 963   (right)
+  merge values: 276082 425638   (left)
+  (flush right side)
+merge: start=80 mid=88 end=96
+  merge values: -772437 -83138   (left)
+  merge values: -961 -83138   (right)
+  merge values: -961 -10   (left)
+  merge values: -7 -10   (right)
+  merge values: -7 -8   (right)
+  merge values: -7 -2   (left)
+  merge values: -3 -2   (left)
+  merge values: -2 -2   (left)
+  merge values: 1 -2   (right)
+  merge values: 1 698   (left)
+  merge values: 3 698   (left)
+  merge values: 10 698   (left)
+  (flush right side)
+merge: start=0 mid=16 end=32
+  merge values: -439 -691657   (right)
+  merge values: -439 -37   (left)
+  merge values: -43 -37   (left)
+  merge values: -10 -37   (right)
+  merge values: -10 -10   (left)
+  merge values: -8 -10   (right)
+  merge values: -8 -6   (left)
+  merge values: -3 -6   (right)
+  merge values: -3 -4   (right)
+  merge values: -3 -3   (left)
+  merge values: -2 -3   (right)
+  merge values: -2 0   (left)
+  merge values: 0 0   (left)
+  merge values: 0 0   (left)
+  merge values: 3 0   (right)
+  merge values: 3 0   (right)
+  merge values: 3 0   (right)
+  merge values: 3 2   (right)
+  merge values: 3 5   (left)
+  merge values: 5 5   (left)
+  merge values: 7 5   (right)
+  merge values: 7 6   (right)
+  merge values: 7 33   (left)
+  merge values: 10 33   (left)
+  merge values: 329 33   (right)
+  merge values: 329 646   (left)
+  merge values: 337 646   (left)
+  merge values: 879 646   (right)
+  merge values: 879 910   (left)
+  merge values: 884 910   (left)
+  (flush right side)
+merge: start=32 mid=48 end=64
+  merge values: -879086 -743175   (left)
+  merge values: -802 -743175   (right)
+  merge values: -802 -639426   (right)
+  merge values: -802 -474627   (right)
+  merge values: -802 -993   (right)
+  merge values: -802 -972   (right)
+  merge values: -802 -6   (left)
+  merge values: -498 -6   (left)
+  merge values: -368 -6   (left)
+  merge values: -9 -6   (left)
+  merge values: -9 -6   (left)
+  merge values: -6 -6   (left)
+  merge values: -2 -6   (right)
+  merge values: -2 -6   (right)
+  merge values: -2 -6   (right)
+  merge values: -2 -4   (right)
+  merge values: -2 -4   (right)
+  merge values: -2 -3   (right)
+  merge values: -2 -3   (right)
+  merge values: -2 0   (left)
+  merge values: 0 0   (left)
+  merge values: 0 0   (left)
+  merge values: 0 0   (left)
+  merge values: 0 0   (left)
+  merge values: 4 0   (right)
+  merge values: 4 0   (right)
+  merge values: 4 0   (right)
+  merge values: 4 373   (left)
+  merge values: 6 373   (left)
+  merge values: 9 373   (left)
+  merge values: 625516 373   (right)
+  (flush left side)
+merge: start=64 mid=80 end=96
+  merge values: -860666 -772437   (left)
+  merge values: -7 -772437   (right)
+  merge values: -7 -83138   (right)
+  merge values: -7 -961   (right)
+  merge values: -7 -10   (right)
+  merge values: -7 -8   (right)
+  merge values: -7 -7   (left)
+  merge values: -6 -7   (right)
+  merge values: -6 -3   (left)
+  merge values: -1 -3   (right)
+  merge values: -1 -2   (right)
+  merge values: -1 -2   (right)
+  merge values: -1 1   (left)
+  merge values: 0 1   (left)
+  merge values: 1 1   (left)
+  merge values: 6 1   (right)
+  merge values: 6 3   (right)
+  merge values: 6 10   (left)
+  merge values: 7 10   (left)
+  merge values: 8 10   (left)
+  merge values: 36 10   (right)
+  merge values: 36 698   (left)
+  merge values: 165 698   (left)
+  merge values: 514 698   (left)
+  merge values: 757 698   (right)
+  merge values: 757 255684   (left)
+  merge values: 963 255684   (left)
+  merge values: 276082 255684   (right)
+  merge values: 276082 627167   (left)
+  merge values: 425638 627167   (left)
+  (flush right side)
+merge: start=0 mid=32 end=64
+  merge values: -691657 -879086   (right)
+  merge values: -691657 -743175   (right)
+  merge values: -691657 -639426   (left)
+  merge values: -439 -639426   (right)
+  merge values: -439 -474627   (right)
+  merge values: -439 -993   (right)
+  merge values: -439 -972   (right)
+  merge values: -439 -802   (right)
+  merge values: -439 -498   (right)
+  merge values: -439 -368   (left)
+  merge values: -43 -368   (right)
+  merge values: -43 -9   (left)
+  merge values: -37 -9   (left)
+  merge values: -10 -9   (left)
+  merge values: -10 -9   (left)
+  merge values: -8 -9   (right)
+  merge values: -8 -9   (right)
+  merge values: -8 -6   (left)
+  merge values: -6 -6   (left)
+  merge values: -4 -6   (right)
+  merge values: -4 -6   (right)
+  merge values: -4 -6   (right)
+  merge values: -4 -6   (right)
+  merge values: -4 -4   (left)
+  merge values: -3 -4   (right)
+  merge values: -3 -4   (right)
+  merge values: -3 -3   (left)
+  merge values: -3 -3   (left)
+  merge values: -2 -3   (right)
+  merge values: -2 -3   (right)
+  merge values: -2 -2   (left)
+  merge values: 0 -2   (right)
+  merge values: 0 0   (left)
+  merge values: 0 0   (left)
+  merge values: 0 0   (left)
+  merge values: 0 0   (left)
+  merge values: 0 0   (left)
+  merge values: 2 0   (right)
+  merge values: 2 0   (right)
+  merge values: 2 0   (right)
+  merge values: 2 0   (right)
+  merge values: 2 0   (right)
+  merge values: 2 0   (right)
+  merge values: 2 0   (right)
+  merge values: 2 4   (left)
+  merge values: 3 4   (left)
+  merge values: 5 4   (right)
+  merge values: 5 6   (left)
+  merge values: 5 6   (left)
+  merge values: 6 6   (left)
+  merge values: 7 6   (right)
+  merge values: 7 9   (left)
+  merge values: 10 9   (right)
+  merge values: 10 373   (left)
+  merge values: 33 373   (left)
+  merge values: 329 373   (left)
+  merge values: 337 373   (left)
+  merge values: 646 373   (right)
+  merge values: 646 625516   (left)
+  merge values: 879 625516   (left)
+  merge values: 884 625516   (left)
+  merge values: 910 625516   (left)
+  merge values: 180058 625516   (left)
+  (flush right side)
+merge: start=64 mid=96 end=101
+  merge values: -860666 -837942   (left)
+  merge values: -772437 -837942   (right)
+  merge values: -772437 -43   (left)
+  merge values: -83138 -43   (left)
+  merge values: -961 -43   (left)
+  merge values: -10 -43   (right)
+  merge values: -10 -7   (left)
+  merge values: -8 -7   (left)
+  merge values: -7 -7   (left)
+  merge values: -7 -7   (left)
+  merge values: -6 -7   (right)
+  merge values: -6 1   (left)
+  merge values: -3 1   (left)
+  merge values: -2 1   (left)
+  merge values: -2 1   (left)
+  merge values: -1 1   (left)
+  merge values: 0 1   (left)
+  merge values: 1 1   (left)
+  merge values: 1 1   (left)
+  merge values: 3 1   (right)
+  merge values: 3 501308   (left)
+  merge values: 6 501308   (left)
+  merge values: 7 501308   (left)
+  merge values: 8 501308   (left)
+  merge values: 10 501308   (left)
+  merge values: 36 501308   (left)
+  merge values: 165 501308   (left)
+  merge values: 514 501308   (left)
+  merge values: 698 501308   (left)
+  merge values: 757 501308   (left)
+  merge values: 963 501308   (left)
+  merge values: 255684 501308   (left)
+  merge values: 276082 501308   (left)
+  merge values: 425638 501308   (left)
+  merge values: 627167 501308   (right)
+  (flush left side)
+merge: start=0 mid=64 end=101
+  merge values: -879086 -860666   (left)
+  merge values: -743175 -860666   (right)
+  merge values: -743175 -837942   (right)
+  merge values: -743175 -772437   (right)
+  merge values: -743175 -83138   (left)
+  merge values: -691657 -83138   (left)
+  merge values: -639426 -83138   (left)
+  merge values: -474627 -83138   (left)
+  merge values: -993 -83138   (right)
+  merge values: -993 -961   (left)
+  merge values: -972 -961   (left)
+  merge values: -802 -961   (right)
+  merge values: -802 -43   (left)
+  merge values: -498 -43   (left)
+  merge values: -439 -43   (left)
+  merge values: -368 -43   (left)
+  merge values: -43 -43   (left)
+  merge values: -37 -43   (right)
+  merge values: -37 -10   (left)
+  merge values: -10 -10   (left)
+  merge values: -10 -10   (left)
+  merge values: -9 -10   (right)
+  merge values: -9 -8   (left)
+  merge values: -9 -8   (left)
+  merge values: -8 -8   (left)
+  merge values: -6 -8   (right)
+  merge values: -6 -7   (right)
+  merge values: -6 -7   (right)
+  merge values: -6 -7   (right)
+  merge values: -6 -6   (left)
+  merge values: -6 -6   (left)
+  merge values: -6 -6   (left)
+  merge values: -6 -6   (left)
+  merge values: -6 -6   (left)
+  merge values: -4 -6   (right)
+  merge values: -4 -3   (left)
+  merge values: -4 -3   (left)
+  merge values: -4 -3   (left)
+  merge values: -3 -3   (left)
+  merge values: -3 -3   (left)
+  merge values: -3 -3   (left)
+  merge values: -3 -3   (left)
+  merge values: -2 -3   (right)
+  merge values: -2 -2   (left)
+  merge values: -2 -2   (left)
+  merge values: 0 -2   (right)
+  merge values: 0 -2   (right)
+  merge values: 0 -1   (right)
+  merge values: 0 0   (left)
+  merge values: 0 0   (left)
+  merge values: 0 0   (left)
+  merge values: 0 0   (left)
+  merge values: 0 0   (left)
+  merge values: 0 0   (left)
+  merge values: 0 0   (left)
+  merge values: 0 0   (left)
+  merge values: 0 0   (left)
+  merge values: 0 0   (left)
+  merge values: 0 0   (left)
+  merge values: 0 0   (left)
+  merge values: 2 0   (right)
+  merge values: 2 1   (right)
+  merge values: 2 1   (right)
+  merge values: 2 1   (right)
+  merge values: 2 3   (left)
+  merge values: 3 3   (left)
+  merge values: 4 3   (right)
+  merge values: 4 6   (left)
+  merge values: 5 6   (left)
+  merge values: 5 6   (left)
+  merge values: 6 6   (left)
+  merge values: 6 6   (left)
+  merge values: 7 6   (right)
+  merge values: 7 7   (left)
+  merge values: 9 7   (right)
+  merge values: 9 8   (right)
+  merge values: 9 10   (left)
+  merge values: 10 10   (left)
+  merge values: 33 10   (right)
+  merge values: 33 36   (left)
+  merge values: 329 36   (right)
+  merge values: 329 165   (right)
+  merge values: 329 514   (left)
+  merge values: 337 514   (left)
+  merge values: 373 514   (left)
+  merge values: 646 514   (right)
+  merge values: 646 698   (left)
+  merge values: 879 698   (right)
+  merge values: 879 757   (right)
+  merge values: 879 963   (left)
+  merge values: 884 963   (left)
+  merge values: 910 963   (left)
+  merge values: 180058 963   (right)
+  merge values: 180058 255684   (left)
+  merge values: 625516 255684   (right)
+  merge values: 625516 276082   (right)
+  merge values: 625516 425638   (right)
+  merge values: 625516 501308   (right)
+  merge values: 625516 627167   (left)
+  (flush right side)
+
+-879086
+-860666
+-837942
+-772437
+-743175
+-691657
+-639426
+-474627
+-83138
+-993
+-972
+-961
+-802
+-498
+-439
+-368
+-43
+-43
+-37
+-10
+-10
+-10
+-9
+-9
+-8
+-8
+-7
+-7
+-7
+-6
+-6
+-6
+-6
+-6
+-6
+-4
+-4
+-4
+-3
+-3
+-3
+-3
+-3
+-2
+-2
+-2
+-2
+-1
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+1
+1
+1
+2
+3
+3
+4
+5
+5
+6
+6
+6
+7
+7
+8
+9
+10
+10
+33
+36
+165
+329
+337
+373
+514
+646
+698
+757
+879
+884
+910
+963
+180058
+255684
+276082
+425638
+501308
+625516
+627167
+895583
