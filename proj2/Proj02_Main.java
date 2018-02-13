@@ -12,7 +12,7 @@ public class Proj02_Main{
     
 //     Proj02_HeapSort.sort(vals);
 
-     Proj02_CountingSort.sort(vals,4);
+     Proj02_CountingSort.sort2(vals,1);
 
 
 
