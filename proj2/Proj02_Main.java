@@ -10,8 +10,9 @@ public class Proj02_Main{
 
      Proj02_DataPair[] vals = readInput();
     
-     Proj02_HeapSort.sort(vals);
+//     Proj02_HeapSort.sort(vals);
 
+     Proj02_CountingSort.sort(vals,4);
 
 
 
