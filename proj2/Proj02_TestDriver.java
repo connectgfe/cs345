@@ -62,7 +62,7 @@ public class Proj02_TestDriver
 
 		case "CountingSort":
 			if (ex && trace)
-				Proj02_example_CountingSort.sort_trace(vals, 1);
+				Proj02_example_CountingSort.sort_trace(vals, 4);
 			else if(ex)
 				Proj02_example_CountingSort.sort(vals, 3);
 //			else if (trace)

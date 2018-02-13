@@ -16,29 +16,11 @@ public class Proj02_CountingSort{
 
         int n = arr.length;
  
-        // The output character array that will have sorted arr
         int output_pos[] = new int[n];
         int output_val[] = new int[n];
         
  
-        // Create a count array to store count of inidividul
-        // characters and initialize count array as 0
         int count[] = new int[10];
-
-//        for (int i=0; i<10; ++i)
-//            count[i] = 0;
- 
-        // store count of each character
-//        for (int i=0; i<n; ++i)
-//            ++count[arr[i]];
- 
-        // Change count[i] so that count[i] now contains actual
-        // position of this character in output array
-
-
-        for (int i=1; i<=9; ++i)
-            count[i] += count[i-1];
-
 
 
          for (int i = 0; i < arr.length; i++){
@@ -61,6 +43,7 @@ int[] intTab = String.valueOf(arr[i]).chars().map(Character::getNumericValue).to
 
 
 
+// stdout bin totals
 
         for( int i : count ){
          System.out.println(i);
@@ -80,6 +63,7 @@ int[] intTab = String.valueOf(arr[i]).chars().map(Character::getNumericValue).to
             cnt3[i]=cnt2[i-1];
          }
 
+// stdout updated bins
         for( int i : cnt3 ){
          System.out.println(i);
         }
@@ -89,26 +73,7 @@ int[] intTab = String.valueOf(arr[i]).chars().map(Character::getNumericValue).to
 
         
 
-
-// output bin totals
-
-
-
-// sort output_pos to output_vals 
-/* 
-        int j=0;
-        for (int i = 0; i < 10; i++){
- 
-             while (j < count[i]){
-
-              
- 
-                 output_val[j++] = arr[i]; //+ min;
-
-
-        } 
-*/
-
+// make new array
          int v=0;
 
         for( int i =0; i<10;i++){
@@ -127,19 +92,6 @@ int[] intTab = String.valueOf(arr[i]).chars().map(Character::getNumericValue).to
         }
 
 
-
-/* 
-        // Build the output character array
-        for (int i = 0; i<n; i++)
-        {
-            output[count[i]-1] = arr[i];
-            --count[arr[i]];
-        }
- 
-        // Copy the output array to arr, so that arr now
-        // contains sorted characters
-*/
-
         for (int i = 0; i<n; ++i)
             arr[i] = output_val[i];
 
@@ -151,6 +103,10 @@ int[] intTab = String.valueOf(arr[i]).chars().map(Character::getNumericValue).to
 
 
    }
+
+
+
+/*
 
     public static void sort( Proj02_DataPair[] indat,int pos)
  
@@ -250,5 +206,8 @@ int[] intTab = String.valueOf(input[i]).chars().map(Character::getNumericValue).
 
 
      }    
+
+*/
+
 
 }
