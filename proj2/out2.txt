@@ -26,84 +26,247 @@
 0 I_must_escape!
 6426 smokebomb!
 
--- Beginning Counting Sort, with pos=1 --
-  Performing the count:
-    index=0 : Key=0 -> Bin=0
-    index=1 : Key=0 -> Bin=0
-    index=2 : Key=28672 -> Bin=7
-    index=3 : Key=1145 -> Bin=4
-    index=4 : Key=645 -> Bin=4
-    index=5 : Key=1150 -> Bin=5
-    index=6 : Key=995 -> Bin=9
-    index=7 : Key=2481 -> Bin=8
-    index=8 : Key=3713 -> Bin=1
-    index=9 : Key=2469 -> Bin=6
-    index=10 : Key=4228 -> Bin=2
-    index=11 : Key=2396 -> Bin=9
-    index=12 : Key=4111 -> Bin=1
-    index=13 : Key=2941 -> Bin=4
-    index=14 : Key=3086 -> Bin=8
-    index=15 : Key=1161 -> Bin=6
-    index=16 : Key=653 -> Bin=5
-    index=17 : Key=1166 -> Bin=6
-    index=18 : Key=1003 -> Bin=0
-    index=19 : Key=2497 -> Bin=9
-    index=20 : Key=3721 -> Bin=2
-    index=21 : Key=2485 -> Bin=8
-    index=22 : Key=4236 -> Bin=3
-    index=23 : Key=2412 -> Bin=1
-    index=24 : Key=4119 -> Bin=1
-    index=25 : Key=0 -> Bin=0
-    index=26 : Key=6426 -> Bin=2
-Count totals:
-  bin 0: count=4
-  bin 1: count=4
-  bin 2: count=3
-  bin 3: count=1
-  bin 4: count=3
-  bin 5: count=2
-  bin 6: count=3
-  bin 7: count=1
-  bin 8: count=3
-  bin 9: count=3
-Indices at beginning of copy:
-  bin 0: pos=0
-  bin 1: pos=4
-  bin 2: pos=8
-  bin 3: pos=11
-  bin 4: pos=12
-  bin 5: pos=15
-  bin 6: pos=17
-  bin 7: pos=20
-  bin 8: pos=21
-  bin 9: pos=24
-Contents after sort:
-  0(iron_man) 0(the_incredible_hulk) 1003(infinity_war) 0(I_must_escape!) 3713(the_winter_soldier) 4111(civil_war) 2412(hmmm...I_guess_they_really_are_going_to_read_all_this) 4119(so_was_this_wise?) 4228(ultron) 3721(does_this_list_ever_end?) 6426(smokebomb!) 4236(wait_until_they_see_my_robotech_script) 1145(thor) 645(captain_america) 2941(professor_strange) 1150(the_avengers) 653(ragnarok) 2469(guardians) 1161(homecoming) 1166(black_panther) 28672(iron_man) 2481(thor_the_dark_world) 3086(guardians_2) 2485(will_the_students_think_me_a_silly_fanboy) 995(iron_man_3) 2396(ant-man) 2497(wow)
-
-0 iron_man
-0 the_incredible_hulk
-1003 infinity_war
-0 I_must_escape!
-3713 the_winter_soldier
-4111 civil_war
-2412 hmmm...I_guess_they_really_are_going_to_read_all_this
-4119 so_was_this_wise?
-4228 ultron
-3721 does_this_list_ever_end?
-6426 smokebomb!
-4236 wait_until_they_see_my_robotech_script
-1145 thor
-645 captain_america
-2941 professor_strange
-1150 the_avengers
-653 ragnarok
-2469 guardians
-1161 homecoming
-1166 black_panther
-28672 iron_man
-2481 thor_the_dark_world
-3086 guardians_2
-2485 will_the_students_think_me_a_silly_fanboy
-995 iron_man_3
-2396 ant-man
-2497 wow
+left and right 25 26
+swap 12 26
+left and right 23 24
+swap 11 24
+left and right 21 22
+swap 10 22
+left and right 19 20
+swap 9 20
+left and right 17 18
+left and right 15 16
+left and right 13 14
+swap 6 14
+left and right 11 12
+swap 5 12
+left and right 25 26
+swap 12 26
+left and right 9 10
+swap 4 10
+left and right 21 22
+swap 10 22
+left and right 7 8
+swap 3 8
+left and right 17 18
+swap 8 17
+left and right 5 6
+left and right 3 4
+swap 1 4
+left and right 9 10
+swap 4 10
+left and right 21 22
+swap 10 21
+left and right 1 2
+swap 0 2
+left and right 5 6
+swap 2 5
+left and right 11 12
+swap 5 11
+left and right 23 24
+swap 11 23
+moving root to end 26
+left and right 1 2
+swap 0 2
+left and right 5 6
+swap 2 5
+left and right 11 12
+swap 5 12
+left and right 25 26
+moving root to end 25
+left and right 1 2
+swap 0 1
+left and right 3 4
+swap 1 4
+left and right 9 10
+swap 4 9
+left and right 19 20
+swap 9 19
+moving root to end 24
+left and right 1 2
+swap 0 1
+left and right 3 4
+swap 1 4
+left and right 9 10
+swap 4 9
+left and right 19 20
+swap 9 20
+moving root to end 23
+left and right 1 2
+swap 0 2
+left and right 5 6
+swap 2 5
+left and right 11 12
+swap 5 11
+left and right 23 24
+moving root to end 22
+left and right 1 2
+swap 0 2
+left and right 5 6
+swap 2 6
+left and right 13 14
+swap 6 13
+left and right 27 28
+moving root to end 21
+left and right 1 2
+swap 0 1
+left and right 3 4
+swap 1 3
+left and right 7 8
+swap 3 7
+left and right 15 16
+swap 7 15
+moving root to end 20
+left and right 1 2
+swap 0 1
+left and right 3 4
+swap 1 4
+left and right 9 10
+swap 4 10
+left and right 21 22
+moving root to end 19
+left and right 1 2
+swap 0 2
+left and right 5 6
+swap 2 6
+left and right 13 14
+swap 6 14
+moving root to end 18
+left and right 1 2
+swap 0 2
+left and right 5 6
+swap 2 5
+left and right 11 12
+swap 5 12
+left and right 25 26
+moving root to end 17
+left and right 1 2
+swap 0 1
+left and right 3 4
+swap 1 4
+left and right 9 10
+swap 4 9
+left and right 19 20
+moving root to end 16
+left and right 1 2
+swap 0 1
+left and right 3 4
+swap 1 3
+left and right 7 8
+swap 3 8
+left and right 17 18
+moving root to end 15
+left and right 1 2
+swap 0 1
+left and right 3 4
+swap 1 4
+left and right 9 10
+swap 4 10
+left and right 21 22
+moving root to end 14
+left and right 1 2
+swap 0 1
+left and right 3 4
+swap 1 4
+left and right 9 10
+swap 4 9
+left and right 19 20
+moving root to end 13
+left and right 1 2
+swap 0 2
+left and right 5 6
+swap 2 5
+left and right 11 12
+swap 5 12
+left and right 25 26
+moving root to end 12
+left and right 1 2
+swap 0 1
+left and right 3 4
+swap 1 3
+left and right 7 8
+swap 3 7
+left and right 15 16
+moving root to end 11
+left and right 1 2
+swap 0 1
+left and right 3 4
+swap 1 3
+left and right 7 8
+swap 3 8
+left and right 17 18
+moving root to end 10
+left and right 1 2
+swap 0 1
+left and right 3 4
+swap 1 4
+left and right 9 10
+moving root to end 9
+left and right 1 2
+swap 0 2
+left and right 5 6
+swap 2 5
+left and right 11 12
+moving root to end 8
+left and right 1 2
+swap 0 1
+left and right 3 4
+swap 1 3
+left and right 7 8
+swap 3 7
+left and right 15 16
+moving root to end 7
+left and right 1 2
+swap 0 2
+left and right 5 6
+swap 2 6
+left and right 13 14
+moving root to end 6
+left and right 1 2
+swap 0 2
+left and right 5 6
+moving root to end 5
+left and right 1 2
+swap 0 1
+left and right 3 4
+swap 1 3
+left and right 7 8
+moving root to end 4
+left and right 1 2
+swap 0 1
+left and right 3 4
+moving root to end 3
+left and right 1 2
+moving root to end 2
+left and right 1 2
+moving root to end 1
+left and right 1 2
+moving root to end 0
+left and right 1 2
+0
+0
+0
+645
+653
+995
+1003
+1145
+1150
+1161
+1166
+2396
+2412
+2469
+2481
+2485
+2497
+2941
+3086
+3713
+3721
+4111
+4119
+4228
+4236
+6426
+28672

@@ -15,9 +15,22 @@ public class Proj02_HeapSort{
         int n = arr.length;
  
         // Build heap (rearrange array)
+
         for (int i = n / 2 - 1; i >= 0; i--){
-            heapify(arr, n, i);
+
+          System.out.println("building the max heap: bubbling down, starting at index "+i);
+
+
+//          System.out.println("  current index: "+i+" (key="+indat[i].key+")");
+
+           
+            heapify(arr, n, i, indat);
+
+
         } 
+
+
+          System.out.println("--- Heap Sort: The heap is built.  Now extract max values...");
 
         // One by one extract an element from heap
         for (int i=n-1; i>=0; i--){
@@ -25,11 +38,11 @@ public class Proj02_HeapSort{
             int temp = arr[0];
             arr[0] = arr[i];
             arr[i] = temp;
-            System.out.println("moving root to end "+i);
-
+            System.out.println("Bubbling down the value which was swapped into index [0]   (heapSize="+i+")");
+ 
  
             // call max heapify on the reduced heap
-            heapify(arr, i, 0);
+            heapify(arr, i, 0, indat);
         }
 
         for( int i : arr ){
@@ -40,14 +53,22 @@ public class Proj02_HeapSort{
  
     // To heapify a subtree rooted with node i which is
     // an index in arr[]. n is size of heap
-    public static void heapify(int arr[], int n, int i)
+    public static void heapify(int arr[], int n, int i, Proj02_DataPair[] indat)
     {
+
+
         int largest = i;  // Initialize largest as root
         int l = 2*i + 1;  // left = 2*i + 1
         int r = 2*i + 2;  // right = 2*i + 2
 
         if(l<=arr.length){
-        System.out.println("left and right "+l+" "+r);
+
+          System.out.println("  current index: "+i+" (key="+indat[i].key+")");
+
+        System.out.println("   left    index: "+l+" ("+indat[l].key+")");
+        System.out.println("   right   index: "+r+" ("+indat[r].key+")");
+
+
         }
 
  
@@ -65,11 +86,13 @@ public class Proj02_HeapSort{
             int swap = arr[i];
             arr[i] = arr[largest];
             arr[largest] = swap;
-            System.out.println("swap "+i+" "+largest);
+
+
+            System.out.println("swap("+i+","+largest+")");
 
  
             // Recursively heapify the affected sub-tree
-            heapify(arr, n, largest);
+            heapify(arr, n, largest,indat);
         }
     }
  
