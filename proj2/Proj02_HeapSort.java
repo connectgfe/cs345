@@ -3,6 +3,9 @@
 public class Proj02_HeapSort{
 
     public static void sort(Proj02_DataPair arr[]){
+
+
+    System.out.println(arr.length);
 /*
         int[] arr = new int[indat.length];
 
@@ -38,6 +41,9 @@ public class Proj02_HeapSort{
             Proj02_DataPair temp = arr[0];
             arr[0] = arr[i];
             arr[i] = temp;
+ 
+            System.out.println("Swapping the max value that remains in the heap, into the next-highest position in the array:\nswap(0,"+i+")");
+
             System.out.println("Bubbling down the value which was swapped into index [0]   (heapSize="+i+")");
  
  
@@ -59,12 +65,15 @@ public class Proj02_HeapSort{
     public static void heapify(Proj02_DataPair arr[], int n, int i)
     {
 
+
+//        System.out.println(i);
+
  
         int largest = i;  // Initialize largest as root
         int l = 2*i + 1;  // left = 2*i + 1
         int r = 2*i + 2;  // right = 2*i + 2
 
-        if(l<=arr.length){
+        if(l<arr.length){
 
         System.out.println("  current index: "+i+" (key="+arr[i].key+")");
 
@@ -74,16 +83,27 @@ public class Proj02_HeapSort{
 
         }
 
+
+        if(l<arr.length){
+ 
+            if(arr[i].key>arr[r].key){
+             
+               System.out.println("  (parent is in correct position, terminating bubble-down)");
+                return;
+           }     
+    
+        }
+
  
         // If left child is larger than root
         if (l < n && arr[l].key > arr[largest].key){
-          System.out.println("In heap l > root");
+ //         System.out.println("In heap l > root");
             largest = l;
         }
  
         // If right child is larger than largest so far
         if (r < n && arr[r].key > arr[largest].key){
-          System.out.println("In heap r > root");
+//          System.out.println("In heap r > root");
             largest = r;
         } 
 
@@ -95,7 +115,7 @@ public class Proj02_HeapSort{
          
         }
 */
-         
+           
         // If largest is not root
         if (largest != i)
         {
@@ -112,6 +132,7 @@ public class Proj02_HeapSort{
 
         }
 
+//        System.out.println("end "+i);
 
     }
  
