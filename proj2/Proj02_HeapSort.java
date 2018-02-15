@@ -5,7 +5,7 @@ public class Proj02_HeapSort{
     public static void sort(Proj02_DataPair arr[]){
 
 
-    System.out.println(arr.length);
+//    System.out.println(arr.length);
 /*
         int[] arr = new int[indat.length];
 
@@ -36,7 +36,7 @@ public class Proj02_HeapSort{
           System.out.println("--- Heap Sort: The heap is built.  Now extract max values...");
 
         // One by one extract an element from heap
-        for (int i=n-1; i>=0; i--){
+        for (int i=n-1; i>0; i--){
             // Move current root to end
             Proj02_DataPair temp = arr[0];
             arr[0] = arr[i];
@@ -50,11 +50,12 @@ public class Proj02_HeapSort{
             // call max heapify on the reduced heap
             heapify(arr, i, 0);
         }
-/*
-        for( int i : arr ){
-         System.out.println(i);
+
+        System.out.println();
+        for( Proj02_DataPair i : arr ){
+         System.out.println(i.key+" "+i.value);
         }
-*/
+
 
         
 
@@ -77,19 +78,19 @@ public class Proj02_HeapSort{
 
         System.out.println("  current index: "+i+" (key="+arr[i].key+")");
 
-        System.out.println("   left    index: "+l+" ("+arr[l].key+")");
-        System.out.println("   right   index: "+r+" ("+arr[r].key+")");
+        System.out.println("    left    index: "+l+" (key="+arr[l].key+")");
+        System.out.println("    right   index: "+r+" (key="+arr[r].key+")");
 
 
         }
 
 
-        if(l<arr.length){
+        if(r<=arr.length){
  
-            if(arr[i].key>arr[r].key){
+            if(arr[i].key>arr[r].key && arr[i].key>arr[l].key){
              
                System.out.println("  (parent is in correct position, terminating bubble-down)");
-                return;
+ //               return;
            }     
     
         }
