@@ -10,9 +10,11 @@ public class Proj02_Main{
 
      Proj02_DataPair[] vals = readInput();
     
-     Proj02_HeapSort.sort(vals);
+//     Proj02_HeapSort.sort_trace(vals);
 
-//     Proj02_CountingSort.sort2(vals,1);
+//     Proj02_CountingSort.sort_trace(vals,1);
+
+      Proj02_RadixSort.sort_trace(vals);
 
 
 
@@ -42,10 +44,11 @@ public class Proj02_Main{
                 for (int i=0; i<vals.length; i++)
                         vals[i] = vals_in.get(i);
 
+/*
                 for (Proj02_DataPair v: vals)
                         System.out.printf("%d %s\n", v.key, v.value);
                 System.out.printf("\n");
-
+*/
                 return vals;
         }
 

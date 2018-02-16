@@ -3,7 +3,29 @@
 public class Proj02_CountingSort{
 
 
-   public static void sort2(Proj02_DataPair[] indat, int pos){
+
+   public static void sort(Proj02_DataPair[] vals, int pos){
+
+/*
+// print beg
+                 for (Proj02_DataPair v: vals)
+                        System.out.printf("%d %s\n", v.key, v.value);
+                System.out.printf("\n");
+*/
+
+                sortIt(vals,pos);
+
+/*
+// print fin
+                for (Proj02_DataPair v: vals)
+                        System.out.printf("%d %s\n", v.key, v.value);
+*/
+
+       
+
+   }
+
+   public static void sortIt(Proj02_DataPair[] indat, int pos){
 
         int[] arr = new int[indat.length];
 
@@ -17,36 +39,31 @@ public class Proj02_CountingSort{
         int n = arr.length;
  
         int output_pos[] = new int[n];
-//        int output_val[] = new int[n];
         Proj02_DataPair output_val[] = new Proj02_DataPair[n];
-        
- 
+         
         int count[] = new int[10];
-
+/*
         System.out.println("-- Beginning Counting Sort, with pos="+pos+" --");
         System.out.println("  Performing the count:");
-
+*/
 
          for (int i = 0; i < arr.length; i++){
 
 
-int[] intTab = String.valueOf(arr[i]).chars().map(Character::getNumericValue).toArray();
+            int[] inVal = String.valueOf(arr[i]).chars().map(Character::getNumericValue).toArray();
 
-             if(pos<=intTab.length-1){
+             if(pos<=inVal.length-1){
  
-                count[intTab[intTab.length-(1+pos)]]++;
-                output_pos[i]=intTab[intTab.length-(1+pos)];
-         System.out.println("    index="+i+" : Key="+arr[i]+" -> Bin="+intTab[intTab.length-(1+pos)]);
-
-
+                count[inVal[inVal.length-(1+pos)]]++;
+                output_pos[i]=inVal[inVal.length-(1+pos)];
+ //               System.out.println("    index="+i+" : Key="+arr[i]+" -> Bin="+inVal[inVal.length-(1+pos)]);
 
              }else{
 
                 count[0]++;
                 output_pos[i]=0;
 
-         System.out.println("    index="+i+" : Key="+arr[i]+" -> Bin=0");
-
+  //              System.out.println("    index="+i+" : Key="+arr[i]+" -> Bin=0");
 
 
              }  
@@ -57,199 +74,214 @@ int[] intTab = String.valueOf(arr[i]).chars().map(Character::getNumericValue).to
 
 
 // stdout bin totals
-          System.out.println("Count totals:");
+   //        System.out.println("Count totals:");
 
-//        for( int i : count ){
-//         System.out.println(i);
-//        }
+           for (int i=0; i<10; ++i){
 
-        for (int i=0; i<10; ++i){
-
-          System.out.println("  bin "+i+": count="+count[i]);
-        } 
+    //          System.out.println("  bin "+i+": count="+count[i]);
+            } 
 
 
-
-
-
-         System.out.println("Indices at beginning of copy:");
-
-    
-        int[] cnt2= count;
-        
-        for (int i=1; i<=9; ++i)
-          cnt2[i] += cnt2[i-1];
-
-         int[] cnt3 = new int[10];
-         cnt3[0]=0; 
-         for(int i=1;i<cnt3.length;i++){ 
-            cnt3[i]=cnt2[i-1];
-         }
-
-// stdout updated bins
-//        for( int i : cnt3 ){
-//         System.out.println(i);
-//        }
-        
-
-        for (int i=0; i<10; ++i){
-
-          System.out.println("  bin "+i+": pos="+cnt3[i]);
-        } 
-
-
-
-
-         System.out.println("Contents after sort:");
-         System.out.print(" ");
-
-        
-
-// make new array
-         int v=0;
-
-        for( int i =0; i<10;i++){
-
-          for(int j=0;j<arr.length;j++){
-                
-              if(output_pos[j]==i){
+     //      System.out.println("Indices at beginning of copy:");
  
-               output_val[v++]=indat[j];  
+           int[] cnt2= count;
+        
+           for (int i=1; i<=9; ++i)
+              cnt2[i] += cnt2[i-1];
 
-              }
+           int[] cnt3 = new int[10];
+           cnt3[0]=0; 
+           for(int i=1;i<cnt3.length;i++){ 
+             cnt3[i]=cnt2[i-1];
+           }
 
-          }
+       
 
+           for (int i=0; i<10; ++i){
 
-        }
-
-
-        for (int i = 0; i<n; ++i)
-            indat[i] = output_val[i];
-
-
-        for (int i = 0; i<n; ++i)
-            System.out.print(" "+indat[i].key+"("+indat[i].value+")" );
-
-
-
-        System.out.println();
-        System.out.println();
+      //      System.out.println("  bin "+i+": pos="+cnt3[i]);
+           } 
 
 
-        for (int i = 0; i<n; ++i)
-            System.out.println(indat[i].key+" "+indat[i].value );
+       //    System.out.println("Contents after sort:");
+        //   System.out.print(" ");
+
+        
+// make new array
+           int v=0;
+
+           for( int i =0; i<10;i++){
+
+              for(int j=0;j<arr.length;j++){
+                
+                if(output_pos[j]==i){
+ 
+                 output_val[v++]=indat[j];  
+
+                 }
+
+               }
+
+             }
+
+
+           for (int i = 0; i<n; ++i)
+              indat[i] = output_val[i];
+
+
+   //        for (int i = 0; i<n; ++i)
+         //     System.out.print(" "+indat[i].key+"("+indat[i].value+")" );
 
 
 
-
+   //        System.out.println();
+   //        System.out.println();
 
    }
 
 
 
+
+
+
+
+   public static void sort_trace(Proj02_DataPair[] vals, int pos){
+
 /*
+// print beg
+                 for (Proj02_DataPair v: vals)
+                        System.out.printf("%d %s\n", v.key, v.value);
+                System.out.printf("\n");
+*/
 
-    public static void sort( Proj02_DataPair[] indat,int pos)
- 
-     {
+                sortIt_trace(vals,pos);
 
+/*
+// print fin
+                for (Proj02_DataPair v: vals)
+                        System.out.printf("%d %s\n", v.key, v.value);
+*/
 
-        int[] input = new int[indat.length];
+       
 
-        for(int i=0;i<input.length;i++){
+   }
 
-          input[i]=indat[i].key;
+   public static void sortIt_trace(Proj02_DataPair[] indat, int pos){
 
+        int[] arr = new int[indat.length];
 
-int[] intTab = String.valueOf(input[i]).chars().map(Character::getNumericValue).toArray();
+        for(int i=0;i<arr.length;i++){
 
-
-//         System.out.println(intTab[intTab.length-1]);
-
-
+          arr[i]=indat[i].key;
         }
 
 
 
+        int n = arr.length;
+ 
+        int output_pos[] = new int[n];
+        Proj02_DataPair output_val[] = new Proj02_DataPair[n];
+         
+        int count[] = new int[10];
 
- 
-         int min=0,max=0;
- 
-         for (int i = 1; i < input.length; i++)
- 
-         {
- 
-             if (input[i] > max)
- 
-                 max = input[i];
- 
-             if (input[i] < min)
- 
-                 min = input[i];
- 
-         }
- 
-         int range =  10; //max - min + 1;
-
- 
- System.out.println("max/min "+max+" "+min);
-
- 
- 
-         int[] count = new int[range];
- 
-         //counts frequencies for each element
- 
-         for (int i = 0; i < input.length; i++){
+        System.out.println("-- Beginning Counting Sort, with pos="+pos+" --");
+        System.out.println("  Performing the count:");
 
 
-int[] intTab = String.valueOf(input[i]).chars().map(Character::getNumericValue).toArray();
+         for (int i = 0; i < arr.length; i++){
 
-             if(pos<=intTab.length-1){
+
+            int[] inVal = String.valueOf(arr[i]).chars().map(Character::getNumericValue).toArray();
+
+             if(pos<=inVal.length-1){
  
-                count[intTab[intTab.length-(1+pos)]]++;
+                count[inVal[inVal.length-(1+pos)]]++;
+                output_pos[i]=inVal[inVal.length-(1+pos)];
+                System.out.println("    index="+i+" : Key="+arr[i]+" -> Bin="+inVal[inVal.length-(1+pos)]);
+
              }else{
 
                 count[0]++;
+                output_pos[i]=0;
+
+                System.out.println("    index="+i+" : Key="+arr[i]+" -> Bin=0");
+
+
              }  
 
           } 
 
 
-//checking count arr
-          for( int i : count ){
-            System.out.println(i);
-          }
 
 
+// stdout bin totals
+           System.out.println("Count totals:");
+
+           for (int i=0; i<10; ++i){
+
+              System.out.println("  bin "+i+": count="+count[i]);
+            } 
 
 
-         // getting positions in final array
+           System.out.println("Indices at beginning of copy:");
  
-         for (int i = 1; i < range; i++)
- 
-             count[i] += count[i - 1];
- 
-         
-         //copy to output array, preserving order of inputs with equal keys
-         int j = 0;
- 
-        for (int i = 0; i < range; i++)
- 
-             while (j < count[i])
- 
-                 input[j++] = input[i]; //+ min;
- 
+           int[] cnt2= count;
+        
+           for (int i=1; i<=9; ++i)
+              cnt2[i] += cnt2[i-1];
 
-        for( int i : input ){
-         System.out.println(i);
-        }
+           int[] cnt3 = new int[10];
+           cnt3[0]=0; 
+           for(int i=1;i<cnt3.length;i++){ 
+             cnt3[i]=cnt2[i-1];
+           }
+
+       
+
+           for (int i=0; i<10; ++i){
+
+            System.out.println("  bin "+i+": pos="+cnt3[i]);
+           } 
 
 
-     }    
+           System.out.println("Contents after sort:");
+           System.out.print(" ");
 
-*/
+        
+// make new array
+           int v=0;
+
+           for( int i =0; i<10;i++){
+
+              for(int j=0;j<arr.length;j++){
+                
+                if(output_pos[j]==i){
+ 
+                 output_val[v++]=indat[j];  
+
+                 }
+
+               }
+
+             }
+
+
+           for (int i = 0; i<n; ++i)
+              indat[i] = output_val[i];
+
+
+           for (int i = 0; i<n; ++i)
+              System.out.print(" "+indat[i].key+"("+indat[i].value+")" );
+
+
+
+           System.out.println();
+//           System.out.println();
+
+   }
 
 
 }
+
+
+

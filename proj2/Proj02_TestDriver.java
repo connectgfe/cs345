@@ -54,21 +54,21 @@ public class Proj02_TestDriver
 				Proj02_example_HeapSort.sort_trace(vals);
 			else if(ex)
 				Proj02_example_HeapSort.sort(vals);
-//			else if (trace)
-//				Proj02_HeapSort.sort_trace(vals);
-//			else
-//				Proj02_HeapSort.sort(vals);
+			else if (trace)
+				Proj02_HeapSort.sort_trace(vals);
+			else
+				Proj02_HeapSort.sort(vals);
 			break;
 
 		case "CountingSort":
 			if (ex && trace)
-				Proj02_example_CountingSort.sort_trace(vals, 1);
+				Proj02_example_CountingSort.sort_trace(vals, 3);
 			else if(ex)
 				Proj02_example_CountingSort.sort(vals, 3);
-//			else if (trace)
-//				Proj02_CountingSort.sort_trace(vals, 3);
-//			else
-//				Proj02_CountingSort.sort(vals, 3);
+			else if (trace)
+  			Proj02_CountingSort.sort_trace(vals, 3);
+			else
+				Proj02_CountingSort.sort(vals, 3);
 			break;
 
 		case "RadixSort":
@@ -76,10 +76,10 @@ public class Proj02_TestDriver
 				Proj02_example_RadixSort.sort_trace(vals);
 			else if(ex)
 				Proj02_example_RadixSort.sort(vals);
-//			else if (trace)
-//				Proj02_RadixSort.sort_trace(vals);
-//			else
-//				Proj02_RadixSort.sort(vals);
+			else if (trace)
+				Proj02_RadixSort.sort_trace(vals);
+		else
+				Proj02_RadixSort.sort(vals);
 			break;
 
 		default:
