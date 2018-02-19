@@ -18,7 +18,7 @@ public class Main{
 */
 
 
-     int[] arr = { 3, 8, 1, 2, 6, 4,1 };
+     int[] arr = { 3, 8, 1, 2, 6, 4,1 ,4,3,22, 143, 829, 28, 18};
 
 
      for( int i: arr )

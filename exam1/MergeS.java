@@ -5,13 +5,16 @@ public class MergeS{
 
   public static void sort(int[] arr){
 
+    int c = (int)(Math.log(arr.length)/Math.log(2));
 
-    int mid;
 
-    if(arr.length%2!=0){ 
-      mid = (arr.length/2)+1;
-    }else{ 
-      mid = arr.length/2;
+    System.out.println("merge layers "+c);
+
+
+    int mid = arr.length/2;
+
+    if(mid%2!=0){ 
+      mid = mid+1;
     }
 
     System.out.println(mid);
@@ -54,12 +57,24 @@ public class MergeS{
     System.out.println();
  
     printArr(arr); 
-    
-    merge(arr,0,2);
- 
-    merge(arr,4,6);
+   
 
-    merge(arr,0,4);     
+   for( int j=1;j<=c;j++){
+
+    int m =  (int)Math.pow(2,j);
+    System.out.println("math pow "+m);
+
+    for( int i=0; i<arr.length-m; i=i+m*(j*m)){ 
+
+     System.out.println(i+" "+(i+m));
+
+      merge(arr,i,i+m);
+    }
+
+    }
+ 
+//    merge(arr,4,6);
+
  
     System.out.println();
  
