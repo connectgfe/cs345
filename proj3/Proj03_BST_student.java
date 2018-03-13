@@ -66,7 +66,7 @@ public class Proj03_BST_student implements Proj03_BST
  
    String val;
    if( searchTree(root,key) == null){
-     val = "nope";
+     val = null;
    }else{
      val = searchTree(root,key).value;
    }
@@ -101,8 +101,56 @@ System.out.println(val);
    *
    * Throws IllegalArgumentException if the key does not exist.
    */
-  public  void delete(int key){}
+  public void delete(int key){
 
+    deleteNode(root,key);
+
+  }
+ /* A recursive function to insert a new key in BST */
+
+  Proj03_BSTNode deleteNode(Proj03_BSTNode root, int key){
+        /* Base Case: If the tree is empty */
+        if (root == null)  return root;
+ 
+        /* Otherwise, recur down the tree */
+        if (key < root.key)
+            root.left = deleteNode(root.left, key);
+        else if (key > root.key)
+            root.right = deleteNode(root.right, key);
+ 
+        // if key is same as root's key, then This is the node
+        // to be deleted
+        else
+        {
+            // node with only one child or no child
+            if (root.left == null)
+                return root.right;
+            else if (root.right == null)
+                return root.left;
+ 
+            // node with two children: Get the inorder successor (smallest
+            // in the right subtree)
+            root.key = minKeyValue(root.right);
+ 
+            // Delete the inorder successor
+            root.right = deleteNode(root.right, root.key);
+        }
+ 
+        return root;
+    }
+
+    public int minKeyValue(Proj03_BSTNode root)
+    {
+        int minValue = root.key;
+        while (root.left != null)
+        {
+            minValue = root.left.key;
+            root = root.left;
+        }
+        return minValue;
+    }
+
+ 
 
   /* void rotateLeft(int)
    *
