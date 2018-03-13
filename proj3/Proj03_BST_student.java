@@ -72,7 +72,7 @@ public class Proj03_BST_student implements Proj03_BST
    }
     
 
-System.out.println(val);
+System.out.println("value result from search: "+val);
    return val;
 
   }
@@ -103,7 +103,11 @@ System.out.println(val);
    */
   public void delete(int key){
 
-    deleteNode(root,key);
+   if( search(key)!=null ){ 
+     deleteNode(root,key);
+   }else{
+System.out.println("can't delete");
+   }
 
   }
  /* A recursive function to insert a new key in BST */

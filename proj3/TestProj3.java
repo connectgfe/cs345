@@ -19,6 +19,9 @@ public class TestProj3 {
 
     test1.search(18);
 
+    test1.delete(8);
+
+    test1.printInOrder();
 /*
     PrintWriter writer = new PrintWriter("test_it_graph.dot");   
 
