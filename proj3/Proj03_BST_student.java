@@ -10,6 +10,9 @@
 
 public class Proj03_BST_student implements Proj03_BST
 {
+
+
+   Proj03_BSTNode root;
   /* void insert(int,String)
    *
    * Inserts a given (key,value) pair into the tree.
@@ -21,7 +24,37 @@ public class Proj03_BST_student implements Proj03_BST
    * Throws IllegalArgumentException if the key already exists in
    * the tree.
    */
-  public  void insert(int key, String value){};
+
+
+  public Proj03_BST_student(){
+
+     root = null;
+
+  }
+
+  
+  public void insert(int key, String value){
+
+    root = insertNode(root, key, value);
+
+  }
+
+     
+   Proj03_BSTNode insertNode(Proj03_BSTNode root, int key, String value) {
+ 
+        if (root == null) {
+            root = new Proj03_BSTNode(key, value);
+            return root;
+        }
+ 
+        if (key < root.key)
+            root.left = insertNode(root.left, key, value);
+        else if (key > root.key)
+            root.right = insertNode(root.right, key, value);
+ 
+        return root;
+   }
+
 
 
   /* String search(int)
@@ -29,7 +62,37 @@ public class Proj03_BST_student implements Proj03_BST
    * Searches the tree for a given key; returns the associated String
    * if the key is found, or null if it is not found.
    */
-  public  String search(int key){ return "val";}
+  public String search(int key){ 
+ 
+   String val;
+   if( searchTree(root,key) == null){
+     val = "nope";
+   }else{
+     val = searchTree(root,key).value;
+   }
+    
+
+System.out.println(val);
+   return val;
+
+  }
+
+
+  public Proj03_BSTNode searchTree(Proj03_BSTNode root, int key){
+    // Base Cases: root is null or key is present at root
+    if (root==null || root.key==key)
+        return root;
+ 
+    // val is greater than root's key
+    if (root.key > key)
+        return searchTree(root.left, key);
+ 
+    // val is less than root's key
+    if (root.key < key)
+        return searchTree(root.right, key);
+    
+    return null;
+  }
 
 
   /* void delete(int)
@@ -73,7 +136,18 @@ public class Proj03_BST_student implements Proj03_BST
    *
    * If the tree is empty, then it will not print out anything.
    */
-  public  void printInOrder(){}
+  public void printInOrder(){
+
+     inorderPrint(root);
+  }
+
+  void inorderPrint(Proj03_BSTNode root) {
+        if (root != null) {
+            inorderPrint(root.left);
+            System.out.println(root.key+" "+root.value);
+            inorderPrint(root.right);
+        }
+    }
 
 
   /* void printPostOrder()
@@ -81,7 +155,7 @@ public class Proj03_BST_student implements Proj03_BST
    * Same as printInOrder(), except that it performs a post-order
    * traversal.
    */
-  public  void printPostOrder(){}
+  public void printPostOrder(){}
 
 
   /* void genDebugDot(String)
