@@ -1,0 +1,24 @@
+inserted 10:ten(tree_0)
+inserted 0:zero(tree_0)
+inserted 20:twenty(tree_0)
+IN   ORDER: 0:'zero(tree_0)' 10:'ten(tree_0)' 20:'twenty(tree_0)'
+POST ORDER: 0:'zero(tree_0)' 20:'twenty(tree_0)' 10:'ten(tree_0)'
+Dumping to the file debug_01_0_step1.dot
+inserted 0:zero(tree_1)
+inserted 10:ten(tree_1)
+inserted 20:twenty(tree_1)
+IN   ORDER: 0:'zero(tree_1)' 10:'ten(tree_1)' 20:'twenty(tree_1)'
+POST ORDER: 20:'twenty(tree_1)' 10:'ten(tree_1)' 0:'zero(tree_1)'
+Dumping to the file debug_01_1_step1.dot
+inserted 20:twenty(tree_2)
+inserted 0:zero(tree_2)
+inserted 10:ten(tree_2)
+IN   ORDER: 0:'zero(tree_2)' 10:'ten(tree_2)' 20:'twenty(tree_2)'
+POST ORDER: 10:'ten(tree_2)' 0:'zero(tree_2)' 20:'twenty(tree_2)'
+Dumping to the file debug_01_2_step1.dot
+inserted 10:ten(tree_3)
+inserted 20:twenty(tree_3)
+inserted 0:zero(tree_3)
+IN   ORDER: 0:'zero(tree_3)' 10:'ten(tree_3)' 20:'twenty(tree_3)'
+POST ORDER: 0:'zero(tree_3)' 20:'twenty(tree_3)' 10:'ten(tree_3)'
+Dumping to the file debug_01_3_step1.dot

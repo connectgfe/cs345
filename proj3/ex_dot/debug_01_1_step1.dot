@@ -1,0 +1,19 @@
+digraph {
+  node_0 [penwidth=4];  // this is the root node
+
+  node_0 [label="0
+zero(tree_1)"]
+  node_0 -> node_0_invis_L [style=invis];
+    node_0_invis_L [style=invis];
+  node_0 -> node_10 [label="R"];
+
+  node_10 [label="10
+ten(tree_1)"]
+  node_10 -> node_10_invis_L [style=invis];
+    node_10_invis_L [style=invis];
+  node_10 -> node_20 [label="R"];
+
+  node_20 [label="20
+twenty(tree_1)"]
+}
+

@@ -1,3 +1,4 @@
+import java.io.*;
 import java.util.LinkedList;
 /* Proj03_BST
  *
@@ -15,6 +16,8 @@ public class Proj03_BST_student implements Proj03_BST
 
    Proj03_BSTNode root;
    LinkedList<Proj03_BSTNode> nodeList;
+   PrintWriter writer;
+ 
   /* void insert(int,String)
    *
    * Inserts a given (key,value) pair into the tree.
@@ -37,21 +40,61 @@ public class Proj03_BST_student implements Proj03_BST
 
  
 
-  public void getList(){
+  public void debug(String val) {
 
     makeList(root, nodeList);
 
+
+/*
     for(Proj03_BSTNode node : nodeList){
-      System.out.print(node.key);
-      if(node.left !=null){ System.out.println(" -> L ->  "+node.left.key+" ;");}
 
-      if(node.right !=null){  System.out.print(node.key);
-        System.out.print(" -> R ->  "+node.right.key+" ;");}
-      System.out.println();
-     
-
-
+     if(node.left !=null){// || node.right !=null){   
+        System.out.println(node.key+" ->  "+node.left.key+";");}
+     if(node.right !=null){  
+        System.out.println(node.key+" ->  "+node.right.key+";");}
+       
+    
     }
+
+*/
+
+
+    try{
+    writer = new PrintWriter(val);
+    }catch(FileNotFoundException fne){
+    }
+
+    writer.println("digraph M {");
+
+
+    for(Proj03_BSTNode node : nodeList){
+
+      if(node.left !=null){// || node.right !=null){   
+        writer.println(node.key+" ->  "+node.left.key+" [label=\"L\"] ;");}
+      if(node.right !=null){  
+        writer.println(node.key+" ->  "+node.right.key+" [label=\"R\"] ;");}
+           
+    }
+
+/*
+
+    for(Proj03_BSTNode node : nodeList){
+
+     if(node.left !=null || node.right !=null){   
+        writer.print(node.key);
+         if(node.left !=null){ writer.println(" ->  "+node.left.key+" ;");}
+         if(node.right !=null){  writer.print(node.key);
+         writer.print(" ->  "+node.right.key+" ;");}
+       writer.println();
+      } 
+    
+    }
+
+*/
+
+    writer.println("}");
+    writer.close();
+
 
 
   }
@@ -220,7 +263,7 @@ System.out.println("can't delete");
   void inorderPrint(Proj03_BSTNode root) {
         if (root != null) {
             inorderPrint(root.left);
-            System.out.println(root.key+" "+root.value);
+            System.out.print(" "+root.key+":'"+root.value+"'");
             inorderPrint(root.right);
         }
     }
@@ -233,7 +276,7 @@ System.out.println("can't delete");
 
   void preorderPrint(Proj03_BSTNode root) {
         if (root != null) {
-            System.out.println(root.key+" "+root.value);
+            System.out.print(root.key+" "+root.value);
             preorderPrint(root.left);
 // System.out.println("end left");
  
@@ -274,7 +317,7 @@ System.out.println("can't delete");
             postorderPrint(root.right);
 // System.out.println("end right");
  
-            System.out.println(root.key+" "+root.value);
+            System.out.print(" "+root.key+":'"+root.value+"'");
         }
     }
 
@@ -285,6 +328,9 @@ System.out.println("can't delete");
    * Generates a \texttt{.dot} file which represents the tree; the
    * String is the name of the file to generate.
    */
-  public void genDebugDot(String filename){}
+  public void genDebugDot(String filename){
+
+     debug(filename);
+   }
 }
 
