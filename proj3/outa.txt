@@ -1,24 +1,31 @@
-inserted 10:ten(tree_0)
-inserted 0:zero(tree_0)
-inserted 20:twenty(tree_0)
-IN   ORDER: 0:'zero(tree_0)' 10:'ten(tree_0)' 20:'twenty(tree_0)'
-POST ORDER: 0:'zero(tree_0)' 20:'twenty(tree_0)' 10:'ten(tree_0)'
-Dumping to the file debug_01_0_step1.dot
-inserted 0:zero(tree_1)
-inserted 10:ten(tree_1)
-inserted 20:twenty(tree_1)
-IN   ORDER: 0:'zero(tree_1)' 10:'ten(tree_1)' 20:'twenty(tree_1)'
-POST ORDER: 20:'twenty(tree_1)' 10:'ten(tree_1)' 0:'zero(tree_1)'
-Dumping to the file debug_01_1_step1.dot
-inserted 20:twenty(tree_2)
-inserted 0:zero(tree_2)
-inserted 10:ten(tree_2)
-IN   ORDER: 0:'zero(tree_2)' 10:'ten(tree_2)' 20:'twenty(tree_2)'
-POST ORDER: 10:'ten(tree_2)' 0:'zero(tree_2)' 20:'twenty(tree_2)'
-Dumping to the file debug_01_2_step1.dot
-inserted 10:ten(tree_3)
-inserted 20:twenty(tree_3)
-inserted 0:zero(tree_3)
-IN   ORDER: 0:'zero(tree_3)' 10:'ten(tree_3)' 20:'twenty(tree_3)'
-POST ORDER: 0:'zero(tree_3)' 20:'twenty(tree_3)' 10:'ten(tree_3)'
-Dumping to the file debug_01_3_step1.dot
+inserted 12:O
+inserted 20:G
+inserted 4:W
+inserted 24:C
+inserted 16:K
+inserted 8:S
+inserted 0:<left-edge>
+inserted 26:A
+inserted 22:E
+inserted 18:I
+inserted 14:M
+inserted 10:Q
+inserted 6:U
+inserted 2:Y
+inserted 27:<right-edge>
+inserted 25:B
+inserted 23:D
+inserted 21:F
+inserted 19:H
+inserted 17:J
+inserted 15:L
+inserted 13:N
+inserted 11:P
+inserted 9:R
+inserted 7:T
+inserted 5:V
+inserted 3:X
+inserted 1:Z
+IN   ORDER: 0:'<left-edge>' 1:'Z' 2:'Y' 3:'X' 4:'W' 5:'V' 6:'U' 7:'T' 8:'S' 9:'R' 10:'Q' 11:'P' 12:'O' 13:'N' 14:'M' 15:'L' 16:'K' 17:'J' 18:'I' 19:'H' 20:'G' 21:'F' 22:'E' 23:'D' 24:'C' 25:'B' 26:'A' 27:'<right-edge>'
+POST ORDER: 1:'Z' 3:'X' 2:'Y' 0:'<left-edge>' 5:'V' 7:'T' 6:'U' 9:'R' 11:'P' 10:'Q' 8:'S' 4:'W' 13:'N' 15:'L' 14:'M' 17:'J' 19:'H' 18:'I' 16:'K' 21:'F' 23:'D' 22:'E' 25:'B' 27:'<right-edge>' 26:'A' 24:'C' 20:'G' 12:'O'
+Dumping to the file debug_03_0.dot

@@ -30,8 +30,11 @@ public class TestProj3 {
     System.out.println();
 */
 
+    Proj03_GenDotFile t1 = new Proj03_GenDotFile();
+    t1.gen(test1.root,"test_3.dot");
+
     
-    test1.genDebugDot("test_2.dot"); 
+//    test1.genDebugDot("test_2.dot"); 
 /*
     test1.insert(0,"three");
     test1.insert(10,"eight");

@@ -1,4 +1,0 @@
-digraph M {
-20 ->  0 [label="L"] ;
-0 ->  10 [label="R"] ;
-}
