@@ -1,3 +1,4 @@
+import java.util.LinkedList;
 /* Proj03_BST
  *
  * Author: Russ Lewis
@@ -13,6 +14,7 @@ public class Proj03_BST_student implements Proj03_BST
 
 
    Proj03_BSTNode root;
+   LinkedList<Proj03_BSTNode> nodeList;
   /* void insert(int,String)
    *
    * Inserts a given (key,value) pair into the tree.
@@ -29,10 +31,32 @@ public class Proj03_BST_student implements Proj03_BST
   public Proj03_BST_student(){
 
      root = null;
+     nodeList = new LinkedList<Proj03_BSTNode>();
 
   }
 
-  
+ 
+
+  public void getList(){
+
+    makeList(root, nodeList);
+
+    for(Proj03_BSTNode node : nodeList){
+      System.out.print(node.key);
+      if(node.left !=null){ System.out.println(" -> L ->  "+node.left.key+" ;");}
+
+      if(node.right !=null){  System.out.print(node.key);
+        System.out.print(" -> R ->  "+node.right.key+" ;");}
+      System.out.println();
+     
+
+
+    }
+
+
+  }
+
+ 
   public void insert(int key, String value){
 
     root = insertNode(root, key, value);
@@ -201,13 +225,59 @@ System.out.println("can't delete");
         }
     }
 
+  public void printPreOrder(){
+
+     preorderPrint(root);
+
+  }
+
+  void preorderPrint(Proj03_BSTNode root) {
+        if (root != null) {
+            System.out.println(root.key+" "+root.value);
+            preorderPrint(root.left);
+// System.out.println("end left");
+ 
+            preorderPrint(root.right);
+// System.out.println("end right");
+ 
+        }
+    }
+
+  void makeList(Proj03_BSTNode root, LinkedList<Proj03_BSTNode> nodeList) {
+
+        if (root != null) {
+            nodeList.add(root);
+            makeList(root.left, nodeList);
+            makeList(root.right, nodeList);
+ 
+        }
+    }
+
+
+
 
   /* void printPostOrder()
    *
    * Same as printInOrder(), except that it performs a post-order
    * traversal.
    */
-  public void printPostOrder(){}
+  public void printPostOrder(){
+
+     postorderPrint(root);
+
+  }
+  void postorderPrint(Proj03_BSTNode root) {
+        if (root != null) {
+            postorderPrint(root.left);
+// System.out.println("end left");
+ 
+            postorderPrint(root.right);
+// System.out.println("end right");
+ 
+            System.out.println(root.key+" "+root.value);
+        }
+    }
+
 
 
   /* void genDebugDot(String)

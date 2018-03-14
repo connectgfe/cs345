@@ -1,0 +1,9 @@
+0 insert 3 three(tree_0)
+0 insert 8 eight(tree_0)
+0 insert 9 nine(tree_0)
+0 insert 5 five(tree_0)
+0 insert 1 one(tree_0)
+
+0 inOrder
+0 postOrder
+0 debug debug_02_simple.dot

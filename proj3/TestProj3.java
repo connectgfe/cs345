@@ -14,14 +14,21 @@ public class TestProj3 {
     test1.insert(8,"eight");
     test1.insert(9,"nine");
     test1.insert(5,"five");
+    test1.insert(1,"one");
+
 
     test1.printInOrder();
+    System.out.println();
 
-    test1.search(18);
+    test1.printPostOrder();
+    System.out.println();
 
-    test1.delete(8);
+    test1.printPreOrder();
+//    test1.search(18);
+    System.out.println();
+    
+    test1.getList(); 
 
-    test1.printInOrder();
 /*
     PrintWriter writer = new PrintWriter("test_it_graph.dot");   
 
