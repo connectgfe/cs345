@@ -4,3 +4,9 @@ all:
 run:
 	java TestProj3
 
+
+clear:
+	rm *.dot *.png
+
+dot:
+	dot -Tpng *.dot -o val.png

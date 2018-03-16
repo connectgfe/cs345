@@ -234,21 +234,96 @@ System.out.println("can't delete");
    * Throws IllegalArgumentException if the selected node does not have
    * a right child.
    */
-  public  void rotateLeft (int at){
+
+  public  void rotateLeft(int at){
 
         Proj03_BSTNode x = searchTree(root,at); 
-        if(x==null || x.right==null){ 
-           throw new IllegalArgumentException();
-         }  
-
-        Proj03_BSTNode y = x.right;
-        Proj03_BSTNode yLc = y.left;
  
-        // Perform rotation
-        y.left = x;
-        x.right = yLc;
+        if(x==null || x.right==null){ 
+           throw new IllegalArgumentException();           
+         }else{
+
+            while(true){
+  System.out.println(root.key);
+ 
+     
+              if(root.key==at){            
+// good code 
+                Proj03_BSTNode temp = root;
+                Proj03_BSTNode y = temp.right;
+
+                Proj03_BSTNode yLc = y.left;
+                temp.right = yLc;
+       
+                y.left = temp;
+                root = y;
+
+  System.out.println("at break");
+                break;
+              }
+   
+        if(root.key>at){ 
+
+              if(root.left!=null){            
+                if(root.left.key==at){            
+// good code 
+                Proj03_BSTNode temp = root.left;
+                Proj03_BSTNode y = temp.right;
+
+                Proj03_BSTNode yLc = y.left;
+                temp.right = yLc;
+       
+                y.left = temp;
+                root.left = y;
+
+  System.out.println("at break");
+                break;
+               }
+              }
+
+               root=root.left;
+              
+  System.out.println("<-- left");
+ 
+             }else{
+
+              if(root.right!=null){            
+               if(root.right.key==at){            
+
+// good code 
+                Proj03_BSTNode temp = root.right;
+                Proj03_BSTNode y = temp.right;
+
+                Proj03_BSTNode yLc = y.left;
+                temp.right = yLc;
+       
+                y.left = temp;
+                root.right = y;
+                
+
+  System.out.println("at break");
+                break;
+               }
+               }
+
+
+               root=root.right;
+  System.out.println("--> right");
+ 
+             }
+ 
+          }  // end while
+
+        } // end else
+
+ System.out.println("at end");
+ 
 
   }
+
+
+
+
 
 
   /* void rotateRight(int)
@@ -260,33 +335,84 @@ System.out.println("can't delete");
         Proj03_BSTNode x = searchTree(root,at); 
  
         if(x==null || x.left==null){ 
-           throw new IllegalArgumentException();
-         }  
+           throw new IllegalArgumentException();           
+         }else{
 
-
-
-        
+            while(true){
+  System.out.println(root.key);
+ 
+     
+              if(root.key==at){            
 // good code 
-        Proj03_BSTNode temp = root;
-        Proj03_BSTNode y = root.left;
+                Proj03_BSTNode temp = root;
+                Proj03_BSTNode y = temp.left;
 
-        if(y.right!=null){        
-          Proj03_BSTNode yRc = y.right;
-          temp.left = yRc;
-        }
+                Proj03_BSTNode yRc = y.right;
+                temp.left = yRc;
        
-        y.right = temp;
-        root = y;
+                y.right = temp;
+                root = y;
 
+  System.out.println("at break");
+                break;
+              }
+   
+        if(root.key<at){ 
+
+              if(root.right!=null){            
+                if(root.right.key==at){            
+// good code 
+                Proj03_BSTNode temp = root.right;
+                Proj03_BSTNode y = temp.left;
+
+                Proj03_BSTNode yRc = y.right;
+                temp.left = yRc;
+       
+                y.right = temp;
+                root.right = y;
+
+  System.out.println("at break");
+                break;
+               }
+              }
+
+               root=root.right;
+              
+  System.out.println("--> right");
  
-/*
-        Proj03_BSTNode y = x.left;
-        Proj03_BSTNode yRc = y.right;
+             }else{
+
+              if(root.left!=null){            
+               if(root.left.key==at){            
+
+// good code 
+                Proj03_BSTNode temp = root.left;
+                Proj03_BSTNode y = temp.left;
+
+                Proj03_BSTNode yRc = y.right;
+                temp.left = yRc;
+       
+                y.right = temp;
+                root.left = y;
+                
+
+  System.out.println("at break");
+                break;
+               }
+               }
+
+
+               root=root.left;
+  System.out.println("<-- left");
  
-        // Perform rotation
-        y.right = x;
-        x.left = yRc;
-*/
+             }
+ 
+          }  // end while
+
+        } // end else
+
+ System.out.println("at end");
+ 
 
   }
 

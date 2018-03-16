@@ -1,0 +1,142 @@
+0 insert	12 O
+0 insert	20 G
+0 insert	4  W
+0 insert	24 C
+0 insert	16 K
+0 insert	8  S
+0 insert	0  <left-edge>
+0 insert	26 A
+0 insert	22 E
+0 insert	18 I
+0 insert	14 M
+0 insert	10 Q
+0 insert	6  U
+0 insert	2  Y
+0 insert	27 <right-edge>
+0 insert	25 B
+0 insert	23 D
+0 insert	21 F
+0 insert	19 H
+0 insert	17 J
+0 insert	15 L
+0 insert	13 N
+0 insert	11 P
+0 insert	9  R
+0 insert	7  T
+0 insert	5  V
+0 insert	3  X
+0 insert	1  Z
+
+0 inOrder
+0 postOrder
+0 debug debug_05_00.dot
+
+0 rotateRight	20
+    0 debug debug_05_01.dot
+0 rotateRight	16
+    0 debug debug_05_02.dot
+0 rotateRight	14
+    0 debug debug_05_03.dot
+
+# should be an error!
+0 rotateRight   13
+
+# should be an error!
+0 rotateRight   100
+
+0 rotateRight	16
+    0 debug debug_05_04.dot
+0 rotateRight	26
+    0 debug debug_05_05.dot
+0 rotateRight	24
+    0 debug debug_05_06.dot
+0 rotateRight	20
+    0 debug debug_05_07.dot
+
+# should be an error!
+0 rotateRight	16
+
+0 rotateLeft	0
+    0 debug debug_05_08.dot
+0 rotateLeft	4
+    0 debug debug_05_09.dot
+0 rotateLeft	8
+    0 debug debug_05_10.dot
+0 rotateLeft	10
+    0 debug debug_05_11.dot
+0 rotateLeft	0
+    0 debug debug_05_12.dot
+0 rotateLeft	2
+    0 debug debug_05_13.dot
+0 rotateLeft	4
+    0 debug debug_05_14.dot
+0 rotateLeft	8
+    0 debug debug_05_15.dot
+
+# turn it all into a perfect tree!
+0 rotateRight	2
+    0 debug debug_05_16.dot
+0 rotateRight	4
+    0 debug debug_05_17.dot
+0 rotateLeft	6
+    0 debug debug_05_18.dot
+0 rotateRight	6
+    0 debug debug_05_19.dot
+0 rotateLeft	4
+    0 debug debug_05_20.dot
+0 rotateRight	6
+    0 debug debug_05_21.dot
+
+0 rotateRight	8
+    0 debug debug_05_22.dot
+0 rotateRight	9
+    0 debug debug_05_23.dot
+0 rotateRight	10
+    0 debug debug_05_24.dot
+0 rotateRight	11
+    0 debug debug_05_25.dot
+0 rotateLeft	13
+    0 debug debug_05_26.dot
+0 rotateLeft	14
+    0 debug debug_05_27.dot
+0 rotateLeft	12
+    0 debug debug_05_28.dot
+0 rotateRight	12
+    0 debug debug_05_29.dot
+0 rotateRight	12
+    0 debug debug_05_30.dot
+0 rotateRight	10
+    0 debug debug_05_31.dot
+0 rotateRight	14
+    0 debug debug_05_32.dot
+0 rotateLeft	12
+    0 debug debug_05_33.dot
+
+0 rotateLeft	16
+    0 debug debug_05_34.dot
+0 rotateLeft	18
+    0 debug debug_05_35.dot
+0 rotateLeft	20
+    0 debug debug_05_36.dot
+0 rotateRight	24
+    0 debug debug_05_37.dot
+0 rotateLeft	22
+    0 debug debug_05_38.dot
+0 rotateLeft	18
+    0 debug debug_05_39.dot
+0 rotateRight	20
+    0 debug debug_05_40.dot
+0 rotateRight	22
+    0 debug debug_05_41.dot
+0 rotateLeft	16
+    0 debug debug_05_42.dot
+0 rotateRight	18
+    0 debug debug_05_43.dot
+0 rotateLeft	20
+    0 debug debug_05_44.dot
+0 rotateRight	22
+    0 debug debug_05_45.dot
+
+0 rotateLeft	24
+    0 debug debug_05_46.dot
+

@@ -1,0 +1,9 @@
+0 insert 8 l
+0 insert 6 l
+0 insert 5 l
+0 insert 7 l
+0 insert 9 l
+
+0 postOrder
+0 rotateRight 6
+0 debug deb_rot.dot
