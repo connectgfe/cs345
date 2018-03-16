@@ -34,7 +34,7 @@ public class TestProj3 {
     System.out.println();
 */
 
-    test1.rotateLeft(8);
+    test1.rotateLeft(6);
 //    test1.rotateLeft(8);
 
 

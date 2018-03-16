@@ -5,5 +5,5 @@
 0 insert 9 l
 
 0 postOrder
-0 rotateRight 6
+0 rotateLeft 6
 0 debug deb_rot.dot
