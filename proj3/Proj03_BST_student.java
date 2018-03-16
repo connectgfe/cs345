@@ -234,14 +234,63 @@ System.out.println("can't delete");
    * Throws IllegalArgumentException if the selected node does not have
    * a right child.
    */
-  public  void rotateLeft (int at){}
+  public  void rotateLeft (int at){
+
+        Proj03_BSTNode x = searchTree(root,at); 
+        if(x==null || x.right==null){ 
+           throw new IllegalArgumentException();
+         }  
+
+        Proj03_BSTNode y = x.right;
+        Proj03_BSTNode yLc = y.left;
+ 
+        // Perform rotation
+        y.left = x;
+        x.right = yLc;
+
+  }
 
 
   /* void rotateRight(int)
    *
    * Same as rotateLeft, except that it rotates right.
    */
-  public  void rotateRight(int at){}
+  public  void rotateRight(int at){
+
+        Proj03_BSTNode x = searchTree(root,at); 
+ 
+        if(x==null || x.left==null){ 
+           throw new IllegalArgumentException();
+         }  
+
+
+
+        
+// good code 
+        Proj03_BSTNode temp = root;
+        Proj03_BSTNode y = root.left;
+
+        if(y.right!=null){        
+          Proj03_BSTNode yRc = y.right;
+          temp.left = yRc;
+        }
+       
+        y.right = temp;
+        root = y;
+
+ 
+/*
+        Proj03_BSTNode y = x.left;
+        Proj03_BSTNode yRc = y.right;
+ 
+        // Perform rotation
+        y.right = x;
+        x.left = yRc;
+*/
+
+  }
+
+
 
 
   /* void printInOrder()
