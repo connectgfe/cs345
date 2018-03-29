@@ -1,14 +1,9 @@
+/*Author: G Esposito
+* Function: bst, can rotate
+*
+*/
 import java.io.*;
 import java.util.LinkedList;
-/* Proj03_BST
- *
- * Author: Russ Lewis
- *
- * Represents a single node in a BST.  Carries both a key and satellite data.
- * For simplicity, I have not made this a generic - though I might add that
- * later.  And since students will be using this as a utility class (rather
- * than modifying it for themselves), it does not have any methods.
- */
 
 public class Proj03_BST_student implements Proj03_BST
 {
@@ -18,23 +13,10 @@ public class Proj03_BST_student implements Proj03_BST
    LinkedList<Proj03_BSTNode> nodeList;
    PrintWriter writer;
  
-  /* void insert(int,String)
-   *
-   * Inserts a given (key,value) pair into the tree.
-   *
-   * This call may assume that the key is non-negative, and that the
-   * value is not null.  (It may, but is not required to, enforce
-   * these assumptions.)
-   *
-   * Throws IllegalArgumentException if the key already exists in
-   * the tree.
-   */
-
 
   public Proj03_BST_student(){
 
      root = null;
-     nodeList = new LinkedList<Proj03_BSTNode>();
 
   }
 
@@ -42,21 +24,10 @@ public class Proj03_BST_student implements Proj03_BST
 
   public void debug(String val) {
 
+
+    nodeList = new LinkedList<Proj03_BSTNode>();
+
     makeList(root, nodeList);
-
-
-/*
-    for(Proj03_BSTNode node : nodeList){
-
-     if(node.left !=null){// || node.right !=null){   
-        System.out.println(node.key+" ->  "+node.left.key+";");}
-     if(node.right !=null){  
-        System.out.println(node.key+" ->  "+node.right.key+";");}
-       
-    
-    }
-
-*/
 
 
     try{
@@ -76,33 +47,39 @@ public class Proj03_BST_student implements Proj03_BST
            
     }
 
-/*
-
-    for(Proj03_BSTNode node : nodeList){
-
-     if(node.left !=null || node.right !=null){   
-        writer.print(node.key);
-         if(node.left !=null){ writer.println(" ->  "+node.left.key+" ;");}
-         if(node.right !=null){  writer.print(node.key);
-         writer.print(" ->  "+node.right.key+" ;");}
-       writer.println();
-      } 
-    
-    }
-
-*/
 
     writer.println("}");
     writer.close();
 
 
-
   }
 
- 
+   /* void insert(int,String)
+   *
+   * Inserts a given (key,value) pair into the tree.
+   *
+   * This call may assume that the key is non-negative, and that the
+   * value is not null.  (It may, but is not required to, enforce
+   * these assumptions.)
+   *
+   * Throws IllegalArgumentException if the key already exists in
+   * the tree.
+   */
+
+
   public void insert(int key, String value){
 
-    root = insertNode(root, key, value);
+        if(search(key)!=null){
+ 
+
+          throw new IllegalArgumentException("Attempt to insert a duplicate key '"+key+"'"); 
+
+         }else{
+
+          root = insertNode(root, key, value);
+
+       }
+
 
   }
 
@@ -138,23 +115,19 @@ public class Proj03_BST_student implements Proj03_BST
      val = searchTree(root,key).value;
    }
     
-
-System.out.println("value result from search: "+val);
    return val;
 
   }
 
 
   public Proj03_BSTNode searchTree(Proj03_BSTNode root, int key){
-    // Base Cases: root is null or key is present at root
+
     if (root==null || root.key==key)
         return root;
  
-    // val is greater than root's key
     if (root.key > key)
         return searchTree(root.left, key);
  
-    // val is less than root's key
     if (root.key < key)
         return searchTree(root.right, key);
     
@@ -170,45 +143,38 @@ System.out.println("value result from search: "+val);
    */
   public void delete(int key){
 
-   if( search(key)!=null ){ 
-     deleteNode(root,key);
-   }else{
-System.out.println("can't delete");
-   }
+    if( search(key)!=null ){ 
+      deleteNode(root,key);
+    }else{
+       throw new IllegalArgumentException("ERROR: key "+key+"DNE");
+    }
 
   }
- /* A recursive function to insert a new key in BST */
+
 
   Proj03_BSTNode deleteNode(Proj03_BSTNode root, int key){
-        /* Base Case: If the tree is empty */
         if (root == null)  return root;
  
-        /* Otherwise, recur down the tree */
         if (key < root.key)
             root.left = deleteNode(root.left, key);
         else if (key > root.key)
             root.right = deleteNode(root.right, key);
  
-        // if key is same as root's key, then This is the node
-        // to be deleted
         else
         {
-            // node with only one child or no child
             if (root.left == null)
                 return root.right;
             else if (root.right == null)
                 return root.left;
  
-            // node with two children: Get the inorder successor (smallest
-            // in the right subtree)
             root.key = minKeyValue(root.right);
  
-            // Delete the inorder successor
             root.right = deleteNode(root.right, root.key);
         }
  
         return root;
     }
+
 
     public int minKeyValue(Proj03_BSTNode root)
     {
@@ -223,19 +189,9 @@ System.out.println("can't delete");
 
  
 
-  /* void rotateLeft(int)
-   *
-   * Searches the tree for a given key, and then performs a rotate left
-   * at that location.  A "rotate left" means that the selected node
-   * moves down, and the right child of that node moves up to be the new
-   * root.
-   *
-   * Throws IllegalArgumentException if the key does not exist.
-   * Throws IllegalArgumentException if the selected node does not have
-   * a right child.
-   */
 
-  public  void rotateLeft(int at){
+/*
+  public  void rLeft(int at){
 
         Proj03_BSTNode x = searchTree(root,at); 
  
@@ -244,7 +200,7 @@ System.out.println("can't delete");
          }else{
 
             while(true){
-  System.out.println(root.key);
+//  System.out.println(root.key);
  
      
               if(root.key==at){            
@@ -258,7 +214,7 @@ System.out.println("can't delete");
                 y.left = temp;
                 root = y;
 
-  System.out.println("at break");
+//  System.out.println("at break");
                 break;
               }
    
@@ -276,14 +232,14 @@ System.out.println("can't delete");
                 y.left = temp;
                 root.left = y;
 
-  System.out.println("at break");
+//  System.out.println("at break");
                 break;
                }
               }
 
                root=root.left;
               
-  System.out.println("<-- left");
+//  System.out.println("<-- left");
  
              }else{
 
@@ -301,14 +257,14 @@ System.out.println("can't delete");
                 root.right = y;
                 
 
-  System.out.println("at break");
+//  System.out.println("at break");
                 break;
                }
                }
 
 
                root=root.right;
-  System.out.println("--> right");
+//  System.out.println("--> right");
  
              }
  
@@ -316,21 +272,143 @@ System.out.println("can't delete");
 
         } // end else
 
- System.out.println("at end");
+// System.out.println("at end");
  
 
   }
 
-
-
-
+*/
 
 
   /* void rotateRight(int)
    *
    * Same as rotateLeft, except that it rotates right.
    */
+
   public  void rotateRight(int at){
+
+        if(search(at)==null){
+ 
+
+          throw new IllegalArgumentException("ERROR: Cannot rotate right at key "+at+", because the key is not present in the tree.");
+         }
+
+
+
+        Proj03_BSTNode x = searchTree(root,at); 
+ 
+        if(x.left==null){ 
+
+           throw new IllegalArgumentException("ERROR: The node with key "+at+" does not have a left child, so a rotate right is not possible.");
+  
+
+         }else{
+
+
+         rrNode(root,at);
+         }
+  }
+
+
+  Proj03_BSTNode rrNode(Proj03_BSTNode root, int key){
+        if (root == null)  return root;
+ 
+        if (key < root.key)
+            root.left = rrNode(root.left, key);
+        else if (key > root.key)
+            root.right = rrNode(root.right, key);
+ 
+        else
+        {
+                Proj03_BSTNode temp = root;
+                Proj03_BSTNode y = temp.left;
+
+                Proj03_BSTNode yRc = y.right;
+                temp.left = yRc;
+       
+                y.right = temp;
+                root = y;
+
+        }
+ 
+        return root;
+    }
+
+
+
+  /* void rotateLeft(int)
+   *
+   * Searches the tree for a given key, and then performs a rotate left
+   * at that location.  A "rotate left" means that the selected node
+   * moves down, and the right child of that node moves up to be the new
+   * root.
+   *
+   * Throws IllegalArgumentException if the key does not exist.
+   * Throws IllegalArgumentException if the selected node does not have
+   * a right child.
+   */
+
+
+  public  void rotateLeft(int at){
+
+        if(search(at)==null){
+ 
+
+          throw new IllegalArgumentException("ERROR: Cannot rotate right at key "+at+", because the key is not present in the tree.");
+         }
+
+
+
+        Proj03_BSTNode x = searchTree(root,at); 
+ 
+        if( x.right==null){ 
+
+
+           throw new IllegalArgumentException("ERROR: Cannot rotate left at key "+at+" because the key is not present in the tree.");           
+
+
+         }else{
+           lrNode(root,at);
+         }
+
+  }
+
+
+
+
+  Proj03_BSTNode lrNode(Proj03_BSTNode root, int key){
+        if (root == null)  return root;
+ 
+        if (key < root.key)
+            root.left = lrNode(root.left, key);
+        else if (key > root.key)
+            root.right = lrNode(root.right, key);
+ 
+        else
+        {
+
+                Proj03_BSTNode temp = root;
+                Proj03_BSTNode y = temp.right;
+
+                Proj03_BSTNode yLc = y.left;
+                temp.right = yLc;
+       
+                y.left = temp;
+                root = y;
+
+
+        }
+ 
+        return root;
+    }
+
+
+
+
+
+/*
+
+  public  void rRight(int at){
 
         Proj03_BSTNode x = searchTree(root,at); 
  
@@ -339,10 +417,13 @@ System.out.println("can't delete");
          }else{
 
             while(true){
-  System.out.println(root.key);
+  System.out.println("1 "+root.key);
  
      
               if(root.key==at){            
+  System.out.println("atRT "+root.key);
+ 
+
 // good code 
                 Proj03_BSTNode temp = root;
                 Proj03_BSTNode y = temp.left;
@@ -353,12 +434,13 @@ System.out.println("can't delete");
                 y.right = temp;
                 root = y;
 
-  System.out.println("at break");
+//  System.out.println("at break");
                 break;
               }
    
         if(root.key<at){ 
-
+  System.out.println("R "+root.key);
+ 
               if(root.right!=null){            
                 if(root.right.key==at){            
 // good code 
@@ -380,19 +462,24 @@ System.out.println("can't delete");
               
   System.out.println("--> right");
  
-             }else{
+             }
 
+        if(root.key>at){ 
+ 
+
+  System.out.println("L "+root.key);
+ 
               if(root.left!=null){            
                if(root.left.key==at){            
 
 // good code 
                 Proj03_BSTNode temp = root.left;
-                Proj03_BSTNode y = temp.left;
+                Proj03_BSTNode y = root.left.left;
 
                 Proj03_BSTNode yRc = y.right;
-                temp.left = yRc;
+                root.left.left = yRc;
        
-                y.right = temp;
+                y.right = root.left;
                 root.left = y;
                 
 
@@ -416,7 +503,7 @@ System.out.println("can't delete");
 
   }
 
-
+*/
 
 
   /* void printInOrder()

@@ -1,35 +1,33 @@
+/*Author: G Esposito
+* Function: takes bst node and creates dot file
+*
+*/
+
 import java.io.*;
 import java.util.LinkedList;
-/* Proj03_BST
- *
- * Author: Russ Lewis
- *
- * Represents a single node in a BST.  Carries both a key and satellite data.
- * For simplicity, I have not made this a generic - though I might add that
- * later.  And since students will be using this as a utility class (rather
- * than modifying it for themselves), it does not have any methods.
- */
 
 public class Proj03_GenDotFile
 {
 
 
-   Proj03_BSTNode root;
-   LinkedList<Proj03_BSTNode> nodeList;
-   PrintWriter writer;
+   private static LinkedList<Proj03_BSTNode> nodeList;
  
 
-  public Proj03_GenDotFile(){
-
-     root = null;
-     nodeList = new LinkedList<Proj03_BSTNode>();
+   public Proj03_GenDotFile(){
 
   }
 
 
-  public void gen(Proj03_BSTNode root, String val){ 
+  public static void gen(Proj03_BSTNode rt, String val) throws IOException{ 
 
-    makeList(root, nodeList);
+    PrintWriter writer = null;
+
+    nodeList = new LinkedList<Proj03_BSTNode>();
+
+
+//    prePrint(root);
+
+    makeList(rt, nodeList);
 
     try{
     writer = new PrintWriter(val);
@@ -41,7 +39,7 @@ public class Proj03_GenDotFile
 
     for(Proj03_BSTNode node : nodeList){
 
-      if(node.left !=null){// || node.right !=null){   
+      if(node.left !=null){   
         writer.println(node.key+" ->  "+node.left.key+" [label=\"L\"] ;");}
       if(node.right !=null){  
         writer.println(node.key+" ->  "+node.right.key+" [label=\"R\"] ;");}
@@ -54,15 +52,37 @@ public class Proj03_GenDotFile
   }
 
 
-  void makeList(Proj03_BSTNode root, LinkedList<Proj03_BSTNode> nodeList) {
+    static void  makeList(Proj03_BSTNode root, LinkedList<Proj03_BSTNode> nodeList) {
 
         if (root != null) {
+
             nodeList.add(root);
+
             makeList(root.left, nodeList);
             makeList(root.right, nodeList);
  
         }
     }
+
+ public static void prePrint(Proj03_BSTNode root){
+
+   preorderPrint(root);
+ }
+
+  public static void preorderPrint(Proj03_BSTNode root) {
+        if (root != null) {
+            System.out.print(root.key+" "+root.value);
+            preorderPrint(root.left);
+// System.out.println("end left");
+
+            preorderPrint(root.right);
+// System.out.println("end right");
+
+        }
+    }
+
+
+
 
 }
 

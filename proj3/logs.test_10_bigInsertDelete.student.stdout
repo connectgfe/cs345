@@ -1,0 +1,397 @@
+inserted 728:n/a
+IN   ORDER: 728:'n/a'
+POST ORDER: 728:'n/a'
+Dumping to the file debug_10_01.dot
+deleted key 728
+IN   ORDER: 728:'n/a'
+POST ORDER: 728:'n/a'
+Dumping to the file debug_10_02.dot
+inserted 9776:n/a
+IN   ORDER: 728:'n/a' 9776:'n/a'
+POST ORDER: 9776:'n/a' 728:'n/a'
+Dumping to the file debug_10_03.dot
+inserted 5412:n/a
+IN   ORDER: 728:'n/a' 5412:'n/a' 9776:'n/a'
+POST ORDER: 5412:'n/a' 9776:'n/a' 728:'n/a'
+Dumping to the file debug_10_04.dot
+inserted 3950:n/a
+IN   ORDER: 728:'n/a' 3950:'n/a' 5412:'n/a' 9776:'n/a'
+POST ORDER: 3950:'n/a' 5412:'n/a' 9776:'n/a' 728:'n/a'
+Dumping to the file debug_10_05.dot
+deleted key 3950
+IN   ORDER: 728:'n/a' 5412:'n/a' 9776:'n/a'
+POST ORDER: 5412:'n/a' 9776:'n/a' 728:'n/a'
+Dumping to the file debug_10_06.dot
+inserted 3566:n/a
+IN   ORDER: 728:'n/a' 3566:'n/a' 5412:'n/a' 9776:'n/a'
+POST ORDER: 3566:'n/a' 5412:'n/a' 9776:'n/a' 728:'n/a'
+Dumping to the file debug_10_07.dot
+deleted key 9776
+IN   ORDER: 728:'n/a' 3566:'n/a' 5412:'n/a'
+POST ORDER: 3566:'n/a' 5412:'n/a' 728:'n/a'
+Dumping to the file debug_10_08.dot
+inserted 3987:n/a
+IN   ORDER: 728:'n/a' 3566:'n/a' 3987:'n/a' 5412:'n/a'
+POST ORDER: 3987:'n/a' 3566:'n/a' 5412:'n/a' 728:'n/a'
+Dumping to the file debug_10_09.dot
+inserted 236:n/a
+IN   ORDER: 236:'n/a' 728:'n/a' 3566:'n/a' 3987:'n/a' 5412:'n/a'
+POST ORDER: 236:'n/a' 3987:'n/a' 3566:'n/a' 5412:'n/a' 728:'n/a'
+Dumping to the file debug_10_10.dot
+inserted 9024:n/a
+IN   ORDER: 236:'n/a' 728:'n/a' 3566:'n/a' 3987:'n/a' 5412:'n/a' 9024:'n/a'
+POST ORDER: 236:'n/a' 3987:'n/a' 3566:'n/a' 9024:'n/a' 5412:'n/a' 728:'n/a'
+Dumping to the file debug_10_11.dot
+deleted key 5412
+IN   ORDER: 236:'n/a' 728:'n/a' 3566:'n/a' 3987:'n/a' 9024:'n/a'
+POST ORDER: 236:'n/a' 3987:'n/a' 3566:'n/a' 9024:'n/a' 728:'n/a'
+Dumping to the file debug_10_12.dot
+deleted key 236
+IN   ORDER: 728:'n/a' 3566:'n/a' 3987:'n/a' 9024:'n/a'
+POST ORDER: 3987:'n/a' 3566:'n/a' 9024:'n/a' 728:'n/a'
+Dumping to the file debug_10_13.dot
+inserted 448:n/a
+IN   ORDER: 448:'n/a' 728:'n/a' 3566:'n/a' 3987:'n/a' 9024:'n/a'
+POST ORDER: 448:'n/a' 3987:'n/a' 3566:'n/a' 9024:'n/a' 728:'n/a'
+Dumping to the file debug_10_14.dot
+deleted key 448
+IN   ORDER: 728:'n/a' 3566:'n/a' 3987:'n/a' 9024:'n/a'
+POST ORDER: 3987:'n/a' 3566:'n/a' 9024:'n/a' 728:'n/a'
+Dumping to the file debug_10_15.dot
+inserted 5451:n/a
+IN   ORDER: 728:'n/a' 3566:'n/a' 3987:'n/a' 5451:'n/a' 9024:'n/a'
+POST ORDER: 5451:'n/a' 3987:'n/a' 3566:'n/a' 9024:'n/a' 728:'n/a'
+Dumping to the file debug_10_16.dot
+deleted key 3987
+IN   ORDER: 728:'n/a' 3566:'n/a' 5451:'n/a' 9024:'n/a'
+POST ORDER: 5451:'n/a' 3566:'n/a' 9024:'n/a' 728:'n/a'
+Dumping to the file debug_10_17.dot
+inserted 8553:n/a
+IN   ORDER: 728:'n/a' 3566:'n/a' 5451:'n/a' 8553:'n/a' 9024:'n/a'
+POST ORDER: 8553:'n/a' 5451:'n/a' 3566:'n/a' 9024:'n/a' 728:'n/a'
+Dumping to the file debug_10_18.dot
+deleted key 3566
+IN   ORDER: 728:'n/a' 5451:'n/a' 8553:'n/a' 9024:'n/a'
+POST ORDER: 8553:'n/a' 5451:'n/a' 9024:'n/a' 728:'n/a'
+Dumping to the file debug_10_19.dot
+inserted 8548:n/a
+IN   ORDER: 728:'n/a' 5451:'n/a' 8548:'n/a' 8553:'n/a' 9024:'n/a'
+POST ORDER: 8548:'n/a' 8553:'n/a' 5451:'n/a' 9024:'n/a' 728:'n/a'
+Dumping to the file debug_10_20.dot
+inserted 6110:n/a
+IN   ORDER: 728:'n/a' 5451:'n/a' 6110:'n/a' 8548:'n/a' 8553:'n/a' 9024:'n/a'
+POST ORDER: 6110:'n/a' 8548:'n/a' 8553:'n/a' 5451:'n/a' 9024:'n/a' 728:'n/a'
+Dumping to the file debug_10_21.dot
+inserted 3401:n/a
+IN   ORDER: 728:'n/a' 3401:'n/a' 5451:'n/a' 6110:'n/a' 8548:'n/a' 8553:'n/a' 9024:'n/a'
+POST ORDER: 3401:'n/a' 6110:'n/a' 8548:'n/a' 8553:'n/a' 5451:'n/a' 9024:'n/a' 728:'n/a'
+Dumping to the file debug_10_22.dot
+inserted 2662:n/a
+IN   ORDER: 728:'n/a' 2662:'n/a' 3401:'n/a' 5451:'n/a' 6110:'n/a' 8548:'n/a' 8553:'n/a' 9024:'n/a'
+POST ORDER: 2662:'n/a' 3401:'n/a' 6110:'n/a' 8548:'n/a' 8553:'n/a' 5451:'n/a' 9024:'n/a' 728:'n/a'
+Dumping to the file debug_10_23.dot
+inserted 4647:n/a
+IN   ORDER: 728:'n/a' 2662:'n/a' 3401:'n/a' 4647:'n/a' 5451:'n/a' 6110:'n/a' 8548:'n/a' 8553:'n/a' 9024:'n/a'
+POST ORDER: 2662:'n/a' 4647:'n/a' 3401:'n/a' 6110:'n/a' 8548:'n/a' 8553:'n/a' 5451:'n/a' 9024:'n/a' 728:'n/a'
+Dumping to the file debug_10_24.dot
+deleted key 8553
+IN   ORDER: 728:'n/a' 2662:'n/a' 3401:'n/a' 4647:'n/a' 5451:'n/a' 6110:'n/a' 8548:'n/a' 9024:'n/a'
+POST ORDER: 2662:'n/a' 4647:'n/a' 3401:'n/a' 6110:'n/a' 8548:'n/a' 5451:'n/a' 9024:'n/a' 728:'n/a'
+Dumping to the file debug_10_25.dot
+deleted key 9024
+IN   ORDER: 728:'n/a' 2662:'n/a' 3401:'n/a' 4647:'n/a' 5451:'n/a' 6110:'n/a' 8548:'n/a'
+POST ORDER: 2662:'n/a' 4647:'n/a' 3401:'n/a' 6110:'n/a' 8548:'n/a' 5451:'n/a' 728:'n/a'
+Dumping to the file debug_10_26.dot
+deleted key 3401
+IN   ORDER: 728:'n/a' 2662:'n/a' 4647:'n/a' 5451:'n/a' 6110:'n/a' 8548:'n/a'
+POST ORDER: 2662:'n/a' 4647:'n/a' 6110:'n/a' 8548:'n/a' 5451:'n/a' 728:'n/a'
+Dumping to the file debug_10_27.dot
+inserted 1544:n/a
+IN   ORDER: 728:'n/a' 1544:'n/a' 2662:'n/a' 4647:'n/a' 5451:'n/a' 6110:'n/a' 8548:'n/a'
+POST ORDER: 1544:'n/a' 2662:'n/a' 4647:'n/a' 6110:'n/a' 8548:'n/a' 5451:'n/a' 728:'n/a'
+Dumping to the file debug_10_28.dot
+inserted 3561:n/a
+IN   ORDER: 728:'n/a' 1544:'n/a' 2662:'n/a' 3561:'n/a' 4647:'n/a' 5451:'n/a' 6110:'n/a' 8548:'n/a'
+POST ORDER: 1544:'n/a' 3561:'n/a' 2662:'n/a' 4647:'n/a' 6110:'n/a' 8548:'n/a' 5451:'n/a' 728:'n/a'
+Dumping to the file debug_10_29.dot
+inserted 355:n/a
+IN   ORDER: 355:'n/a' 728:'n/a' 1544:'n/a' 2662:'n/a' 3561:'n/a' 4647:'n/a' 5451:'n/a' 6110:'n/a' 8548:'n/a'
+POST ORDER: 355:'n/a' 1544:'n/a' 3561:'n/a' 2662:'n/a' 4647:'n/a' 6110:'n/a' 8548:'n/a' 5451:'n/a' 728:'n/a'
+Dumping to the file debug_10_30.dot
+deleted key 1544
+IN   ORDER: 355:'n/a' 728:'n/a' 2662:'n/a' 3561:'n/a' 4647:'n/a' 5451:'n/a' 6110:'n/a' 8548:'n/a'
+POST ORDER: 355:'n/a' 3561:'n/a' 2662:'n/a' 4647:'n/a' 6110:'n/a' 8548:'n/a' 5451:'n/a' 728:'n/a'
+Dumping to the file debug_10_31.dot
+inserted 9954:n/a
+IN   ORDER: 355:'n/a' 728:'n/a' 2662:'n/a' 3561:'n/a' 4647:'n/a' 5451:'n/a' 6110:'n/a' 8548:'n/a' 9954:'n/a'
+POST ORDER: 355:'n/a' 3561:'n/a' 2662:'n/a' 4647:'n/a' 6110:'n/a' 9954:'n/a' 8548:'n/a' 5451:'n/a' 728:'n/a'
+Dumping to the file debug_10_32.dot
+inserted 8115:n/a
+IN   ORDER: 355:'n/a' 728:'n/a' 2662:'n/a' 3561:'n/a' 4647:'n/a' 5451:'n/a' 6110:'n/a' 8115:'n/a' 8548:'n/a' 9954:'n/a'
+POST ORDER: 355:'n/a' 3561:'n/a' 2662:'n/a' 4647:'n/a' 8115:'n/a' 6110:'n/a' 9954:'n/a' 8548:'n/a' 5451:'n/a' 728:'n/a'
+Dumping to the file debug_10_33.dot
+inserted 2075:n/a
+IN   ORDER: 355:'n/a' 728:'n/a' 2075:'n/a' 2662:'n/a' 3561:'n/a' 4647:'n/a' 5451:'n/a' 6110:'n/a' 8115:'n/a' 8548:'n/a' 9954:'n/a'
+POST ORDER: 355:'n/a' 2075:'n/a' 3561:'n/a' 2662:'n/a' 4647:'n/a' 8115:'n/a' 6110:'n/a' 9954:'n/a' 8548:'n/a' 5451:'n/a' 728:'n/a'
+Dumping to the file debug_10_34.dot
+inserted 3050:n/a
+IN   ORDER: 355:'n/a' 728:'n/a' 2075:'n/a' 2662:'n/a' 3050:'n/a' 3561:'n/a' 4647:'n/a' 5451:'n/a' 6110:'n/a' 8115:'n/a' 8548:'n/a' 9954:'n/a'
+POST ORDER: 355:'n/a' 2075:'n/a' 3050:'n/a' 3561:'n/a' 2662:'n/a' 4647:'n/a' 8115:'n/a' 6110:'n/a' 9954:'n/a' 8548:'n/a' 5451:'n/a' 728:'n/a'
+Dumping to the file debug_10_35.dot
+deleted key 3050
+IN   ORDER: 355:'n/a' 728:'n/a' 2075:'n/a' 2662:'n/a' 3561:'n/a' 4647:'n/a' 5451:'n/a' 6110:'n/a' 8115:'n/a' 8548:'n/a' 9954:'n/a'
+POST ORDER: 355:'n/a' 2075:'n/a' 3561:'n/a' 2662:'n/a' 4647:'n/a' 8115:'n/a' 6110:'n/a' 9954:'n/a' 8548:'n/a' 5451:'n/a' 728:'n/a'
+Dumping to the file debug_10_36.dot
+deleted key 2662
+IN   ORDER: 355:'n/a' 728:'n/a' 2075:'n/a' 3561:'n/a' 4647:'n/a' 5451:'n/a' 6110:'n/a' 8115:'n/a' 8548:'n/a' 9954:'n/a'
+POST ORDER: 355:'n/a' 2075:'n/a' 3561:'n/a' 4647:'n/a' 8115:'n/a' 6110:'n/a' 9954:'n/a' 8548:'n/a' 5451:'n/a' 728:'n/a'
+Dumping to the file debug_10_37.dot
+deleted key 3561
+IN   ORDER: 355:'n/a' 728:'n/a' 2075:'n/a' 4647:'n/a' 5451:'n/a' 6110:'n/a' 8115:'n/a' 8548:'n/a' 9954:'n/a'
+POST ORDER: 355:'n/a' 2075:'n/a' 4647:'n/a' 8115:'n/a' 6110:'n/a' 9954:'n/a' 8548:'n/a' 5451:'n/a' 728:'n/a'
+Dumping to the file debug_10_38.dot
+inserted 8974:n/a
+IN   ORDER: 355:'n/a' 728:'n/a' 2075:'n/a' 4647:'n/a' 5451:'n/a' 6110:'n/a' 8115:'n/a' 8548:'n/a' 8974:'n/a' 9954:'n/a'
+POST ORDER: 355:'n/a' 2075:'n/a' 4647:'n/a' 8115:'n/a' 6110:'n/a' 8974:'n/a' 9954:'n/a' 8548:'n/a' 5451:'n/a' 728:'n/a'
+Dumping to the file debug_10_39.dot
+inserted 5907:n/a
+IN   ORDER: 355:'n/a' 728:'n/a' 2075:'n/a' 4647:'n/a' 5451:'n/a' 5907:'n/a' 6110:'n/a' 8115:'n/a' 8548:'n/a' 8974:'n/a' 9954:'n/a'
+POST ORDER: 355:'n/a' 2075:'n/a' 4647:'n/a' 5907:'n/a' 8115:'n/a' 6110:'n/a' 8974:'n/a' 9954:'n/a' 8548:'n/a' 5451:'n/a' 728:'n/a'
+Dumping to the file debug_10_40.dot
+deleted key 355
+IN   ORDER: 728:'n/a' 2075:'n/a' 4647:'n/a' 5451:'n/a' 5907:'n/a' 6110:'n/a' 8115:'n/a' 8548:'n/a' 8974:'n/a' 9954:'n/a'
+POST ORDER: 2075:'n/a' 4647:'n/a' 5907:'n/a' 8115:'n/a' 6110:'n/a' 8974:'n/a' 9954:'n/a' 8548:'n/a' 5451:'n/a' 728:'n/a'
+Dumping to the file debug_10_41.dot
+deleted key 4647
+IN   ORDER: 728:'n/a' 2075:'n/a' 5451:'n/a' 5907:'n/a' 6110:'n/a' 8115:'n/a' 8548:'n/a' 8974:'n/a' 9954:'n/a'
+POST ORDER: 2075:'n/a' 5907:'n/a' 8115:'n/a' 6110:'n/a' 8974:'n/a' 9954:'n/a' 8548:'n/a' 5451:'n/a' 728:'n/a'
+Dumping to the file debug_10_42.dot
+inserted 8017:n/a
+IN   ORDER: 728:'n/a' 2075:'n/a' 5451:'n/a' 5907:'n/a' 6110:'n/a' 8017:'n/a' 8115:'n/a' 8548:'n/a' 8974:'n/a' 9954:'n/a'
+POST ORDER: 2075:'n/a' 5907:'n/a' 8017:'n/a' 8115:'n/a' 6110:'n/a' 8974:'n/a' 9954:'n/a' 8548:'n/a' 5451:'n/a' 728:'n/a'
+Dumping to the file debug_10_43.dot
+inserted 6584:n/a
+IN   ORDER: 728:'n/a' 2075:'n/a' 5451:'n/a' 5907:'n/a' 6110:'n/a' 6584:'n/a' 8017:'n/a' 8115:'n/a' 8548:'n/a' 8974:'n/a' 9954:'n/a'
+POST ORDER: 2075:'n/a' 5907:'n/a' 6584:'n/a' 8017:'n/a' 8115:'n/a' 6110:'n/a' 8974:'n/a' 9954:'n/a' 8548:'n/a' 5451:'n/a' 728:'n/a'
+Dumping to the file debug_10_44.dot
+deleted key 8115
+IN   ORDER: 728:'n/a' 2075:'n/a' 5451:'n/a' 5907:'n/a' 6110:'n/a' 6584:'n/a' 8017:'n/a' 8548:'n/a' 8974:'n/a' 9954:'n/a'
+POST ORDER: 2075:'n/a' 5907:'n/a' 6584:'n/a' 8017:'n/a' 6110:'n/a' 8974:'n/a' 9954:'n/a' 8548:'n/a' 5451:'n/a' 728:'n/a'
+Dumping to the file debug_10_45.dot
+inserted 8371:n/a
+IN   ORDER: 728:'n/a' 2075:'n/a' 5451:'n/a' 5907:'n/a' 6110:'n/a' 6584:'n/a' 8017:'n/a' 8371:'n/a' 8548:'n/a' 8974:'n/a' 9954:'n/a'
+POST ORDER: 2075:'n/a' 5907:'n/a' 6584:'n/a' 8371:'n/a' 8017:'n/a' 6110:'n/a' 8974:'n/a' 9954:'n/a' 8548:'n/a' 5451:'n/a' 728:'n/a'
+Dumping to the file debug_10_46.dot
+inserted 3126:n/a
+IN   ORDER: 728:'n/a' 2075:'n/a' 3126:'n/a' 5451:'n/a' 5907:'n/a' 6110:'n/a' 6584:'n/a' 8017:'n/a' 8371:'n/a' 8548:'n/a' 8974:'n/a' 9954:'n/a'
+POST ORDER: 3126:'n/a' 2075:'n/a' 5907:'n/a' 6584:'n/a' 8371:'n/a' 8017:'n/a' 6110:'n/a' 8974:'n/a' 9954:'n/a' 8548:'n/a' 5451:'n/a' 728:'n/a'
+Dumping to the file debug_10_47.dot
+deleted key 8974
+IN   ORDER: 728:'n/a' 2075:'n/a' 3126:'n/a' 5451:'n/a' 5907:'n/a' 6110:'n/a' 6584:'n/a' 8017:'n/a' 8371:'n/a' 8548:'n/a' 9954:'n/a'
+POST ORDER: 3126:'n/a' 2075:'n/a' 5907:'n/a' 6584:'n/a' 8371:'n/a' 8017:'n/a' 6110:'n/a' 9954:'n/a' 8548:'n/a' 5451:'n/a' 728:'n/a'
+Dumping to the file debug_10_48.dot
+inserted 9672:n/a
+IN   ORDER: 728:'n/a' 2075:'n/a' 3126:'n/a' 5451:'n/a' 5907:'n/a' 6110:'n/a' 6584:'n/a' 8017:'n/a' 8371:'n/a' 8548:'n/a' 9672:'n/a' 9954:'n/a'
+POST ORDER: 3126:'n/a' 2075:'n/a' 5907:'n/a' 6584:'n/a' 8371:'n/a' 8017:'n/a' 6110:'n/a' 9672:'n/a' 9954:'n/a' 8548:'n/a' 5451:'n/a' 728:'n/a'
+Dumping to the file debug_10_49.dot
+inserted 3174:n/a
+IN   ORDER: 728:'n/a' 2075:'n/a' 3126:'n/a' 3174:'n/a' 5451:'n/a' 5907:'n/a' 6110:'n/a' 6584:'n/a' 8017:'n/a' 8371:'n/a' 8548:'n/a' 9672:'n/a' 9954:'n/a'
+POST ORDER: 3174:'n/a' 3126:'n/a' 2075:'n/a' 5907:'n/a' 6584:'n/a' 8371:'n/a' 8017:'n/a' 6110:'n/a' 9672:'n/a' 9954:'n/a' 8548:'n/a' 5451:'n/a' 728:'n/a'
+Dumping to the file debug_10_50.dot
+deleted key 3174
+IN   ORDER: 728:'n/a' 2075:'n/a' 3126:'n/a' 5451:'n/a' 5907:'n/a' 6110:'n/a' 6584:'n/a' 8017:'n/a' 8371:'n/a' 8548:'n/a' 9672:'n/a' 9954:'n/a'
+POST ORDER: 3126:'n/a' 2075:'n/a' 5907:'n/a' 6584:'n/a' 8371:'n/a' 8017:'n/a' 6110:'n/a' 9672:'n/a' 9954:'n/a' 8548:'n/a' 5451:'n/a' 728:'n/a'
+Dumping to the file debug_10_51.dot
+inserted 7666:n/a
+IN   ORDER: 728:'n/a' 2075:'n/a' 3126:'n/a' 5451:'n/a' 5907:'n/a' 6110:'n/a' 6584:'n/a' 7666:'n/a' 8017:'n/a' 8371:'n/a' 8548:'n/a' 9672:'n/a' 9954:'n/a'
+POST ORDER: 3126:'n/a' 2075:'n/a' 5907:'n/a' 7666:'n/a' 6584:'n/a' 8371:'n/a' 8017:'n/a' 6110:'n/a' 9672:'n/a' 9954:'n/a' 8548:'n/a' 5451:'n/a' 728:'n/a'
+Dumping to the file debug_10_52.dot
+inserted 2882:n/a
+IN   ORDER: 728:'n/a' 2075:'n/a' 2882:'n/a' 3126:'n/a' 5451:'n/a' 5907:'n/a' 6110:'n/a' 6584:'n/a' 7666:'n/a' 8017:'n/a' 8371:'n/a' 8548:'n/a' 9672:'n/a' 9954:'n/a'
+POST ORDER: 2882:'n/a' 3126:'n/a' 2075:'n/a' 5907:'n/a' 7666:'n/a' 6584:'n/a' 8371:'n/a' 8017:'n/a' 6110:'n/a' 9672:'n/a' 9954:'n/a' 8548:'n/a' 5451:'n/a' 728:'n/a'
+Dumping to the file debug_10_53.dot
+inserted 5579:n/a
+IN   ORDER: 728:'n/a' 2075:'n/a' 2882:'n/a' 3126:'n/a' 5451:'n/a' 5579:'n/a' 5907:'n/a' 6110:'n/a' 6584:'n/a' 7666:'n/a' 8017:'n/a' 8371:'n/a' 8548:'n/a' 9672:'n/a' 9954:'n/a'
+POST ORDER: 2882:'n/a' 3126:'n/a' 2075:'n/a' 5579:'n/a' 5907:'n/a' 7666:'n/a' 6584:'n/a' 8371:'n/a' 8017:'n/a' 6110:'n/a' 9672:'n/a' 9954:'n/a' 8548:'n/a' 5451:'n/a' 728:'n/a'
+Dumping to the file debug_10_54.dot
+inserted 2381:n/a
+IN   ORDER: 728:'n/a' 2075:'n/a' 2381:'n/a' 2882:'n/a' 3126:'n/a' 5451:'n/a' 5579:'n/a' 5907:'n/a' 6110:'n/a' 6584:'n/a' 7666:'n/a' 8017:'n/a' 8371:'n/a' 8548:'n/a' 9672:'n/a' 9954:'n/a'
+POST ORDER: 2381:'n/a' 2882:'n/a' 3126:'n/a' 2075:'n/a' 5579:'n/a' 5907:'n/a' 7666:'n/a' 6584:'n/a' 8371:'n/a' 8017:'n/a' 6110:'n/a' 9672:'n/a' 9954:'n/a' 8548:'n/a' 5451:'n/a' 728:'n/a'
+Dumping to the file debug_10_55.dot
+inserted 8979:n/a
+IN   ORDER: 728:'n/a' 2075:'n/a' 2381:'n/a' 2882:'n/a' 3126:'n/a' 5451:'n/a' 5579:'n/a' 5907:'n/a' 6110:'n/a' 6584:'n/a' 7666:'n/a' 8017:'n/a' 8371:'n/a' 8548:'n/a' 8979:'n/a' 9672:'n/a' 9954:'n/a'
+POST ORDER: 2381:'n/a' 2882:'n/a' 3126:'n/a' 2075:'n/a' 5579:'n/a' 5907:'n/a' 7666:'n/a' 6584:'n/a' 8371:'n/a' 8017:'n/a' 6110:'n/a' 8979:'n/a' 9672:'n/a' 9954:'n/a' 8548:'n/a' 5451:'n/a' 728:'n/a'
+Dumping to the file debug_10_56.dot
+deleted key 2381
+IN   ORDER: 728:'n/a' 2075:'n/a' 2882:'n/a' 3126:'n/a' 5451:'n/a' 5579:'n/a' 5907:'n/a' 6110:'n/a' 6584:'n/a' 7666:'n/a' 8017:'n/a' 8371:'n/a' 8548:'n/a' 8979:'n/a' 9672:'n/a' 9954:'n/a'
+POST ORDER: 2882:'n/a' 3126:'n/a' 2075:'n/a' 5579:'n/a' 5907:'n/a' 7666:'n/a' 6584:'n/a' 8371:'n/a' 8017:'n/a' 6110:'n/a' 8979:'n/a' 9672:'n/a' 9954:'n/a' 8548:'n/a' 5451:'n/a' 728:'n/a'
+Dumping to the file debug_10_57.dot
+inserted 8770:n/a
+IN   ORDER: 728:'n/a' 2075:'n/a' 2882:'n/a' 3126:'n/a' 5451:'n/a' 5579:'n/a' 5907:'n/a' 6110:'n/a' 6584:'n/a' 7666:'n/a' 8017:'n/a' 8371:'n/a' 8548:'n/a' 8770:'n/a' 8979:'n/a' 9672:'n/a' 9954:'n/a'
+POST ORDER: 2882:'n/a' 3126:'n/a' 2075:'n/a' 5579:'n/a' 5907:'n/a' 7666:'n/a' 6584:'n/a' 8371:'n/a' 8017:'n/a' 6110:'n/a' 8770:'n/a' 8979:'n/a' 9672:'n/a' 9954:'n/a' 8548:'n/a' 5451:'n/a' 728:'n/a'
+Dumping to the file debug_10_58.dot
+deleted key 6584
+IN   ORDER: 728:'n/a' 2075:'n/a' 2882:'n/a' 3126:'n/a' 5451:'n/a' 5579:'n/a' 5907:'n/a' 6110:'n/a' 7666:'n/a' 8017:'n/a' 8371:'n/a' 8548:'n/a' 8770:'n/a' 8979:'n/a' 9672:'n/a' 9954:'n/a'
+POST ORDER: 2882:'n/a' 3126:'n/a' 2075:'n/a' 5579:'n/a' 5907:'n/a' 7666:'n/a' 8371:'n/a' 8017:'n/a' 6110:'n/a' 8770:'n/a' 8979:'n/a' 9672:'n/a' 9954:'n/a' 8548:'n/a' 5451:'n/a' 728:'n/a'
+Dumping to the file debug_10_59.dot
+inserted 4160:n/a
+IN   ORDER: 728:'n/a' 2075:'n/a' 2882:'n/a' 3126:'n/a' 4160:'n/a' 5451:'n/a' 5579:'n/a' 5907:'n/a' 6110:'n/a' 7666:'n/a' 8017:'n/a' 8371:'n/a' 8548:'n/a' 8770:'n/a' 8979:'n/a' 9672:'n/a' 9954:'n/a'
+POST ORDER: 2882:'n/a' 4160:'n/a' 3126:'n/a' 2075:'n/a' 5579:'n/a' 5907:'n/a' 7666:'n/a' 8371:'n/a' 8017:'n/a' 6110:'n/a' 8770:'n/a' 8979:'n/a' 9672:'n/a' 9954:'n/a' 8548:'n/a' 5451:'n/a' 728:'n/a'
+Dumping to the file debug_10_60.dot
+inserted 7679:n/a
+IN   ORDER: 728:'n/a' 2075:'n/a' 2882:'n/a' 3126:'n/a' 4160:'n/a' 5451:'n/a' 5579:'n/a' 5907:'n/a' 6110:'n/a' 7666:'n/a' 7679:'n/a' 8017:'n/a' 8371:'n/a' 8548:'n/a' 8770:'n/a' 8979:'n/a' 9672:'n/a' 9954:'n/a'
+POST ORDER: 2882:'n/a' 4160:'n/a' 3126:'n/a' 2075:'n/a' 5579:'n/a' 5907:'n/a' 7679:'n/a' 7666:'n/a' 8371:'n/a' 8017:'n/a' 6110:'n/a' 8770:'n/a' 8979:'n/a' 9672:'n/a' 9954:'n/a' 8548:'n/a' 5451:'n/a' 728:'n/a'
+Dumping to the file debug_10_61.dot
+inserted 5134:n/a
+IN   ORDER: 728:'n/a' 2075:'n/a' 2882:'n/a' 3126:'n/a' 4160:'n/a' 5134:'n/a' 5451:'n/a' 5579:'n/a' 5907:'n/a' 6110:'n/a' 7666:'n/a' 7679:'n/a' 8017:'n/a' 8371:'n/a' 8548:'n/a' 8770:'n/a' 8979:'n/a' 9672:'n/a' 9954:'n/a'
+POST ORDER: 2882:'n/a' 5134:'n/a' 4160:'n/a' 3126:'n/a' 2075:'n/a' 5579:'n/a' 5907:'n/a' 7679:'n/a' 7666:'n/a' 8371:'n/a' 8017:'n/a' 6110:'n/a' 8770:'n/a' 8979:'n/a' 9672:'n/a' 9954:'n/a' 8548:'n/a' 5451:'n/a' 728:'n/a'
+Dumping to the file debug_10_62.dot
+inserted 9029:n/a
+IN   ORDER: 728:'n/a' 2075:'n/a' 2882:'n/a' 3126:'n/a' 4160:'n/a' 5134:'n/a' 5451:'n/a' 5579:'n/a' 5907:'n/a' 6110:'n/a' 7666:'n/a' 7679:'n/a' 8017:'n/a' 8371:'n/a' 8548:'n/a' 8770:'n/a' 8979:'n/a' 9029:'n/a' 9672:'n/a' 9954:'n/a'
+POST ORDER: 2882:'n/a' 5134:'n/a' 4160:'n/a' 3126:'n/a' 2075:'n/a' 5579:'n/a' 5907:'n/a' 7679:'n/a' 7666:'n/a' 8371:'n/a' 8017:'n/a' 6110:'n/a' 8770:'n/a' 9029:'n/a' 8979:'n/a' 9672:'n/a' 9954:'n/a' 8548:'n/a' 5451:'n/a' 728:'n/a'
+Dumping to the file debug_10_63.dot
+deleted key 8017
+IN   ORDER: 728:'n/a' 2075:'n/a' 2882:'n/a' 3126:'n/a' 4160:'n/a' 5134:'n/a' 5451:'n/a' 5579:'n/a' 5907:'n/a' 6110:'n/a' 7666:'n/a' 7679:'n/a' 8371:'n/a' 8548:'n/a' 8770:'n/a' 8979:'n/a' 9029:'n/a' 9672:'n/a' 9954:'n/a'
+POST ORDER: 2882:'n/a' 5134:'n/a' 4160:'n/a' 3126:'n/a' 2075:'n/a' 5579:'n/a' 5907:'n/a' 7679:'n/a' 7666:'n/a' 8371:'n/a' 6110:'n/a' 8770:'n/a' 9029:'n/a' 8979:'n/a' 9672:'n/a' 9954:'n/a' 8548:'n/a' 5451:'n/a' 728:'n/a'
+Dumping to the file debug_10_64.dot
+deleted key 8548
+IN   ORDER: 728:'n/a' 2075:'n/a' 2882:'n/a' 3126:'n/a' 4160:'n/a' 5134:'n/a' 5451:'n/a' 5579:'n/a' 5907:'n/a' 6110:'n/a' 7666:'n/a' 7679:'n/a' 8371:'n/a' 8770:'n/a' 8979:'n/a' 9029:'n/a' 9672:'n/a' 9954:'n/a'
+POST ORDER: 2882:'n/a' 5134:'n/a' 4160:'n/a' 3126:'n/a' 2075:'n/a' 5579:'n/a' 5907:'n/a' 7679:'n/a' 7666:'n/a' 8371:'n/a' 6110:'n/a' 9029:'n/a' 8979:'n/a' 9672:'n/a' 9954:'n/a' 8770:'n/a' 5451:'n/a' 728:'n/a'
+Dumping to the file debug_10_65.dot
+deleted key 3126
+IN   ORDER: 728:'n/a' 2075:'n/a' 2882:'n/a' 4160:'n/a' 5134:'n/a' 5451:'n/a' 5579:'n/a' 5907:'n/a' 6110:'n/a' 7666:'n/a' 7679:'n/a' 8371:'n/a' 8770:'n/a' 8979:'n/a' 9029:'n/a' 9672:'n/a' 9954:'n/a'
+POST ORDER: 2882:'n/a' 5134:'n/a' 4160:'n/a' 2075:'n/a' 5579:'n/a' 5907:'n/a' 7679:'n/a' 7666:'n/a' 8371:'n/a' 6110:'n/a' 9029:'n/a' 8979:'n/a' 9672:'n/a' 9954:'n/a' 8770:'n/a' 5451:'n/a' 728:'n/a'
+Dumping to the file debug_10_66.dot
+inserted 3327:n/a
+IN   ORDER: 728:'n/a' 2075:'n/a' 2882:'n/a' 3327:'n/a' 4160:'n/a' 5134:'n/a' 5451:'n/a' 5579:'n/a' 5907:'n/a' 6110:'n/a' 7666:'n/a' 7679:'n/a' 8371:'n/a' 8770:'n/a' 8979:'n/a' 9029:'n/a' 9672:'n/a' 9954:'n/a'
+POST ORDER: 3327:'n/a' 2882:'n/a' 5134:'n/a' 4160:'n/a' 2075:'n/a' 5579:'n/a' 5907:'n/a' 7679:'n/a' 7666:'n/a' 8371:'n/a' 6110:'n/a' 9029:'n/a' 8979:'n/a' 9672:'n/a' 9954:'n/a' 8770:'n/a' 5451:'n/a' 728:'n/a'
+Dumping to the file debug_10_67.dot
+inserted 7222:n/a
+IN   ORDER: 728:'n/a' 2075:'n/a' 2882:'n/a' 3327:'n/a' 4160:'n/a' 5134:'n/a' 5451:'n/a' 5579:'n/a' 5907:'n/a' 6110:'n/a' 7222:'n/a' 7666:'n/a' 7679:'n/a' 8371:'n/a' 8770:'n/a' 8979:'n/a' 9029:'n/a' 9672:'n/a' 9954:'n/a'
+POST ORDER: 3327:'n/a' 2882:'n/a' 5134:'n/a' 4160:'n/a' 2075:'n/a' 5579:'n/a' 5907:'n/a' 7222:'n/a' 7679:'n/a' 7666:'n/a' 8371:'n/a' 6110:'n/a' 9029:'n/a' 8979:'n/a' 9672:'n/a' 9954:'n/a' 8770:'n/a' 5451:'n/a' 728:'n/a'
+Dumping to the file debug_10_68.dot
+deleted key 3327
+IN   ORDER: 728:'n/a' 2075:'n/a' 2882:'n/a' 4160:'n/a' 5134:'n/a' 5451:'n/a' 5579:'n/a' 5907:'n/a' 6110:'n/a' 7222:'n/a' 7666:'n/a' 7679:'n/a' 8371:'n/a' 8770:'n/a' 8979:'n/a' 9029:'n/a' 9672:'n/a' 9954:'n/a'
+POST ORDER: 2882:'n/a' 5134:'n/a' 4160:'n/a' 2075:'n/a' 5579:'n/a' 5907:'n/a' 7222:'n/a' 7679:'n/a' 7666:'n/a' 8371:'n/a' 6110:'n/a' 9029:'n/a' 8979:'n/a' 9672:'n/a' 9954:'n/a' 8770:'n/a' 5451:'n/a' 728:'n/a'
+Dumping to the file debug_10_69.dot
+inserted 5505:n/a
+IN   ORDER: 728:'n/a' 2075:'n/a' 2882:'n/a' 4160:'n/a' 5134:'n/a' 5451:'n/a' 5505:'n/a' 5579:'n/a' 5907:'n/a' 6110:'n/a' 7222:'n/a' 7666:'n/a' 7679:'n/a' 8371:'n/a' 8770:'n/a' 8979:'n/a' 9029:'n/a' 9672:'n/a' 9954:'n/a'
+POST ORDER: 2882:'n/a' 5134:'n/a' 4160:'n/a' 2075:'n/a' 5505:'n/a' 5579:'n/a' 5907:'n/a' 7222:'n/a' 7679:'n/a' 7666:'n/a' 8371:'n/a' 6110:'n/a' 9029:'n/a' 8979:'n/a' 9672:'n/a' 9954:'n/a' 8770:'n/a' 5451:'n/a' 728:'n/a'
+Dumping to the file debug_10_70.dot
+inserted 7742:n/a
+IN   ORDER: 728:'n/a' 2075:'n/a' 2882:'n/a' 4160:'n/a' 5134:'n/a' 5451:'n/a' 5505:'n/a' 5579:'n/a' 5907:'n/a' 6110:'n/a' 7222:'n/a' 7666:'n/a' 7679:'n/a' 7742:'n/a' 8371:'n/a' 8770:'n/a' 8979:'n/a' 9029:'n/a' 9672:'n/a' 9954:'n/a'
+POST ORDER: 2882:'n/a' 5134:'n/a' 4160:'n/a' 2075:'n/a' 5505:'n/a' 5579:'n/a' 5907:'n/a' 7222:'n/a' 7742:'n/a' 7679:'n/a' 7666:'n/a' 8371:'n/a' 6110:'n/a' 9029:'n/a' 8979:'n/a' 9672:'n/a' 9954:'n/a' 8770:'n/a' 5451:'n/a' 728:'n/a'
+Dumping to the file debug_10_71.dot
+inserted 5751:n/a
+IN   ORDER: 728:'n/a' 2075:'n/a' 2882:'n/a' 4160:'n/a' 5134:'n/a' 5451:'n/a' 5505:'n/a' 5579:'n/a' 5751:'n/a' 5907:'n/a' 6110:'n/a' 7222:'n/a' 7666:'n/a' 7679:'n/a' 7742:'n/a' 8371:'n/a' 8770:'n/a' 8979:'n/a' 9029:'n/a' 9672:'n/a' 9954:'n/a'
+POST ORDER: 2882:'n/a' 5134:'n/a' 4160:'n/a' 2075:'n/a' 5505:'n/a' 5751:'n/a' 5579:'n/a' 5907:'n/a' 7222:'n/a' 7742:'n/a' 7679:'n/a' 7666:'n/a' 8371:'n/a' 6110:'n/a' 9029:'n/a' 8979:'n/a' 9672:'n/a' 9954:'n/a' 8770:'n/a' 5451:'n/a' 728:'n/a'
+Dumping to the file debug_10_72.dot
+deleted key 8979
+IN   ORDER: 728:'n/a' 2075:'n/a' 2882:'n/a' 4160:'n/a' 5134:'n/a' 5451:'n/a' 5505:'n/a' 5579:'n/a' 5751:'n/a' 5907:'n/a' 6110:'n/a' 7222:'n/a' 7666:'n/a' 7679:'n/a' 7742:'n/a' 8371:'n/a' 8770:'n/a' 9029:'n/a' 9672:'n/a' 9954:'n/a'
+POST ORDER: 2882:'n/a' 5134:'n/a' 4160:'n/a' 2075:'n/a' 5505:'n/a' 5751:'n/a' 5579:'n/a' 5907:'n/a' 7222:'n/a' 7742:'n/a' 7679:'n/a' 7666:'n/a' 8371:'n/a' 6110:'n/a' 9029:'n/a' 9672:'n/a' 9954:'n/a' 8770:'n/a' 5451:'n/a' 728:'n/a'
+Dumping to the file debug_10_73.dot
+deleted key 5505
+IN   ORDER: 728:'n/a' 2075:'n/a' 2882:'n/a' 4160:'n/a' 5134:'n/a' 5451:'n/a' 5579:'n/a' 5751:'n/a' 5907:'n/a' 6110:'n/a' 7222:'n/a' 7666:'n/a' 7679:'n/a' 7742:'n/a' 8371:'n/a' 8770:'n/a' 9029:'n/a' 9672:'n/a' 9954:'n/a'
+POST ORDER: 2882:'n/a' 5134:'n/a' 4160:'n/a' 2075:'n/a' 5751:'n/a' 5579:'n/a' 5907:'n/a' 7222:'n/a' 7742:'n/a' 7679:'n/a' 7666:'n/a' 8371:'n/a' 6110:'n/a' 9029:'n/a' 9672:'n/a' 9954:'n/a' 8770:'n/a' 5451:'n/a' 728:'n/a'
+Dumping to the file debug_10_74.dot
+inserted 2774:n/a
+IN   ORDER: 728:'n/a' 2075:'n/a' 2774:'n/a' 2882:'n/a' 4160:'n/a' 5134:'n/a' 5451:'n/a' 5579:'n/a' 5751:'n/a' 5907:'n/a' 6110:'n/a' 7222:'n/a' 7666:'n/a' 7679:'n/a' 7742:'n/a' 8371:'n/a' 8770:'n/a' 9029:'n/a' 9672:'n/a' 9954:'n/a'
+POST ORDER: 2774:'n/a' 2882:'n/a' 5134:'n/a' 4160:'n/a' 2075:'n/a' 5751:'n/a' 5579:'n/a' 5907:'n/a' 7222:'n/a' 7742:'n/a' 7679:'n/a' 7666:'n/a' 8371:'n/a' 6110:'n/a' 9029:'n/a' 9672:'n/a' 9954:'n/a' 8770:'n/a' 5451:'n/a' 728:'n/a'
+Dumping to the file debug_10_75.dot
+inserted 550:n/a
+IN   ORDER: 550:'n/a' 728:'n/a' 2075:'n/a' 2774:'n/a' 2882:'n/a' 4160:'n/a' 5134:'n/a' 5451:'n/a' 5579:'n/a' 5751:'n/a' 5907:'n/a' 6110:'n/a' 7222:'n/a' 7666:'n/a' 7679:'n/a' 7742:'n/a' 8371:'n/a' 8770:'n/a' 9029:'n/a' 9672:'n/a' 9954:'n/a'
+POST ORDER: 550:'n/a' 2774:'n/a' 2882:'n/a' 5134:'n/a' 4160:'n/a' 2075:'n/a' 5751:'n/a' 5579:'n/a' 5907:'n/a' 7222:'n/a' 7742:'n/a' 7679:'n/a' 7666:'n/a' 8371:'n/a' 6110:'n/a' 9029:'n/a' 9672:'n/a' 9954:'n/a' 8770:'n/a' 5451:'n/a' 728:'n/a'
+Dumping to the file debug_10_76.dot
+deleted key 9029
+IN   ORDER: 550:'n/a' 728:'n/a' 2075:'n/a' 2774:'n/a' 2882:'n/a' 4160:'n/a' 5134:'n/a' 5451:'n/a' 5579:'n/a' 5751:'n/a' 5907:'n/a' 6110:'n/a' 7222:'n/a' 7666:'n/a' 7679:'n/a' 7742:'n/a' 8371:'n/a' 8770:'n/a' 9672:'n/a' 9954:'n/a'
+POST ORDER: 550:'n/a' 2774:'n/a' 2882:'n/a' 5134:'n/a' 4160:'n/a' 2075:'n/a' 5751:'n/a' 5579:'n/a' 5907:'n/a' 7222:'n/a' 7742:'n/a' 7679:'n/a' 7666:'n/a' 8371:'n/a' 6110:'n/a' 9672:'n/a' 9954:'n/a' 8770:'n/a' 5451:'n/a' 728:'n/a'
+Dumping to the file debug_10_77.dot
+inserted 3098:n/a
+IN   ORDER: 550:'n/a' 728:'n/a' 2075:'n/a' 2774:'n/a' 2882:'n/a' 3098:'n/a' 4160:'n/a' 5134:'n/a' 5451:'n/a' 5579:'n/a' 5751:'n/a' 5907:'n/a' 6110:'n/a' 7222:'n/a' 7666:'n/a' 7679:'n/a' 7742:'n/a' 8371:'n/a' 8770:'n/a' 9672:'n/a' 9954:'n/a'
+POST ORDER: 550:'n/a' 2774:'n/a' 3098:'n/a' 2882:'n/a' 5134:'n/a' 4160:'n/a' 2075:'n/a' 5751:'n/a' 5579:'n/a' 5907:'n/a' 7222:'n/a' 7742:'n/a' 7679:'n/a' 7666:'n/a' 8371:'n/a' 6110:'n/a' 9672:'n/a' 9954:'n/a' 8770:'n/a' 5451:'n/a' 728:'n/a'
+Dumping to the file debug_10_78.dot
+inserted 6602:n/a
+IN   ORDER: 550:'n/a' 728:'n/a' 2075:'n/a' 2774:'n/a' 2882:'n/a' 3098:'n/a' 4160:'n/a' 5134:'n/a' 5451:'n/a' 5579:'n/a' 5751:'n/a' 5907:'n/a' 6110:'n/a' 6602:'n/a' 7222:'n/a' 7666:'n/a' 7679:'n/a' 7742:'n/a' 8371:'n/a' 8770:'n/a' 9672:'n/a' 9954:'n/a'
+POST ORDER: 550:'n/a' 2774:'n/a' 3098:'n/a' 2882:'n/a' 5134:'n/a' 4160:'n/a' 2075:'n/a' 5751:'n/a' 5579:'n/a' 5907:'n/a' 6602:'n/a' 7222:'n/a' 7742:'n/a' 7679:'n/a' 7666:'n/a' 8371:'n/a' 6110:'n/a' 9672:'n/a' 9954:'n/a' 8770:'n/a' 5451:'n/a' 728:'n/a'
+Dumping to the file debug_10_79.dot
+deleted key 6602
+IN   ORDER: 550:'n/a' 728:'n/a' 2075:'n/a' 2774:'n/a' 2882:'n/a' 3098:'n/a' 4160:'n/a' 5134:'n/a' 5451:'n/a' 5579:'n/a' 5751:'n/a' 5907:'n/a' 6110:'n/a' 7222:'n/a' 7666:'n/a' 7679:'n/a' 7742:'n/a' 8371:'n/a' 8770:'n/a' 9672:'n/a' 9954:'n/a'
+POST ORDER: 550:'n/a' 2774:'n/a' 3098:'n/a' 2882:'n/a' 5134:'n/a' 4160:'n/a' 2075:'n/a' 5751:'n/a' 5579:'n/a' 5907:'n/a' 7222:'n/a' 7742:'n/a' 7679:'n/a' 7666:'n/a' 8371:'n/a' 6110:'n/a' 9672:'n/a' 9954:'n/a' 8770:'n/a' 5451:'n/a' 728:'n/a'
+Dumping to the file debug_10_80.dot
+deleted key 7742
+IN   ORDER: 550:'n/a' 728:'n/a' 2075:'n/a' 2774:'n/a' 2882:'n/a' 3098:'n/a' 4160:'n/a' 5134:'n/a' 5451:'n/a' 5579:'n/a' 5751:'n/a' 5907:'n/a' 6110:'n/a' 7222:'n/a' 7666:'n/a' 7679:'n/a' 8371:'n/a' 8770:'n/a' 9672:'n/a' 9954:'n/a'
+POST ORDER: 550:'n/a' 2774:'n/a' 3098:'n/a' 2882:'n/a' 5134:'n/a' 4160:'n/a' 2075:'n/a' 5751:'n/a' 5579:'n/a' 5907:'n/a' 7222:'n/a' 7679:'n/a' 7666:'n/a' 8371:'n/a' 6110:'n/a' 9672:'n/a' 9954:'n/a' 8770:'n/a' 5451:'n/a' 728:'n/a'
+Dumping to the file debug_10_81.dot
+deleted key 2075
+IN   ORDER: 550:'n/a' 728:'n/a' 2774:'n/a' 2882:'n/a' 3098:'n/a' 4160:'n/a' 5134:'n/a' 5451:'n/a' 5579:'n/a' 5751:'n/a' 5907:'n/a' 6110:'n/a' 7222:'n/a' 7666:'n/a' 7679:'n/a' 8371:'n/a' 8770:'n/a' 9672:'n/a' 9954:'n/a'
+POST ORDER: 550:'n/a' 2774:'n/a' 3098:'n/a' 2882:'n/a' 5134:'n/a' 4160:'n/a' 5751:'n/a' 5579:'n/a' 5907:'n/a' 7222:'n/a' 7679:'n/a' 7666:'n/a' 8371:'n/a' 6110:'n/a' 9672:'n/a' 9954:'n/a' 8770:'n/a' 5451:'n/a' 728:'n/a'
+Dumping to the file debug_10_82.dot
+deleted key 5579
+IN   ORDER: 550:'n/a' 728:'n/a' 2774:'n/a' 2882:'n/a' 3098:'n/a' 4160:'n/a' 5134:'n/a' 5451:'n/a' 5751:'n/a' 5907:'n/a' 6110:'n/a' 7222:'n/a' 7666:'n/a' 7679:'n/a' 8371:'n/a' 8770:'n/a' 9672:'n/a' 9954:'n/a'
+POST ORDER: 550:'n/a' 2774:'n/a' 3098:'n/a' 2882:'n/a' 5134:'n/a' 4160:'n/a' 5751:'n/a' 5907:'n/a' 7222:'n/a' 7679:'n/a' 7666:'n/a' 8371:'n/a' 6110:'n/a' 9672:'n/a' 9954:'n/a' 8770:'n/a' 5451:'n/a' 728:'n/a'
+Dumping to the file debug_10_83.dot
+deleted key 550
+IN   ORDER: 728:'n/a' 2774:'n/a' 2882:'n/a' 3098:'n/a' 4160:'n/a' 5134:'n/a' 5451:'n/a' 5751:'n/a' 5907:'n/a' 6110:'n/a' 7222:'n/a' 7666:'n/a' 7679:'n/a' 8371:'n/a' 8770:'n/a' 9672:'n/a' 9954:'n/a'
+POST ORDER: 2774:'n/a' 3098:'n/a' 2882:'n/a' 5134:'n/a' 4160:'n/a' 5751:'n/a' 5907:'n/a' 7222:'n/a' 7679:'n/a' 7666:'n/a' 8371:'n/a' 6110:'n/a' 9672:'n/a' 9954:'n/a' 8770:'n/a' 5451:'n/a' 728:'n/a'
+Dumping to the file debug_10_84.dot
+deleted key 4160
+IN   ORDER: 728:'n/a' 2774:'n/a' 2882:'n/a' 3098:'n/a' 5134:'n/a' 5451:'n/a' 5751:'n/a' 5907:'n/a' 6110:'n/a' 7222:'n/a' 7666:'n/a' 7679:'n/a' 8371:'n/a' 8770:'n/a' 9672:'n/a' 9954:'n/a'
+POST ORDER: 2774:'n/a' 3098:'n/a' 2882:'n/a' 5134:'n/a' 5751:'n/a' 5907:'n/a' 7222:'n/a' 7679:'n/a' 7666:'n/a' 8371:'n/a' 6110:'n/a' 9672:'n/a' 9954:'n/a' 8770:'n/a' 5451:'n/a' 728:'n/a'
+Dumping to the file debug_10_85.dot
+deleted key 9954
+IN   ORDER: 728:'n/a' 2774:'n/a' 2882:'n/a' 3098:'n/a' 5134:'n/a' 5451:'n/a' 5751:'n/a' 5907:'n/a' 6110:'n/a' 7222:'n/a' 7666:'n/a' 7679:'n/a' 8371:'n/a' 8770:'n/a' 9672:'n/a'
+POST ORDER: 2774:'n/a' 3098:'n/a' 2882:'n/a' 5134:'n/a' 5751:'n/a' 5907:'n/a' 7222:'n/a' 7679:'n/a' 7666:'n/a' 8371:'n/a' 6110:'n/a' 9672:'n/a' 8770:'n/a' 5451:'n/a' 728:'n/a'
+Dumping to the file debug_10_86.dot
+deleted key 8770
+IN   ORDER: 728:'n/a' 2774:'n/a' 2882:'n/a' 3098:'n/a' 5134:'n/a' 5451:'n/a' 5751:'n/a' 5907:'n/a' 6110:'n/a' 7222:'n/a' 7666:'n/a' 7679:'n/a' 8371:'n/a' 9672:'n/a'
+POST ORDER: 2774:'n/a' 3098:'n/a' 2882:'n/a' 5134:'n/a' 5751:'n/a' 5907:'n/a' 7222:'n/a' 7679:'n/a' 7666:'n/a' 8371:'n/a' 6110:'n/a' 9672:'n/a' 5451:'n/a' 728:'n/a'
+Dumping to the file debug_10_87.dot
+deleted key 7666
+IN   ORDER: 728:'n/a' 2774:'n/a' 2882:'n/a' 3098:'n/a' 5134:'n/a' 5451:'n/a' 5751:'n/a' 5907:'n/a' 6110:'n/a' 7222:'n/a' 7679:'n/a' 8371:'n/a' 9672:'n/a'
+POST ORDER: 2774:'n/a' 3098:'n/a' 2882:'n/a' 5134:'n/a' 5751:'n/a' 5907:'n/a' 7222:'n/a' 7679:'n/a' 8371:'n/a' 6110:'n/a' 9672:'n/a' 5451:'n/a' 728:'n/a'
+Dumping to the file debug_10_88.dot
+deleted key 7679
+IN   ORDER: 728:'n/a' 2774:'n/a' 2882:'n/a' 3098:'n/a' 5134:'n/a' 5451:'n/a' 5751:'n/a' 5907:'n/a' 6110:'n/a' 7222:'n/a' 8371:'n/a' 9672:'n/a'
+POST ORDER: 2774:'n/a' 3098:'n/a' 2882:'n/a' 5134:'n/a' 5751:'n/a' 5907:'n/a' 7222:'n/a' 8371:'n/a' 6110:'n/a' 9672:'n/a' 5451:'n/a' 728:'n/a'
+Dumping to the file debug_10_89.dot
+deleted key 5907
+IN   ORDER: 728:'n/a' 2774:'n/a' 2882:'n/a' 3098:'n/a' 5134:'n/a' 5451:'n/a' 5751:'n/a' 6110:'n/a' 7222:'n/a' 8371:'n/a' 9672:'n/a'
+POST ORDER: 2774:'n/a' 3098:'n/a' 2882:'n/a' 5134:'n/a' 5751:'n/a' 7222:'n/a' 8371:'n/a' 6110:'n/a' 9672:'n/a' 5451:'n/a' 728:'n/a'
+Dumping to the file debug_10_90.dot
+deleted key 8371
+IN   ORDER: 728:'n/a' 2774:'n/a' 2882:'n/a' 3098:'n/a' 5134:'n/a' 5451:'n/a' 5751:'n/a' 6110:'n/a' 7222:'n/a' 9672:'n/a'
+POST ORDER: 2774:'n/a' 3098:'n/a' 2882:'n/a' 5134:'n/a' 5751:'n/a' 7222:'n/a' 6110:'n/a' 9672:'n/a' 5451:'n/a' 728:'n/a'
+Dumping to the file debug_10_91.dot
+deleted key 9672
+IN   ORDER: 728:'n/a' 2774:'n/a' 2882:'n/a' 3098:'n/a' 5134:'n/a' 5451:'n/a' 5751:'n/a' 6110:'n/a' 7222:'n/a'
+POST ORDER: 2774:'n/a' 3098:'n/a' 2882:'n/a' 5134:'n/a' 5751:'n/a' 7222:'n/a' 6110:'n/a' 5451:'n/a' 728:'n/a'
+Dumping to the file debug_10_92.dot
+deleted key 5451
+IN   ORDER: 728:'n/a' 2774:'n/a' 2882:'n/a' 3098:'n/a' 5134:'n/a' 5751:'n/a' 6110:'n/a' 7222:'n/a'
+POST ORDER: 2774:'n/a' 3098:'n/a' 2882:'n/a' 5134:'n/a' 7222:'n/a' 6110:'n/a' 5751:'n/a' 728:'n/a'
+Dumping to the file debug_10_93.dot
+deleted key 7222
+IN   ORDER: 728:'n/a' 2774:'n/a' 2882:'n/a' 3098:'n/a' 5134:'n/a' 5751:'n/a' 6110:'n/a'
+POST ORDER: 2774:'n/a' 3098:'n/a' 2882:'n/a' 5134:'n/a' 6110:'n/a' 5751:'n/a' 728:'n/a'
+Dumping to the file debug_10_94.dot
+deleted key 5134
+IN   ORDER: 728:'n/a' 2774:'n/a' 2882:'n/a' 3098:'n/a' 5751:'n/a' 6110:'n/a'
+POST ORDER: 2774:'n/a' 3098:'n/a' 2882:'n/a' 6110:'n/a' 5751:'n/a' 728:'n/a'
+Dumping to the file debug_10_95.dot
+deleted key 3098
+IN   ORDER: 728:'n/a' 2774:'n/a' 2882:'n/a' 5751:'n/a' 6110:'n/a'
+POST ORDER: 2774:'n/a' 2882:'n/a' 6110:'n/a' 5751:'n/a' 728:'n/a'
+Dumping to the file debug_10_96.dot
+deleted key 2882
+IN   ORDER: 728:'n/a' 2774:'n/a' 5751:'n/a' 6110:'n/a'
+POST ORDER: 2774:'n/a' 6110:'n/a' 5751:'n/a' 728:'n/a'
+Dumping to the file debug_10_97.dot
+deleted key 6110
+IN   ORDER: 728:'n/a' 2774:'n/a' 5751:'n/a'
+POST ORDER: 2774:'n/a' 5751:'n/a' 728:'n/a'
+Dumping to the file debug_10_98.dot
+deleted key 5751
+IN   ORDER: 728:'n/a' 2774:'n/a'
+POST ORDER: 2774:'n/a' 728:'n/a'
+Dumping to the file debug_10_99.dot
+deleted key 2774

@@ -1,0 +1,23 @@
+0 insert	 348 A
+    0 inOrder
+    0 postOrder
+0 insert	 369 B
+    0 inOrder
+    0 postOrder
+0 insert	  86 C
+    0 inOrder
+    0 postOrder
+    0 debug     debug_08_0.dot
+0 delete	 348
+    0 inOrder
+    0 postOrder
+    0 debug     debug_08_1.dot
+0 delete	  86
+    0 inOrder
+    0 postOrder
+    0 debug     debug_08_2.dot
+0 delete	 369
+    0 inOrder
+    0 postOrder
+    0 debug     debug_08_3.dot
+

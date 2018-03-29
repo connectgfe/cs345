@@ -1,0 +1,109 @@
+inserted 24:proposition
+inserted 27:men
+inserted 14:a
+inserted 28:are
+inserted 16:nation
+inserted 6:ago
+inserted 15:new
+inserted 11:on
+inserted 20:and
+inserted 30:equal
+inserted 3:and
+inserted 23:the
+inserted 10:forth
+inserted 21:dedicated
+inserted 7:our
+inserted 4:seven
+inserted 26:all
+inserted 17:conceived
+inserted 13:continent
+inserted 18:in
+inserted 22:to
+inserted 25:that
+inserted 2:score
+inserted 1:Four
+inserted 8:fathers
+inserted 9:brought
+inserted 19:liberty
+inserted 12:this
+inserted 29:created
+inserted 5:years
+IN   ORDER: 1:'Four' 2:'score' 3:'and' 4:'seven' 5:'years' 6:'ago' 7:'our' 8:'fathers' 9:'brought' 10:'forth' 11:'on' 12:'this' 13:'continent' 14:'a' 15:'new' 16:'nation' 17:'conceived' 18:'in' 19:'liberty' 20:'and' 21:'dedicated' 22:'to' 23:'the' 24:'proposition' 25:'that' 26:'all' 27:'men' 28:'are' 29:'created' 30:'equal'
+POST ORDER: 1:'Four' 2:'score' 5:'years' 4:'seven' 3:'and' 9:'brought' 8:'fathers' 7:'our' 10:'forth' 12:'this' 13:'continent' 11:'on' 6:'ago' 15:'new' 19:'liberty' 18:'in' 17:'conceived' 22:'to' 21:'dedicated' 23:'the' 20:'and' 16:'nation' 14:'a' 25:'that' 26:'all' 29:'created' 30:'equal' 28:'are' 27:'men' 24:'proposition'
+Dumping to the file debug_06_00.dot
+rotated left at 14
+IN   ORDER: 1:'Four' 2:'score' 3:'and' 4:'seven' 5:'years' 6:'ago' 7:'our' 8:'fathers' 9:'brought' 10:'forth' 11:'on' 12:'this' 13:'continent' 14:'a' 15:'new' 16:'nation' 17:'conceived' 18:'in' 19:'liberty' 20:'and' 21:'dedicated' 22:'to' 23:'the' 24:'proposition' 25:'that' 26:'all' 27:'men' 28:'are' 29:'created' 30:'equal'
+POST ORDER: 1:'Four' 2:'score' 5:'years' 4:'seven' 3:'and' 9:'brought' 8:'fathers' 7:'our' 10:'forth' 12:'this' 13:'continent' 11:'on' 6:'ago' 15:'new' 14:'a' 19:'liberty' 18:'in' 17:'conceived' 22:'to' 21:'dedicated' 23:'the' 20:'and' 16:'nation' 25:'that' 26:'all' 29:'created' 30:'equal' 28:'are' 27:'men' 24:'proposition'
+Dumping to the file debug_06_01.dot
+rotated right at 24
+IN   ORDER: 1:'Four' 2:'score' 3:'and' 4:'seven' 5:'years' 6:'ago' 7:'our' 8:'fathers' 9:'brought' 10:'forth' 11:'on' 12:'this' 13:'continent' 14:'a' 15:'new' 16:'nation' 17:'conceived' 18:'in' 19:'liberty' 20:'and' 21:'dedicated' 22:'to' 23:'the' 24:'proposition' 25:'that' 26:'all' 27:'men' 28:'are' 29:'created' 30:'equal'
+POST ORDER: 1:'Four' 2:'score' 5:'years' 4:'seven' 3:'and' 9:'brought' 8:'fathers' 7:'our' 10:'forth' 12:'this' 13:'continent' 11:'on' 6:'ago' 15:'new' 14:'a' 19:'liberty' 18:'in' 17:'conceived' 22:'to' 21:'dedicated' 23:'the' 20:'and' 25:'that' 26:'all' 29:'created' 30:'equal' 28:'are' 27:'men' 24:'proposition' 16:'nation'
+Dumping to the file debug_06_02.dot
+rotated left at 7
+IN   ORDER: 1:'Four' 2:'score' 3:'and' 4:'seven' 5:'years' 6:'ago' 7:'our' 8:'fathers' 9:'brought' 10:'forth' 11:'on' 12:'this' 13:'continent' 14:'a' 15:'new' 16:'nation' 17:'conceived' 18:'in' 19:'liberty' 20:'and' 21:'dedicated' 22:'to' 23:'the' 24:'proposition' 25:'that' 26:'all' 27:'men' 28:'are' 29:'created' 30:'equal'
+POST ORDER: 1:'Four' 2:'score' 5:'years' 4:'seven' 3:'and' 7:'our' 9:'brought' 8:'fathers' 10:'forth' 12:'this' 13:'continent' 11:'on' 6:'ago' 15:'new' 14:'a' 19:'liberty' 18:'in' 17:'conceived' 22:'to' 21:'dedicated' 23:'the' 20:'and' 25:'that' 26:'all' 29:'created' 30:'equal' 28:'are' 27:'men' 24:'proposition' 16:'nation'
+Dumping to the file debug_06_03.dot
+rotated right at 10
+IN   ORDER: 1:'Four' 2:'score' 3:'and' 4:'seven' 5:'years' 6:'ago' 7:'our' 8:'fathers' 9:'brought' 10:'forth' 11:'on' 12:'this' 13:'continent' 14:'a' 15:'new' 16:'nation' 17:'conceived' 18:'in' 19:'liberty' 20:'and' 21:'dedicated' 22:'to' 23:'the' 24:'proposition' 25:'that' 26:'all' 27:'men' 28:'are' 29:'created' 30:'equal'
+POST ORDER: 1:'Four' 2:'score' 5:'years' 4:'seven' 3:'and' 7:'our' 9:'brought' 10:'forth' 8:'fathers' 12:'this' 13:'continent' 11:'on' 6:'ago' 15:'new' 14:'a' 19:'liberty' 18:'in' 17:'conceived' 22:'to' 21:'dedicated' 23:'the' 20:'and' 25:'that' 26:'all' 29:'created' 30:'equal' 28:'are' 27:'men' 24:'proposition' 16:'nation'
+Dumping to the file debug_06_04.dot
+rotated right at 11
+IN   ORDER: 1:'Four' 2:'score' 3:'and' 4:'seven' 5:'years' 6:'ago' 7:'our' 8:'fathers' 9:'brought' 10:'forth' 11:'on' 12:'this' 13:'continent' 14:'a' 15:'new' 16:'nation' 17:'conceived' 18:'in' 19:'liberty' 20:'and' 21:'dedicated' 22:'to' 23:'the' 24:'proposition' 25:'that' 26:'all' 27:'men' 28:'are' 29:'created' 30:'equal'
+POST ORDER: 1:'Four' 2:'score' 5:'years' 4:'seven' 3:'and' 7:'our' 9:'brought' 10:'forth' 12:'this' 13:'continent' 11:'on' 8:'fathers' 6:'ago' 15:'new' 14:'a' 19:'liberty' 18:'in' 17:'conceived' 22:'to' 21:'dedicated' 23:'the' 20:'and' 25:'that' 26:'all' 29:'created' 30:'equal' 28:'are' 27:'men' 24:'proposition' 16:'nation'
+Dumping to the file debug_06_05.dot
+rotated left at 6
+IN   ORDER: 1:'Four' 2:'score' 3:'and' 4:'seven' 5:'years' 6:'ago' 7:'our' 8:'fathers' 9:'brought' 10:'forth' 11:'on' 12:'this' 13:'continent' 14:'a' 15:'new' 16:'nation' 17:'conceived' 18:'in' 19:'liberty' 20:'and' 21:'dedicated' 22:'to' 23:'the' 24:'proposition' 25:'that' 26:'all' 27:'men' 28:'are' 29:'created' 30:'equal'
+POST ORDER: 1:'Four' 2:'score' 5:'years' 4:'seven' 3:'and' 7:'our' 6:'ago' 9:'brought' 10:'forth' 12:'this' 13:'continent' 11:'on' 8:'fathers' 15:'new' 14:'a' 19:'liberty' 18:'in' 17:'conceived' 22:'to' 21:'dedicated' 23:'the' 20:'and' 25:'that' 26:'all' 29:'created' 30:'equal' 28:'are' 27:'men' 24:'proposition' 16:'nation'
+Dumping to the file debug_06_06.dot
+rotated right at 14
+IN   ORDER: 1:'Four' 2:'score' 3:'and' 4:'seven' 5:'years' 6:'ago' 7:'our' 8:'fathers' 9:'brought' 10:'forth' 11:'on' 12:'this' 13:'continent' 14:'a' 15:'new' 16:'nation' 17:'conceived' 18:'in' 19:'liberty' 20:'and' 21:'dedicated' 22:'to' 23:'the' 24:'proposition' 25:'that' 26:'all' 27:'men' 28:'are' 29:'created' 30:'equal'
+POST ORDER: 1:'Four' 2:'score' 5:'years' 4:'seven' 3:'and' 7:'our' 6:'ago' 9:'brought' 10:'forth' 12:'this' 13:'continent' 11:'on' 15:'new' 14:'a' 8:'fathers' 19:'liberty' 18:'in' 17:'conceived' 22:'to' 21:'dedicated' 23:'the' 20:'and' 25:'that' 26:'all' 29:'created' 30:'equal' 28:'are' 27:'men' 24:'proposition' 16:'nation'
+Dumping to the file debug_06_07.dot
+rotated left at 3
+IN   ORDER: 1:'Four' 2:'score' 3:'and' 4:'seven' 5:'years' 6:'ago' 7:'our' 8:'fathers' 9:'brought' 10:'forth' 11:'on' 12:'this' 13:'continent' 14:'a' 15:'new' 16:'nation' 17:'conceived' 18:'in' 19:'liberty' 20:'and' 21:'dedicated' 22:'to' 23:'the' 24:'proposition' 25:'that' 26:'all' 27:'men' 28:'are' 29:'created' 30:'equal'
+POST ORDER: 1:'Four' 2:'score' 3:'and' 5:'years' 4:'seven' 7:'our' 6:'ago' 9:'brought' 10:'forth' 12:'this' 13:'continent' 11:'on' 15:'new' 14:'a' 8:'fathers' 19:'liberty' 18:'in' 17:'conceived' 22:'to' 21:'dedicated' 23:'the' 20:'and' 25:'that' 26:'all' 29:'created' 30:'equal' 28:'are' 27:'men' 24:'proposition' 16:'nation'
+Dumping to the file debug_06_08.dot
+rotated right at 6
+IN   ORDER: 1:'Four' 2:'score' 3:'and' 4:'seven' 5:'years' 6:'ago' 7:'our' 8:'fathers' 9:'brought' 10:'forth' 11:'on' 12:'this' 13:'continent' 14:'a' 15:'new' 16:'nation' 17:'conceived' 18:'in' 19:'liberty' 20:'and' 21:'dedicated' 22:'to' 23:'the' 24:'proposition' 25:'that' 26:'all' 27:'men' 28:'are' 29:'created' 30:'equal'
+POST ORDER: 1:'Four' 2:'score' 3:'and' 5:'years' 7:'our' 6:'ago' 4:'seven' 9:'brought' 10:'forth' 12:'this' 13:'continent' 11:'on' 15:'new' 14:'a' 8:'fathers' 19:'liberty' 18:'in' 17:'conceived' 22:'to' 21:'dedicated' 23:'the' 20:'and' 25:'that' 26:'all' 29:'created' 30:'equal' 28:'are' 27:'men' 24:'proposition' 16:'nation'
+Dumping to the file debug_06_09.dot
+rotated right at 3
+IN   ORDER: 1:'Four' 2:'score' 3:'and' 4:'seven' 5:'years' 6:'ago' 7:'our' 8:'fathers' 9:'brought' 10:'forth' 11:'on' 12:'this' 13:'continent' 14:'a' 15:'new' 16:'nation' 17:'conceived' 18:'in' 19:'liberty' 20:'and' 21:'dedicated' 22:'to' 23:'the' 24:'proposition' 25:'that' 26:'all' 27:'men' 28:'are' 29:'created' 30:'equal'
+POST ORDER: 1:'Four' 3:'and' 2:'score' 5:'years' 7:'our' 6:'ago' 4:'seven' 9:'brought' 10:'forth' 12:'this' 13:'continent' 11:'on' 15:'new' 14:'a' 8:'fathers' 19:'liberty' 18:'in' 17:'conceived' 22:'to' 21:'dedicated' 23:'the' 20:'and' 25:'that' 26:'all' 29:'created' 30:'equal' 28:'are' 27:'men' 24:'proposition' 16:'nation'
+Dumping to the file debug_06_10.dot
+rotated right at 13
+IN   ORDER: 1:'Four' 2:'score' 3:'and' 4:'seven' 5:'years' 6:'ago' 7:'our' 8:'fathers' 9:'brought' 10:'forth' 11:'on' 12:'this' 13:'continent' 14:'a' 15:'new' 16:'nation' 17:'conceived' 18:'in' 19:'liberty' 20:'and' 21:'dedicated' 22:'to' 23:'the' 24:'proposition' 25:'that' 26:'all' 27:'men' 28:'are' 29:'created' 30:'equal'
+POST ORDER: 1:'Four' 3:'and' 2:'score' 5:'years' 7:'our' 6:'ago' 4:'seven' 9:'brought' 10:'forth' 13:'continent' 12:'this' 11:'on' 15:'new' 14:'a' 8:'fathers' 19:'liberty' 18:'in' 17:'conceived' 22:'to' 21:'dedicated' 23:'the' 20:'and' 25:'that' 26:'all' 29:'created' 30:'equal' 28:'are' 27:'men' 24:'proposition' 16:'nation'
+Dumping to the file debug_06_11.dot
+rotated left at 11
+IN   ORDER: 1:'Four' 2:'score' 3:'and' 4:'seven' 5:'years' 6:'ago' 7:'our' 8:'fathers' 9:'brought' 10:'forth' 11:'on' 12:'this' 13:'continent' 14:'a' 15:'new' 16:'nation' 17:'conceived' 18:'in' 19:'liberty' 20:'and' 21:'dedicated' 22:'to' 23:'the' 24:'proposition' 25:'that' 26:'all' 27:'men' 28:'are' 29:'created' 30:'equal'
+POST ORDER: 1:'Four' 3:'and' 2:'score' 5:'years' 7:'our' 6:'ago' 4:'seven' 9:'brought' 10:'forth' 11:'on' 13:'continent' 12:'this' 15:'new' 14:'a' 8:'fathers' 19:'liberty' 18:'in' 17:'conceived' 22:'to' 21:'dedicated' 23:'the' 20:'and' 25:'that' 26:'all' 29:'created' 30:'equal' 28:'are' 27:'men' 24:'proposition' 16:'nation'
+Dumping to the file debug_06_12.dot
+rotated right at 14
+IN   ORDER: 1:'Four' 2:'score' 3:'and' 4:'seven' 5:'years' 6:'ago' 7:'our' 8:'fathers' 9:'brought' 10:'forth' 11:'on' 12:'this' 13:'continent' 14:'a' 15:'new' 16:'nation' 17:'conceived' 18:'in' 19:'liberty' 20:'and' 21:'dedicated' 22:'to' 23:'the' 24:'proposition' 25:'that' 26:'all' 27:'men' 28:'are' 29:'created' 30:'equal'
+POST ORDER: 1:'Four' 3:'and' 2:'score' 5:'years' 7:'our' 6:'ago' 4:'seven' 9:'brought' 10:'forth' 11:'on' 13:'continent' 15:'new' 14:'a' 12:'this' 8:'fathers' 19:'liberty' 18:'in' 17:'conceived' 22:'to' 21:'dedicated' 23:'the' 20:'and' 25:'that' 26:'all' 29:'created' 30:'equal' 28:'are' 27:'men' 24:'proposition' 16:'nation'
+Dumping to the file debug_06_13.dot
+rotated right at 11
+IN   ORDER: 1:'Four' 2:'score' 3:'and' 4:'seven' 5:'years' 6:'ago' 7:'our' 8:'fathers' 9:'brought' 10:'forth' 11:'on' 12:'this' 13:'continent' 14:'a' 15:'new' 16:'nation' 17:'conceived' 18:'in' 19:'liberty' 20:'and' 21:'dedicated' 22:'to' 23:'the' 24:'proposition' 25:'that' 26:'all' 27:'men' 28:'are' 29:'created' 30:'equal'
+POST ORDER: 1:'Four' 3:'and' 2:'score' 5:'years' 7:'our' 6:'ago' 4:'seven' 9:'brought' 11:'on' 10:'forth' 13:'continent' 15:'new' 14:'a' 12:'this' 8:'fathers' 19:'liberty' 18:'in' 17:'conceived' 22:'to' 21:'dedicated' 23:'the' 20:'and' 25:'that' 26:'all' 29:'created' 30:'equal' 28:'are' 27:'men' 24:'proposition' 16:'nation'
+Dumping to the file debug_06_14.dot
+rotated left at 17
+IN   ORDER: 1:'Four' 2:'score' 3:'and' 4:'seven' 5:'years' 6:'ago' 7:'our' 8:'fathers' 9:'brought' 10:'forth' 11:'on' 12:'this' 13:'continent' 14:'a' 15:'new' 16:'nation' 17:'conceived' 18:'in' 19:'liberty' 20:'and' 21:'dedicated' 22:'to' 23:'the' 24:'proposition' 25:'that' 26:'all' 27:'men' 28:'are' 29:'created' 30:'equal'
+POST ORDER: 1:'Four' 3:'and' 2:'score' 5:'years' 7:'our' 6:'ago' 4:'seven' 9:'brought' 11:'on' 10:'forth' 13:'continent' 15:'new' 14:'a' 12:'this' 8:'fathers' 17:'conceived' 19:'liberty' 18:'in' 22:'to' 21:'dedicated' 23:'the' 20:'and' 25:'that' 26:'all' 29:'created' 30:'equal' 28:'are' 27:'men' 24:'proposition' 16:'nation'
+Dumping to the file debug_06_15.dot
+rotated left at 21
+IN   ORDER: 1:'Four' 2:'score' 3:'and' 4:'seven' 5:'years' 6:'ago' 7:'our' 8:'fathers' 9:'brought' 10:'forth' 11:'on' 12:'this' 13:'continent' 14:'a' 15:'new' 16:'nation' 17:'conceived' 18:'in' 19:'liberty' 20:'and' 21:'dedicated' 22:'to' 23:'the' 24:'proposition' 25:'that' 26:'all' 27:'men' 28:'are' 29:'created' 30:'equal'
+POST ORDER: 1:'Four' 3:'and' 2:'score' 5:'years' 7:'our' 6:'ago' 4:'seven' 9:'brought' 11:'on' 10:'forth' 13:'continent' 15:'new' 14:'a' 12:'this' 8:'fathers' 17:'conceived' 19:'liberty' 18:'in' 21:'dedicated' 22:'to' 23:'the' 20:'and' 25:'that' 26:'all' 29:'created' 30:'equal' 28:'are' 27:'men' 24:'proposition' 16:'nation'
+Dumping to the file debug_06_16.dot
+rotated right at 23
+IN   ORDER: 1:'Four' 2:'score' 3:'and' 4:'seven' 5:'years' 6:'ago' 7:'our' 8:'fathers' 9:'brought' 10:'forth' 11:'on' 12:'this' 13:'continent' 14:'a' 15:'new' 16:'nation' 17:'conceived' 18:'in' 19:'liberty' 20:'and' 21:'dedicated' 22:'to' 23:'the' 24:'proposition' 25:'that' 26:'all' 27:'men' 28:'are' 29:'created' 30:'equal'
+POST ORDER: 1:'Four' 3:'and' 2:'score' 5:'years' 7:'our' 6:'ago' 4:'seven' 9:'brought' 11:'on' 10:'forth' 13:'continent' 15:'new' 14:'a' 12:'this' 8:'fathers' 17:'conceived' 19:'liberty' 18:'in' 21:'dedicated' 23:'the' 22:'to' 20:'and' 25:'that' 26:'all' 29:'created' 30:'equal' 28:'are' 27:'men' 24:'proposition' 16:'nation'
+Dumping to the file debug_06_17.dot
+rotated left at 27
+IN   ORDER: 1:'Four' 2:'score' 3:'and' 4:'seven' 5:'years' 6:'ago' 7:'our' 8:'fathers' 9:'brought' 10:'forth' 11:'on' 12:'this' 13:'continent' 14:'a' 15:'new' 16:'nation' 17:'conceived' 18:'in' 19:'liberty' 20:'and' 21:'dedicated' 22:'to' 23:'the' 24:'proposition' 25:'that' 26:'all' 27:'men' 28:'are' 29:'created' 30:'equal'
+POST ORDER: 1:'Four' 3:'and' 2:'score' 5:'years' 7:'our' 6:'ago' 4:'seven' 9:'brought' 11:'on' 10:'forth' 13:'continent' 15:'new' 14:'a' 12:'this' 8:'fathers' 17:'conceived' 19:'liberty' 18:'in' 21:'dedicated' 23:'the' 22:'to' 20:'and' 25:'that' 26:'all' 27:'men' 29:'created' 30:'equal' 28:'are' 24:'proposition' 16:'nation'
+Dumping to the file debug_06_18.dot
+rotated right at 27
+IN   ORDER: 1:'Four' 2:'score' 3:'and' 4:'seven' 5:'years' 6:'ago' 7:'our' 8:'fathers' 9:'brought' 10:'forth' 11:'on' 12:'this' 13:'continent' 14:'a' 15:'new' 16:'nation' 17:'conceived' 18:'in' 19:'liberty' 20:'and' 21:'dedicated' 22:'to' 23:'the' 24:'proposition' 25:'that' 26:'all' 27:'men' 28:'are' 29:'created' 30:'equal'
+POST ORDER: 1:'Four' 3:'and' 2:'score' 5:'years' 7:'our' 6:'ago' 4:'seven' 9:'brought' 11:'on' 10:'forth' 13:'continent' 15:'new' 14:'a' 12:'this' 8:'fathers' 17:'conceived' 19:'liberty' 18:'in' 21:'dedicated' 23:'the' 22:'to' 20:'and' 25:'that' 27:'men' 26:'all' 29:'created' 30:'equal' 28:'are' 24:'proposition' 16:'nation'
+Dumping to the file debug_06_19.dot

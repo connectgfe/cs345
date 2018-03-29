@@ -1,0 +1,22 @@
+inserted 474:A
+IN   ORDER: 474:'A'
+POST ORDER: 474:'A'
+inserted 487:B
+IN   ORDER: 474:'A' 487:'B'
+POST ORDER: 487:'B' 474:'A'
+inserted 176:C
+IN   ORDER: 176:'C' 474:'A' 487:'B'
+POST ORDER: 176:'C' 487:'B' 474:'A'
+Dumping to the file debug_09_0.dot
+deleted key 176
+IN   ORDER: 474:'A' 487:'B'
+POST ORDER: 487:'B' 474:'A'
+Dumping to the file debug_09_1.dot
+deleted key 474
+IN   ORDER: 474:'A' 487:'B'
+POST ORDER: 487:'B' 474:'A'
+Dumping to the file debug_09_2.dot
+deleted key 487
+IN   ORDER: 474:'A'
+POST ORDER: 474:'A'
+Dumping to the file debug_09_3.dot

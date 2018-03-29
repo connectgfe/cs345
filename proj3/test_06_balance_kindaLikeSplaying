@@ -1,0 +1,134 @@
+0 insert	24 proposition
+0 insert	27 men
+0 insert	14 a
+0 insert	28 are
+0 insert	16 nation
+0 insert	 6 ago
+0 insert	15 new
+0 insert	11 on
+0 insert	20 and
+0 insert	30 equal
+0 insert	 3 and
+0 insert	23 the
+0 insert	10 forth
+0 insert	21 dedicated
+0 insert	 7 our
+0 insert	 4 seven
+0 insert	26 all
+0 insert	17 conceived
+0 insert	13 continent
+0 insert	18 in
+0 insert	22 to
+0 insert	25 that
+0 insert	 2 score
+0 insert	 1 Four
+0 insert	 8 fathers
+0 insert	 9 brought
+0 insert	19 liberty
+0 insert	12 this
+0 insert	29 created
+0 insert	 5 years
+
+0 inOrder
+0 postOrder
+0 debug debug_06_00.dot
+
+# splay 16 to the root
+0 rotateLeft	14
+    0 inOrder
+    0 postOrder
+    0 debug debug_06_01.dot
+0 rotateRight	24
+    0 inOrder
+    0 postOrder
+    0 debug debug_06_02.dot
+
+# "splay" 8 to the left child of 16
+0 rotateLeft	7
+    0 inOrder
+    0 postOrder
+    0 debug debug_06_03.dot
+0 rotateRight	10
+    0 inOrder
+    0 postOrder
+    0 debug debug_06_04.dot
+0 rotateRight	11
+    0 inOrder
+    0 postOrder
+    0 debug debug_06_05.dot
+0 rotateLeft	6
+    0 inOrder
+    0 postOrder
+    0 debug debug_06_06.dot
+0 rotateRight	14
+    0 inOrder
+    0 postOrder
+    0 debug debug_06_07.dot
+
+# "splay" 4 to the left child of 8
+0 rotateLeft	3
+    0 inOrder
+    0 postOrder
+    0 debug debug_06_08.dot
+0 rotateRight	6
+    0 inOrder
+    0 postOrder
+    0 debug debug_06_09.dot
+
+# "splay" 2 to the left child of 4
+0 rotateRight	3
+    0 inOrder
+    0 postOrder
+    0 debug debug_06_10.dot
+
+# "splay" 12 to the right child of 8
+0 rotateRight	13
+    0 inOrder
+    0 postOrder
+    0 debug debug_06_11.dot
+0 rotateLeft	11
+    0 inOrder
+    0 postOrder
+    0 debug debug_06_12.dot
+0 rotateRight	14
+    0 inOrder
+    0 postOrder
+    0 debug debug_06_13.dot
+
+# "splay" 10 to the left child of 12
+0 rotateRight	11
+    0 inOrder
+    0 postOrder
+    0 debug debug_06_14.dot
+
+# 24 is already in position
+# 20 is already in position
+
+# "splay" 18 to the left child of 20
+0 rotateLeft	17
+    0 inOrder
+    0 postOrder
+    0 debug debug_06_15.dot
+
+# "splay" 22 to the right child of 20
+0 rotateLeft	21
+    0 inOrder
+    0 postOrder
+    0 debug debug_06_16.dot
+0 rotateRight	23
+    0 inOrder
+    0 postOrder
+    0 debug debug_06_17.dot
+
+# "splay" 28 to the right child of 24
+0 rotateLeft	27
+    0 inOrder
+    0 postOrder
+    0 debug debug_06_18.dot
+
+# "splay" 26 to the left child of 28
+0 rotateRight	27
+    0 inOrder
+    0 postOrder
+    0 debug debug_06_19.dot
+

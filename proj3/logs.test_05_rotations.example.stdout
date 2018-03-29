@@ -1,0 +1,126 @@
+inserted 12:O
+inserted 20:G
+inserted 4:W
+inserted 24:C
+inserted 16:K
+inserted 8:S
+inserted 0:<left-edge>
+inserted 26:A
+inserted 22:E
+inserted 18:I
+inserted 14:M
+inserted 10:Q
+inserted 6:U
+inserted 2:Y
+inserted 27:<right-edge>
+inserted 25:B
+inserted 23:D
+inserted 21:F
+inserted 19:H
+inserted 17:J
+inserted 15:L
+inserted 13:N
+inserted 11:P
+inserted 9:R
+inserted 7:T
+inserted 5:V
+inserted 3:X
+inserted 1:Z
+IN   ORDER: 0:'<left-edge>' 1:'Z' 2:'Y' 3:'X' 4:'W' 5:'V' 6:'U' 7:'T' 8:'S' 9:'R' 10:'Q' 11:'P' 12:'O' 13:'N' 14:'M' 15:'L' 16:'K' 17:'J' 18:'I' 19:'H' 20:'G' 21:'F' 22:'E' 23:'D' 24:'C' 25:'B' 26:'A' 27:'<right-edge>'
+POST ORDER: 1:'Z' 3:'X' 2:'Y' 0:'<left-edge>' 5:'V' 7:'T' 6:'U' 9:'R' 11:'P' 10:'Q' 8:'S' 4:'W' 13:'N' 15:'L' 14:'M' 17:'J' 19:'H' 18:'I' 16:'K' 21:'F' 23:'D' 22:'E' 25:'B' 27:'<right-edge>' 26:'A' 24:'C' 20:'G' 12:'O'
+Dumping to the file debug_05_00.dot
+rotated right at 20
+Dumping to the file debug_05_01.dot
+rotated right at 16
+Dumping to the file debug_05_02.dot
+rotated right at 14
+Dumping to the file debug_05_03.dot
+FAILED to rotate right at 13: ERROR: The node with key 13 does not have a left child, so a rotate right is not possible.
+FAILED to rotate right at 100: ERROR: Cannot rotate right at key 100, because the key is not present in the tree.
+rotated right at 16
+Dumping to the file debug_05_04.dot
+rotated right at 26
+Dumping to the file debug_05_05.dot
+rotated right at 24
+Dumping to the file debug_05_06.dot
+rotated right at 20
+Dumping to the file debug_05_07.dot
+FAILED to rotate right at 16: ERROR: The node with key 16 does not have a left child, so a rotate right is not possible.
+rotated left at 0
+Dumping to the file debug_05_08.dot
+rotated left at 4
+Dumping to the file debug_05_09.dot
+rotated left at 8
+Dumping to the file debug_05_10.dot
+rotated left at 10
+Dumping to the file debug_05_11.dot
+rotated left at 0
+Dumping to the file debug_05_12.dot
+rotated left at 2
+Dumping to the file debug_05_13.dot
+rotated left at 4
+Dumping to the file debug_05_14.dot
+rotated left at 8
+Dumping to the file debug_05_15.dot
+rotated right at 2
+Dumping to the file debug_05_16.dot
+rotated right at 4
+Dumping to the file debug_05_17.dot
+rotated left at 6
+Dumping to the file debug_05_18.dot
+rotated right at 6
+Dumping to the file debug_05_19.dot
+rotated left at 4
+Dumping to the file debug_05_20.dot
+rotated right at 6
+Dumping to the file debug_05_21.dot
+rotated right at 8
+Dumping to the file debug_05_22.dot
+rotated right at 9
+Dumping to the file debug_05_23.dot
+rotated right at 10
+Dumping to the file debug_05_24.dot
+rotated right at 11
+Dumping to the file debug_05_25.dot
+rotated left at 13
+Dumping to the file debug_05_26.dot
+rotated left at 14
+Dumping to the file debug_05_27.dot
+rotated left at 12
+Dumping to the file debug_05_28.dot
+rotated right at 12
+Dumping to the file debug_05_29.dot
+rotated right at 12
+Dumping to the file debug_05_30.dot
+rotated right at 10
+Dumping to the file debug_05_31.dot
+rotated right at 14
+Dumping to the file debug_05_32.dot
+rotated left at 12
+Dumping to the file debug_05_33.dot
+rotated left at 16
+Dumping to the file debug_05_34.dot
+rotated left at 18
+Dumping to the file debug_05_35.dot
+rotated left at 20
+Dumping to the file debug_05_36.dot
+rotated right at 24
+Dumping to the file debug_05_37.dot
+rotated left at 22
+Dumping to the file debug_05_38.dot
+rotated left at 18
+Dumping to the file debug_05_39.dot
+rotated right at 20
+Dumping to the file debug_05_40.dot
+rotated right at 22
+Dumping to the file debug_05_41.dot
+rotated left at 16
+Dumping to the file debug_05_42.dot
+rotated right at 18
+Dumping to the file debug_05_43.dot
+rotated left at 20
+Dumping to the file debug_05_44.dot
+rotated right at 22
+Dumping to the file debug_05_45.dot
+rotated left at 24
+Dumping to the file debug_05_46.dot

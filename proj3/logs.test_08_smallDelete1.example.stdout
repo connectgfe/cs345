@@ -1,0 +1,22 @@
+inserted 348:A
+IN   ORDER: 348:'A'
+POST ORDER: 348:'A'
+inserted 369:B
+IN   ORDER: 348:'A' 369:'B'
+POST ORDER: 369:'B' 348:'A'
+inserted 86:C
+IN   ORDER: 86:'C' 348:'A' 369:'B'
+POST ORDER: 86:'C' 369:'B' 348:'A'
+Dumping to the file debug_08_0.dot
+deleted key 348
+IN   ORDER: 86:'C' 369:'B'
+POST ORDER: 369:'B' 86:'C'
+Dumping to the file debug_08_1.dot
+deleted key 86
+IN   ORDER: 369:'B'
+POST ORDER: 369:'B'
+Dumping to the file debug_08_2.dot
+deleted key 369
+IN   ORDER:
+POST ORDER:
+Dumping to the file debug_08_3.dot

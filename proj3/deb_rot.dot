@@ -1,6 +1,0 @@
-digraph M {
-8 ->  7 [label="L"] ;
-8 ->  9 [label="R"] ;
-7 ->  6 [label="L"] ;
-6 ->  5 [label="L"] ;
-}
