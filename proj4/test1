@@ -1,0 +1,7 @@
+digraph M {
+10 ->  4 [label="L"] ;
+10 ->  16 [label="R"] ;
+4 ->  1 [label="L"] ;
+4 ->  9 [label="R"] ;
+16 ->  14 [label="L"] ;
+}
