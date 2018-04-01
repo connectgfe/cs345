@@ -4,15 +4,13 @@
  *
  */
 
-import java.io.*;
-
-public class Proj04_AVL_student implements Proj04_Dictionary{
+public class Proj04_234_student implements Proj04_Dictionary{
 
 
    Proj04_BSTNode root;
 
 
-   public Proj04_AVL_student(){
+   public Proj04_234_student(){
 
     root=null;
 
@@ -42,16 +40,9 @@ public class Proj04_AVL_student implements Proj04_Dictionary{
   public Proj04_BSTNode insertHelper(Proj04_BSTNode node, int key, String value){
 
      if (node == null){
-
-
-       Proj04_BSTNode val = new Proj04_BSTNode(key,value);
-       val.height = 1; 
-
-       return (val);
- 
+          
+       return (new Proj04_BSTNode(key,value));
      }
-
-        
 
  
         if (key < node.key){
@@ -62,8 +53,6 @@ public class Proj04_AVL_student implements Proj04_Dictionary{
             return node;
         } 
         /* 2. Update height of this ancestor node */
-        
-        
         node.height = 1 + max(height(node.left),
                               height(node.right));
  
@@ -199,27 +188,10 @@ public class Proj04_AVL_student implements Proj04_Dictionary{
 	 */
 	public void printInOrder(){
 
-   printIn(root);
+
 
 
   }
-
-  public void printIn(Proj04_BSTNode root){
-
-    if (root != null)
-        {
-            printIn(root.left);
-            System.out.print(" "+root.key+":'"+root.value+"'");
- 
-
-            printIn(root.right);
-        }
-
-
-  }
-
-
-
 
 	/* void printPreOrder()
 	 *
@@ -236,8 +208,7 @@ public class Proj04_AVL_student implements Proj04_Dictionary{
 
     if (root != null)
         {
-            System.out.print(root.key+" "+root.value);
-   
+            System.out.print(root.key + " ");
             printPre(root.left);
             printPre(root.right);
         }
@@ -253,29 +224,9 @@ public class Proj04_AVL_student implements Proj04_Dictionary{
 	 */
 	public void printPostOrder(){
 
-    printPost(root);
-
-  }
-
-  public void printPost(Proj04_BSTNode root){
-
-    if (root != null)
-        {
-            printPost(root.left);
-            printPost(root.right);
-
-            System.out.print(" "+root.key+":'"+root.value+"'");
- 
-
-        }
 
 
   }
-
-
-
-
-
 
 	/* void genDebugDot(String)
 	 *
@@ -283,13 +234,6 @@ public class Proj04_AVL_student implements Proj04_Dictionary{
 	 * String is the name of the file to generate.
 	 */
 	public void genDebugDot(String filename){
-
-
-  try{
-  Proj04_GenDotFile.gen(root,filename);
-  }catch(IOException e){}
-
-
 
 
   }

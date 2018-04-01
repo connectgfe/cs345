@@ -1,0 +1,111 @@
+Skipping a debug command (filename='debug_02_00.dot'), because the user did not pass the 'debug' command-line option
+IN   ORDER:
+POST ORDER:
+inserted 0:iron_man
+Skipping a debug command (filename='debug_02_01.dot'), because the user did not pass the 'debug' command-line option
+IN   ORDER: 0:'iron_man'
+POST ORDER: 0:'iron_man'
+inserted 1:the_incredible_hulk
+Skipping a debug command (filename='debug_02_02.dot'), because the user did not pass the 'debug' command-line option
+IN   ORDER: 0:'iron_man' 1:'the_incredible_hulk'
+POST ORDER: 1:'the_incredible_hulk' 0:'iron_man'
+inserted 28672:iron_man
+Skipping a debug command (filename='debug_02_03.dot'), because the user did not pass the 'debug' command-line option
+IN   ORDER: 0:'iron_man' 1:'the_incredible_hulk' 28672:'iron_man'
+POST ORDER: 0:'iron_man' 28672:'iron_man' 1:'the_incredible_hulk'
+inserted 1145:thor
+Skipping a debug command (filename='debug_02_04.dot'), because the user did not pass the 'debug' command-line option
+IN   ORDER: 0:'iron_man' 1:'the_incredible_hulk' 1145:'thor' 28672:'iron_man'
+POST ORDER: 0:'iron_man' 1145:'thor' 28672:'iron_man' 1:'the_incredible_hulk'
+inserted 645:captain_america
+Skipping a debug command (filename='debug_02_05.dot'), because the user did not pass the 'debug' command-line option
+IN   ORDER: 0:'iron_man' 1:'the_incredible_hulk' 645:'captain_america' 1145:'thor' 28672:'iron_man'
+POST ORDER: 0:'iron_man' 645:'captain_america' 28672:'iron_man' 1145:'thor' 1:'the_incredible_hulk'
+inserted 1150:the_avengers
+Skipping a debug command (filename='debug_02_06.dot'), because the user did not pass the 'debug' command-line option
+IN   ORDER: 0:'iron_man' 1:'the_incredible_hulk' 645:'captain_america' 1145:'thor' 1150:'the_avengers' 28672:'iron_man'
+POST ORDER: 0:'iron_man' 645:'captain_america' 1:'the_incredible_hulk' 1150:'the_avengers' 28672:'iron_man' 1145:'thor'
+inserted 995:iron_man_3
+Skipping a debug command (filename='debug_02_07.dot'), because the user did not pass the 'debug' command-line option
+IN   ORDER: 0:'iron_man' 1:'the_incredible_hulk' 645:'captain_america' 995:'iron_man_3' 1145:'thor' 1150:'the_avengers' 28672:'iron_man'
+POST ORDER: 0:'iron_man' 995:'iron_man_3' 645:'captain_america' 1:'the_incredible_hulk' 1150:'the_avengers' 28672:'iron_man' 1145:'thor'
+inserted 2481:thor_the_dark_world
+Skipping a debug command (filename='debug_02_08.dot'), because the user did not pass the 'debug' command-line option
+IN   ORDER: 0:'iron_man' 1:'the_incredible_hulk' 645:'captain_america' 995:'iron_man_3' 1145:'thor' 1150:'the_avengers' 2481:'thor_the_dark_world' 28672:'iron_man'
+POST ORDER: 0:'iron_man' 995:'iron_man_3' 645:'captain_america' 1:'the_incredible_hulk' 1150:'the_avengers' 28672:'iron_man' 2481:'thor_the_dark_world' 1145:'thor'
+inserted 3713:the_winter_soldier
+Skipping a debug command (filename='debug_02_09.dot'), because the user did not pass the 'debug' command-line option
+IN   ORDER: 0:'iron_man' 1:'the_incredible_hulk' 645:'captain_america' 995:'iron_man_3' 1145:'thor' 1150:'the_avengers' 2481:'thor_the_dark_world' 3713:'the_winter_soldier' 28672:'iron_man'
+POST ORDER: 0:'iron_man' 995:'iron_man_3' 645:'captain_america' 1:'the_incredible_hulk' 1150:'the_avengers' 3713:'the_winter_soldier' 28672:'iron_man' 2481:'thor_the_dark_world' 1145:'thor'
+inserted 2469:guardians
+Skipping a debug command (filename='debug_02_10.dot'), because the user did not pass the 'debug' command-line option
+IN   ORDER: 0:'iron_man' 1:'the_incredible_hulk' 645:'captain_america' 995:'iron_man_3' 1145:'thor' 1150:'the_avengers' 2469:'guardians' 2481:'thor_the_dark_world' 3713:'the_winter_soldier' 28672:'iron_man'
+POST ORDER: 0:'iron_man' 995:'iron_man_3' 645:'captain_america' 1:'the_incredible_hulk' 2469:'guardians' 1150:'the_avengers' 3713:'the_winter_soldier' 28672:'iron_man' 2481:'thor_the_dark_world' 1145:'thor'
+inserted 4228:ultron
+Skipping a debug command (filename='debug_02_11.dot'), because the user did not pass the 'debug' command-line option
+IN   ORDER: 0:'iron_man' 1:'the_incredible_hulk' 645:'captain_america' 995:'iron_man_3' 1145:'thor' 1150:'the_avengers' 2469:'guardians' 2481:'thor_the_dark_world' 3713:'the_winter_soldier' 4228:'ultron' 28672:'iron_man'
+POST ORDER: 0:'iron_man' 995:'iron_man_3' 645:'captain_america' 1:'the_incredible_hulk' 2469:'guardians' 1150:'the_avengers' 3713:'the_winter_soldier' 28672:'iron_man' 4228:'ultron' 2481:'thor_the_dark_world' 1145:'thor'
+inserted 2396:ant-man
+Skipping a debug command (filename='debug_02_12.dot'), because the user did not pass the 'debug' command-line option
+IN   ORDER: 0:'iron_man' 1:'the_incredible_hulk' 645:'captain_america' 995:'iron_man_3' 1145:'thor' 1150:'the_avengers' 2396:'ant-man' 2469:'guardians' 2481:'thor_the_dark_world' 3713:'the_winter_soldier' 4228:'ultron' 28672:'iron_man'
+POST ORDER: 0:'iron_man' 995:'iron_man_3' 645:'captain_america' 1:'the_incredible_hulk' 1150:'the_avengers' 2469:'guardians' 2396:'ant-man' 3713:'the_winter_soldier' 28672:'iron_man' 4228:'ultron' 2481:'thor_the_dark_world' 1145:'thor'
+inserted 4111:civil_war
+Skipping a debug command (filename='debug_02_13.dot'), because the user did not pass the 'debug' command-line option
+IN   ORDER: 0:'iron_man' 1:'the_incredible_hulk' 645:'captain_america' 995:'iron_man_3' 1145:'thor' 1150:'the_avengers' 2396:'ant-man' 2469:'guardians' 2481:'thor_the_dark_world' 3713:'the_winter_soldier' 4111:'civil_war' 4228:'ultron' 28672:'iron_man'
+POST ORDER: 0:'iron_man' 995:'iron_man_3' 645:'captain_america' 1:'the_incredible_hulk' 1150:'the_avengers' 2469:'guardians' 2396:'ant-man' 4111:'civil_war' 3713:'the_winter_soldier' 28672:'iron_man' 4228:'ultron' 2481:'thor_the_dark_world' 1145:'thor'
+inserted 2941:professor_strange
+Skipping a debug command (filename='debug_02_14.dot'), because the user did not pass the 'debug' command-line option
+IN   ORDER: 0:'iron_man' 1:'the_incredible_hulk' 645:'captain_america' 995:'iron_man_3' 1145:'thor' 1150:'the_avengers' 2396:'ant-man' 2469:'guardians' 2481:'thor_the_dark_world' 2941:'professor_strange' 3713:'the_winter_soldier' 4111:'civil_war' 4228:'ultron' 28672:'iron_man'
+POST ORDER: 0:'iron_man' 995:'iron_man_3' 645:'captain_america' 1:'the_incredible_hulk' 1150:'the_avengers' 2469:'guardians' 2396:'ant-man' 2941:'professor_strange' 4111:'civil_war' 3713:'the_winter_soldier' 28672:'iron_man' 4228:'ultron' 2481:'thor_the_dark_world' 1145:'thor'
+inserted 3086:guardians_2
+Skipping a debug command (filename='debug_02_15.dot'), because the user did not pass the 'debug' command-line option
+IN   ORDER: 0:'iron_man' 1:'the_incredible_hulk' 645:'captain_america' 995:'iron_man_3' 1145:'thor' 1150:'the_avengers' 2396:'ant-man' 2469:'guardians' 2481:'thor_the_dark_world' 2941:'professor_strange' 3086:'guardians_2' 3713:'the_winter_soldier' 4111:'civil_war' 4228:'ultron' 28672:'iron_man'
+POST ORDER: 0:'iron_man' 995:'iron_man_3' 645:'captain_america' 1:'the_incredible_hulk' 1150:'the_avengers' 2469:'guardians' 2396:'ant-man' 3086:'guardians_2' 2941:'professor_strange' 4111:'civil_war' 28672:'iron_man' 4228:'ultron' 3713:'the_winter_soldier' 2481:'thor_the_dark_world' 1145:'thor'
+inserted 1161:homecoming
+Skipping a debug command (filename='debug_02_16.dot'), because the user did not pass the 'debug' command-line option
+IN   ORDER: 0:'iron_man' 1:'the_incredible_hulk' 645:'captain_america' 995:'iron_man_3' 1145:'thor' 1150:'the_avengers' 1161:'homecoming' 2396:'ant-man' 2469:'guardians' 2481:'thor_the_dark_world' 2941:'professor_strange' 3086:'guardians_2' 3713:'the_winter_soldier' 4111:'civil_war' 4228:'ultron' 28672:'iron_man'
+POST ORDER: 0:'iron_man' 995:'iron_man_3' 645:'captain_america' 1:'the_incredible_hulk' 1161:'homecoming' 1150:'the_avengers' 2469:'guardians' 2396:'ant-man' 3086:'guardians_2' 2941:'professor_strange' 4111:'civil_war' 28672:'iron_man' 4228:'ultron' 3713:'the_winter_soldier' 2481:'thor_the_dark_world' 1145:'thor'
+inserted 653:ragnarok
+Skipping a debug command (filename='debug_02_17.dot'), because the user did not pass the 'debug' command-line option
+IN   ORDER: 0:'iron_man' 1:'the_incredible_hulk' 645:'captain_america' 653:'ragnarok' 995:'iron_man_3' 1145:'thor' 1150:'the_avengers' 1161:'homecoming' 2396:'ant-man' 2469:'guardians' 2481:'thor_the_dark_world' 2941:'professor_strange' 3086:'guardians_2' 3713:'the_winter_soldier' 4111:'civil_war' 4228:'ultron' 28672:'iron_man'
+POST ORDER: 0:'iron_man' 645:'captain_america' 995:'iron_man_3' 653:'ragnarok' 1:'the_incredible_hulk' 1161:'homecoming' 1150:'the_avengers' 2469:'guardians' 2396:'ant-man' 3086:'guardians_2' 2941:'professor_strange' 4111:'civil_war' 28672:'iron_man' 4228:'ultron' 3713:'the_winter_soldier' 2481:'thor_the_dark_world' 1145:'thor'
+inserted 1166:black_panther
+Skipping a debug command (filename='debug_02_18.dot'), because the user did not pass the 'debug' command-line option
+IN   ORDER: 0:'iron_man' 1:'the_incredible_hulk' 645:'captain_america' 653:'ragnarok' 995:'iron_man_3' 1145:'thor' 1150:'the_avengers' 1161:'homecoming' 1166:'black_panther' 2396:'ant-man' 2469:'guardians' 2481:'thor_the_dark_world' 2941:'professor_strange' 3086:'guardians_2' 3713:'the_winter_soldier' 4111:'civil_war' 4228:'ultron' 28672:'iron_man'
+POST ORDER: 0:'iron_man' 645:'captain_america' 995:'iron_man_3' 653:'ragnarok' 1:'the_incredible_hulk' 1150:'the_avengers' 1166:'black_panther' 1161:'homecoming' 2469:'guardians' 2396:'ant-man' 3086:'guardians_2' 2941:'professor_strange' 4111:'civil_war' 28672:'iron_man' 4228:'ultron' 3713:'the_winter_soldier' 2481:'thor_the_dark_world' 1145:'thor'
+inserted 1003:infinity_war
+Skipping a debug command (filename='debug_02_19.dot'), because the user did not pass the 'debug' command-line option
+IN   ORDER: 0:'iron_man' 1:'the_incredible_hulk' 645:'captain_america' 653:'ragnarok' 995:'iron_man_3' 1003:'infinity_war' 1145:'thor' 1150:'the_avengers' 1161:'homecoming' 1166:'black_panther' 2396:'ant-man' 2469:'guardians' 2481:'thor_the_dark_world' 2941:'professor_strange' 3086:'guardians_2' 3713:'the_winter_soldier' 4111:'civil_war' 4228:'ultron' 28672:'iron_man'
+POST ORDER: 0:'iron_man' 645:'captain_america' 1:'the_incredible_hulk' 1003:'infinity_war' 995:'iron_man_3' 653:'ragnarok' 1150:'the_avengers' 1166:'black_panther' 1161:'homecoming' 2469:'guardians' 2396:'ant-man' 3086:'guardians_2' 2941:'professor_strange' 4111:'civil_war' 28672:'iron_man' 4228:'ultron' 3713:'the_winter_soldier' 2481:'thor_the_dark_world' 1145:'thor'
+inserted 2497:wow
+Skipping a debug command (filename='debug_02_20.dot'), because the user did not pass the 'debug' command-line option
+IN   ORDER: 0:'iron_man' 1:'the_incredible_hulk' 645:'captain_america' 653:'ragnarok' 995:'iron_man_3' 1003:'infinity_war' 1145:'thor' 1150:'the_avengers' 1161:'homecoming' 1166:'black_panther' 2396:'ant-man' 2469:'guardians' 2481:'thor_the_dark_world' 2497:'wow' 2941:'professor_strange' 3086:'guardians_2' 3713:'the_winter_soldier' 4111:'civil_war' 4228:'ultron' 28672:'iron_man'
+POST ORDER: 0:'iron_man' 645:'captain_america' 1:'the_incredible_hulk' 1003:'infinity_war' 995:'iron_man_3' 653:'ragnarok' 1150:'the_avengers' 1166:'black_panther' 1161:'homecoming' 2469:'guardians' 2396:'ant-man' 2497:'wow' 3086:'guardians_2' 2941:'professor_strange' 4111:'civil_war' 28672:'iron_man' 4228:'ultron' 3713:'the_winter_soldier' 2481:'thor_the_dark_world' 1145:'thor'
+inserted 3721:does_this_list_ever_end?
+Skipping a debug command (filename='debug_02_21.dot'), because the user did not pass the 'debug' command-line option
+IN   ORDER: 0:'iron_man' 1:'the_incredible_hulk' 645:'captain_america' 653:'ragnarok' 995:'iron_man_3' 1003:'infinity_war' 1145:'thor' 1150:'the_avengers' 1161:'homecoming' 1166:'black_panther' 2396:'ant-man' 2469:'guardians' 2481:'thor_the_dark_world' 2497:'wow' 2941:'professor_strange' 3086:'guardians_2' 3713:'the_winter_soldier' 3721:'does_this_list_ever_end?' 4111:'civil_war' 4228:'ultron' 28672:'iron_man'
+POST ORDER: 0:'iron_man' 645:'captain_america' 1:'the_incredible_hulk' 1003:'infinity_war' 995:'iron_man_3' 653:'ragnarok' 1150:'the_avengers' 1166:'black_panther' 1161:'homecoming' 2469:'guardians' 2396:'ant-man' 1145:'thor' 2497:'wow' 3086:'guardians_2' 2941:'professor_strange' 3721:'does_this_list_ever_end?' 4111:'civil_war' 28672:'iron_man' 4228:'ultron' 3713:'the_winter_soldier' 2481:'thor_the_dark_world'
+inserted 2485:will_the_students_think_me_a_silly_fanboy
+Skipping a debug command (filename='debug_02_22.dot'), because the user did not pass the 'debug' command-line option
+IN   ORDER: 0:'iron_man' 1:'the_incredible_hulk' 645:'captain_america' 653:'ragnarok' 995:'iron_man_3' 1003:'infinity_war' 1145:'thor' 1150:'the_avengers' 1161:'homecoming' 1166:'black_panther' 2396:'ant-man' 2469:'guardians' 2481:'thor_the_dark_world' 2485:'will_the_students_think_me_a_silly_fanboy' 2497:'wow' 2941:'professor_strange' 3086:'guardians_2' 3713:'the_winter_soldier' 3721:'does_this_list_ever_end?' 4111:'civil_war' 4228:'ultron' 28672:'iron_man'
+POST ORDER: 0:'iron_man' 645:'captain_america' 1:'the_incredible_hulk' 1003:'infinity_war' 995:'iron_man_3' 653:'ragnarok' 1150:'the_avengers' 1166:'black_panther' 1161:'homecoming' 2469:'guardians' 2396:'ant-man' 1145:'thor' 2485:'will_the_students_think_me_a_silly_fanboy' 2497:'wow' 3086:'guardians_2' 2941:'professor_strange' 3721:'does_this_list_ever_end?' 4111:'civil_war' 28672:'iron_man' 4228:'ultron' 3713:'the_winter_soldier' 2481:'thor_the_dark_world'
+inserted 4236:wait_until_they_see_my_robotech_script
+Skipping a debug command (filename='debug_02_23.dot'), because the user did not pass the 'debug' command-line option
+IN   ORDER: 0:'iron_man' 1:'the_incredible_hulk' 645:'captain_america' 653:'ragnarok' 995:'iron_man_3' 1003:'infinity_war' 1145:'thor' 1150:'the_avengers' 1161:'homecoming' 1166:'black_panther' 2396:'ant-man' 2469:'guardians' 2481:'thor_the_dark_world' 2485:'will_the_students_think_me_a_silly_fanboy' 2497:'wow' 2941:'professor_strange' 3086:'guardians_2' 3713:'the_winter_soldier' 3721:'does_this_list_ever_end?' 4111:'civil_war' 4228:'ultron' 4236:'wait_until_they_see_my_robotech_script' 28672:'iron_man'
+POST ORDER: 0:'iron_man' 645:'captain_america' 1:'the_incredible_hulk' 1003:'infinity_war' 995:'iron_man_3' 653:'ragnarok' 1150:'the_avengers' 1166:'black_panther' 1161:'homecoming' 2469:'guardians' 2396:'ant-man' 1145:'thor' 2485:'will_the_students_think_me_a_silly_fanboy' 2497:'wow' 3086:'guardians_2' 2941:'professor_strange' 3721:'does_this_list_ever_end?' 4111:'civil_war' 4236:'wait_until_they_see_my_robotech_script' 28672:'iron_man' 4228:'ultron' 3713:'the_winter_soldier' 2481:'thor_the_dark_world'
+inserted 2412:hmmm...I_guess_they_really_are_going_to_read_all_this
+Skipping a debug command (filename='debug_02_24.dot'), because the user did not pass the 'debug' command-line option
+IN   ORDER: 0:'iron_man' 1:'the_incredible_hulk' 645:'captain_america' 653:'ragnarok' 995:'iron_man_3' 1003:'infinity_war' 1145:'thor' 1150:'the_avengers' 1161:'homecoming' 1166:'black_panther' 2396:'ant-man' 2412:'hmmm...I_guess_they_really_are_going_to_read_all_this' 2469:'guardians' 2481:'thor_the_dark_world' 2485:'will_the_students_think_me_a_silly_fanboy' 2497:'wow' 2941:'professor_strange' 3086:'guardians_2' 3713:'the_winter_soldier' 3721:'does_this_list_ever_end?' 4111:'civil_war' 4228:'ultron' 4236:'wait_until_they_see_my_robotech_script' 28672:'iron_man'
+POST ORDER: 0:'iron_man' 645:'captain_america' 1:'the_incredible_hulk' 1003:'infinity_war' 995:'iron_man_3' 653:'ragnarok' 1150:'the_avengers' 1166:'black_panther' 1161:'homecoming' 2412:'hmmm...I_guess_they_really_are_going_to_read_all_this' 2469:'guardians' 2396:'ant-man' 1145:'thor' 2485:'will_the_students_think_me_a_silly_fanboy' 2497:'wow' 3086:'guardians_2' 2941:'professor_strange' 3721:'does_this_list_ever_end?' 4111:'civil_war' 4236:'wait_until_they_see_my_robotech_script' 28672:'iron_man' 4228:'ultron' 3713:'the_winter_soldier' 2481:'thor_the_dark_world'
+inserted 4119:so_was_this_wise?
+Skipping a debug command (filename='debug_02_25.dot'), because the user did not pass the 'debug' command-line option
+IN   ORDER: 0:'iron_man' 1:'the_incredible_hulk' 645:'captain_america' 653:'ragnarok' 995:'iron_man_3' 1003:'infinity_war' 1145:'thor' 1150:'the_avengers' 1161:'homecoming' 1166:'black_panther' 2396:'ant-man' 2412:'hmmm...I_guess_they_really_are_going_to_read_all_this' 2469:'guardians' 2481:'thor_the_dark_world' 2485:'will_the_students_think_me_a_silly_fanboy' 2497:'wow' 2941:'professor_strange' 3086:'guardians_2' 3713:'the_winter_soldier' 3721:'does_this_list_ever_end?' 4111:'civil_war' 4119:'so_was_this_wise?' 4228:'ultron' 4236:'wait_until_they_see_my_robotech_script' 28672:'iron_man'
+POST ORDER: 0:'iron_man' 645:'captain_america' 1:'the_incredible_hulk' 1003:'infinity_war' 995:'iron_man_3' 653:'ragnarok' 1150:'the_avengers' 1166:'black_panther' 1161:'homecoming' 2412:'hmmm...I_guess_they_really_are_going_to_read_all_this' 2469:'guardians' 2396:'ant-man' 1145:'thor' 2485:'will_the_students_think_me_a_silly_fanboy' 2497:'wow' 3086:'guardians_2' 2941:'professor_strange' 3721:'does_this_list_ever_end?' 4119:'so_was_this_wise?' 4111:'civil_war' 4236:'wait_until_they_see_my_robotech_script' 28672:'iron_man' 4228:'ultron' 3713:'the_winter_soldier' 2481:'thor_the_dark_world'
+FAILED to insert 1:I_must_escape!: Attempt to insert a duplicate key '1'
+Skipping a debug command (filename='debug_02_26.dot'), because the user did not pass the 'debug' command-line option
+IN   ORDER: 0:'iron_man' 1:'the_incredible_hulk' 645:'captain_america' 653:'ragnarok' 995:'iron_man_3' 1003:'infinity_war' 1145:'thor' 1150:'the_avengers' 1161:'homecoming' 1166:'black_panther' 2396:'ant-man' 2412:'hmmm...I_guess_they_really_are_going_to_read_all_this' 2469:'guardians' 2481:'thor_the_dark_world' 2485:'will_the_students_think_me_a_silly_fanboy' 2497:'wow' 2941:'professor_strange' 3086:'guardians_2' 3713:'the_winter_soldier' 3721:'does_this_list_ever_end?' 4111:'civil_war' 4119:'so_was_this_wise?' 4228:'ultron' 4236:'wait_until_they_see_my_robotech_script' 28672:'iron_man'
+POST ORDER: 0:'iron_man' 645:'captain_america' 1:'the_incredible_hulk' 1003:'infinity_war' 995:'iron_man_3' 653:'ragnarok' 1150:'the_avengers' 1166:'black_panther' 1161:'homecoming' 2412:'hmmm...I_guess_they_really_are_going_to_read_all_this' 2469:'guardians' 2396:'ant-man' 1145:'thor' 2485:'will_the_students_think_me_a_silly_fanboy' 2497:'wow' 3086:'guardians_2' 2941:'professor_strange' 3721:'does_this_list_ever_end?' 4119:'so_was_this_wise?' 4111:'civil_war' 4236:'wait_until_they_see_my_robotech_script' 28672:'iron_man' 4228:'ultron' 3713:'the_winter_soldier' 2481:'thor_the_dark_world'
+inserted 6426:smokebomb!
+Skipping a debug command (filename='debug_02_27.dot'), because the user did not pass the 'debug' command-line option
+IN   ORDER: 0:'iron_man' 1:'the_incredible_hulk' 645:'captain_america' 653:'ragnarok' 995:'iron_man_3' 1003:'infinity_war' 1145:'thor' 1150:'the_avengers' 1161:'homecoming' 1166:'black_panther' 2396:'ant-man' 2412:'hmmm...I_guess_they_really_are_going_to_read_all_this' 2469:'guardians' 2481:'thor_the_dark_world' 2485:'will_the_students_think_me_a_silly_fanboy' 2497:'wow' 2941:'professor_strange' 3086:'guardians_2' 3713:'the_winter_soldier' 3721:'does_this_list_ever_end?' 4111:'civil_war' 4119:'so_was_this_wise?' 4228:'ultron' 4236:'wait_until_they_see_my_robotech_script' 6426:'smokebomb!' 28672:'iron_man'
+POST ORDER: 0:'iron_man' 645:'captain_america' 1:'the_incredible_hulk' 1003:'infinity_war' 995:'iron_man_3' 653:'ragnarok' 1150:'the_avengers' 1166:'black_panther' 1161:'homecoming' 2412:'hmmm...I_guess_they_really_are_going_to_read_all_this' 2469:'guardians' 2396:'ant-man' 1145:'thor' 2485:'will_the_students_think_me_a_silly_fanboy' 2497:'wow' 3086:'guardians_2' 2941:'professor_strange' 3721:'does_this_list_ever_end?' 4119:'so_was_this_wise?' 4111:'civil_war' 4236:'wait_until_they_see_my_robotech_script' 28672:'iron_man' 6426:'smokebomb!' 4228:'ultron' 3713:'the_winter_soldier' 2481:'thor_the_dark_world'
