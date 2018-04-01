@@ -33,7 +33,18 @@ public class Proj04_AVL_student implements Proj04_Dictionary{
 	 */
 	public void insert(int key, String value){
 
-   root = insertHelper(root,key,value);
+        if(search(key)!=null){
+
+
+          throw new IllegalArgumentException("Attempt to insert a duplicate key '"+key+"'");
+
+         }else{
+
+          root = insertHelper(root, key, value);
+
+       }
+
+
 
   }
 
@@ -166,13 +177,39 @@ public class Proj04_AVL_student implements Proj04_Dictionary{
 	 * Searches the tree for a given key; returns the associated String
 	 * if the key is found, or null if it is not found.
 	 */
-	public String search(int key){
 
+  public String search(int key){
 
+   String val;
+   if( searchTree(root,key) == null){
+     val = null;
+   }else{
+     val = searchTree(root,key).value;
+   }
 
-  return "";
+   return val;
 
   }
+
+
+  public Proj04_BSTNode searchTree(Proj04_BSTNode root, int key){
+
+    if (root==null || root.key==key)
+        return root;
+
+    if (root.key > key)
+        return searchTree(root.left, key);
+
+    if (root.key < key)
+        return searchTree(root.right, key);
+
+    return null;
+  }
+
+
+
+
+
 
 	/* void delete(int)
 	 *
@@ -182,9 +219,120 @@ public class Proj04_AVL_student implements Proj04_Dictionary{
 	 */
 	public void delete(int key){
 
+    if( search(key)!=null ){
+      root =  deleteNode(root,key);
+    }else{
+       throw new IllegalArgumentException("ERROR: key "+key+"DNE");
+    }
 
 
   }
+
+
+  Proj04_BSTNode deleteNode(Proj04_BSTNode root, int key)
+    {
+        // STEP 1: PERFORM STANDARD BST DELETE
+        if (root == null)
+            return root;
+ 
+        // If the key to be deleted is smaller than
+        // the root's key, then it lies in left subtree
+        if (key < root.key)
+            root.left = deleteNode(root.left, key);
+ 
+        // If the key to be deleted is greater than the
+        // root's key, then it lies in right subtree
+        else if (key > root.key)
+            root.right = deleteNode(root.right, key);
+ 
+        // if key is same as root's key, then this is the node
+        // to be deleted
+        else
+        {
+ 
+            // node with only one child or no child
+            if ((root.left == null) || (root.right == null))
+            {
+                Proj04_BSTNode temp = null;
+                if (temp == root.left)
+                    temp = root.right;
+                else
+                    temp = root.left;
+ 
+                // No child case
+                if (temp == null)
+                {
+                    temp = root;
+                    root = null;
+                }
+                else   // One child case
+                    root = temp; // Copy the contents of
+                                 // the non-empty child
+            }
+            else
+            {
+ 
+                // get predessor 
+                Proj04_BSTNode temp = maxVal(root.left);
+ 
+                root.key = temp.key;
+ 
+                root.left = deleteNode(root.left, temp.key);
+            }
+        }
+ 
+        // If the tree had only one node then return
+        if (root == null)
+            return root;
+ 
+        // STEP 2: UPDATE HEIGHT OF THE CURRENT NODE
+        root.height = max(height(root.left), height(root.right)) + 1;
+ 
+        // STEP 3: GET THE BALANCE FACTOR OF THIS NODE (to check whether
+        //  this node became unbalanced)
+        int balance = getBal(root);
+ 
+        // If this node becomes unbalanced, then there are 4 cases
+        // Left Left Case
+        if (balance > 1 && getBal(root.left) >= 0)
+            return rightRotate(root);
+ 
+        // Left Right Case
+        if (balance > 1 && getBal(root.left) < 0)
+        {
+            root.left = leftRotate(root.left);
+            return rightRotate(root);
+        }
+ 
+        // Right Right Case
+        if (balance < -1 && getBal(root.right) <= 0)
+            return leftRotate(root);
+ 
+        // Right Left Case
+        if (balance < -1 && getBal(root.right) > 0)
+        {
+            root.right = rightRotate(root.right);
+            return leftRotate(root);
+        }
+ 
+        return root;
+    }
+ 
+
+    Proj04_BSTNode maxVal(Proj04_BSTNode node){
+        Proj04_BSTNode cur = node;
+ 
+        /* loop down to find the leftmost leaf */
+        while (cur.right != null)
+           cur = cur.right;
+ 
+        return cur;
+    }
+ 
+
+
+
+
 
 	/* void printInOrder()
 	 *
