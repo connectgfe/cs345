@@ -1,0 +1,111 @@
+Dumping to the file debug_02_00.dot
+IN   ORDER:
+POST ORDER:
+inserted 0:iron_man
+Dumping to the file debug_02_01.dot
+IN   ORDER: 0:iron_man
+POST ORDER: 0:iron_man
+inserted 1:the_incredible_hulk
+Dumping to the file debug_02_02.dot
+IN   ORDER: 0:iron_man 1:the_incredible_hulk
+POST ORDER: 0:iron_man 1:the_incredible_hulk
+inserted 28672:iron_man
+Dumping to the file debug_02_03.dot
+IN   ORDER: 0:iron_man 1:the_incredible_hulk 28672:iron_man
+POST ORDER: 0:iron_man 1:the_incredible_hulk 28672:iron_man
+inserted 1145:thor
+Dumping to the file debug_02_04.dot
+IN   ORDER: 0:iron_man 1:the_incredible_hulk 1145:thor 28672:iron_man
+POST ORDER: 0:iron_man 1145:thor 28672:iron_man 1:the_incredible_hulk
+inserted 645:captain_america
+Dumping to the file debug_02_05.dot
+IN   ORDER: 0:iron_man 1:the_incredible_hulk 645:captain_america 1145:thor 28672:iron_man
+POST ORDER: 0:iron_man 645:captain_america 1145:thor 28672:iron_man 1:the_incredible_hulk
+inserted 1150:the_avengers
+Dumping to the file debug_02_06.dot
+IN   ORDER: 0:iron_man 1:the_incredible_hulk 645:captain_america 1145:thor 1150:the_avengers 28672:iron_man
+POST ORDER: 0:iron_man 645:captain_america 1150:the_avengers 28672:iron_man 1:the_incredible_hulk 1145:thor
+inserted 995:iron_man_3
+Dumping to the file debug_02_07.dot
+IN   ORDER: 0:iron_man 1:the_incredible_hulk 645:captain_america 995:iron_man_3 1145:thor 1150:the_avengers 28672:iron_man
+POST ORDER: 0:iron_man 645:captain_america 995:iron_man_3 1150:the_avengers 28672:iron_man 1:the_incredible_hulk 1145:thor
+inserted 2481:thor_the_dark_world
+Dumping to the file debug_02_08.dot
+IN   ORDER: 0:iron_man 1:the_incredible_hulk 645:captain_america 995:iron_man_3 1145:thor 1150:the_avengers 2481:thor_the_dark_world 28672:iron_man
+POST ORDER: 0:iron_man 645:captain_america 995:iron_man_3 1150:the_avengers 2481:thor_the_dark_world 28672:iron_man 1:the_incredible_hulk 1145:thor
+inserted 3713:the_winter_soldier
+Dumping to the file debug_02_09.dot
+IN   ORDER: 0:iron_man 1:the_incredible_hulk 645:captain_america 995:iron_man_3 1145:thor 1150:the_avengers 2481:thor_the_dark_world 3713:the_winter_soldier 28672:iron_man
+POST ORDER: 0:iron_man 645:captain_america 995:iron_man_3 1150:the_avengers 3713:the_winter_soldier 28672:iron_man 1:the_incredible_hulk 1145:thor 2481:thor_the_dark_world
+inserted 2469:guardians
+Dumping to the file debug_02_10.dot
+IN   ORDER: 0:iron_man 1:the_incredible_hulk 645:captain_america 995:iron_man_3 1145:thor 1150:the_avengers 2469:guardians 2481:thor_the_dark_world 3713:the_winter_soldier 28672:iron_man
+POST ORDER: 0:iron_man 645:captain_america 995:iron_man_3 1:the_incredible_hulk 1150:the_avengers 2469:guardians 3713:the_winter_soldier 28672:iron_man 2481:thor_the_dark_world 1145:thor
+inserted 4228:ultron
+Dumping to the file debug_02_11.dot
+IN   ORDER: 0:iron_man 1:the_incredible_hulk 645:captain_america 995:iron_man_3 1145:thor 1150:the_avengers 2469:guardians 2481:thor_the_dark_world 3713:the_winter_soldier 4228:ultron 28672:iron_man
+POST ORDER: 0:iron_man 645:captain_america 995:iron_man_3 1:the_incredible_hulk 1150:the_avengers 2469:guardians 3713:the_winter_soldier 4228:ultron 28672:iron_man 2481:thor_the_dark_world 1145:thor
+inserted 2396:ant-man
+Dumping to the file debug_02_12.dot
+IN   ORDER: 0:iron_man 1:the_incredible_hulk 645:captain_america 995:iron_man_3 1145:thor 1150:the_avengers 2396:ant-man 2469:guardians 2481:thor_the_dark_world 3713:the_winter_soldier 4228:ultron 28672:iron_man
+POST ORDER: 0:iron_man 645:captain_america 995:iron_man_3 1:the_incredible_hulk 1150:the_avengers 2396:ant-man 2469:guardians 3713:the_winter_soldier 4228:ultron 28672:iron_man 2481:thor_the_dark_world 1145:thor
+inserted 4111:civil_war
+Dumping to the file debug_02_13.dot
+IN   ORDER: 0:iron_man 1:the_incredible_hulk 645:captain_america 995:iron_man_3 1145:thor 1150:the_avengers 2396:ant-man 2469:guardians 2481:thor_the_dark_world 3713:the_winter_soldier 4111:civil_war 4228:ultron 28672:iron_man
+POST ORDER: 0:iron_man 645:captain_america 995:iron_man_3 1:the_incredible_hulk 1150:the_avengers 2396:ant-man 2469:guardians 3713:the_winter_soldier 4111:civil_war 28672:iron_man 2481:thor_the_dark_world 4228:ultron 1145:thor
+inserted 2941:professor_strange
+Dumping to the file debug_02_14.dot
+IN   ORDER: 0:iron_man 1:the_incredible_hulk 645:captain_america 995:iron_man_3 1145:thor 1150:the_avengers 2396:ant-man 2469:guardians 2481:thor_the_dark_world 2941:professor_strange 3713:the_winter_soldier 4111:civil_war 4228:ultron 28672:iron_man
+POST ORDER: 0:iron_man 645:captain_america 995:iron_man_3 1:the_incredible_hulk 1150:the_avengers 2396:ant-man 2469:guardians 2941:professor_strange 3713:the_winter_soldier 4111:civil_war 28672:iron_man 2481:thor_the_dark_world 4228:ultron 1145:thor
+inserted 3086:guardians_2
+Dumping to the file debug_02_15.dot
+IN   ORDER: 0:iron_man 1:the_incredible_hulk 645:captain_america 995:iron_man_3 1145:thor 1150:the_avengers 2396:ant-man 2469:guardians 2481:thor_the_dark_world 2941:professor_strange 3086:guardians_2 3713:the_winter_soldier 4111:civil_war 4228:ultron 28672:iron_man
+POST ORDER: 0:iron_man 645:captain_america 995:iron_man_3 1:the_incredible_hulk 1150:the_avengers 2396:ant-man 2469:guardians 2941:professor_strange 3086:guardians_2 4111:civil_war 28672:iron_man 2481:thor_the_dark_world 3713:the_winter_soldier 4228:ultron 1145:thor
+inserted 1161:homecoming
+Dumping to the file debug_02_16.dot
+IN   ORDER: 0:iron_man 1:the_incredible_hulk 645:captain_america 995:iron_man_3 1145:thor 1150:the_avengers 1161:homecoming 2396:ant-man 2469:guardians 2481:thor_the_dark_world 2941:professor_strange 3086:guardians_2 3713:the_winter_soldier 4111:civil_war 4228:ultron 28672:iron_man
+POST ORDER: 0:iron_man 645:captain_america 995:iron_man_3 1:the_incredible_hulk 1150:the_avengers 1161:homecoming 2469:guardians 2941:professor_strange 3086:guardians_2 2396:ant-man 2481:thor_the_dark_world 4111:civil_war 28672:iron_man 4228:ultron 1145:thor 3713:the_winter_soldier
+inserted 653:ragnarok
+Dumping to the file debug_02_17.dot
+IN   ORDER: 0:iron_man 1:the_incredible_hulk 645:captain_america 653:ragnarok 995:iron_man_3 1145:thor 1150:the_avengers 1161:homecoming 2396:ant-man 2469:guardians 2481:thor_the_dark_world 2941:professor_strange 3086:guardians_2 3713:the_winter_soldier 4111:civil_war 4228:ultron 28672:iron_man
+POST ORDER: 0:iron_man 645:captain_america 653:ragnarok 995:iron_man_3 1:the_incredible_hulk 1150:the_avengers 1161:homecoming 2469:guardians 2941:professor_strange 3086:guardians_2 2396:ant-man 2481:thor_the_dark_world 4111:civil_war 28672:iron_man 4228:ultron 1145:thor 3713:the_winter_soldier
+inserted 1166:black_panther
+Dumping to the file debug_02_18.dot
+IN   ORDER: 0:iron_man 1:the_incredible_hulk 645:captain_america 653:ragnarok 995:iron_man_3 1145:thor 1150:the_avengers 1161:homecoming 1166:black_panther 2396:ant-man 2469:guardians 2481:thor_the_dark_world 2941:professor_strange 3086:guardians_2 3713:the_winter_soldier 4111:civil_war 4228:ultron 28672:iron_man
+POST ORDER: 0:iron_man 645:captain_america 653:ragnarok 995:iron_man_3 1:the_incredible_hulk 1150:the_avengers 1161:homecoming 1166:black_panther 2469:guardians 2941:professor_strange 3086:guardians_2 2396:ant-man 2481:thor_the_dark_world 4111:civil_war 28672:iron_man 4228:ultron 1145:thor 3713:the_winter_soldier
+inserted 1003:infinity_war
+Dumping to the file debug_02_19.dot
+IN   ORDER: 0:iron_man 1:the_incredible_hulk 645:captain_america 653:ragnarok 995:iron_man_3 1003:infinity_war 1145:thor 1150:the_avengers 1161:homecoming 1166:black_panther 2396:ant-man 2469:guardians 2481:thor_the_dark_world 2941:professor_strange 3086:guardians_2 3713:the_winter_soldier 4111:civil_war 4228:ultron 28672:iron_man
+POST ORDER: 0:iron_man 645:captain_america 995:iron_man_3 1003:infinity_war 1:the_incredible_hulk 653:ragnarok 1150:the_avengers 1161:homecoming 1166:black_panther 2469:guardians 2941:professor_strange 3086:guardians_2 2396:ant-man 2481:thor_the_dark_world 4111:civil_war 28672:iron_man 4228:ultron 1145:thor 3713:the_winter_soldier
+inserted 2497:wow
+Dumping to the file debug_02_20.dot
+IN   ORDER: 0:iron_man 1:the_incredible_hulk 645:captain_america 653:ragnarok 995:iron_man_3 1003:infinity_war 1145:thor 1150:the_avengers 1161:homecoming 1166:black_panther 2396:ant-man 2469:guardians 2481:thor_the_dark_world 2497:wow 2941:professor_strange 3086:guardians_2 3713:the_winter_soldier 4111:civil_war 4228:ultron 28672:iron_man
+POST ORDER: 0:iron_man 645:captain_america 995:iron_man_3 1003:infinity_war 1:the_incredible_hulk 653:ragnarok 1150:the_avengers 1161:homecoming 1166:black_panther 2469:guardians 2497:wow 2941:professor_strange 3086:guardians_2 2396:ant-man 2481:thor_the_dark_world 4111:civil_war 28672:iron_man 4228:ultron 1145:thor 3713:the_winter_soldier
+inserted 3721:does_this_list_ever_end?
+Dumping to the file debug_02_21.dot
+IN   ORDER: 0:iron_man 1:the_incredible_hulk 645:captain_america 653:ragnarok 995:iron_man_3 1003:infinity_war 1145:thor 1150:the_avengers 1161:homecoming 1166:black_panther 2396:ant-man 2469:guardians 2481:thor_the_dark_world 2497:wow 2941:professor_strange 3086:guardians_2 3713:the_winter_soldier 3721:does_this_list_ever_end? 4111:civil_war 4228:ultron 28672:iron_man
+POST ORDER: 0:iron_man 645:captain_america 995:iron_man_3 1003:infinity_war 1:the_incredible_hulk 653:ragnarok 1150:the_avengers 1161:homecoming 1166:black_panther 2469:guardians 2497:wow 2941:professor_strange 3086:guardians_2 2396:ant-man 2481:thor_the_dark_world 3721:does_this_list_ever_end? 4111:civil_war 28672:iron_man 4228:ultron 1145:thor 3713:the_winter_soldier
+inserted 2485:will_the_students_think_me_a_silly_fanboy
+Dumping to the file debug_02_22.dot
+IN   ORDER: 0:iron_man 1:the_incredible_hulk 645:captain_america 653:ragnarok 995:iron_man_3 1003:infinity_war 1145:thor 1150:the_avengers 1161:homecoming 1166:black_panther 2396:ant-man 2469:guardians 2481:thor_the_dark_world 2485:will_the_students_think_me_a_silly_fanboy 2497:wow 2941:professor_strange 3086:guardians_2 3713:the_winter_soldier 3721:does_this_list_ever_end? 4111:civil_war 4228:ultron 28672:iron_man
+POST ORDER: 0:iron_man 645:captain_america 995:iron_man_3 1003:infinity_war 1:the_incredible_hulk 653:ragnarok 1150:the_avengers 1161:homecoming 1166:black_panther 2469:guardians 2485:will_the_students_think_me_a_silly_fanboy 2497:wow 3086:guardians_2 2396:ant-man 2481:thor_the_dark_world 2941:professor_strange 3721:does_this_list_ever_end? 4111:civil_war 28672:iron_man 4228:ultron 1145:thor 3713:the_winter_soldier
+inserted 4236:wait_until_they_see_my_robotech_script
+Dumping to the file debug_02_23.dot
+IN   ORDER: 0:iron_man 1:the_incredible_hulk 645:captain_america 653:ragnarok 995:iron_man_3 1003:infinity_war 1145:thor 1150:the_avengers 1161:homecoming 1166:black_panther 2396:ant-man 2469:guardians 2481:thor_the_dark_world 2485:will_the_students_think_me_a_silly_fanboy 2497:wow 2941:professor_strange 3086:guardians_2 3713:the_winter_soldier 3721:does_this_list_ever_end? 4111:civil_war 4228:ultron 4236:wait_until_they_see_my_robotech_script 28672:iron_man
+POST ORDER: 0:iron_man 645:captain_america 995:iron_man_3 1003:infinity_war 1:the_incredible_hulk 653:ragnarok 1150:the_avengers 1161:homecoming 1166:black_panther 2469:guardians 2485:will_the_students_think_me_a_silly_fanboy 2497:wow 3086:guardians_2 2396:ant-man 2481:thor_the_dark_world 2941:professor_strange 3721:does_this_list_ever_end? 4111:civil_war 4236:wait_until_they_see_my_robotech_script 28672:iron_man 4228:ultron 1145:thor 3713:the_winter_soldier
+inserted 2412:hmmm...I_guess_they_really_are_going_to_read_all_this
+Dumping to the file debug_02_24.dot
+IN   ORDER: 0:iron_man 1:the_incredible_hulk 645:captain_america 653:ragnarok 995:iron_man_3 1003:infinity_war 1145:thor 1150:the_avengers 1161:homecoming 1166:black_panther 2396:ant-man 2412:hmmm...I_guess_they_really_are_going_to_read_all_this 2469:guardians 2481:thor_the_dark_world 2485:will_the_students_think_me_a_silly_fanboy 2497:wow 2941:professor_strange 3086:guardians_2 3713:the_winter_soldier 3721:does_this_list_ever_end? 4111:civil_war 4228:ultron 4236:wait_until_they_see_my_robotech_script 28672:iron_man
+POST ORDER: 0:iron_man 645:captain_america 995:iron_man_3 1003:infinity_war 1:the_incredible_hulk 653:ragnarok 1150:the_avengers 1161:homecoming 1166:black_panther 2412:hmmm...I_guess_they_really_are_going_to_read_all_this 2469:guardians 2396:ant-man 2485:will_the_students_think_me_a_silly_fanboy 2497:wow 3086:guardians_2 2941:professor_strange 3721:does_this_list_ever_end? 4111:civil_war 4236:wait_until_they_see_my_robotech_script 28672:iron_man 4228:ultron 1145:thor 2481:thor_the_dark_world 3713:the_winter_soldier
+inserted 4119:so_was_this_wise?
+Dumping to the file debug_02_25.dot
+IN   ORDER: 0:iron_man 1:the_incredible_hulk 645:captain_america 653:ragnarok 995:iron_man_3 1003:infinity_war 1145:thor 1150:the_avengers 1161:homecoming 1166:black_panther 2396:ant-man 2412:hmmm...I_guess_they_really_are_going_to_read_all_this 2469:guardians 2481:thor_the_dark_world 2485:will_the_students_think_me_a_silly_fanboy 2497:wow 2941:professor_strange 3086:guardians_2 3713:the_winter_soldier 3721:does_this_list_ever_end? 4111:civil_war 4119:so_was_this_wise? 4228:ultron 4236:wait_until_they_see_my_robotech_script 28672:iron_man
+POST ORDER: 0:iron_man 645:captain_america 995:iron_man_3 1003:infinity_war 1:the_incredible_hulk 653:ragnarok 1150:the_avengers 1161:homecoming 1166:black_panther 2412:hmmm...I_guess_they_really_are_going_to_read_all_this 2469:guardians 2396:ant-man 1145:thor 2485:will_the_students_think_me_a_silly_fanboy 2497:wow 3086:guardians_2 2941:professor_strange 3721:does_this_list_ever_end? 4111:civil_war 4119:so_was_this_wise? 4236:wait_until_they_see_my_robotech_script 28672:iron_man 4228:ultron 3713:the_winter_soldier 2481:thor_the_dark_world
+FAILED to insert 1:I_must_escape!: Attempt to insert a duplicate key '1'
+Dumping to the file debug_02_26.dot
+IN   ORDER: 0:iron_man 1:the_incredible_hulk 645:captain_america 653:ragnarok 995:iron_man_3 1003:infinity_war 1145:thor 1150:the_avengers 1161:homecoming 1166:black_panther 2396:ant-man 2412:hmmm...I_guess_they_really_are_going_to_read_all_this 2469:guardians 2481:thor_the_dark_world 2485:will_the_students_think_me_a_silly_fanboy 2497:wow 2941:professor_strange 3086:guardians_2 3713:the_winter_soldier 3721:does_this_list_ever_end? 4111:civil_war 4119:so_was_this_wise? 4228:ultron 4236:wait_until_they_see_my_robotech_script 28672:iron_man
+POST ORDER: 0:iron_man 645:captain_america 995:iron_man_3 1003:infinity_war 1:the_incredible_hulk 653:ragnarok 1150:the_avengers 1161:homecoming 1166:black_panther 2412:hmmm...I_guess_they_really_are_going_to_read_all_this 2469:guardians 2396:ant-man 1145:thor 2485:will_the_students_think_me_a_silly_fanboy 2497:wow 3086:guardians_2 2941:professor_strange 3721:does_this_list_ever_end? 4111:civil_war 4119:so_was_this_wise? 4236:wait_until_they_see_my_robotech_script 28672:iron_man 4228:ultron 3713:the_winter_soldier 2481:thor_the_dark_world
+inserted 6426:smokebomb!
+Dumping to the file debug_02_27.dot
+IN   ORDER: 0:iron_man 1:the_incredible_hulk 645:captain_america 653:ragnarok 995:iron_man_3 1003:infinity_war 1145:thor 1150:the_avengers 1161:homecoming 1166:black_panther 2396:ant-man 2412:hmmm...I_guess_they_really_are_going_to_read_all_this 2469:guardians 2481:thor_the_dark_world 2485:will_the_students_think_me_a_silly_fanboy 2497:wow 2941:professor_strange 3086:guardians_2 3713:the_winter_soldier 3721:does_this_list_ever_end? 4111:civil_war 4119:so_was_this_wise? 4228:ultron 4236:wait_until_they_see_my_robotech_script 6426:smokebomb! 28672:iron_man
+POST ORDER: 0:iron_man 645:captain_america 995:iron_man_3 1003:infinity_war 1:the_incredible_hulk 653:ragnarok 1150:the_avengers 1161:homecoming 1166:black_panther 2412:hmmm...I_guess_they_really_are_going_to_read_all_this 2469:guardians 2396:ant-man 1145:thor 2485:will_the_students_think_me_a_silly_fanboy 2497:wow 3086:guardians_2 2941:professor_strange 3721:does_this_list_ever_end? 4111:civil_war 4119:so_was_this_wise? 4236:wait_until_they_see_my_robotech_script 6426:smokebomb! 28672:iron_man 4228:ultron 3713:the_winter_soldier 2481:thor_the_dark_world

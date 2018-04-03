@@ -17,6 +17,9 @@ public class Proj04_GenDotFile
 
   }
 
+  public static void gen(Proj04_234Node rt, String val) throws IOException{ }
+
+
 
   public static void gen(Proj04_BSTNode rt, String val) throws IOException{ 
 

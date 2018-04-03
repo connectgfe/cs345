@@ -1,0 +1,259 @@
+IN   ORDER:
+POST ORDER:
+Dumping to the file debug_07_00.dot
+inserted 33:of
+IN   ORDER: 33:of
+POST ORDER: 33:of
+Dumping to the file debug_07_01.dot
+inserted 11:Whether
+IN   ORDER: 11:Whether 33:of
+POST ORDER: 11:Whether 33:of
+Dumping to the file debug_07_02.dot
+inserted 53:end
+IN   ORDER: 11:Whether 33:of 53:end
+POST ORDER: 11:Whether 33:of 53:end
+Dumping to the file debug_07_03.dot
+inserted 49:sleep
+IN   ORDER: 11:Whether 33:of 49:sleep 53:end
+POST ORDER: 11:Whether 49:sleep 53:end 33:of
+Dumping to the file debug_07_04.dot
+inserted 55:Heart
+IN   ORDER: 11:Whether 33:of 49:sleep 53:end 55:Heart
+POST ORDER: 11:Whether 49:sleep 53:end 55:Heart 33:of
+Dumping to the file debug_07_05.dot
+inserted 25:Fortune
+IN   ORDER: 11:Whether 25:Fortune 33:of 49:sleep 53:end 55:Heart
+POST ORDER: 11:Whether 25:Fortune 49:sleep 53:end 55:Heart 33:of
+Dumping to the file debug_07_06.dot
+inserted 22:Arrows
+IN   ORDER: 11:Whether 22:Arrows 25:Fortune 33:of 49:sleep 53:end 55:Heart
+POST ORDER: 11:Whether 22:Arrows 25:Fortune 49:sleep 53:end 55:Heart 33:of
+Dumping to the file debug_07_07.dot
+inserted 14:in
+IN   ORDER: 11:Whether 14:in 22:Arrows 25:Fortune 33:of 49:sleep 53:end 55:Heart
+POST ORDER: 11:Whether 14:in 25:Fortune 49:sleep 53:end 55:Heart 22:Arrows 33:of
+Dumping to the file debug_07_08.dot
+inserted 19:The
+IN   ORDER: 11:Whether 14:in 19:The 22:Arrows 25:Fortune 33:of 49:sleep 53:end 55:Heart
+POST ORDER: 11:Whether 14:in 19:The 25:Fortune 49:sleep 53:end 55:Heart 22:Arrows 33:of
+Dumping to the file debug_07_09.dot
+inserted 17:to
+IN   ORDER: 11:Whether 14:in 17:to 19:The 22:Arrows 25:Fortune 33:of 49:sleep 53:end 55:Heart
+POST ORDER: 11:Whether 17:to 19:The 25:Fortune 49:sleep 53:end 55:Heart 14:in 22:Arrows 33:of
+Dumping to the file debug_07_10.dot
+inserted 40:to
+IN   ORDER: 11:Whether 14:in 17:to 19:The 22:Arrows 25:Fortune 33:of 40:to 49:sleep 53:end 55:Heart
+POST ORDER: 11:Whether 17:to 19:The 14:in 25:Fortune 40:to 49:sleep 55:Heart 33:of 53:end 22:Arrows
+Dumping to the file debug_07_11.dot
+inserted 10:question
+IN   ORDER: 10:question 11:Whether 14:in 17:to 19:The 22:Arrows 25:Fortune 33:of 40:to 49:sleep 53:end 55:Heart
+POST ORDER: 10:question 11:Whether 17:to 19:The 14:in 25:Fortune 40:to 49:sleep 55:Heart 33:of 53:end 22:Arrows
+Dumping to the file debug_07_12.dot
+inserted 41:die
+IN   ORDER: 10:question 11:Whether 14:in 17:to 19:The 22:Arrows 25:Fortune 33:of 40:to 41:die 49:sleep 53:end 55:Heart
+POST ORDER: 10:question 11:Whether 17:to 19:The 14:in 25:Fortune 40:to 41:die 49:sleep 55:Heart 33:of 53:end 22:Arrows
+Dumping to the file debug_07_13.dot
+inserted 20:Slings
+IN   ORDER: 10:question 11:Whether 14:in 17:to 19:The 20:Slings 22:Arrows 25:Fortune 33:of 40:to 41:die 49:sleep 53:end 55:Heart
+POST ORDER: 10:question 11:Whether 17:to 19:The 20:Slings 14:in 25:Fortune 40:to 41:die 49:sleep 55:Heart 33:of 53:end 22:Arrows
+Dumping to the file debug_07_14.dot
+inserted 47:by
+IN   ORDER: 10:question 11:Whether 14:in 17:to 19:The 20:Slings 22:Arrows 25:Fortune 33:of 40:to 41:die 47:by 49:sleep 53:end 55:Heart
+POST ORDER: 10:question 11:Whether 17:to 19:The 20:Slings 14:in 25:Fortune 40:to 47:by 49:sleep 55:Heart 33:of 41:die 53:end 22:Arrows
+Dumping to the file debug_07_15.dot
+inserted 27:to
+IN   ORDER: 10:question 11:Whether 14:in 17:to 19:The 20:Slings 22:Arrows 25:Fortune 27:to 33:of 40:to 41:die 47:by 49:sleep 53:end 55:Heart
+POST ORDER: 10:question 11:Whether 17:to 19:The 20:Slings 14:in 25:Fortune 27:to 40:to 33:of 47:by 49:sleep 55:Heart 53:end 22:Arrows 41:die
+Dumping to the file debug_07_16.dot
+inserted 46:and
+IN   ORDER: 10:question 11:Whether 14:in 17:to 19:The 20:Slings 22:Arrows 25:Fortune 27:to 33:of 40:to 41:die 46:and 47:by 49:sleep 53:end 55:Heart
+POST ORDER: 10:question 11:Whether 17:to 19:The 20:Slings 14:in 25:Fortune 27:to 40:to 33:of 46:and 47:by 49:sleep 55:Heart 53:end 22:Arrows 41:die
+Dumping to the file debug_07_17.dot
+inserted 50:to
+IN   ORDER: 10:question 11:Whether 14:in 17:to 19:The 20:Slings 22:Arrows 25:Fortune 27:to 33:of 40:to 41:die 46:and 47:by 49:sleep 50:to 53:end 55:Heart
+POST ORDER: 10:question 11:Whether 17:to 19:The 20:Slings 14:in 25:Fortune 27:to 40:to 33:of 46:and 49:sleep 50:to 55:Heart 47:by 53:end 22:Arrows 41:die
+Dumping to the file debug_07_18.dot
+inserted 60:Natural
+IN   ORDER: 10:question 11:Whether 14:in 17:to 19:The 20:Slings 22:Arrows 25:Fortune 27:to 33:of 40:to 41:die 46:and 47:by 49:sleep 50:to 53:end 55:Heart 60:Natural
+POST ORDER: 10:question 11:Whether 17:to 19:The 20:Slings 14:in 25:Fortune 27:to 40:to 33:of 46:and 49:sleep 50:to 55:Heart 60:Natural 47:by 53:end 22:Arrows 41:die
+Dumping to the file debug_07_19.dot
+inserted 54:The
+IN   ORDER: 10:question 11:Whether 14:in 17:to 19:The 20:Slings 22:Arrows 25:Fortune 27:to 33:of 40:to 41:die 46:and 47:by 49:sleep 50:to 53:end 54:The 55:Heart 60:Natural
+POST ORDER: 10:question 11:Whether 17:to 19:The 20:Slings 14:in 25:Fortune 27:to 40:to 33:of 46:and 49:sleep 50:to 54:The 55:Heart 60:Natural 47:by 53:end 22:Arrows 41:die
+Dumping to the file debug_07_20.dot
+inserted 24:outrageous
+IN   ORDER: 10:question 11:Whether 14:in 17:to 19:The 20:Slings 22:Arrows 24:outrageous 25:Fortune 27:to 33:of 40:to 41:die 46:and 47:by 49:sleep 50:to 53:end 54:The 55:Heart 60:Natural
+POST ORDER: 10:question 11:Whether 17:to 19:The 20:Slings 14:in 24:outrageous 25:Fortune 27:to 40:to 33:of 46:and 49:sleep 50:to 54:The 55:Heart 60:Natural 47:by 53:end 22:Arrows 41:die
+Dumping to the file debug_07_21.dot
+inserted 31:a
+IN   ORDER: 10:question 11:Whether 14:in 17:to 19:The 20:Slings 22:Arrows 24:outrageous 25:Fortune 27:to 31:a 33:of 40:to 41:die 46:and 47:by 49:sleep 50:to 53:end 54:The 55:Heart 60:Natural
+POST ORDER: 10:question 11:Whether 17:to 19:The 20:Slings 14:in 24:outrageous 27:to 31:a 40:to 25:Fortune 33:of 46:and 49:sleep 50:to 54:The 55:Heart 60:Natural 47:by 53:end 22:Arrows 41:die
+Dumping to the file debug_07_22.dot
+inserted 44:No
+IN   ORDER: 10:question 11:Whether 14:in 17:to 19:The 20:Slings 22:Arrows 24:outrageous 25:Fortune 27:to 31:a 33:of 40:to 41:die 44:No 46:and 47:by 49:sleep 50:to 53:end 54:The 55:Heart 60:Natural
+POST ORDER: 10:question 11:Whether 17:to 19:The 20:Slings 14:in 24:outrageous 27:to 31:a 40:to 25:Fortune 33:of 44:No 46:and 49:sleep 50:to 54:The 55:Heart 60:Natural 47:by 53:end 22:Arrows 41:die
+Dumping to the file debug_07_23.dot
+inserted 29:Arms
+IN   ORDER: 10:question 11:Whether 14:in 17:to 19:The 20:Slings 22:Arrows 24:outrageous 25:Fortune 27:to 29:Arms 31:a 33:of 40:to 41:die 44:No 46:and 47:by 49:sleep 50:to 53:end 54:The 55:Heart 60:Natural
+POST ORDER: 10:question 11:Whether 17:to 19:The 20:Slings 14:in 24:outrageous 27:to 29:Arms 31:a 40:to 25:Fortune 33:of 44:No 46:and 49:sleep 50:to 54:The 55:Heart 60:Natural 47:by 53:end 22:Arrows 41:die
+Dumping to the file debug_07_24.dot
+inserted 28:take
+IN   ORDER: 10:question 11:Whether 14:in 17:to 19:The 20:Slings 22:Arrows 24:outrageous 25:Fortune 27:to 28:take 29:Arms 31:a 33:of 40:to 41:die 44:No 46:and 47:by 49:sleep 50:to 53:end 54:The 55:Heart 60:Natural
+POST ORDER: 10:question 11:Whether 17:to 19:The 20:Slings 14:in 24:outrageous 27:to 28:take 31:a 40:to 25:Fortune 29:Arms 33:of 44:No 46:and 49:sleep 50:to 54:The 55:Heart 60:Natural 47:by 53:end 22:Arrows 41:die
+Dumping to the file debug_07_25.dot
+inserted 12:'tis
+IN   ORDER: 10:question 11:Whether 12:'tis 14:in 17:to 19:The 20:Slings 22:Arrows 24:outrageous 25:Fortune 27:to 28:take 29:Arms 31:a 33:of 40:to 41:die 44:No 46:and 47:by 49:sleep 50:to 53:end 54:The 55:Heart 60:Natural
+POST ORDER: 10:question 11:Whether 12:'tis 17:to 19:The 20:Slings 14:in 24:outrageous 27:to 28:take 31:a 40:to 25:Fortune 29:Arms 33:of 44:No 46:and 49:sleep 50:to 54:The 55:Heart 60:Natural 47:by 53:end 22:Arrows 41:die
+Dumping to the file debug_07_26.dot
+inserted 64:is
+IN   ORDER: 10:question 11:Whether 12:'tis 14:in 17:to 19:The 20:Slings 22:Arrows 24:outrageous 25:Fortune 27:to 28:take 29:Arms 31:a 33:of 40:to 41:die 44:No 46:and 47:by 49:sleep 50:to 53:end 54:The 55:Heart 60:Natural 64:is
+POST ORDER: 10:question 11:Whether 12:'tis 17:to 19:The 20:Slings 14:in 24:outrageous 27:to 28:take 31:a 40:to 25:Fortune 29:Arms 33:of 44:No 46:and 49:sleep 50:to 54:The 60:Natural 64:is 47:by 53:end 55:Heart 22:Arrows 41:die
+Dumping to the file debug_07_27.dot
+inserted 48:a
+IN   ORDER: 10:question 11:Whether 12:'tis 14:in 17:to 19:The 20:Slings 22:Arrows 24:outrageous 25:Fortune 27:to 28:take 29:Arms 31:a 33:of 40:to 41:die 44:No 46:and 47:by 48:a 49:sleep 50:to 53:end 54:The 55:Heart 60:Natural 64:is
+POST ORDER: 10:question 11:Whether 12:'tis 17:to 19:The 20:Slings 14:in 24:outrageous 27:to 28:take 31:a 40:to 25:Fortune 29:Arms 33:of 44:No 46:and 48:a 49:sleep 50:to 47:by 54:The 60:Natural 64:is 55:Heart 22:Arrows 41:die 53:end
+Dumping to the file debug_07_28.dot
+inserted 51:say
+IN   ORDER: 10:question 11:Whether 12:'tis 14:in 17:to 19:The 20:Slings 22:Arrows 24:outrageous 25:Fortune 27:to 28:take 29:Arms 31:a 33:of 40:to 41:die 44:No 46:and 47:by 48:a 49:sleep 50:to 51:say 53:end 54:The 55:Heart 60:Natural 64:is
+POST ORDER: 10:question 11:Whether 12:'tis 17:to 19:The 20:Slings 14:in 24:outrageous 27:to 28:take 31:a 40:to 25:Fortune 29:Arms 33:of 22:Arrows 44:No 46:and 48:a 50:to 51:say 47:by 49:sleep 54:The 60:Natural 64:is 55:Heart 53:end 41:die
+Dumping to the file debug_07_29.dot
+inserted 23:of
+IN   ORDER: 10:question 11:Whether 12:'tis 14:in 17:to 19:The 20:Slings 22:Arrows 23:of 24:outrageous 25:Fortune 27:to 28:take 29:Arms 31:a 33:of 40:to 41:die 44:No 46:and 47:by 48:a 49:sleep 50:to 51:say 53:end 54:The 55:Heart 60:Natural 64:is
+POST ORDER: 10:question 11:Whether 12:'tis 17:to 19:The 20:Slings 14:in 23:of 24:outrageous 27:to 28:take 25:Fortune 31:a 40:to 33:of 22:Arrows 29:Arms 44:No 46:and 48:a 50:to 51:say 47:by 49:sleep 54:The 60:Natural 64:is 55:Heart 53:end 41:die
+Dumping to the file debug_07_30.dot
+inserted 37:opposing
+IN   ORDER: 10:question 11:Whether 12:'tis 14:in 17:to 19:The 20:Slings 22:Arrows 23:of 24:outrageous 25:Fortune 27:to 28:take 29:Arms 31:a 33:of 37:opposing 40:to 41:die 44:No 46:and 47:by 48:a 49:sleep 50:to 51:say 53:end 54:The 55:Heart 60:Natural 64:is
+POST ORDER: 10:question 11:Whether 12:'tis 17:to 19:The 20:Slings 14:in 23:of 24:outrageous 27:to 28:take 25:Fortune 31:a 37:opposing 40:to 33:of 22:Arrows 29:Arms 44:No 46:and 48:a 50:to 51:say 47:by 49:sleep 54:The 60:Natural 64:is 55:Heart 53:end 41:die
+Dumping to the file debug_07_31.dot
+inserted 8:is
+IN   ORDER: 8:is 10:question 11:Whether 12:'tis 14:in 17:to 19:The 20:Slings 22:Arrows 23:of 24:outrageous 25:Fortune 27:to 28:take 29:Arms 31:a 33:of 37:opposing 40:to 41:die 44:No 46:and 47:by 48:a 49:sleep 50:to 51:say 53:end 54:The 55:Heart 60:Natural 64:is
+POST ORDER: 8:is 10:question 12:'tis 17:to 19:The 20:Slings 11:Whether 14:in 23:of 24:outrageous 27:to 28:take 25:Fortune 31:a 37:opposing 40:to 33:of 22:Arrows 29:Arms 44:No 46:and 48:a 50:to 51:say 47:by 49:sleep 54:The 60:Natural 64:is 55:Heart 53:end 41:die
+Dumping to the file debug_07_32.dot
+inserted 2:be
+IN   ORDER: 2:be 8:is 10:question 11:Whether 12:'tis 14:in 17:to 19:The 20:Slings 22:Arrows 23:of 24:outrageous 25:Fortune 27:to 28:take 29:Arms 31:a 33:of 37:opposing 40:to 41:die 44:No 46:and 47:by 48:a 49:sleep 50:to 51:say 53:end 54:The 55:Heart 60:Natural 64:is
+POST ORDER: 2:be 8:is 10:question 12:'tis 17:to 19:The 20:Slings 11:Whether 14:in 23:of 24:outrageous 27:to 28:take 25:Fortune 31:a 37:opposing 40:to 33:of 22:Arrows 29:Arms 44:No 46:and 48:a 50:to 51:say 47:by 49:sleep 54:The 60:Natural 64:is 55:Heart 53:end 41:die
+Dumping to the file debug_07_33.dot
+inserted 38:end
+IN   ORDER: 2:be 8:is 10:question 11:Whether 12:'tis 14:in 17:to 19:The 20:Slings 22:Arrows 23:of 24:outrageous 25:Fortune 27:to 28:take 29:Arms 31:a 33:of 37:opposing 38:end 40:to 41:die 44:No 46:and 47:by 48:a 49:sleep 50:to 51:say 53:end 54:The 55:Heart 60:Natural 64:is
+POST ORDER: 2:be 8:is 10:question 12:'tis 17:to 19:The 20:Slings 11:Whether 14:in 23:of 24:outrageous 27:to 28:take 25:Fortune 31:a 37:opposing 38:end 40:to 33:of 22:Arrows 29:Arms 44:No 46:and 48:a 50:to 51:say 47:by 49:sleep 54:The 60:Natural 64:is 55:Heart 53:end 41:die
+Dumping to the file debug_07_34.dot
+inserted 58:the
+IN   ORDER: 2:be 8:is 10:question 11:Whether 12:'tis 14:in 17:to 19:The 20:Slings 22:Arrows 23:of 24:outrageous 25:Fortune 27:to 28:take 29:Arms 31:a 33:of 37:opposing 38:end 40:to 41:die 44:No 46:and 47:by 48:a 49:sleep 50:to 51:say 53:end 54:The 55:Heart 58:the 60:Natural 64:is
+POST ORDER: 2:be 8:is 10:question 12:'tis 17:to 19:The 20:Slings 11:Whether 14:in 23:of 24:outrageous 27:to 28:take 25:Fortune 31:a 37:opposing 38:end 40:to 33:of 22:Arrows 29:Arms 44:No 46:and 48:a 50:to 51:say 47:by 49:sleep 54:The 58:the 60:Natural 64:is 55:Heart 53:end 41:die
+Dumping to the file debug_07_35.dot
+inserted 61:shocks
+IN   ORDER: 2:be 8:is 10:question 11:Whether 12:'tis 14:in 17:to 19:The 20:Slings 22:Arrows 23:of 24:outrageous 25:Fortune 27:to 28:take 29:Arms 31:a 33:of 37:opposing 38:end 40:to 41:die 44:No 46:and 47:by 48:a 49:sleep 50:to 51:say 53:end 54:The 55:Heart 58:the 60:Natural 61:shocks 64:is
+POST ORDER: 2:be 8:is 10:question 12:'tis 17:to 19:The 20:Slings 11:Whether 14:in 23:of 24:outrageous 27:to 28:take 25:Fortune 31:a 37:opposing 38:end 40:to 33:of 22:Arrows 29:Arms 44:No 46:and 48:a 50:to 51:say 47:by 49:sleep 54:The 58:the 61:shocks 64:is 55:Heart 60:Natural 53:end 41:die
+Dumping to the file debug_07_36.dot
+inserted 56:ache
+IN   ORDER: 2:be 8:is 10:question 11:Whether 12:'tis 14:in 17:to 19:The 20:Slings 22:Arrows 23:of 24:outrageous 25:Fortune 27:to 28:take 29:Arms 31:a 33:of 37:opposing 38:end 40:to 41:die 44:No 46:and 47:by 48:a 49:sleep 50:to 51:say 53:end 54:The 55:Heart 56:ache 58:the 60:Natural 61:shocks 64:is
+POST ORDER: 2:be 8:is 10:question 12:'tis 17:to 19:The 20:Slings 11:Whether 14:in 23:of 24:outrageous 27:to 28:take 25:Fortune 31:a 37:opposing 38:end 40:to 33:of 22:Arrows 29:Arms 44:No 46:and 48:a 50:to 51:say 47:by 49:sleep 54:The 56:ache 58:the 61:shocks 64:is 55:Heart 60:Natural 53:end 41:die
+Dumping to the file debug_07_37.dot
+inserted 6:be
+IN   ORDER: 2:be 6:be 8:is 10:question 11:Whether 12:'tis 14:in 17:to 19:The 20:Slings 22:Arrows 23:of 24:outrageous 25:Fortune 27:to 28:take 29:Arms 31:a 33:of 37:opposing 38:end 40:to 41:die 44:No 46:and 47:by 48:a 49:sleep 50:to 51:say 53:end 54:The 55:Heart 56:ache 58:the 60:Natural 61:shocks 64:is
+POST ORDER: 2:be 6:be 10:question 12:'tis 17:to 19:The 20:Slings 8:is 11:Whether 14:in 23:of 24:outrageous 27:to 28:take 25:Fortune 31:a 37:opposing 38:end 40:to 33:of 22:Arrows 29:Arms 44:No 46:and 48:a 50:to 51:say 47:by 49:sleep 54:The 56:ache 58:the 61:shocks 64:is 55:Heart 60:Natural 53:end 41:die
+Dumping to the file debug_07_38.dot
+inserted 5:to
+IN   ORDER: 2:be 5:to 6:be 8:is 10:question 11:Whether 12:'tis 14:in 17:to 19:The 20:Slings 22:Arrows 23:of 24:outrageous 25:Fortune 27:to 28:take 29:Arms 31:a 33:of 37:opposing 38:end 40:to 41:die 44:No 46:and 47:by 48:a 49:sleep 50:to 51:say 53:end 54:The 55:Heart 56:ache 58:the 60:Natural 61:shocks 64:is
+POST ORDER: 2:be 5:to 6:be 10:question 8:is 12:'tis 17:to 19:The 20:Slings 14:in 23:of 24:outrageous 27:to 28:take 25:Fortune 31:a 37:opposing 38:end 40:to 33:of 11:Whether 22:Arrows 29:Arms 44:No 46:and 48:a 50:to 51:say 47:by 49:sleep 54:The 56:ache 58:the 61:shocks 64:is 55:Heart 60:Natural 53:end 41:die
+Dumping to the file debug_07_39.dot
+inserted 52:we
+IN   ORDER: 2:be 5:to 6:be 8:is 10:question 11:Whether 12:'tis 14:in 17:to 19:The 20:Slings 22:Arrows 23:of 24:outrageous 25:Fortune 27:to 28:take 29:Arms 31:a 33:of 37:opposing 38:end 40:to 41:die 44:No 46:and 47:by 48:a 49:sleep 50:to 51:say 52:we 53:end 54:The 55:Heart 56:ache 58:the 60:Natural 61:shocks 64:is
+POST ORDER: 2:be 5:to 6:be 10:question 8:is 12:'tis 17:to 19:The 20:Slings 14:in 23:of 24:outrageous 27:to 28:take 25:Fortune 31:a 37:opposing 38:end 40:to 33:of 11:Whether 22:Arrows 29:Arms 44:No 46:and 48:a 50:to 51:say 52:we 47:by 49:sleep 54:The 56:ache 58:the 61:shocks 64:is 55:Heart 60:Natural 53:end 41:die
+Dumping to the file debug_07_40.dot
+inserted 39:them
+IN   ORDER: 2:be 5:to 6:be 8:is 10:question 11:Whether 12:'tis 14:in 17:to 19:The 20:Slings 22:Arrows 23:of 24:outrageous 25:Fortune 27:to 28:take 29:Arms 31:a 33:of 37:opposing 38:end 39:them 40:to 41:die 44:No 46:and 47:by 48:a 49:sleep 50:to 51:say 52:we 53:end 54:The 55:Heart 56:ache 58:the 60:Natural 61:shocks 64:is
+POST ORDER: 2:be 5:to 6:be 10:question 8:is 12:'tis 17:to 19:The 20:Slings 14:in 11:Whether 23:of 24:outrageous 27:to 28:take 25:Fortune 31:a 37:opposing 39:them 40:to 33:of 38:end 29:Arms 44:No 46:and 48:a 50:to 51:say 52:we 47:by 49:sleep 54:The 56:ache 58:the 61:shocks 64:is 55:Heart 60:Natural 53:end 22:Arrows 41:die
+Dumping to the file debug_07_41.dot
+inserted 15:the
+IN   ORDER: 2:be 5:to 6:be 8:is 10:question 11:Whether 12:'tis 14:in 15:the 17:to 19:The 20:Slings 22:Arrows 23:of 24:outrageous 25:Fortune 27:to 28:take 29:Arms 31:a 33:of 37:opposing 38:end 39:them 40:to 41:die 44:No 46:and 47:by 48:a 49:sleep 50:to 51:say 52:we 53:end 54:The 55:Heart 56:ache 58:the 60:Natural 61:shocks 64:is
+POST ORDER: 2:be 5:to 6:be 10:question 8:is 12:'tis 15:the 17:to 20:Slings 14:in 19:The 11:Whether 23:of 24:outrageous 27:to 28:take 25:Fortune 31:a 37:opposing 39:them 40:to 33:of 38:end 29:Arms 44:No 46:and 48:a 50:to 51:say 52:we 47:by 49:sleep 54:The 56:ache 58:the 61:shocks 64:is 55:Heart 60:Natural 53:end 22:Arrows 41:die
+Dumping to the file debug_07_42.dot
+inserted 42:to
+IN   ORDER: 2:be 5:to 6:be 8:is 10:question 11:Whether 12:'tis 14:in 15:the 17:to 19:The 20:Slings 22:Arrows 23:of 24:outrageous 25:Fortune 27:to 28:take 29:Arms 31:a 33:of 37:opposing 38:end 39:them 40:to 41:die 42:to 44:No 46:and 47:by 48:a 49:sleep 50:to 51:say 52:we 53:end 54:The 55:Heart 56:ache 58:the 60:Natural 61:shocks 64:is
+POST ORDER: 2:be 5:to 6:be 10:question 8:is 12:'tis 15:the 17:to 20:Slings 14:in 19:The 11:Whether 23:of 24:outrageous 27:to 28:take 25:Fortune 31:a 37:opposing 39:them 40:to 33:of 38:end 29:Arms 42:to 44:No 46:and 48:a 50:to 51:say 52:we 47:by 49:sleep 54:The 56:ache 58:the 61:shocks 64:is 55:Heart 60:Natural 53:end 22:Arrows 41:die
+Dumping to the file debug_07_43.dot
+inserted 21:and
+IN   ORDER: 2:be 5:to 6:be 8:is 10:question 11:Whether 12:'tis 14:in 15:the 17:to 19:The 20:Slings 21:and 22:Arrows 23:of 24:outrageous 25:Fortune 27:to 28:take 29:Arms 31:a 33:of 37:opposing 38:end 39:them 40:to 41:die 42:to 44:No 46:and 47:by 48:a 49:sleep 50:to 51:say 52:we 53:end 54:The 55:Heart 56:ache 58:the 60:Natural 61:shocks 64:is
+POST ORDER: 2:be 5:to 6:be 10:question 8:is 12:'tis 15:the 17:to 20:Slings 21:and 14:in 19:The 11:Whether 23:of 24:outrageous 27:to 28:take 25:Fortune 31:a 37:opposing 39:them 40:to 33:of 38:end 29:Arms 42:to 44:No 46:and 48:a 50:to 51:say 52:we 47:by 49:sleep 54:The 56:ache 58:the 61:shocks 64:is 55:Heart 60:Natural 53:end 22:Arrows 41:die
+Dumping to the file debug_07_44.dot
+inserted 32:Sea
+IN   ORDER: 2:be 5:to 6:be 8:is 10:question 11:Whether 12:'tis 14:in 15:the 17:to 19:The 20:Slings 21:and 22:Arrows 23:of 24:outrageous 25:Fortune 27:to 28:take 29:Arms 31:a 32:Sea 33:of 37:opposing 38:end 39:them 40:to 41:die 42:to 44:No 46:and 47:by 48:a 49:sleep 50:to 51:say 52:we 53:end 54:The 55:Heart 56:ache 58:the 60:Natural 61:shocks 64:is
+POST ORDER: 2:be 5:to 6:be 10:question 8:is 12:'tis 15:the 17:to 20:Slings 21:and 14:in 19:The 11:Whether 23:of 24:outrageous 27:to 28:take 25:Fortune 31:a 32:Sea 37:opposing 39:them 40:to 33:of 38:end 29:Arms 42:to 44:No 46:and 48:a 50:to 51:say 52:we 47:by 49:sleep 54:The 56:ache 58:the 61:shocks 64:is 55:Heart 60:Natural 53:end 22:Arrows 41:die
+Dumping to the file debug_07_45.dot
+inserted 43:sleep
+IN   ORDER: 2:be 5:to 6:be 8:is 10:question 11:Whether 12:'tis 14:in 15:the 17:to 19:The 20:Slings 21:and 22:Arrows 23:of 24:outrageous 25:Fortune 27:to 28:take 29:Arms 31:a 32:Sea 33:of 37:opposing 38:end 39:them 40:to 41:die 42:to 43:sleep 44:No 46:and 47:by 48:a 49:sleep 50:to 51:say 52:we 53:end 54:The 55:Heart 56:ache 58:the 60:Natural 61:shocks 64:is
+POST ORDER: 2:be 5:to 6:be 10:question 8:is 12:'tis 15:the 17:to 20:Slings 21:and 14:in 19:The 11:Whether 23:of 24:outrageous 27:to 28:take 25:Fortune 31:a 32:Sea 37:opposing 39:them 40:to 33:of 38:end 29:Arms 42:to 43:sleep 46:and 48:a 50:to 51:say 52:we 44:No 47:by 49:sleep 54:The 56:ache 58:the 61:shocks 64:is 55:Heart 60:Natural 53:end 22:Arrows 41:die
+Dumping to the file debug_07_46.dot
+inserted 35:And
+IN   ORDER: 2:be 5:to 6:be 8:is 10:question 11:Whether 12:'tis 14:in 15:the 17:to 19:The 20:Slings 21:and 22:Arrows 23:of 24:outrageous 25:Fortune 27:to 28:take 29:Arms 31:a 32:Sea 33:of 35:And 37:opposing 38:end 39:them 40:to 41:die 42:to 43:sleep 44:No 46:and 47:by 48:a 49:sleep 50:to 51:say 52:we 53:end 54:The 55:Heart 56:ache 58:the 60:Natural 61:shocks 64:is
+POST ORDER: 2:be 5:to 6:be 10:question 8:is 12:'tis 15:the 17:to 20:Slings 21:and 14:in 19:The 11:Whether 23:of 24:outrageous 27:to 28:take 25:Fortune 31:a 32:Sea 35:And 37:opposing 39:them 40:to 33:of 38:end 29:Arms 42:to 43:sleep 46:and 48:a 50:to 51:say 52:we 44:No 47:by 49:sleep 54:The 56:ache 58:the 61:shocks 64:is 55:Heart 60:Natural 53:end 22:Arrows 41:die
+Dumping to the file debug_07_47.dot
+inserted 3:or
+IN   ORDER: 2:be 3:or 5:to 6:be 8:is 10:question 11:Whether 12:'tis 14:in 15:the 17:to 19:The 20:Slings 21:and 22:Arrows 23:of 24:outrageous 25:Fortune 27:to 28:take 29:Arms 31:a 32:Sea 33:of 35:And 37:opposing 38:end 39:them 40:to 41:die 42:to 43:sleep 44:No 46:and 47:by 48:a 49:sleep 50:to 51:say 52:we 53:end 54:The 55:Heart 56:ache 58:the 60:Natural 61:shocks 64:is
+POST ORDER: 2:be 3:or 6:be 10:question 5:to 8:is 12:'tis 15:the 17:to 20:Slings 21:and 14:in 19:The 11:Whether 23:of 24:outrageous 27:to 28:take 25:Fortune 31:a 32:Sea 35:And 37:opposing 39:them 40:to 33:of 38:end 29:Arms 42:to 43:sleep 46:and 48:a 50:to 51:say 52:we 44:No 47:by 49:sleep 54:The 56:ache 58:the 61:shocks 64:is 55:Heart 60:Natural 53:end 22:Arrows 41:die
+Dumping to the file debug_07_48.dot
+inserted 34:troubles
+IN   ORDER: 2:be 3:or 5:to 6:be 8:is 10:question 11:Whether 12:'tis 14:in 15:the 17:to 19:The 20:Slings 21:and 22:Arrows 23:of 24:outrageous 25:Fortune 27:to 28:take 29:Arms 31:a 32:Sea 33:of 34:troubles 35:And 37:opposing 38:end 39:them 40:to 41:die 42:to 43:sleep 44:No 46:and 47:by 48:a 49:sleep 50:to 51:say 52:we 53:end 54:The 55:Heart 56:ache 58:the 60:Natural 61:shocks 64:is
+POST ORDER: 2:be 3:or 6:be 10:question 5:to 8:is 12:'tis 15:the 17:to 20:Slings 21:and 14:in 19:The 11:Whether 23:of 24:outrageous 27:to 28:take 25:Fortune 31:a 32:Sea 34:troubles 35:And 37:opposing 39:them 40:to 33:of 38:end 29:Arms 42:to 43:sleep 46:and 48:a 50:to 51:say 52:we 44:No 47:by 49:sleep 54:The 56:ache 58:the 61:shocks 64:is 55:Heart 60:Natural 53:end 22:Arrows 41:die
+Dumping to the file debug_07_49.dot
+inserted 9:the
+IN   ORDER: 2:be 3:or 5:to 6:be 8:is 9:the 10:question 11:Whether 12:'tis 14:in 15:the 17:to 19:The 20:Slings 21:and 22:Arrows 23:of 24:outrageous 25:Fortune 27:to 28:take 29:Arms 31:a 32:Sea 33:of 34:troubles 35:And 37:opposing 38:end 39:them 40:to 41:die 42:to 43:sleep 44:No 46:and 47:by 48:a 49:sleep 50:to 51:say 52:we 53:end 54:The 55:Heart 56:ache 58:the 60:Natural 61:shocks 64:is
+POST ORDER: 2:be 3:or 6:be 9:the 10:question 5:to 8:is 12:'tis 15:the 17:to 20:Slings 21:and 14:in 19:The 11:Whether 23:of 24:outrageous 27:to 28:take 25:Fortune 31:a 32:Sea 34:troubles 35:And 37:opposing 39:them 40:to 33:of 38:end 29:Arms 42:to 43:sleep 46:and 48:a 50:to 51:say 52:we 44:No 47:by 49:sleep 54:The 56:ache 58:the 61:shocks 64:is 55:Heart 60:Natural 53:end 22:Arrows 41:die
+Dumping to the file debug_07_50.dot
+inserted 62:That
+IN   ORDER: 2:be 3:or 5:to 6:be 8:is 9:the 10:question 11:Whether 12:'tis 14:in 15:the 17:to 19:The 20:Slings 21:and 22:Arrows 23:of 24:outrageous 25:Fortune 27:to 28:take 29:Arms 31:a 32:Sea 33:of 34:troubles 35:And 37:opposing 38:end 39:them 40:to 41:die 42:to 43:sleep 44:No 46:and 47:by 48:a 49:sleep 50:to 51:say 52:we 53:end 54:The 55:Heart 56:ache 58:the 60:Natural 61:shocks 62:That 64:is
+POST ORDER: 2:be 3:or 6:be 9:the 10:question 5:to 8:is 12:'tis 15:the 17:to 20:Slings 21:and 14:in 19:The 11:Whether 23:of 24:outrageous 27:to 28:take 25:Fortune 31:a 32:Sea 34:troubles 35:And 37:opposing 39:them 40:to 33:of 38:end 29:Arms 42:to 43:sleep 46:and 48:a 50:to 51:say 52:we 44:No 47:by 49:sleep 54:The 56:ache 58:the 61:shocks 62:That 64:is 55:Heart 60:Natural 53:end 22:Arrows 41:die
+Dumping to the file debug_07_51.dot
+inserted 63:Flesh
+IN   ORDER: 2:be 3:or 5:to 6:be 8:is 9:the 10:question 11:Whether 12:'tis 14:in 15:the 17:to 19:The 20:Slings 21:and 22:Arrows 23:of 24:outrageous 25:Fortune 27:to 28:take 29:Arms 31:a 32:Sea 33:of 34:troubles 35:And 37:opposing 38:end 39:them 40:to 41:die 42:to 43:sleep 44:No 46:and 47:by 48:a 49:sleep 50:to 51:say 52:we 53:end 54:The 55:Heart 56:ache 58:the 60:Natural 61:shocks 62:That 63:Flesh 64:is
+POST ORDER: 2:be 3:or 6:be 9:the 10:question 5:to 8:is 12:'tis 15:the 17:to 20:Slings 21:and 14:in 19:The 11:Whether 23:of 24:outrageous 27:to 28:take 25:Fortune 31:a 32:Sea 34:troubles 35:And 37:opposing 39:them 40:to 33:of 38:end 29:Arms 42:to 43:sleep 46:and 48:a 50:to 51:say 52:we 44:No 47:by 49:sleep 54:The 56:ache 58:the 61:shocks 63:Flesh 64:is 55:Heart 60:Natural 62:That 53:end 22:Arrows 41:die
+Dumping to the file debug_07_52.dot
+inserted 16:mind
+IN   ORDER: 2:be 3:or 5:to 6:be 8:is 9:the 10:question 11:Whether 12:'tis 14:in 15:the 16:mind 17:to 19:The 20:Slings 21:and 22:Arrows 23:of 24:outrageous 25:Fortune 27:to 28:take 29:Arms 31:a 32:Sea 33:of 34:troubles 35:And 37:opposing 38:end 39:them 40:to 41:die 42:to 43:sleep 44:No 46:and 47:by 48:a 49:sleep 50:to 51:say 52:we 53:end 54:The 55:Heart 56:ache 58:the 60:Natural 61:shocks 62:That 63:Flesh 64:is
+POST ORDER: 2:be 3:or 6:be 9:the 10:question 5:to 8:is 12:'tis 15:the 16:mind 17:to 20:Slings 21:and 14:in 19:The 11:Whether 23:of 24:outrageous 27:to 28:take 25:Fortune 31:a 32:Sea 34:troubles 35:And 37:opposing 39:them 40:to 33:of 38:end 29:Arms 42:to 43:sleep 46:and 48:a 50:to 51:say 52:we 44:No 47:by 49:sleep 54:The 56:ache 58:the 61:shocks 63:Flesh 64:is 55:Heart 60:Natural 62:That 53:end 22:Arrows 41:die
+Dumping to the file debug_07_53.dot
+inserted 26:Or
+IN   ORDER: 2:be 3:or 5:to 6:be 8:is 9:the 10:question 11:Whether 12:'tis 14:in 15:the 16:mind 17:to 19:The 20:Slings 21:and 22:Arrows 23:of 24:outrageous 25:Fortune 26:Or 27:to 28:take 29:Arms 31:a 32:Sea 33:of 34:troubles 35:And 37:opposing 38:end 39:them 40:to 41:die 42:to 43:sleep 44:No 46:and 47:by 48:a 49:sleep 50:to 51:say 52:we 53:end 54:The 55:Heart 56:ache 58:the 60:Natural 61:shocks 62:That 63:Flesh 64:is
+POST ORDER: 2:be 3:or 6:be 9:the 10:question 5:to 8:is 12:'tis 15:the 16:mind 17:to 20:Slings 21:and 14:in 19:The 11:Whether 23:of 24:outrageous 26:Or 27:to 28:take 25:Fortune 31:a 32:Sea 34:troubles 35:And 37:opposing 39:them 40:to 33:of 38:end 29:Arms 42:to 43:sleep 46:and 48:a 50:to 51:say 52:we 44:No 47:by 49:sleep 54:The 56:ache 58:the 61:shocks 63:Flesh 64:is 55:Heart 60:Natural 62:That 53:end 22:Arrows 41:die
+Dumping to the file debug_07_54.dot
+inserted 57:and
+IN   ORDER: 2:be 3:or 5:to 6:be 8:is 9:the 10:question 11:Whether 12:'tis 14:in 15:the 16:mind 17:to 19:The 20:Slings 21:and 22:Arrows 23:of 24:outrageous 25:Fortune 26:Or 27:to 28:take 29:Arms 31:a 32:Sea 33:of 34:troubles 35:And 37:opposing 38:end 39:them 40:to 41:die 42:to 43:sleep 44:No 46:and 47:by 48:a 49:sleep 50:to 51:say 52:we 53:end 54:The 55:Heart 56:ache 57:and 58:the 60:Natural 61:shocks 62:That 63:Flesh 64:is
+POST ORDER: 2:be 3:or 6:be 9:the 10:question 5:to 8:is 12:'tis 15:the 16:mind 17:to 20:Slings 21:and 14:in 19:The 11:Whether 23:of 24:outrageous 26:Or 27:to 28:take 25:Fortune 31:a 32:Sea 34:troubles 35:And 37:opposing 39:them 40:to 33:of 38:end 29:Arms 42:to 43:sleep 46:and 48:a 50:to 51:say 52:we 44:No 47:by 49:sleep 54:The 56:ache 57:and 58:the 55:Heart 61:shocks 63:Flesh 64:is 62:That 53:end 60:Natural 22:Arrows 41:die
+Dumping to the file debug_07_55.dot
+inserted 7:that
+IN   ORDER: 2:be 3:or 5:to 6:be 7:that 8:is 9:the 10:question 11:Whether 12:'tis 14:in 15:the 16:mind 17:to 19:The 20:Slings 21:and 22:Arrows 23:of 24:outrageous 25:Fortune 26:Or 27:to 28:take 29:Arms 31:a 32:Sea 33:of 34:troubles 35:And 37:opposing 38:end 39:them 40:to 41:die 42:to 43:sleep 44:No 46:and 47:by 48:a 49:sleep 50:to 51:say 52:we 53:end 54:The 55:Heart 56:ache 57:and 58:the 60:Natural 61:shocks 62:That 63:Flesh 64:is
+POST ORDER: 2:be 3:or 6:be 7:that 9:the 10:question 5:to 8:is 12:'tis 15:the 16:mind 17:to 20:Slings 21:and 14:in 19:The 11:Whether 23:of 24:outrageous 26:Or 27:to 28:take 25:Fortune 31:a 32:Sea 34:troubles 35:And 37:opposing 39:them 40:to 33:of 38:end 29:Arms 42:to 43:sleep 46:and 48:a 50:to 51:say 52:we 44:No 47:by 49:sleep 54:The 56:ache 57:and 58:the 55:Heart 61:shocks 63:Flesh 64:is 62:That 53:end 60:Natural 22:Arrows 41:die
+Dumping to the file debug_07_56.dot
+inserted 4:not
+IN   ORDER: 2:be 3:or 4:not 5:to 6:be 7:that 8:is 9:the 10:question 11:Whether 12:'tis 14:in 15:the 16:mind 17:to 19:The 20:Slings 21:and 22:Arrows 23:of 24:outrageous 25:Fortune 26:Or 27:to 28:take 29:Arms 31:a 32:Sea 33:of 34:troubles 35:And 37:opposing 38:end 39:them 40:to 41:die 42:to 43:sleep 44:No 46:and 47:by 48:a 49:sleep 50:to 51:say 52:we 53:end 54:The 55:Heart 56:ache 57:and 58:the 60:Natural 61:shocks 62:That 63:Flesh 64:is
+POST ORDER: 2:be 3:or 4:not 6:be 7:that 9:the 10:question 5:to 8:is 12:'tis 15:the 16:mind 17:to 20:Slings 21:and 14:in 19:The 11:Whether 23:of 24:outrageous 26:Or 27:to 28:take 25:Fortune 31:a 32:Sea 34:troubles 35:And 37:opposing 39:them 40:to 33:of 38:end 29:Arms 42:to 43:sleep 46:and 48:a 50:to 51:say 52:we 44:No 47:by 49:sleep 54:The 56:ache 57:and 58:the 55:Heart 61:shocks 63:Flesh 64:is 62:That 53:end 60:Natural 22:Arrows 41:die
+Dumping to the file debug_07_57.dot
+inserted 13:Nobler
+IN   ORDER: 2:be 3:or 4:not 5:to 6:be 7:that 8:is 9:the 10:question 11:Whether 12:'tis 13:Nobler 14:in 15:the 16:mind 17:to 19:The 20:Slings 21:and 22:Arrows 23:of 24:outrageous 25:Fortune 26:Or 27:to 28:take 29:Arms 31:a 32:Sea 33:of 34:troubles 35:And 37:opposing 38:end 39:them 40:to 41:die 42:to 43:sleep 44:No 46:and 47:by 48:a 49:sleep 50:to 51:say 52:we 53:end 54:The 55:Heart 56:ache 57:and 58:the 60:Natural 61:shocks 62:That 63:Flesh 64:is
+POST ORDER: 2:be 3:or 4:not 6:be 7:that 9:the 10:question 5:to 8:is 12:'tis 13:Nobler 15:the 16:mind 17:to 20:Slings 21:and 14:in 19:The 11:Whether 23:of 24:outrageous 26:Or 27:to 28:take 25:Fortune 31:a 32:Sea 34:troubles 35:And 37:opposing 39:them 40:to 33:of 38:end 29:Arms 42:to 43:sleep 46:and 48:a 50:to 51:say 52:we 44:No 47:by 49:sleep 54:The 56:ache 57:and 58:the 55:Heart 61:shocks 63:Flesh 64:is 62:That 53:end 60:Natural 22:Arrows 41:die
+Dumping to the file debug_07_58.dot
+inserted 1:To
+IN   ORDER: 1:To 2:be 3:or 4:not 5:to 6:be 7:that 8:is 9:the 10:question 11:Whether 12:'tis 13:Nobler 14:in 15:the 16:mind 17:to 19:The 20:Slings 21:and 22:Arrows 23:of 24:outrageous 25:Fortune 26:Or 27:to 28:take 29:Arms 31:a 32:Sea 33:of 34:troubles 35:And 37:opposing 38:end 39:them 40:to 41:die 42:to 43:sleep 44:No 46:and 47:by 48:a 49:sleep 50:to 51:say 52:we 53:end 54:The 55:Heart 56:ache 57:and 58:the 60:Natural 61:shocks 62:That 63:Flesh 64:is
+POST ORDER: 1:To 2:be 4:not 6:be 7:that 9:the 10:question 3:or 5:to 8:is 12:'tis 13:Nobler 15:the 16:mind 17:to 20:Slings 21:and 14:in 19:The 11:Whether 23:of 24:outrageous 26:Or 27:to 28:take 25:Fortune 31:a 32:Sea 34:troubles 35:And 37:opposing 39:them 40:to 33:of 38:end 29:Arms 42:to 43:sleep 46:and 48:a 50:to 51:say 52:we 44:No 47:by 49:sleep 54:The 56:ache 57:and 58:the 55:Heart 61:shocks 63:Flesh 64:is 62:That 53:end 60:Natural 22:Arrows 41:die
+Dumping to the file debug_07_59.dot
+inserted 18:suffer
+IN   ORDER: 1:To 2:be 3:or 4:not 5:to 6:be 7:that 8:is 9:the 10:question 11:Whether 12:'tis 13:Nobler 14:in 15:the 16:mind 17:to 18:suffer 19:The 20:Slings 21:and 22:Arrows 23:of 24:outrageous 25:Fortune 26:Or 27:to 28:take 29:Arms 31:a 32:Sea 33:of 34:troubles 35:And 37:opposing 38:end 39:them 40:to 41:die 42:to 43:sleep 44:No 46:and 47:by 48:a 49:sleep 50:to 51:say 52:we 53:end 54:The 55:Heart 56:ache 57:and 58:the 60:Natural 61:shocks 62:That 63:Flesh 64:is
+POST ORDER: 1:To 2:be 4:not 6:be 7:that 9:the 10:question 3:or 5:to 8:is 12:'tis 13:Nobler 15:the 17:to 18:suffer 20:Slings 21:and 14:in 16:mind 19:The 11:Whether 23:of 24:outrageous 26:Or 27:to 28:take 25:Fortune 31:a 32:Sea 34:troubles 35:And 37:opposing 39:them 40:to 33:of 38:end 29:Arms 42:to 43:sleep 46:and 48:a 50:to 51:say 52:we 44:No 47:by 49:sleep 54:The 56:ache 57:and 58:the 55:Heart 61:shocks 63:Flesh 64:is 62:That 53:end 60:Natural 22:Arrows 41:die
+Dumping to the file debug_07_60.dot
+inserted 45:more;
+IN   ORDER: 1:To 2:be 3:or 4:not 5:to 6:be 7:that 8:is 9:the 10:question 11:Whether 12:'tis 13:Nobler 14:in 15:the 16:mind 17:to 18:suffer 19:The 20:Slings 21:and 22:Arrows 23:of 24:outrageous 25:Fortune 26:Or 27:to 28:take 29:Arms 31:a 32:Sea 33:of 34:troubles 35:And 37:opposing 38:end 39:them 40:to 41:die 42:to 43:sleep 44:No 45:more; 46:and 47:by 48:a 49:sleep 50:to 51:say 52:we 53:end 54:The 55:Heart 56:ache 57:and 58:the 60:Natural 61:shocks 62:That 63:Flesh 64:is
+POST ORDER: 1:To 2:be 4:not 6:be 7:that 9:the 10:question 3:or 5:to 8:is 12:'tis 13:Nobler 15:the 17:to 18:suffer 20:Slings 21:and 14:in 16:mind 19:The 11:Whether 23:of 24:outrageous 26:Or 27:to 28:take 25:Fortune 31:a 32:Sea 34:troubles 35:And 37:opposing 39:them 40:to 33:of 38:end 29:Arms 42:to 43:sleep 45:more; 46:and 44:No 48:a 50:to 51:say 52:we 49:sleep 54:The 56:ache 57:and 58:the 55:Heart 61:shocks 63:Flesh 64:is 62:That 47:by 53:end 60:Natural 22:Arrows 41:die
+Dumping to the file debug_07_61.dot
+inserted 59:thousand
+IN   ORDER: 1:To 2:be 3:or 4:not 5:to 6:be 7:that 8:is 9:the 10:question 11:Whether 12:'tis 13:Nobler 14:in 15:the 16:mind 17:to 18:suffer 19:The 20:Slings 21:and 22:Arrows 23:of 24:outrageous 25:Fortune 26:Or 27:to 28:take 29:Arms 31:a 32:Sea 33:of 34:troubles 35:And 37:opposing 38:end 39:them 40:to 41:die 42:to 43:sleep 44:No 45:more; 46:and 47:by 48:a 49:sleep 50:to 51:say 52:we 53:end 54:The 55:Heart 56:ache 57:and 58:the 59:thousand 60:Natural 61:shocks 62:That 63:Flesh 64:is
+POST ORDER: 1:To 2:be 4:not 6:be 7:that 9:the 10:question 3:or 5:to 8:is 12:'tis 13:Nobler 15:the 17:to 18:suffer 20:Slings 21:and 14:in 16:mind 19:The 11:Whether 23:of 24:outrageous 26:Or 27:to 28:take 25:Fortune 31:a 32:Sea 34:troubles 35:And 37:opposing 39:them 40:to 33:of 38:end 29:Arms 42:to 43:sleep 45:more; 46:and 44:No 48:a 50:to 51:say 52:we 49:sleep 47:by 54:The 56:ache 58:the 59:thousand 55:Heart 57:and 61:shocks 63:Flesh 64:is 62:That 60:Natural 22:Arrows 41:die 53:end
+Dumping to the file debug_07_62.dot
+inserted 30:against
+IN   ORDER: 1:To 2:be 3:or 4:not 5:to 6:be 7:that 8:is 9:the 10:question 11:Whether 12:'tis 13:Nobler 14:in 15:the 16:mind 17:to 18:suffer 19:The 20:Slings 21:and 22:Arrows 23:of 24:outrageous 25:Fortune 26:Or 27:to 28:take 29:Arms 30:against 31:a 32:Sea 33:of 34:troubles 35:And 37:opposing 38:end 39:them 40:to 41:die 42:to 43:sleep 44:No 45:more; 46:and 47:by 48:a 49:sleep 50:to 51:say 52:we 53:end 54:The 55:Heart 56:ache 57:and 58:the 59:thousand 60:Natural 61:shocks 62:That 63:Flesh 64:is
+POST ORDER: 1:To 2:be 4:not 6:be 7:that 9:the 10:question 3:or 5:to 8:is 12:'tis 13:Nobler 15:the 17:to 18:suffer 20:Slings 21:and 14:in 16:mind 19:The 11:Whether 23:of 24:outrageous 26:Or 27:to 28:take 25:Fortune 30:against 31:a 32:Sea 34:troubles 35:And 37:opposing 39:them 40:to 33:of 38:end 29:Arms 22:Arrows 42:to 43:sleep 45:more; 46:and 44:No 48:a 50:to 51:say 52:we 49:sleep 47:by 54:The 56:ache 58:the 59:thousand 55:Heart 57:and 61:shocks 63:Flesh 64:is 62:That 60:Natural 53:end 41:die
+Dumping to the file debug_07_63.dot
+inserted 36:by
+IN   ORDER: 1:To 2:be 3:or 4:not 5:to 6:be 7:that 8:is 9:the 10:question 11:Whether 12:'tis 13:Nobler 14:in 15:the 16:mind 17:to 18:suffer 19:The 20:Slings 21:and 22:Arrows 23:of 24:outrageous 25:Fortune 26:Or 27:to 28:take 29:Arms 30:against 31:a 32:Sea 33:of 34:troubles 35:And 36:by 37:opposing 38:end 39:them 40:to 41:die 42:to 43:sleep 44:No 45:more; 46:and 47:by 48:a 49:sleep 50:to 51:say 52:we 53:end 54:The 55:Heart 56:ache 57:and 58:the 59:thousand 60:Natural 61:shocks 62:That 63:Flesh 64:is
+POST ORDER: 1:To 2:be 4:not 6:be 7:that 9:the 10:question 3:or 5:to 8:is 12:'tis 13:Nobler 15:the 17:to 18:suffer 20:Slings 21:and 14:in 16:mind 19:The 11:Whether 23:of 24:outrageous 26:Or 27:to 28:take 25:Fortune 30:against 31:a 32:Sea 34:troubles 36:by 37:opposing 39:them 40:to 33:of 35:And 38:end 29:Arms 22:Arrows 42:to 43:sleep 45:more; 46:and 44:No 48:a 50:to 51:say 52:we 49:sleep 47:by 54:The 56:ache 58:the 59:thousand 55:Heart 57:and 61:shocks 63:Flesh 64:is 62:That 60:Natural 53:end 41:die
+Dumping to the file debug_07_64.dot

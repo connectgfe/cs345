@@ -1,0 +1,13 @@
+1 insert	90	ten(tree_0)
+1 insert	0	zero(tree_0)
+1 insert	20	twenty(tree_0)
+1 insert	23	zero(tree_1)
+1 insert	10	ten(tree_1)
+1 insert	25	twenty(tree_1)
+1 insert	30	twenty(tree_1)
+1 insert	40	twenty(tree_1)
+
+
+1 inOrder
+1 postOrder
+

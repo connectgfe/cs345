@@ -1,0 +1,33 @@
+digraph M {
+16 ->  6 [label="L"] ;
+16 ->  22 [label="R"] ;
+6 ->  2 [label="L"] ;
+6 ->  11 [label="R"] ;
+2 ->  1 [label="L"] ;
+2 ->  4 [label="R"] ;
+4 ->  3 [label="L"] ;
+4 ->  5 [label="R"] ;
+11 ->  8 [label="L"] ;
+11 ->  14 [label="R"] ;
+8 ->  7 [label="L"] ;
+8 ->  10 [label="R"] ;
+10 ->  9 [label="L"] ;
+14 ->  13 [label="L"] ;
+14 ->  15 [label="R"] ;
+13 ->  12 [label="L"] ;
+22 ->  18 [label="L"] ;
+22 ->  29 [label="R"] ;
+18 ->  17 [label="L"] ;
+18 ->  20 [label="R"] ;
+20 ->  19 [label="L"] ;
+20 ->  21 [label="R"] ;
+29 ->  25 [label="L"] ;
+29 ->  31 [label="R"] ;
+25 ->  23 [label="L"] ;
+25 ->  27 [label="R"] ;
+23 ->  24 [label="R"] ;
+27 ->  26 [label="L"] ;
+27 ->  28 [label="R"] ;
+31 ->  30 [label="L"] ;
+31 ->  32 [label="R"] ;
+}
