@@ -1,0 +1,13 @@
+digraph M {
+6 ->  10 [label="U"] ;
+6 ->  18 [label="S"] ;
+10 ->  16 [label="U"] ;
+16 ->  4 [label="U"] ;
+4 ->  8 [label="U"] ;
+8 ->  17 [label="U"] ;
+17 ->  3 [label="U"] ;
+3 ->  33 [label="U"] ;
+18 ->  7 [label="U"] ;
+7 ->  13 [label="U"] ;
+13 ->  11 [label="U"] ;
+}

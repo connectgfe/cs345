@@ -1,0 +1,5 @@
+digraph M {
+7 ->  5 [label="U"] ;
+7 ->  18 [label="S"] ;
+5 ->  10 [label="U"] ;
+}
