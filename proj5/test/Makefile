@@ -1,7 +1,8 @@
 all:
 	javac RedBlackNode.java
-	javac RedBlackTree.java
 	javac test.java
+	javac Proj04_Dictionary.java
+	javac RBT.java
 
 
 run:

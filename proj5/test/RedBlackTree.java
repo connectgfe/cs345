@@ -1,6 +1,6 @@
  /* Class RBTree */
 
-public  class RedBlackTree
+public  class RedBlackTree implements Proj04_Dictionary
 
  {
 
@@ -16,45 +16,43 @@ public  class RedBlackTree
 
      private static RedBlackNode nullNode;
 
-     /* static initializer for nullNode */
-/*
-     static 
-
-     {
-
-         nullNode = new RedBlackNode(0);
-
-         nullNode.left = nullNode;
-
-         nullNode.right = nullNode;
-
-     }
-*/
      /* Black - 1  RED - 0 */
 
      static final int BLACK = 1;    
 
      static final int RED   = 0;
 
+
+
+
+
+
+
  
-
-     /* Constructor */
-
-     public RedBlackTree(int negInf)
+    static 
 
      {
 
-         nullNode = new RedBlackNode(0);
+         nullNode = new RedBlackNode(0,null);
 
          nullNode.left = nullNode;
 
          nullNode.right = nullNode;
 
+     }
+     /* Constructor */
 
+     public RedBlackTree()
 
+     {
+/*
+         nullNode = new RedBlackNode(0,null);
 
+         nullNode.left = nullNode;
 
-         header = new RedBlackNode(negInf);
+         nullNode.right = nullNode;
+*/
+         header = new RedBlackNode(1,null);
 
          header.left = nullNode;
 
@@ -84,14 +82,16 @@ public  class RedBlackTree
 
      /* Function to insert item */
 
-     public void insert(int item )
+     public void insert(int item , String val)
 
      {
 
-System.out.println("inserting: "+item);
+System.out.println("inserted "+item+":"+val);
          current = parent = grand = header;
 
          nullNode.element = item;
+         nullNode.value = val;
+
 
          while (current.element != item)
 
@@ -131,7 +131,7 @@ System.out.println("inserting: "+item);
 
              return;
 
-         current = new RedBlackNode(item, nullNode, nullNode);
+         current = new RedBlackNode(item, val, nullNode, nullNode);
 
          // Attach to parent
 
@@ -182,6 +182,10 @@ System.out.println("inserting: "+item);
          // Make root black
 
          header.right.color = BLACK; 
+
+
+printInOrder();
+
 
      }      
 
@@ -289,22 +293,23 @@ System.out.println("inserting: "+item);
 
      /* Functions to search for an element */
 
-     public boolean search(int val)
+
+
+
+     public String search(int val)
 
      {
 
-         return search(header.right, val);
+         return search2(header.right, val);
 
      }
 
-     private boolean search(RedBlackNode r, int val)
+     private String search2(RedBlackNode r, int val)
 
      {
 
-         boolean found = false;
 
-         while ((r != nullNode) && !found)
-
+         while (r != nullNode) 
          {
 
              int rval = r.element;
@@ -321,31 +326,32 @@ System.out.println("inserting: "+item);
 
              {
 
-                 found = true;
+                 return r.value;
 
-                 break;
 
              }
 
-             found = search(r, val);
+             search2(r, val);
 
          }
 
-         return found;
+         return null;
 
      }
 
      /* Function for inorder traversal */ 
 
-     public void inorder1()
+     public void printInOrder()
 
      {
 
-         inorder(header.right);
+         inorder1(header.right);
+
+         System.out.println();
 
      }
 
-     private void inorder(RedBlackNode r)
+     private void inorder1(RedBlackNode r)
 
      {
 
@@ -357,17 +363,18 @@ System.out.println("inserting: "+item);
 
          {
 
-             inorder(r.left);
+             inorder1(r.left);
 
-             char c = 'B';
+             char c = 'b';
 
              if (r.color == 0)
 
-                 c = 'R';
+                 c = 'r';
 
-             System.out.print(r.element +""+c+" ");
+            System.out.print(" "+"("+c+")"+":"+r.element+":'"+r.value+"'");
 
-             inorder(r.right);
+
+             inorder1(r.right);
 
          }
 
@@ -375,15 +382,17 @@ System.out.println("inserting: "+item);
 
      /* Function for preorder traversal */
 
-     public void preorder()
+     public void printPreOrder()
 
      {
 
-         preorder(header.right);
+         preorder1(header.right);
+
+         System.out.println();
 
      }
 
-     private void preorder(RedBlackNode r)
+     private void preorder1(RedBlackNode r)
 
      {
 
@@ -391,17 +400,18 @@ System.out.println("inserting: "+item);
 
          {
 
-             char c = 'B';
+             char c = 'b';
 
              if (r.color == 0)
 
-                 c = 'R';
+                 c = 'r';
 
-             System.out.print(r.element +""+c+" ");
+            System.out.print(" "+"("+c+")"+":"+r.element+":'"+r.value+"'");
 
-             preorder(r.left);             
 
-             preorder(r.right);
+             preorder1(r.left);             
+
+             preorder1(r.right);
 
          }
 
@@ -409,15 +419,17 @@ System.out.println("inserting: "+item);
 
      /* Function for postorder traversal */
 
-     public void postorder()
+     public void printPostOrder()
 
      {
 
-         postorder(header.right);
+         postorder1(header.right);
+
+         System.out.println();
 
      }
 
-     private void postorder(RedBlackNode r)
+     private void postorder1(RedBlackNode r)
 
      {
 
@@ -425,20 +437,30 @@ System.out.println("inserting: "+item);
 
          {
 
-             postorder(r.left);             
+             postorder1(r.left);             
 
-             postorder(r.right);
+             postorder1(r.right);
 
-             char c = 'B';
+             char c = 'b';
 
              if (r.color == 0)
 
-                 c = 'R';
+                 c = 'r';
 
-             System.out.print(r.element +""+c+" ");
+            System.out.print(" "+"("+c+")"+":"+r.element+":'"+r.value+"'");
+
 
          }
 
      }     
+
+     public void genDebugDot(String file){}
+
+ 
+     public void delete(int key){}
+
+
+
+
 
  }
