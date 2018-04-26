@@ -7,7 +7,7 @@ public class RedBlackNode
 
      RedBlackNode left, right;
 
-     int element;
+     int key;
 
      public String value;
 
@@ -17,16 +17,19 @@ public class RedBlackNode
 
      /* Constructor */
 
-     public RedBlackNode(int theElement, String val)
+     public RedBlackNode(int key, String value)
 
      {
 
-         this( theElement, val, null ,null);
+       this.key=key;
+       this.value=value;
+
+
 
      } 
 
      /* Constructor */
-
+/*
      public RedBlackNode(int theElement, String val, RedBlackNode lt, RedBlackNode rt)
 
      {
@@ -43,5 +46,7 @@ public class RedBlackNode
          
 
      }    
+*/
+
 
  }

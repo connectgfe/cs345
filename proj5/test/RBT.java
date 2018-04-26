@@ -31,34 +31,48 @@ public class RBT implements Proj04_Dictionary
      * Inner class for a red-black tree node.  Extends a binary search
      * tree node with an additional color field.
      */
-    class Node extends RedBlackNode
-    {
-  /** The node's color, either RED or BLACK. */
+    class Node extends RedBlackNode{
+  //* The node's color, either RED or BLACK. */
 //  protected Color color;
 
      Node parent;
      Node right, left;
 
-  /**
-   * Initializes a node with the data, makes other pointers nil,
-   * and makes the node red.
-   *
-   * @param data Data to save in the node.
-   */
+//   * Initializes a node with the data, makes other pointers nil,
+//   * and makes the node red.
+//   *
+//   * @param data Data to save in the node.
      public Node(int key, String value){
-      super(key,value);
-      this.color = 1;
+       super(key,value);
+       this.color = 0;
      }
+
+      public void setLeftChild(Node child)
+      {
+         this.left = child;
+         if (child != null) { child.parent = this; }
+      }
+      
+//         Sets the right child and updates its parent reference.
+//         @param child the new right child
+      public void setRightChild(Node child)
+      {
+         this.right = child;
+         if (child != null) { child.parent = this; }
+      }
+
+
+
+
 
 
     }
 
-    /**
-     * Set the sentinel <code>nil</code> to a given node, and make the
-     * sentinel black.
-     *
-     * @param node The node that <code>nil</code> is set to.
-     */
+//     * Set the sentinel <code>nil</code> to a given node, and make the
+//     * sentinel black.
+//     *
+//     * @param node The node that <code>nil</code> is set to.
+
 /*
     protected void setNil(Node node)
     {
@@ -66,14 +80,15 @@ public class RBT implements Proj04_Dictionary
   super.setNil(node);
     }
 */
-    /**
-     * Creates a red-black tree with just a <code>nil</code>, which is
-     * the root.
-     */
+
+//     * Creates a red-black tree with just a <code>nil</code>, which is
+//     * the root.
     public RBT()
     {
-    root = new Node(0,null);
-    root.color=0;
+
+//    root = new Node(0,null);
+//    root.color=0;
+      root=null;
     }
 
 
@@ -82,7 +97,7 @@ public class RBT implements Proj04_Dictionary
 
 System.out.println("Inserted: "+key);
 
-       insertFixUp(search2(root,key));
+       fixAfterInsert(search2(root,key));
 
     }
      
@@ -110,16 +125,12 @@ System.out.println("Inserted: "+key);
 
 
 
+/*
 
-
-    /**
-     * Performs a left rotation on a node, making the node's right
-     * child its parent.
-     *
-     * @param x The node.
-     */
-
-
+//     * Performs a left rotation on a node, making the node's right
+//     * child its parent.
+//     *
+//     * @param x The node.
     protected void leftRotate(Node x)
     {
   Node y = (Node) x.right;
@@ -148,14 +159,10 @@ System.out.println("Inserted: "+key);
   x.parent = y;
     }
 
-    /**
-     * Performs a right rotation on a node, making the node's left
-     * child its parent.
-     *
-     * @param x The node.
-     */
-
-
+//     * Performs a right rotation on a node, making the node's left
+//     * child its parent.
+//     *
+//     * @param x The node.
     protected void rightRotate(Node x)
     {
   Node y = (Node) x.left;
@@ -179,7 +186,7 @@ System.out.println("Inserted: "+key);
     }
 
 
-  
+*/ 
 
 
     public Node search2(Node r, int val)
@@ -218,18 +225,167 @@ System.out.println("Inserted: "+key);
      } 
 
 
+   private void replaceWith(Node toBeReplaced, Node replacement)
+   {
+      if (toBeReplaced.parent == null) 
+      { 
+         replacement.parent = null; 
+         root = replacement; 
+      }
+      else if (toBeReplaced == toBeReplaced.parent.left) 
+      { 
+         toBeReplaced.parent.setLeftChild(replacement); 
+      }
+      else 
+      { 
+         toBeReplaced.parent.setRightChild(replacement); 
+      }
+   }
+
+   private void fixAfterInsert(Node newNode)
+   {
+      if (newNode.parent == null) 
+      { 
+         newNode.color = 1; 
+      }
+      else
+      {
+         newNode.color = 0;
+         if (newNode.parent.color == 0) { fixDoubleRed(newNode); }
+      }
+   }
+
+
+//      Fixes a "double red" violation.
+//      @param child the child with a red parent
+   private void fixDoubleRed(Node child)
+   {
+      Node parent = child.parent;      
+      Node grandParent = parent.parent;
+      if (grandParent == null) { parent.color = 1; return; }
+      Node n1, n2, n3, t1, t2, t3, t4;
+      if (parent == grandParent.left)
+      {
+         n3 = grandParent; t4 = grandParent.right;
+         if (child == parent.left)
+         {
+            n1 = child; n2 = parent;
+            t1 = child.left; t2 = child.right; t3 = parent.right;
+         }
+         else
+         {
+            n1 = parent; n2 = child;
+            t1 = parent.left; t2 = child.left; t3 = child.right; 
+         }
+      }
+      else
+      {
+         n1 = grandParent; t1 = grandParent.left;
+         if (child == parent.left)
+         {
+            n2 = child; n3 = parent;
+            t2 = child.left; t3 = child.right; t4 = parent.right;
+         }
+         else
+         {
+            n2 = parent; n3 = child;
+            t2 = parent.left; t3 = child.left; t4 = child.right; 
+         }         
+      }
+      
+      replaceWith(grandParent, n2);      
+      n1.setLeftChild(t1);
+      n1.setRightChild(t2);
+      n2.setLeftChild(n1);
+      n2.setRightChild(n3);
+      n3.setLeftChild(t3);
+      n3.setRightChild(t4);
+      n2.color = grandParent.color -1; 
+      n1.color = 1;
+      n3.color = 1;
+
+      if (n2 == root)
+      {
+         root.color = 1;
+      }
+      else if (n2.color == 0 && n2.parent.color == 0)
+      {
+         fixDoubleRed(n2);
+      }
+   }
+   
+//      Fixes a "negative red" violation.
+//      @param negRed the negative red node
+   private void fixNegativeRed(Node negRed)
+   {  
+      Node parent = negRed.parent;
+      Node child;
+      if (parent.left == negRed)
+      {
+         Node n1 = negRed.left;
+         Node n2 = negRed;
+         Node n3 = negRed.right;
+         Node n4 = parent;
+         Node t1 = n3.left;
+         Node t2 = n3.right;
+         Node t3 = n4.right;
+         n1.color = 0;
+         n2.color = 1;
+         n4.color = 1;
+
+         replaceWith(n4, n3);
+         n3.setLeftChild(n2);
+         n3.setRightChild(n4);
+         n2.setLeftChild(n1);
+         n2.setRightChild(t1);
+         n4.setLeftChild(t2);
+         n4.setRightChild(t3);
+
+         child = n1;
+      }
+      else // Mirror image
+      {
+         Node n4 = negRed.right;
+         Node n3 = negRed;
+         Node n2 = negRed.left;
+         Node n1 = parent;
+         Node t3 = n2.right;
+         Node t2 = n2.left;
+         Node t1 = n1.left;
+         n4.color = 0;
+         n3.color = 1;
+         n1.color = 1;
+
+         replaceWith(n1, n2);
+         n2.setRightChild(n3);
+         n2.setLeftChild(n1);
+         n3.setRightChild(n4);
+         n3.setLeftChild(t3);
+         n1.setRightChild(t2);
+         n1.setLeftChild(t1);
+
+         child = n4;
+      }
+     
+      if (child.left != null && child.left.color == 0) 
+      { 
+         fixDoubleRed(child.left); 
+      }
+      else if (child.right != null && child.right.color == 0) 
+      { 
+         fixDoubleRed(child.right);  
+      }
+   }
 
 
 
 
-    /**
-     * Inserts data into the tree, creating a new node for this data.
-     *
-     * @param data Data to be inserted into the tree.
-     * @return A reference to the <code>Node</code> object created.
-     * The <code>Node</code> class is opaque to methods outside this
-     * class.
-     */
+//     * Inserts data into the tree, creating a new node for this data.
+//     *
+//     * @param data Data to be inserted into the tree.
+//     * @return A reference to the <code>Node</code> object created.
+//     * The <code>Node</code> class is opaque to methods outside this
+//.     * class.
 /*
     public Object insert(Comparable data)
     {
@@ -241,11 +397,8 @@ System.out.println("Inserted: "+key);
 
 */
 
-    /**
-     * Inserts a node into the tree.
-     *
-     * @param z The node to insert.
-     */
+//     * Inserts a node into the tree.
+//     * @param z The node to insert.
 
 /*
     protected void treeInsert(Node z)
@@ -255,13 +408,12 @@ System.out.println("Inserted: "+key);
     }
 */
 
-    /**
-     * Restores the red-black conditions of the tree after inserting a
-     * node.
-     *
-     * @param z The node inserted.
-     */
 
+/*
+//     * Restores the red-black conditions of the tree after inserting a
+//     * node.
+//     *
+//     * @param z The node inserted.
     public  void insertFixUp(Node z)
     {
   Node y = null;
@@ -310,6 +462,9 @@ System.out.println("Inserted: "+key);
     }
 
 
+*/
+
+
     /**
      * Returns the number of black nodes from a given node down to any
      * leaf.  The value should be the same for all paths.
@@ -336,7 +491,10 @@ System.out.println("Inserted: "+key);
       throw new BlackHeightException();
     }
 */
-    /**
+ 
+
+
+   /**
      * Returns the number of black nodes from the root down to any
      * leaf.  The value should be the same for all paths.
      *
@@ -363,7 +521,7 @@ System.out.println("Inserted: "+key);
 
      {
 
-         inorder1(root.right);
+         inorder1(root);
 
          System.out.println();
 
@@ -383,11 +541,11 @@ System.out.println("Inserted: "+key);
 
              inorder1(r.left);
 
-             char c = 'b';
+             char c = 'r';
 
-             if (r.color == 0)
+             if (r.color == 1)
 
-                 c = 'r';
+                 c = 'b';
 
             System.out.print(" "+"("+c+")"+":"+r.key+":'"+r.value+"'");
 
@@ -416,15 +574,14 @@ System.out.println("Inserted: "+key);
 }
 ///////////////////////////////////////////////////
 
-
+/*
 import java.util.ArrayList;
 import java.util.List;
 
-/**
-   This class implements a red-black tree whose
-   nodes hold objects that implement the Comparable
-   interface.
-*/
+//   This class implements a red-black tree whose
+//   nodes hold objects that implement the Comparable
+//   interface.
+
 public class RedBlackTree
 {  
    Node root; // Package access, for testing
@@ -434,18 +591,15 @@ public class RedBlackTree
    private static final int NEGATIVE_RED = -1;
    private static final int DOUBLE_BLACK = 2;
 
-   /**
-      Constructs an empty tree.
-   */
+//      Constructs an empty tree.
    public RedBlackTree()
    {  
       root = null;
    }
    
-   /**
-      Inserts a new node into the tree.
-      @param obj the object to insert
-   */
+//      Inserts a new node into the tree.
+
+//      @param obj the object to insert
    public void add(Comparable obj) 
    {  
       Node newNode = new Node();
@@ -457,11 +611,9 @@ public class RedBlackTree
       fixAfterAdd(newNode);
    }
 
-   /**
-      Tries to find an object in the tree.
-      @param obj the object to find
-      @return true if the object is contained in the tree
-   */
+//      Tries to find an object in the tree.
+//      @param obj the object to find
+//      @return true if the object is contained in the tree
    public boolean find(Comparable obj)
    {
       Node current = root;
@@ -475,11 +627,9 @@ public class RedBlackTree
       return false;
    }
    
-   /**
-      Tries to remove an object from the tree. Does nothing
-      if the object is not contained in the tree.
-      @param obj the object to remove
-   */
+//      Tries to remove an object from the tree. Does nothing
+//      if the object is not contained in the tree.
+//      @param obj the object to remove
    public void remove(Comparable obj)
    {
       // Find node to be removed
@@ -533,32 +683,26 @@ public class RedBlackTree
       replaceWith(smallest, smallest.right);
    }
    
-   /**
-      Yields the contents of the tree in sorted order
-      @return all data items traversed in inorder, with a space after each item
-   */
+//      Yields the contents of the tree in sorted order
+//      @return all data items traversed in inorder, with a space after each item
    public String toString()
    {  
       return toString(root);
    }  
 
-   /**
-      Yields the contents of the subtree with the given root in sorted order
-      @param parent the root of the subtree
-      @return all data items traversed in inorder, with a space after each item
-   */
+//      Yields the contents of the subtree with the given root in sorted order
+//      @param parent the root of the subtree
+//      @return all data items traversed in inorder, with a space after each item
    private static String toString(Node parent)
    {  
       if (parent == null) { return ""; }
       return toString(parent.left) + parent.data + " " + toString(parent.right);
    }
 
-   /**
-      A node of a red-black tree stores a data item and references
-      of the child nodes to the left and to the right. The color
-      is the "cost" of passing the node; 1 for black or 0 for red.
-      Temporarily, it may be set to 2 or -1. 
-   */
+//      A node of a red-black tree stores a data item and references
+//      of the child nodes to the left and to the right. The color
+//      is the "cost" of passing the node; 1 for black or 0 for red.
+//      Temporarily, it may be set to 2 or -1. 
    static class Node
    {  
       public Comparable data;
@@ -567,35 +711,27 @@ public class RedBlackTree
       public Node parent;
       public int color;
       
-      /**
-         Constructs a red node with no data.
-      */
+//         Constructs a red node with no data.
       public Node() {}
       
-      /**
-         Sets the left child and updates its parent reference.
-         @param child the new left child
-      */
+//         Sets the left child and updates its parent reference.
+//         @param child the new left child
       public void setLeftChild(Node child)
       {
          left = child;
          if (child != null) { child.parent = this; }
       }
       
-      /**
-         Sets the right child and updates its parent reference.
-         @param child the new right child
-      */
+//         Sets the right child and updates its parent reference.
+//         @param child the new right child
       public void setRightChild(Node child)
       {
          right = child;
          if (child != null) { child.parent = this; }
       }
       
-      /**
-         Inserts a new node as a descendant of this node.
-         @param newNode the node to insert
-      */
+//         Inserts a new node as a descendant of this node.
+//         @param newNode the node to insert
       public void addNode(Node newNode)
       {  
          int comp = newNode.data.compareTo(data);
@@ -620,12 +756,10 @@ public class RedBlackTree
       }
    }
 
-   /**
-      Updates the parent's and replacement node's links when this node is replaced.
-      Also updates the root reference if it is replaced.
-      @param toBeReplaced the node that is to be replaced
-      @param replacement the node that replaces that node
-   */
+//      Updates the parent's and replacement node's links when this node is replaced.
+//      Also updates the root reference if it is replaced.
+//      @param toBeReplaced the node that is to be replaced
+//      @param replacement the node that replaces that node
    private void replaceWith(Node toBeReplaced, Node replacement)
    {
       if (toBeReplaced.parent == null) 
@@ -643,27 +777,23 @@ public class RedBlackTree
       }
    }
 
-   /**
-      Restores the tree to a red-black tree after a node has been added.
-      @param newNode the node that has been added
-   */
-   private void fixAfterAdd(Node newNode)
+//      Restores the tree to a red-black tree after a node has been added.
+//      @param newNode the node that has been added
+   private void fixAfterInsert(Node newNode)
    {
       if (newNode.parent == null) 
       { 
-         newNode.color = BLACK; 
+         newNode.color = 0; 
       }
       else
       {
-         newNode.color = RED;
-         if (newNode.parent.color == RED) { fixDoubleRed(newNode); }
+         newNode.color = 1;
+         if (newNode.parent.color == 1) { fixDoubleRed(newNode); }
       }
    }
 
-   /**  
-     Fixes the tree so that it is a red-black tree after a node has been removed.
-     @param toBeRemoved the node that is to be removed
-   */
+//     Fixes the tree so that it is a red-black tree after a node has been removed.
+//     @param toBeRemoved the node that is to be removed
    private void fixBeforeRemove(Node toBeRemoved)
    {
       if (toBeRemoved.color == RED) { return; }
@@ -677,10 +807,8 @@ public class RedBlackTree
       else { bubbleUp(toBeRemoved.parent); }
    }
    
-   /**
-      Move a charge from two children of a parent
-      @param parent a node with two children, or null (in which case nothing is done)
-   */
+//      Move a charge from two children of a parent
+//      @param parent a node with two children, or null (in which case nothing is done)
    private void bubbleUp(Node parent)
    {
       if (parent == null) { return; }
@@ -698,11 +826,9 @@ public class RedBlackTree
       }
    }
 
-   /**
-      Fixes a negative-red or double-red violation introduced by bubbling up.
-      @param child the child to check for negative-red or double-red violations
-      @return true if the tree was fixed
-   */
+//      Fixes a negative-red or double-red violation introduced by bubbling up.
+//      @param child the child to check for negative-red or double-red violations
+//      @return true if the tree was fixed
    private boolean bubbleUpFix(Node child)
    {
       if (child.color == NEGATIVE_RED) { fixNegativeRed(child); return true; }
@@ -720,10 +846,8 @@ public class RedBlackTree
       return false; 
    }
    
-   /**
-      Fixes a "double red" violation.
-      @param child the child with a red parent
-   */
+//      Fixes a "double red" violation.
+//      @param child the child with a red parent
    private void fixDoubleRed(Node child)
    {
       Node parent = child.parent;      
@@ -780,10 +904,8 @@ public class RedBlackTree
       }
    }
    
-   /**
-      Fixes a "negative red" violation.
-      @param negRed the negative red node
-   */
+//      Fixes a "negative red" violation.
+//      @param negRed the negative red node
    private void fixNegativeRed(Node negRed)
    {  
       Node parent = negRed.parent;
@@ -844,11 +966,13 @@ public class RedBlackTree
          fixDoubleRed(child.right);  
       }
    }
+
+
+
 }
 
 
-
-
+*/
 
 
 
