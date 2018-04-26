@@ -1,371 +1,445 @@
-
-
-public class Proj05_RedBlack_student implements Proj04_Dictionary
-{
-
-
-    Node root;
-
-
-
-    /** Color for a red node. */
-//    protected static final Color RED = Color.red;
-  // color red = 1;  
-    
-    
-
-    /** Color for a black node. */
-//    protected static final Color BLACK = Color.black;
-  // color black =0; 
-
-    /**
-     * Exception thrown by {@link #blackHeight} if the black-height of
-     * a node is ill-defined.
-     */
 /*
-    public static class BlackHeightException extends RuntimeException
-    {
-    }
+ * @(#)RedBlackTree.java	1.1 95/09/14
+ *
+ * Copyright (c) 1996 Chuck McManis, All Rights Reserved.
+ *
+ * Permission to use, copy, modify, and distribute this software
+ * and its documentation for NON-COMMERCIAL purposes and without
+ * fee is hereby granted provided that this copyright notice
+ * appears in all copies.
+ *
+ * CHUCK MCMANIS MAKES NO REPRESENTATIONS OR WARRANTIES ABOUT THE SUITABILITY
+ * OF THE SOFTWARE, EITHER EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED
+ * TO THE IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A
+ * PARTICULAR PURPOSE, OR NON-INFRINGEMENT. CHUCK MCMANIS SHALL NOT BE
+ * LIABLE FOR ANY DAMAGES SUFFERED BY LICENSEE AS A RESULT OF USING,
+ * MODIFYING OR DISTRIBUTING THIS SOFTWARE OR ITS DERIVATIVES.
+ */
+/*
+package util;
+
+import java.io.PrintStream;
+import java.util.Dictionary;
+import java.util.Enumeration;
+import java.util.NoSuchElementException;
+import util.Comparator;
 */
-    /**
-     * Inner class for a red-black tree node.  Extends a binary search
-     * tree node with an additional color field.
-     */
-    class Node extends RedBlackNode
-    {
-  /** The node's color, either RED or BLACK. */
+/**
+ * This class implements a Dictionary using a B-tree. This exact type
+ * of tree is called a "red-black" tree since it uses a color algorithim
+ * to insure that it is always balanced. Note that the key object must
+ * be an object of class String for this class. This is because the
+ * implementation uses compareTo() to determine if a node should be on
+ * the right or left hand branch.
+ *
+ * @author	Chuck McManis
+ * @version	1.1, 14 Sep 1995
+ * @see		Dictionary
+ */
+public class Proj05_RedBlack_student implements Proj04_Dictionary {
+
+
+   class Node extends RedBlackNode{
+  //* The node's color, either RED or BLACK. */
 //  protected Color color;
 
      Node parent;
      Node right, left;
 
-  /**
-   * Initializes a node with the data, makes other pointers nil,
-   * and makes the node red.
-   *
-   * @param data Data to save in the node.
-   */
+//   * Initializes a node with the data, makes other pointers nil,
+//   * and makes the node red.
+//   *
+//   * @param data Data to save in the node.
      public Node(int key, String value){
-      super(key,value);
-      this.color = 1;
+       super(key,value);
+       this.color = 0;
      }
-
-
-    }
-
-    /**
-     * Set the sentinel <code>nil</code> to a given node, and make the
-     * sentinel black.
-     *
-     * @param node The node that <code>nil</code> is set to.
-     */
-/*
-    protected void setNil(Node node)
-    {
-  node.color = BLACK;
-  super.setNil(node);
-    }
-*/
-    /**
-     * Creates a red-black tree with just a <code>nil</code>, which is
-     * the root.
-     */
-    public Proj05_RedBlack_student()
-    {
-    root = new Node(0,null);
-    root.color=0;
     }
 
 
-   public void insert(int key, String value) {
-       root = insertRec(root,null, key, value);
 
-//System.out.println("Inserted: "+key);
+    private Node listRoot;
+    private final int RED = 0;
+    private final int BLACK = 1;
+    private int count = 0;
+    private long treeGen = 0; // This tree's generation count.
 
-//       insertFixUp(search2(root,key));
+//    Comparator cmp;
 
-    }
-     
-    /* A recursive function to insert a new key in BST */
-    public Node insertRec(Node root, Node par, int key, String value) {
+    public Proj05_RedBlack_student() {
  
-        /* If the tree is empty, return a new node */
-        if (root == null) {
-            root = new Node(key,value);
-            root.parent=par;
-            return root;
+       listRoot=null;
+
+    }
+
+
+    /**
+     * Returns the number of elements in the tree.
+     */
+    public int size() {
+    	return (count);
+    }
+
+    /**
+     * Returns true if the tree is empty.
+     */
+    public boolean isEmpty() {
+	    return (listRoot == null);
+    }
+
+    /**
+     * Return an enumeration of the trees keys. This will return the
+     * keys in sorted order as it does an inorder walk from the minimum
+     * valued key to the maximum valued key.
+     */
+/*
+    public Enumeration keys() {
+	    return new RedBlackTreeEnumerator(this, true);
+    }
+*/
+    /**
+     * Return an enumeration of the trees objects. This will return the
+     * elements in sorted order as it does an inorder walk from minimum
+     * key to the  maximum key.
+     */
+/*
+    public Enumeration elements() {
+	    return new RedBlackTreeEnumerator(this, false);
+    }
+*/
+
+    /**
+     * Return the value for a given key.
+     */
+/*
+    public Object get(Object key) {
+  	    Node x = lookup(key);
+   	    return ((x != null) ? x.value : null);
+    }
+*/
+    /**
+     * Add a new object to the tree. Note that if there is already a
+     * node in the tree with this key value, the old value is replaced
+     * with the new value. The old value is returned. If no previous
+     * node exists, this returns null.
+     */
+/*
+    public Object put(int key, String value) {
+    	Node x = add(key, value);
+    	if (x == null)
+    	    count++;	// Added a new element
+    	return ((x != null) ? x.value : null);
+    }
+*/
+
+    public void insert(int key, String value) {
+    	Node x = add(key, value);
+    	if (x == null)
+    	    count++;	// Added a new element
+    }
+
+
+    /**
+     * Remove an object from the tree. This returns null if the key did
+     * not reference an object in the tree.
+     */
+/*
+    public Object remove(Object key) {
+	    Node x = lookup(key);
+	    if (x != null) {
+		    delete(x);
+		    count--;
+		    return (x.value);
+	    }
+    	return (null); // throw something?
+    }
+*/
+    /**
+     * Return the successor object to the named object.
+     */
+/*
+    public Object next(Object key) {
+        Node x = lookup(key);
+        if (x != null) {
+            x = successor(x);
+            if (x != null) {
+                return (x.value);
+            }
         }
- 
-        /* Otherwise, recur down the tree */
-        if (key < root.key){
-
-                    root.left = insertRec(root.left, root, key, value);
-         }else if (key > root.key){
-
-                    root.right = insertRec(root.right, root , key, value);
-         } 
-        /* return the (unchanged) node pointer */
-        return root;
-    }
-
-
-
-
-
-    /**
-     * Performs a left rotation on a node, making the node's right
-     * child its parent.
-     *
-     * @param x The node.
-     */
-
-
-    protected void leftRotate(Node x)
-    {
-  Node y = (Node) x.right;
-
-  // Swap the in-between subtree from y to x.
-  x.right = y.left;
-  if (y.left != null)
-      y.left.parent = x;
-
-  // Make y the root of the subtree for which x was the root.
-  y.parent = x.parent;
-  
-  // If x is the root of the entire tree, make y the root.
-  // Otherwise, make y the correct child of the subtree's
-  // parent.
-  if (x.parent == null)
-      root = y;
-  else 
-      if (x == x.parent.left)
-    x.parent.left = y;
-      else
-    x.parent.right = y;
-
-  // Relink x and y.
-  y.left = x;
-  x.parent = y;
-    }
-
-    /**
-     * Performs a right rotation on a node, making the node's left
-     * child its parent.
-     *
-     * @param x The node.
-     */
-
-
-    protected void rightRotate(Node x)
-    {
-  Node y = (Node) x.left;
-
-  x.left = y.right;
-  if (x.left != null)
-      y.right.parent = x;
-
-  y.parent = x.parent;
-
-  y.right = x;
-  x.parent = y;
-
-  if (root == x)
-      root = y;
-  else
-      if (y.parent.left == x)
-    y.parent.left = y;
-      else
-    y.parent.right = y;
-    }
-
-
-  
-
-
-    public Node search2(Node r, int val)
-
-     {
-
-
-         while (r != null)
-         {
-
-             int rval = r.key;
-
-             if (val < rval)
-
-                 r = r.left;
-
-             else if (val > rval)
-
-                 r = r.right;
-
-             else
-
-             {
-
-                 return r;
-
-
-             }
-
-             search2(r, val);
-
-         }
-
-         return null;
-
-     } 
-
-
-
-
-
-
-    /**
-     * Inserts data into the tree, creating a new node for this data.
-     *
-     * @param data Data to be inserted into the tree.
-     * @return A reference to the <code>Node</code> object created.
-     * The <code>Node</code> class is opaque to methods outside this
-     * class.
-     */
-/*
-    public Object insert(Comparable data)
-    {
-  Node z = new Node(data);
-  treeInsert(z);
-
-  return z;
-    }
-
-*/
-
-    /**
-     * Inserts a node into the tree.
-     *
-     * @param z The node to insert.
-     */
-
-/*
-    protected void treeInsert(Node z)
-    {
-  super.treeInsert(z);
-  insertFixup(z);
+        return null;
     }
 */
-
     /**
-     * Restores the red-black conditions of the tree after inserting a
-     * node.
-     *
-     * @param z The node inserted.
+     * Return the predecessor value to the named object.
      */
-
-    public  void insertFixUp(Node z)
-    {
-  Node y = null;
-
-  while (((Node) z.parent).color == 1) {
-      if (z.parent == z.parent.parent.left) {
-    y = (Node) z.parent.parent.right;
-    if (y.color == 1) {
-        ((Node) z.parent).color = 0;
-        y.color = 0;
-        ((Node) z.parent.parent).color = 1;
-        z = (Node) z.parent.parent;
-    }
-    else {
-        if (z ==  z.parent.right) {
-      z = (Node) z.parent;
-      leftRotate(z);
+/*
+    public Object prev(Object key) {
+        Node x = lookup(key);
+        if (x != null) {
+            x = predecessor(x);
+            if (x != null) {
+                return (x.value);
+            }
         }
-        
-        ((Node) z.parent).color = 0;
-        ((Node) z.parent.parent).color = 1;
-        rightRotate((Node) z.parent.parent);
+        return null;
     }
-      }
-      else {
-    y = (Node) z.parent.parent.left;
-    if (y.color == 1) {
-        ((Node) z.parent).color = 0;
-        y.color = 0;
-        ((Node) z.parent.parent).color = 1;
-        z = (Node) z.parent.parent;
+*/
+    /* ******************************************* *
+     * PRIVATE Implementation of Red-Black B-trees *
+     * ******************************************* */
+
+    /**
+     * Return the value of the generation variable
+     */
+/*
+    long generation() {
+    	return treeGen;
     }
-    else {
-        if (z ==  z.parent.left) {
-      z = (Node) z.parent;
-      rightRotate(z);
-        }
-        
-        ((Node) z.parent).color = 0;
-        ((Node) z.parent.parent).color = 1;
-        leftRotate((Node) z.parent.parent);
+*/
+    /**
+     * Rotate the tree left about node 'x'.
+     */
+    private void rotateLeft(Node x) {
+    	Node y = x.right;
+
+    	x.right = y.left;
+    	if (y.left != null)
+    	    y.left.parent = x;
+
+    	y.parent = x.parent;
+    	if (x.parent == null)
+    		listRoot = y;
+    	else {
+    	    if (x == x.parent.left)
+    	        x.parent.left = y;
+      	    else
+    	        x.parent.right = y;
+    	}
+    	y.left = x;
+    	x.parent = y;
     }
-      }
-  }
-  ((Node) root).color = 0;
+
+    /**
+     * Return the color of node x, note if node x is null then
+     * the color is presumed to be black.
+     */
+    private int color(Node x) {
+    	if (x == null)
+    	    return BLACK;
+    	else
+    	    return (x.color);
+    }
+
+    /**
+     * Rotate the tree right about the node y. Rotations preserve
+     * the key ordering of their children nodes.
+     */
+    private void rotateRight(Node y) {
+    	Node x = y.left;
+
+    	y.left = x.right;
+
+    	if (x.right != null)
+    	    x.right.parent = y;
+
+    	x.parent = y.parent;
+
+    	if (y.parent == null)
+    	    listRoot = x;
+    	else {
+    	    if (y == y.parent.left)
+    	        y.parent.left = x;
+    	    else
+    	        y.parent.right = x;
+    	}
+
+    	x.right = y;
+    	y.parent = x;
+    }
+
+
+    public int compare(int x, int y){
+
+     if(x<y) { return -1;}
+
+      return 1;
+
     }
 
 
     /**
-     * Returns the number of black nodes from a given node down to any
-     * leaf.  The value should be the same for all paths.
-     *
-     * @param z The node.
-     * @throws BlackHeightException if the number of black nodes on a
-     * path from the left child down to a leaf differs from the number
-     * of black nodes on a path from the right child down to a leaf.
+     * Simple node insertion. After insertion the red-black properties
+     * are "fixed" by rotating the correct number of nodes to balance
+     * the tree. See add below.
+     */
+    private Node insert2(Node z) {
+    	Node x = listRoot;
+    	Node y = null;
+    	int	i;
+
+    	while (x != null) {
+    	    y = x;
+    	    x = (compare(x.key, z.key) > 0) ? x.left : x.right;
+    	}
+    	z.parent = y;
+    	if (y == null) {
+    	    listRoot = z;
+    	} else {
+    	    i = compare(y.key, z.key);
+    	    if (i > 0)
+    	        y.left = z;
+    	    else if (i < 0)
+        		y.right = z;
+    	    else { // They have the same key
+        		String t;
+
+        		t = z.value;		// swap values
+        		z.value = y.value;
+        		y.value = t;
+        		return (z);		// return old value
+    	    }
+    	}
+    	return (null);
+    }
+
+    /**
+     * Return the lowest key valued node. (needed for enumerations)
      */
 /*
-    public int blackHeight(Node z)
-    {
-  if (z == nil)
-      return 0;
-
-  int left = blackHeight((Node) z.left);
-  int right = blackHeight((Node) z.right);
-  if (left == right)
-      if (z.color == BLACK)
-    return left + 1;
-      else
-    return left;
-  else
-      throw new BlackHeightException();
+    Node minimum() {
+    	return minimum(listRoot);
     }
 */
     /**
-     * Returns the number of black nodes from the root down to any
-     * leaf.  The value should be the same for all paths.
-     *
-     * @param z The node.
-     * @throws BlackHeightException if the number of black nodes on a
-     * path from the left child down to a leaf differs from the number
-     * of black nodes on a path from the right child down to a leaf.
+     * Return the lowest key value in the subtree under x
      */
 /*
-    public int blackHeight()
-    {
-  return blackHeight((Node) root);
+    private Node minimum(Node x) {
+    	if (x == null)
+    	    x = listRoot;
+
+    	while (x != null) {
+    	    if (x.left == null)
+    		return x;
+    	    x = x.left;
+     	}
+    	return null;
     }
-}
+*/
+    /**
+     * Return the highest value key under the subtree x
+     */
+/*
+    private Node maximum(Node x) {
+    	if (x == null)
+    	    x = listRoot;
+
+    	while (x != null) {
+    	    if (x.right == null)
+    		return x;
+    	    x = x.right;
+    	}
+    	return null;
+    }
 */
 
-// $Id: RedBlackTree.java,v 1.1 2003/10/14 16:56:20 thc Exp $
-// $Log: RedBlackTree.java,v $
-// Revision 1.1  2003/10/14 16:56:20  thc
-// Initial revision.
-//
+    /**
+     *  Return the next higher key value following x.
+     */
+/*
+    public Node successor(Node x) {
+    	if (x.right != null)
+    	    return (minimum(x.right));
+    	Node y = x.parent;
+    	while ((y != null) && (x == y.right)) {
+    	    x = y;
+    	    y = x.parent;
+    	}
+    	return y;
+    }
+*/
+    /**
+     *  Return the next lower node to node x in key order
+     */
+/*
+    public Node predecessor(Node x) {
+    	if (x.left != null)
+    	    return (maximum(x.left));
+    	Node y = x.parent;
+    	while ((y != null) && (x == y.left)) {
+    	    x = y;
+    	    y = x.parent;
+    	}
+    	return y;
+    }
+*/
+    /**
+     * Add a new node to the B-tree. Do the insertion, followed by
+     * balancing. If the node is simply a replacement, skip the
+     * balancing section.
+     */
+    private  Node add(int key, String datum) {
+    	Node x = new Node(key, datum);
+    	Node y;
+    	Node oldValue = null;
+
+    	oldValue = insert2(x);
+    	if (oldValue != null) {
+    	    return (oldValue);
+    	}
+    	treeGen++;	// note that it is a new tree
+
+    	x.color = RED;
+
+    	/* now fix up the tree */
+    	while ((x != listRoot) && (x.parent.color == RED)) {
+
+    	    if (x.parent == x.parent.parent.left) {
+        		y = x.parent.parent.right;
+        		if ((y != null) && (y.color == RED)) {
+        		    x.parent.color = BLACK;
+        		    y.color = BLACK;
+        		    x.parent.parent.color = RED;
+        		    x = x.parent.parent;
+        		} else {
+        		    if (x == x.parent.right) {
+            			x = x.parent;
+            			rotateLeft(x);
+        		    }
+        		    x.parent.color = BLACK;
+        		    x.parent.parent.color = RED;
+        		    rotateRight(x.parent.parent);
+        		}
+    	    } else {
+        		y = x.parent.parent.left;
+        		if ((y != null) && (y.color == RED)) {
+        		    x.parent.color = BLACK;
+        		    y.color = BLACK;
+        		    x.parent.parent.color = RED;
+        		    x = x.parent.parent;
+        		} else {
+        		    if (x == x.parent.left) {
+            			x = x.parent;
+            			rotateRight(x);
+        		    }
+        		    x.parent.color = BLACK;
+        		    x.parent.parent.color = RED;
+        		    rotateLeft(x.parent.parent);
+        		}
+    	    }
+    	}
+    	listRoot.color = BLACK;
+    	return null;
+    }
+
+
 
      public void printInOrder()
 
      {
 
-         inorder1(root.right);
+         inorder1(listRoot);
 
-         System.out.println();
 
      }
 
@@ -383,11 +457,11 @@ public class Proj05_RedBlack_student implements Proj04_Dictionary
 
              inorder1(r.left);
 
-             char c = 'b';
+             char c = 'r';
 
-             if (r.color == 0)
+             if (r.color == 1)
 
-                 c = 'r';
+                 c = 'b';
 
             System.out.print(" "+"("+c+")"+":"+r.key+":'"+r.value+"'");
 
@@ -399,7 +473,7 @@ public class Proj05_RedBlack_student implements Proj04_Dictionary
      }
 
 
- public void genDebugDot(String filename){}
+public void genDebugDot(String filename){}
 
 
  public String search(int key){ return "";}
@@ -413,416 +487,317 @@ public class Proj05_RedBlack_student implements Proj04_Dictionary
  public void printPostOrder(){}
 
 
-}
-///////////////////////////////////////////////////
 
+
+
+
+    /**
+     * Return the node indexed by key.
+     */
 /*
-import java.util.ArrayList;
-import java.util.List;
+    private Node lookup(Object key) {
+    	Node x = listRoot;
+    	int	ci;
 
-//   This class implements a red-black tree whose
-//   nodes hold objects that implement the Comparable
-//   interface.
+    	while (x != null) {
+    	    ci = cmp.compare(x.key, key);
+    	    if (ci < 0)
+    		x = x.right;
+    	    else if (ci > 0)
+    		x = x.left;
+    	    else
+    		return x;
+    	}
+    	return (null);
+    }
+*/
+    /**
+     * return a string of length 'n' blanks  (helper for printNode)
+     */
+/*
+    private String blanks(int n) {
+    	StringBuffer z = new StringBuffer(n);
+    	for (int q = 0; q < n; q++)
+    	    z.append(" ");
+    	return (z.toString());
+    }
 
-public class RedBlackTree
-{  
-   Node root; // Package access, for testing
-
-   static final int BLACK = 1;
-   static final int RED = 0;
-   private static final int NEGATIVE_RED = -1;
-   private static final int DOUBLE_BLACK = 2;
-
-//      Constructs an empty tree.
-   public RedBlackTree()
-   {  
-      root = null;
-   }
-   
-//      Inserts a new node into the tree.
-
-//      @param obj the object to insert
-   public void add(Comparable obj) 
-   {  
-      Node newNode = new Node();
-      newNode.data = obj;
-      newNode.left = null;
-      newNode.right = null;
-      if (root == null) { root = newNode; }
-      else { root.addNode(newNode); }
-      fixAfterAdd(newNode);
-   }
-
-//      Tries to find an object in the tree.
-//      @param obj the object to find
-//      @return true if the object is contained in the tree
-   public boolean find(Comparable obj)
-   {
-      Node current = root;
-      while (current != null)
-      {
-         int d = current.data.compareTo(obj);
-         if (d == 0) { return true; }
-         else if (d > 0) { current = current.left; }
-         else { current = current.right; }
-      }
-      return false;
-   }
-   
-//      Tries to remove an object from the tree. Does nothing
-//      if the object is not contained in the tree.
-//      @param obj the object to remove
-   public void remove(Comparable obj)
-   {
-      // Find node to be removed
-
-      Node toBeRemoved = root;
-      boolean found = false;
-      while (!found && toBeRemoved != null)
-      {
-         int d = toBeRemoved.data.compareTo(obj);
-         if (d == 0) { found = true; }
-         else 
-         {
-            if (d > 0) { toBeRemoved = toBeRemoved.left; }
-            else { toBeRemoved = toBeRemoved.right; }
-         }
-      }
-
-      if (!found) { return; }
-
-      // toBeRemoved contains obj
-
-      // If one of the children is empty, use the other
-
-      if (toBeRemoved.left == null || toBeRemoved.right == null)
-      {
-         Node newChild;
-         if (toBeRemoved.left == null) { newChild = toBeRemoved.right; }
-         else { newChild = toBeRemoved.left; }
-
-         fixBeforeRemove(toBeRemoved); 
-         replaceWith(toBeRemoved, newChild);
-         return;
-      }
-      
-      // Neither subtree is empty
-
-      // Find smallest element of the right subtree
-
-      Node smallest = toBeRemoved.right;
-      while (smallest.left != null)
-      {
-         smallest = smallest.left;
-      }
-
-      // smallest contains smallest child in right subtree
-         
-      // Move contents, unlink child
-
-      toBeRemoved.data = smallest.data;
-      fixBeforeRemove(smallest);
-      replaceWith(smallest, smallest.right);
-   }
-   
-//      Yields the contents of the tree in sorted order
-//      @return all data items traversed in inorder, with a space after each item
-   public String toString()
-   {  
-      return toString(root);
-   }  
-
-//      Yields the contents of the subtree with the given root in sorted order
-//      @param parent the root of the subtree
-//      @return all data items traversed in inorder, with a space after each item
-   private static String toString(Node parent)
-   {  
-      if (parent == null) { return ""; }
-      return toString(parent.left) + parent.data + " " + toString(parent.right);
-   }
-
-//      A node of a red-black tree stores a data item and references
-//      of the child nodes to the left and to the right. The color
-//      is the "cost" of passing the node; 1 for black or 0 for red.
-//      Temporarily, it may be set to 2 or -1. 
-   static class Node
-   {  
-      public Comparable data;
-      public Node left;
-      public Node right;
-      public Node parent;
-      public int color;
-      
-//         Constructs a red node with no data.
-      public Node() {}
-      
-//         Sets the left child and updates its parent reference.
-//         @param child the new left child
-      public void setLeftChild(Node child)
-      {
-         left = child;
-         if (child != null) { child.parent = this; }
-      }
-      
-//         Sets the right child and updates its parent reference.
-//         @param child the new right child
-      public void setRightChild(Node child)
-      {
-         right = child;
-         if (child != null) { child.parent = this; }
-      }
-      
-//         Inserts a new node as a descendant of this node.
-//         @param newNode the node to insert
-      public void addNode(Node newNode)
-      {  
-         int comp = newNode.data.compareTo(data);
-         if (comp < 0)
-         {  
-            if (left == null) 
-            {
-               left = newNode;
-               left.parent = this;
-            }
-            else { left.addNode(newNode); }
-         }
-         else if (comp > 0)
-         {  
-            if (right == null) 
-            {
-               right = newNode;
-               right.parent = this;
-            }
-            else { right.addNode(newNode); }
-         }
-      }
-   }
-
-//      Updates the parent's and replacement node's links when this node is replaced.
-//      Also updates the root reference if it is replaced.
-//      @param toBeReplaced the node that is to be replaced
-//      @param replacement the node that replaces that node
-   private void replaceWith(Node toBeReplaced, Node replacement)
-   {
-      if (toBeReplaced.parent == null) 
-      { 
-         replacement.parent = null; 
-         root = replacement; 
-      }
-      else if (toBeReplaced == toBeReplaced.parent.left) 
-      { 
-         toBeReplaced.parent.setLeftChild(replacement); 
-      }
-      else 
-      { 
-         toBeReplaced.parent.setRightChild(replacement); 
-      }
-   }
-
-//      Restores the tree to a red-black tree after a node has been added.
-//      @param newNode the node that has been added
-   private void fixAfterAdd(Node newNode)
-   {
-      if (newNode.parent == null) 
-      { 
-         newNode.color = BLACK; 
-      }
-      else
-      {
-         newNode.color = RED;
-         if (newNode.parent.color == RED) { fixDoubleRed(newNode); }
-      }
-   }
-
-//     Fixes the tree so that it is a red-black tree after a node has been removed.
-//     @param toBeRemoved the node that is to be removed
-   private void fixBeforeRemove(Node toBeRemoved)
-   {
-      if (toBeRemoved.color == RED) { return; }
-
-      if (toBeRemoved.left != null || toBeRemoved.right != null) // It is not a leaf
-      {
-         // Color the child black
-         if (toBeRemoved.left == null) { toBeRemoved.right.color = BLACK; }
-         else { toBeRemoved.left.color = BLACK; }
-      }    
-      else { bubbleUp(toBeRemoved.parent); }
-   }
-   
-//      Move a charge from two children of a parent
-//      @param parent a node with two children, or null (in which case nothing is done)
-   private void bubbleUp(Node parent)
-   {
-      if (parent == null) { return; }
-      parent.color++;
-      parent.left.color--;
-      parent.right.color--;
-     
-      if (bubbleUpFix(parent.left)) { return; }
-      if (bubbleUpFix(parent.right)) { return; }
-
-      if (parent.color == DOUBLE_BLACK) 
-      { 
-         if (parent.parent == null) { parent.color = BLACK; }
-         else { bubbleUp(parent.parent); }
-      }
-   }
-
-//      Fixes a negative-red or double-red violation introduced by bubbling up.
-//      @param child the child to check for negative-red or double-red violations
-//      @return true if the tree was fixed
-   private boolean bubbleUpFix(Node child)
-   {
-      if (child.color == NEGATIVE_RED) { fixNegativeRed(child); return true; }
-      else if (child.color == RED)
-      {
-         if (child.left != null && child.left.color == RED) 
-         { 
-            fixDoubleRed(child.left); return true;
-         }
-         if (child.right != null && child.right.color == RED) 
-         { 
-            fixDoubleRed(child.right); return true;
-         }
-      }
-      return false; 
-   }
-   
-//      Fixes a "double red" violation.
-//      @param child the child with a red parent
-   private void fixDoubleRed(Node child)
-   {
-      Node parent = child.parent;      
-      Node grandParent = parent.parent;
-      if (grandParent == null) { parent.color = BLACK; return; }
-      Node n1, n2, n3, t1, t2, t3, t4;
-      if (parent == grandParent.left)
-      {
-         n3 = grandParent; t4 = grandParent.right;
-         if (child == parent.left)
-         {
-            n1 = child; n2 = parent;
-            t1 = child.left; t2 = child.right; t3 = parent.right;
-         }
-         else
-         {
-            n1 = parent; n2 = child;
-            t1 = parent.left; t2 = child.left; t3 = child.right; 
-         }
-      }
-      else
-      {
-         n1 = grandParent; t1 = grandParent.left;
-         if (child == parent.left)
-         {
-            n2 = child; n3 = parent;
-            t2 = child.left; t3 = child.right; t4 = parent.right;
-         }
-         else
-         {
-            n2 = parent; n3 = child;
-            t2 = parent.left; t3 = child.left; t4 = child.right; 
-         }         
-      }
-      
-      replaceWith(grandParent, n2);      
-      n1.setLeftChild(t1);
-      n1.setRightChild(t2);
-      n2.setLeftChild(n1);
-      n2.setRightChild(n3);
-      n3.setLeftChild(t3);
-      n3.setRightChild(t4);
-      n2.color = grandParent.color - 1; 
-      n1.color = BLACK;
-      n3.color = BLACK;
-
-      if (n2 == root)
-      {
-         root.color = BLACK;
-      }
-      else if (n2.color == RED && n2.parent.color == RED)
-      {
-         fixDoubleRed(n2);
-      }
-   }
-   
-//      Fixes a "negative red" violation.
-//      @param negRed the negative red node
-   private void fixNegativeRed(Node negRed)
-   {  
-      Node parent = negRed.parent;
-      Node child;
-      if (parent.left == negRed)
-      {
-         Node n1 = negRed.left;
-         Node n2 = negRed;
-         Node n3 = negRed.right;
-         Node n4 = parent;
-         Node t1 = n3.left;
-         Node t2 = n3.right;
-         Node t3 = n4.right;
-         n1.color = RED;
-         n2.color = BLACK;
-         n4.color = BLACK;
-
-         replaceWith(n4, n3);
-         n3.setLeftChild(n2);
-         n3.setRightChild(n4);
-         n2.setLeftChild(n1);
-         n2.setRightChild(t1);
-         n4.setLeftChild(t2);
-         n4.setRightChild(t3);
-
-         child = n1;
-      }
-      else // Mirror image
-      {
-         Node n4 = negRed.right;
-         Node n3 = negRed;
-         Node n2 = negRed.left;
-         Node n1 = parent;
-         Node t3 = n2.right;
-         Node t2 = n2.left;
-         Node t1 = n1.left;
-         n4.color = RED;
-         n3.color = BLACK;
-         n1.color = BLACK;
-
-         replaceWith(n1, n2);
-         n2.setRightChild(n3);
-         n2.setLeftChild(n1);
-         n3.setRightChild(n4);
-         n3.setLeftChild(t3);
-         n1.setRightChild(t2);
-         n1.setLeftChild(t1);
-
-         child = n4;
-      }
-     
-      if (child.left != null && child.left.color == RED) 
-      { 
-         fixDoubleRed(child.left); 
-      }
-      else if (child.right != null && child.right.color == RED) 
-      { 
-         fixDoubleRed(child.right);  
-      }
-   }
-}
-
+    String keyString(Object x) {
+        return x.toString();
+    }
 
 */
 
+    /**
+     * Print a nice graphical representation of the tree on the
+     * PrintStream passed. See printTree for the output.
+     */
+/*
+    private void printNode(RedBlackTreeNode x, String indent, PrintStream out) {
 
+    	if (x == null)
+    	    return;
 
+    	if (x.right != null) {
+    	    if ((x.parent != null) && (x == x.parent.left))
+    	        printNode(x.right, indent+"|"+blanks(x.key.toString().length()+2), out);
+    	    else
+    	        printNode(x.right, indent+blanks(x.key.toString().length()+3), out);
+    	}
 
+    	out.print(indent);
+    	out.print((x.color == BLACK) ? "@ " : "O ");
+    	out.print(x.key);
+    	if ((x.right != null) || (x.left != null))
+    	    out.println(" +");
+    	else
+    	    out.println();
 
+    	if (x.left == null) {
+    	    if (x.parent != null) {
+    		if (x == x.parent.right)
+    	          indent = indent + "|";
+    		else
+    	          indent = indent + " ";
+    	    }
+    	    out.println(indent);
+    	} else {
+    	    if ((x.parent != null) && (x == x.parent.right))
+    		indent = indent + "|" + blanks(x.key.toString().length()+2);
+    	    else
+    		indent = indent + " " + blanks(x.key.toString().length()+2);
 
+    	    out.println(indent+"|");
+    	    printNode(x.left, indent, out);
+    	}
+    }
+*/
+    /**
+     * Print a graphical version of the tree (ignores the 80 column limit)
+     * on terminals. This function walks the tree and outputs a graphical
+     * form with the keys in place. The format is as follows:
+     * <pre>
+     *                O fraz
+     *                |
+     *          @ foo +
+     *          |
+     * @ bletch +
+     *          |
+     *          |     O baz
+     *          |     |
+     *          @ bar +
+     *</pre>
+     * Each node is represented by '@' if it is black, and 'O' if it is
+     * red, followed by its key, and its children. Nodes to the right in
+     * output are lower in the tree than nodes to the left, the root node
+     * is in column 1. Nodes lower on the output are to the "left" of
+     * nodes earlier or higher in the output. (rotate 90 degrees clockwise)
+     */
+/*
+    public void printTree(PrintStream o) {
+    	printNode(listRoot, "", o);
+    }
+*/
+    /**
+     * Print the tree to System.out
+     */
+/*
+    public void printTree() {
+	    printNode(listRoot, "", System.out);
+    }
+*/
+    /**
+     * Fix up the coloring of the tree after a remove operation.
+     */
+/*
+    private void delete_fixup(RedBlackTreeNode x) {
+    	RedBlackTreeNode w;
 
+    	if (x.parent == null) // deleted last node in tree
+    	    return;
 
+    	while ((x != listRoot) && (x.color == BLACK)) {
+    	    if (((x == nilNode) && (x.parent.left == null)) ||
+    		(x == x.parent.left)) {
+        		w = x.parent.right;
+        		if (color(w) == RED) {
+        		    w.color = BLACK;
+        		    w.parent.color = RED;
+        		    rotateLeft(x.parent);
+        		    w = x.parent.right;
+        		}
+        		if ((color(w.left) == BLACK) && (color(w.right) == BLACK)) {
+        		    w.color = RED;
+        		    x = x.parent;
+        		} else {
+        		    if (color(w.right) == BLACK) {
+        		    	w.left.color = BLACK;
+        		    	w.color = RED;
+        		    	rotateRight(w);
+        		    	w = x.parent.right;
+        		    }
+        		    w.color = x.parent.color;
+        		    x.parent.color = BLACK;
+        		    w.right.color = BLACK;
+        		    rotateLeft(x.parent);
+        		    x = listRoot;
+        		}
+    	    } else {
+        		w = x.parent.left;
+        		if (color(w) == RED) {
+        		    w.color = BLACK;
+        		    w.parent.color = RED;
+        		    rotateRight(x.parent);
+        		    w = x.parent.left;
+        		}
+        		if ((color(w.left) == BLACK) && (color(w.right) == BLACK)) {
+        		    w.color = RED;
+        		    x = x.parent;
+        		} else {
+        		    if (color(w.left) == BLACK) {
+        		    	w.right.color = BLACK;
+        		    	w.color = RED;
+        		    	rotateLeft(w);
+        		    	w = x.parent.left;
+        		    }
+        		    w.color = x.parent.color;
+        		    x.parent.color = BLACK;
+        		    w.left.color = BLACK;
+        		    rotateRight(x.parent);
+        		    x = listRoot;
+        		}
+    	    }
+    	}
+    	x.color = BLACK;
+    }
+*/
+    // makes the delete algorithm cleaner
+ //   private RedBlackTreeNode nilNode = new RedBlackTreeNode("Nil", "Nil");
 
+    /**
+     * Remove a node from the tree and if it is black, fix up the
+     * tree so that the black height remains balanced.
+     */
 
+/*
+    private synchronized RedBlackTreeNode delete(RedBlackTreeNode z) {
+    	RedBlackTreeNode x = null, y = null;
 
+    	nilNode.color = BLACK;
+    	treeGen++; // tree has changed, flag enumerators
+    	if ((z.left == null) || (z.right == null))
+    	    y = z;		// Z has only one child
+    	else
+    	    y = successor(z);
 
+    	if (y.left != null)
+    	    x = y.left;
+    	else
+    	    x = (y.right == null) ? nilNode : y.right;
 
+    	x.parent = y.parent;
 
+    	if (y.parent == null)
+    	    listRoot = (x == nilNode) ? null : x;
+    	else {
+    	    if (y == y.parent.left)
+        		y.parent.left = (x == nilNode) ? null : x;
+    	    else
+        		y.parent.right = (x == nilNode) ? null : x;
+    	}
+    	if (y != z) {
+    	    z.key = y.key;
+    	    z.value = y.value;
+    	}
+
+    	if (y.color == BLACK)
+    	    delete_fixup(x);
+
+    	return (y);
+    }
+
+    public String toString() {
+	    return ("RedBlackTree object with "+count+" elements.");
+    }
+}
+*/
+/**
+ * This class defines an individual node on the B-tree itself. It is
+ * private to btrees and has no methods.
+ */
+/*
+class RedBlackTreeNode {
+    int color;
+    Object value;
+    Object key;
+
+    RedBlackTreeNode right, left, parent;
+
+    public RedBlackTreeNode(Object nodeKey, Object nodeValue) {
+	    super();
+	    key = nodeKey;
+	    value = nodeValue;
+    }
+
+    public String toString() {
+	    return ("K("+((color == 0)?"R":"B")+"):"+key);
+    }
+}
+*/
+/**
+ * This is the enumerator class. It implements the enumeration interface
+ * and is very straightforward.
+ *
+ * Note that there is a race condition whereby an enumerator becomes
+ * "invalid" should the tree be changed while it is held.
+ */
+
+/*
+class RedBlackTreeEnumerator implements Enumeration {
+    // state for the enumerator
+    private boolean keys;
+    private RedBlackTree tree;
+    private RedBlackTreeNode x;
+    private long generation;
+*/
+    /**
+     * Create a new enumerator.
+     */
+/*
+    RedBlackTreeEnumerator(RedBlackTree tree, boolean keys) {
+    	this.tree = tree;
+    	this.keys = keys;
+    	this.x = tree.minimum();
+    	this.generation = tree.generation();
+    }
+*/
+    /**
+     * Returns true if there is another element in the list.
+     */
+/*
+    public boolean hasMoreElements() {
+    	return (x != null);
+    }
+*/
+    /**
+     * Returns the next element.
+     * @exception NoSuchElementException thrown if it is out of elements.
+     * @exception Exception thrown if the tree has been modified.
+     */
+/*
+    public Object nextElement() {
+    	RedBlackTreeNode y = x;
+
+    	if (x == null)
+    	    throw new NoSuchElementException("RedBlackTreeEnumerator");
+    	if (generation != tree.generation())
+    	    throw new NoSuchElementException(
+    			"RedBlackTreeEnumerator: Tree modified during enumeration");
+
+    	x = tree.successor(x);
+    	return ((keys) ? y.key : y.value);
+    }
+}
+*/
+
+}

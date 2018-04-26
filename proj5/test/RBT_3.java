@@ -474,6 +474,19 @@ public class RBT_3 {
      }
 
 
+public void genDebugDot(String filename){}
+
+
+ public String search(int key){ return "";}
+
+
+ public void delete(int key){}
+
+
+ public void printPreOrder(){}
+
+ public void printPostOrder(){}
+
 
 
 
