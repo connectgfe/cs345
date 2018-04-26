@@ -12,7 +12,6 @@ public class Proj05_RedBlackNode
 	public String value;
 
 	public boolean isRed;
-
 	public Proj05_RedBlackNode left,right;
 
 
@@ -32,7 +31,7 @@ public class Proj05_RedBlackNode
 		this.value  = value;
 
 		this.isRed  = true;
-
+    
 		// the left,right nodes default to 'null' (Java defaults)
 	}
 }

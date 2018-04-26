@@ -4,7 +4,7 @@ public class RBT implements Proj04_Dictionary
 {
 
 
-    Node root;
+   static    Node root;
 
 
 

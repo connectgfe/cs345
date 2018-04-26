@@ -1,0 +1,36 @@
+inserted 12:O
+inserted 20:G
+inserted 4:W
+inserted 24:C
+inserted 16:K
+inserted 8:S
+inserted 0:<left-edge>
+inserted 26:A
+inserted 22:E
+inserted 18:I
+inserted 14:M
+inserted 10:Q
+inserted 6:U
+inserted 2:Y
+inserted 27:<right-edge>
+inserted 25:B
+inserted 23:D
+inserted 21:F
+inserted 19:H
+inserted 17:J
+inserted 15:L
+inserted 13:N
+inserted 11:P
+inserted 9:R
+inserted 7:T
+inserted 5:V
+inserted 3:X
+inserted 1:Z
+IN   ORDER: 6:'U' 7:'T' 12:'O' 15:'L' 16:'K' 22:'E' 23:'D'
+POST ORDER: 6:'U' 7:'T' 12:'O' 15:'L' 16:'K' 22:'E' 23:'D'
+IN   ORDER: 2:'Y' 5:'V' 8:'S' 13:'N' 18:'I' 20:'G' 21:'F'
+POST ORDER: 2:'Y' 5:'V' 8:'S' 13:'N' 18:'I' 20:'G' 21:'F'
+IN   ORDER: 0:'<left-edge>' 3:'X' 4:'W' 11:'P' 14:'M' 19:'H' 27:'<right-edge>'
+POST ORDER: 0:'<left-edge>' 3:'X' 4:'W' 11:'P' 14:'M' 19:'H' 27:'<right-edge>'
+IN   ORDER: 1:'Z' 9:'R' 10:'Q' 17:'J' 24:'C' 25:'B' 26:'A'
+POST ORDER: 1:'Z' 9:'R' 10:'Q' 17:'J' 24:'C' 25:'B' 26:'A'

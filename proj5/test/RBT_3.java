@@ -58,7 +58,7 @@ public class RBT_3 {
 
 
 
-    private Node listRoot;
+    private static Node listRoot;
     private final int RED = 0;
     private final int BLACK = 1;
     private int count = 0;
@@ -133,7 +133,7 @@ public class RBT_3 {
 */
 
     public void insert(int key, String value) {
-    	Node x = add(key, value);
+    	Node x = add2(key, value);
     	if (x == null)
     	    count++;	// Added a new element
     }
@@ -196,6 +196,80 @@ public class RBT_3 {
     	return treeGen;
     }
 */
+
+    private void rotateLeft2(Node x) {
+    	Node y = x.right;
+
+      Node ylp=null;
+
+      if(y.left!=null){
+
+      ylp = getP(y.left);
+      }
+      Node yp = getP(y);
+      Node xp = getP(x);
+
+    	x.right = y.left;
+    	if (y.left != null)
+          ylp=x;
+//    	    y.left.parent = x;
+
+      yp=xp;
+//    	y.parent = x.parent;
+    	if (xp == null)
+    		listRoot = y;
+    	else {
+    	    if (x == xp.left)
+    	        xp.left = y;
+      	    else
+    	        xp.right = y;
+    	}
+    	y.left = x;
+    	xp = y;
+    }
+    /**
+     * Rotate the tree right about the node y. Rotations preserve
+     * the key ordering of their children nodes.
+     */
+    private void rotateRight2(Node y) {
+    	Node x = y.left;
+
+    	y.left = x.right;
+      Node xrp=null;
+
+      if(x.right!=null){
+       xrp = getP(x.right);
+      }
+      Node yp = getP(y);
+      Node xp = getP(x);
+
+
+
+    	if (x.right != null)
+           xrp=y;
+//    	    x.right.parent = y;
+           xp=yp;
+//    	x.parent = y.parent;
+
+    	if (yp == null)
+    	    listRoot = x;
+    	else {
+    	    if (y == yp.left)
+    	        yp.left = x;
+    	    else
+    	        yp.right = x;
+    	}
+
+    	x.right = y;
+    	yp = x;
+    }
+
+
+
+
+
+
+
     /**
      * Rotate the tree left about node 'x'.
      */
@@ -258,13 +332,104 @@ public class RBT_3 {
     }
 
 
-    public int compare(int x, int y){
+     public static int compare(int x, int y){
 
      if(x<y) { return -1;}
 
       return 1;
 
     }
+
+
+    public  Node getP(Node x){
+
+//     Node y = getPar2(listRoot,null,x.key);
+
+System.out.print(x.key+" x.key ");    
+
+
+     Node y = getPar3(x.key);
+
+
+System.out.println(x.key+" par is "+y.key);    
+
+
+
+
+    return y;
+
+    }
+
+
+
+    public  Node getPar3(int key) {
+
+        /* If the tree is empty, return a new node */
+        /* Otherwise, recur down the tree */
+        if(key==listRoot.key){ return listRoot;}
+
+        Node par=listRoot;
+
+        Node cur=listRoot;
+        while(cur.key!=key){
+
+           if(cur.key<key){ 
+              par=cur; 
+              cur=cur.right;
+           }
+           if(cur.key>key){ 
+              par=cur; 
+              cur=cur.left;
+           }
+
+        }
+
+        return par;
+ 
+    }
+
+
+
+    /**
+     * Simple node insertion. After insertion the red-black properties
+     * are "fixed" by rotating the correct number of nodes to balance
+     * the tree. See add below.
+     */
+    private Node insert3(Node z) {
+    	Node x = listRoot;
+    	Node y = null;
+    	int	i;
+
+    	while (x != null) {
+    	    y = x;
+    	    x = (compare(x.key, z.key) > 0) ? x.left : x.right;
+    	}
+//    	z.parent = y;
+    	if (y == null) {
+    	    listRoot = z;
+    	} else {
+    	    i = compare(y.key, z.key);
+    	    if (i > 0)
+    	        y.left = z;
+    	    else if (i < 0)
+        		y.right = z;
+    	    else { // They have the same key
+        		String t;
+
+        		t = z.value;		// swap values
+        		z.value = y.value;
+        		y.value = t;
+        		return (z);		// return old value
+    	    }
+    	}
+    	return (null);
+    }
+
+
+
+   
+
+
 
 
     /**
@@ -373,6 +538,80 @@ public class RBT_3 {
     	return y;
     }
 */
+
+
+    private  Node add2(int key, String datum) {
+    	Node x = new Node(key, datum);
+    	Node y;
+    	Node oldValue = null;
+
+    	oldValue = insert3(x);
+    	if (oldValue != null) {
+    	    return (oldValue);
+    	}
+    	treeGen++;	// note that it is a new tree
+
+    	x.color = RED;
+/*
+      if(x.parent!=null){
+System.out.println(x.key+" x.key "+x.parent.key);
+      }else{
+System.out.println(x.key+" x.key only");
+ 
+      }
+*/
+
+      Node p = getP(x);
+      Node gp = getP(p);
+
+//System.out.println();    
+    	/* now fix up the tree */
+    	while ((x != listRoot) && (p.color == RED)) {
+
+    	    if (p == gp.left) {
+        		y = gp.right;
+        		if ((y != null) && (y.color == RED)) {
+        		    p.color = BLACK;
+        		    y.color = BLACK;
+        		    gp.color = RED;
+        		    x = gp;
+        		} else {
+        		    if (x == p.right) {
+            			x = p;
+            			rotateLeft2(x);
+        		    }
+        		    p.color = BLACK;
+        		    gp.color = RED;
+        		    rotateRight2(gp);
+        		}
+    	    } else {
+        		y = gp.left;
+        		if ((y != null) && (y.color == RED)) {
+        		    p.color = BLACK;
+        		    y.color = BLACK;
+        		    gp.color = RED;
+        		    x = gp;
+        		} else {
+        		    if (x == p.left) {
+            			x = p;
+            			rotateRight2(x);
+        		    }
+        		    p.color = BLACK;
+        		    gp.color = RED;
+        		    rotateLeft2(gp);
+        		}
+    	    }
+    	}
+    	listRoot.color = BLACK;
+    	return null;
+    }
+
+
+
+
+
+
+
     /**
      * Add a new node to the B-tree. Do the insertion, followed by
      * balancing. If the node is simply a replacement, skip the

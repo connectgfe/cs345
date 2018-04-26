@@ -6,3 +6,13 @@
 
 
 0 inOrder
+
+1 insert 3 nine(tree_0)
+1 insert 51 nine(tree_0)
+1 insert 11 five(tree_0)
+1 insert 90 one(tree_0)
+1 insert 53 three(tree_0)
+
+
+1 inOrder
+
