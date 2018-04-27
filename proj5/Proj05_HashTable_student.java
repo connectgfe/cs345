@@ -14,8 +14,7 @@ public class Proj05_HashTable_student implements Proj04_Dictionary{
 
    public Proj05_HashTable_student(){
 
-     table= new LinkedList<Proj05_HashTableEntry>();
-
+//     table= new LinkedList<Proj05_HashTableEntry>();
 
      resizeTable(4);     
  
@@ -27,7 +26,7 @@ public class Proj05_HashTable_student implements Proj04_Dictionary{
      table = new LinkedList<Proj05_HashTableEntry>();
 
      for(int i=0;i<k;i++){
-             table.add(i,new Proj05_HashTableEntry(0,"")); 
+             table.add(i,null); 
      }
     
      table_size=k;
@@ -41,13 +40,35 @@ public class Proj05_HashTable_student implements Proj04_Dictionary{
 
           LinkedList<Proj05_HashTableEntry> temp= table;
           resizeTable(2*table_size);
-        
-          
+
+       for(int i=0;i<table_size/2;i++){
+
+          Proj05_HashTableEntry cur = temp.get(i);
+
+          if(cur!=null){
+            while(cur.next!=null){
+            
+              insertToLink(table.get((key*3721)%table_size), cur.key, cur.value);
+              cur=cur.next;
+           
+            }
+          } 
+        }
+           
       }
 
+//        int val = (key*3721)%table_size;
 
-      insertToLink(table.get((key*3721)%table_size), key, value);
+       if(table.get((key*3721)%table_size)==null){
+System.out.println("insert set head");
 
+         table.add((key*3721)%table_size, new Proj05_HashTableEntry(key,value));
+         cnt++;
+
+       }else{
+
+         insertToLink(table.get((key*3721)%table_size), key, value);
+       }
 
     }
 
@@ -57,14 +78,16 @@ public class Proj05_HashTable_student implements Proj04_Dictionary{
 
 System.out.println("insert "+key);
 
-
+/*
    if(head==null){
 System.out.println("insert set head");
 
       head = new Proj05_HashTableEntry(key,value);
       cnt++;
 
-    }else if(head.key>key){
+    }else 
+*/
+      if(head.key>key){
 System.out.println("insert change head");
 
 
@@ -159,7 +182,7 @@ System.out.println("cur.key "+cur.key);
 
 
 //   for(int i=0;i<table_size;i++){
-   for(int i=0;i<4;i++){
+   for(int i=0;i<table_size;i++){
 
 
      if(table.get(i)!=null){
@@ -172,7 +195,6 @@ System.out.println("cur.key "+cur.key);
 
 
   public Proj05_HashTableEntry printHelper(Proj05_HashTableEntry head){
-
 
 
       if(head.next== null){ 

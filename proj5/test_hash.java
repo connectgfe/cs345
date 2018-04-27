@@ -10,7 +10,7 @@ public class test_hash{
    hash.insert(5,"");
    hash.insert(15,"");
    hash.insert(35,"");
-   hash.insert(15,"");
+   hash.insert(21,"");
 
 
 
