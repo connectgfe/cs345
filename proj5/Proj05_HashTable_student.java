@@ -1,11 +1,130 @@
+import java.util.LinkedList;
+
+
 
 
 
 public class Proj05_HashTable_student implements Proj04_Dictionary{
 
 
+   LinkedList<Proj05_HashTableEntry> table;
+   int table_size;
+   int cnt;
+   
 
- public  void   insert(int key, String value){}
+   public Proj05_HashTable_student(){
+
+     table= new LinkedList<Proj05_HashTableEntry>();
+
+
+     resizeTable(4);     
+ 
+   }
+
+
+   public void resizeTable(int k){
+
+     table = new LinkedList<Proj05_HashTableEntry>();
+
+     for(int i=0;i<k;i++){
+             table.add(i,new Proj05_HashTableEntry(0,"")); 
+     }
+    
+     table_size=k;
+
+   }
+
+
+    public void insert(int key, String value){
+
+      if(2*cnt==table_size){
+
+          LinkedList<Proj05_HashTableEntry> temp= table;
+          resizeTable(2*table_size);
+        
+          
+      }
+
+
+      insertToLink(table.get((key*3721)%table_size), key, value);
+
+
+    }
+
+
+
+  public void insertToLink(Proj05_HashTableEntry head, int key, String value){
+
+System.out.println("insert "+key);
+
+
+   if(head==null){
+System.out.println("insert set head");
+
+      head = new Proj05_HashTableEntry(key,value);
+      cnt++;
+
+    }else if(head.key>key){
+System.out.println("insert change head");
+
+
+      Proj05_HashTableEntry entry  = new Proj05_HashTableEntry(key,value);
+      entry.next=head;
+      head=entry;
+      cnt++;
+
+    }else{
+
+      insertHelper(head,key,value);
+
+    }
+
+  }
+
+
+
+  public void insertHelper( Proj05_HashTableEntry head, int key, String value){
+System.out.println("insert helper "+key);
+
+
+    Proj05_HashTableEntry cur  = head;
+
+    Proj05_HashTableEntry entry  = new Proj05_HashTableEntry(key,value);
+
+    Proj05_HashTableEntry beg = null;
+
+    Proj05_HashTableEntry temp;
+
+    while(cur.next!=null){
+
+System.out.println("cur.key "+cur.key);
+      //insert
+      if(cur.next.key>=key){
+
+        temp=cur.next;
+
+        cur.next=entry;
+
+        entry.next=temp;
+
+        cnt++;
+
+        return;
+      }
+      cur=cur.next;
+
+    }
+
+    cur.next=entry;
+    cnt++;
+   
+    return;
+
+  }
+
+
+
+
 
 
   /* String search(int)
@@ -36,7 +155,37 @@ public class Proj05_HashTable_student implements Proj04_Dictionary{
    *
    * If the tree is empty, then it will not print out anything.
    */
-  public void printInOrder(){}
+  public void printInOrder(){
+
+
+//   for(int i=0;i<table_size;i++){
+   for(int i=0;i<4;i++){
+
+
+     if(table.get(i)!=null){
+       printHelper(table.get(i));
+     }
+   }
+  
+  }
+
+
+
+  public Proj05_HashTableEntry printHelper(Proj05_HashTableEntry head){
+
+
+
+      if(head.next== null){ 
+         System.out.println(head.key);
+         return head;
+       }
+
+      System.out.println(head.key);
+     
+      return printHelper(head.next);
+
+
+  }
 
 
   /* void printPreOrder()

@@ -1,4 +1,7 @@
-
+/* Author: Giulio Eposito
+*  Program: RedBlack tree
+*  Function: create a standard Red Black Tree with insert only
+*/
 
 public class Proj05_RedBlack_student implements Proj04_Dictionary {
 
@@ -12,12 +15,9 @@ public class Proj05_RedBlack_student implements Proj04_Dictionary {
      public Node(int key, String value){
        super(key,value);
        this.color=0;
-
-
      }
 
     }
-
 
 
     private Node root;
@@ -37,18 +37,16 @@ public class Proj05_RedBlack_student implements Proj04_Dictionary {
     }
 
 
+
     public void insert(int key, String value) {
 
        if(search(key)!=null){
 
-
           throw new IllegalArgumentException("Attempt to insert a duplicate key '"+key+"'");
 
-         }else{
+        }else{
 
-
-
-    	Node x = insertHelper(key, value);
+        	Node x = insertHelper(key, value);
         }
 
     }
@@ -89,12 +87,10 @@ public class Proj05_RedBlack_student implements Proj04_Dictionary {
   }
 
 
-
-
-
-
-
-
+/*
+*  rotate functions are slightly modified to make use of parent pointer
+*  
+*/
     private void rotateLeft(Node x) {
     	Node y = x.right;
 
@@ -140,6 +136,10 @@ public class Proj05_RedBlack_student implements Proj04_Dictionary {
     }
 
 
+/*
+*  compare is a baby version of Comparable
+*  uses somewhat convention val= (boolean) ?  x : y  
+*/
     public int compare(int x, int y){
 
      if(x<y) { return -1;}
@@ -157,7 +157,10 @@ public class Proj05_RedBlack_student implements Proj04_Dictionary {
     }
 
 
-
+/*
+*  insert2 places node in bst fashion, assigns parent pointer
+*  
+*/
     private Node insert2(Node z) {
     	Node x = root;
     	Node y = null;
@@ -187,7 +190,11 @@ public class Proj05_RedBlack_student implements Proj04_Dictionary {
     }
 
 
-
+/*
+*  insertHelper handles the fix-up with many checks 
+*  to node.parent and grand
+*
+*/
     private  Node insertHelper(int key, String val) {
     	Node x = new Node(key, val);
     	Node y;
