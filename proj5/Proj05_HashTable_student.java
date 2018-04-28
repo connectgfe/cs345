@@ -1,5 +1,9 @@
 import java.util.LinkedList;
-
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.*;
+import java.lang.*;
+import java.io.*; 
 
 
 
@@ -14,7 +18,7 @@ public class Proj05_HashTable_student implements Proj04_Dictionary{
 
    public Proj05_HashTable_student(){
 
-//     table= new LinkedList<Proj05_HashTableEntry>();
+     table= new LinkedList<Proj05_HashTableEntry>();
 
      resizeTable(4);     
  
@@ -39,12 +43,12 @@ public class Proj05_HashTable_student implements Proj04_Dictionary{
 
       if(2*cnt==table_size){
 
-System.out.println("table pre resize, table_size table.size(): "+table_size+" "+table.size());
-printInOrder();
+//System.out.println("table pre resize, table_size table.size(): "+table_size+" "+table.size());
+//printTable2();
 
           LinkedList<Proj05_HashTableEntry> temp= table;
           resizeTable(2*table_size);
-System.out.println("new table_size, temp "+table_size+" "+temp.size());
+//System.out.println("new table_size, temp "+table_size+" "+temp.size());
 
 
        for(int i=0;i<temp.size();i++){
@@ -53,19 +57,23 @@ System.out.println("new table_size, temp "+table_size+" "+temp.size());
 
           if(cur!=null){
 
-System.out.println("resinserting from head of list: "+cur.key);
+//System.out.println("resinserting from head of list: "+cur.key);
               insert2(cur.key,cur.value);
 
            while(cur.next!=null){
+
            
              cur=cur.next;
 
-System.out.println("resinserting after head: "+cur.key);
+//System.out.println("resinserting after head: "+cur.key);
              insert2(cur.key,cur.value);
            
             }
           } 
         }
+    
+      insert2(key,value);
+
            
       }else{
         insert2(key,value);
@@ -81,7 +89,7 @@ System.out.println("resinserting after head: "+cur.key);
 
 
        if(table.get((key*3721)%table_size)==null){
-System.out.println("insert set head");
+//System.out.println("insert set head: "+key);
 
          table.set((key*3721)%table_size, new Proj05_HashTableEntry(key,value));
  
@@ -102,25 +110,20 @@ System.out.println("insert set head");
 
   public void insertToLink(Proj05_HashTableEntry head, int key, String value){
 
-System.out.println("insert "+key);
+//System.out.println("insert "+key);
 
-/*
-   if(head==null){
-System.out.println("insert set head");
-
-      head = new Proj05_HashTableEntry(key,value);
-      cnt++;
-
-    }else 
-*/
       if(head.key>key){
-System.out.println("insert change head");
+//System.out.println("insert change head");
 
 
-      Proj05_HashTableEntry entry  = new Proj05_HashTableEntry(key,value);
-      entry.next=head;
-      head=entry;
+      Proj05_HashTableEntry entry  = new Proj05_HashTableEntry(head.key,head.value);
+
+      entry.next=head.next;
+      head.next=entry;
+      head.key=key;
+      head.value=value;
       cnt++;
+
 
     }else{
 
@@ -133,7 +136,7 @@ System.out.println("insert change head");
 
 
   public void insertHelper( Proj05_HashTableEntry head, int key, String value){
-System.out.println("insert helper "+key);
+//System.out.println("insert helper "+key);
 
 
     Proj05_HashTableEntry cur  = head;
@@ -146,7 +149,7 @@ System.out.println("insert helper "+key);
 
     while(cur.next!=null){
 
-System.out.println("cur.key "+cur.key);
+//System.out.println("cur.key "+cur.key);
       //insert
       if(cur.next.key>=key){
 
@@ -204,7 +207,93 @@ System.out.println("cur.key "+cur.key);
    *
    * If the tree is empty, then it will not print out anything.
    */
-  public void printInOrder(){
+
+
+  public void sort(){
+
+      LinkedList<Proj05_HashTableEntry> sort = new  LinkedList<Proj05_HashTableEntry>(); 
+
+
+        for(int i=0;i<table.size();i++){
+
+          Proj05_HashTableEntry cur = table.get(i);
+
+          if(cur!=null){
+
+             sort.add(cur);
+
+             while(cur.next!=null){
+      
+               cur=cur.next;
+
+               sort.add(cur);
+
+             }
+           } 
+         }
+
+
+
+ Collections.sort(sort, (a, b) -> a.key < b.key ? -1 :  1);
+
+
+
+      printList(sort); 
+      
+  }
+
+
+  public void printTable2(){
+
+
+
+        for(int i=0;i<table.size();i++){
+
+          Proj05_HashTableEntry cur = table.get(i);
+
+          if(cur!=null){
+
+    System.out.println("head: "+cur.key);
+
+             while(cur.next!=null){
+      
+               cur=cur.next;
+
+    System.out.println(cur.key);
+
+             }
+
+           }else{
+    System.out.println("no head "+0);
+
+           }
+
+         }
+
+  }
+
+
+
+
+  public void printList( LinkedList<Proj05_HashTableEntry> list){
+
+    for( Proj05_HashTableEntry r : list ){
+    
+//      System.out.println(val.key+" "+val.value);
+
+        System.out.print(" "+r.key+":'"+r.value+"'");
+
+
+
+    }
+
+
+  }
+
+
+
+
+  public void printTable(){
 
 
 //   for(int i=0;i<table_size;i++){
@@ -247,8 +336,16 @@ System.out.println();
    * Same as printInOrder(), except that it performs a pre-order
    * traversal.
    */
-  public void printPreOrder(){}
+  public void printPreOrder(){
 
+    sort();
+  }
+
+
+  public void printInOrder(){
+
+    sort();
+   }
 
 
 
@@ -257,7 +354,10 @@ System.out.println();
    * Same as printInOrder(), except that it performs a post-order
    * traversal.
    */
-  public void printPostOrder(){}
+  public void printPostOrder(){
+
+    sort();
+   }
 
 
   /* void genDebugDot(String)

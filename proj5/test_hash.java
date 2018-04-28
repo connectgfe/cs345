@@ -6,7 +6,7 @@ public class test_hash{
   public static void main(String[] args){
 
    Proj05_HashTable_student hash = new Proj05_HashTable_student();
-
+/*
    hash.insert(5,"");
    hash.insert(15,"");
    hash.insert(35,"");
@@ -26,6 +26,18 @@ public class test_hash{
    hash.insert(88,"");
    hash.insert(20,"");
    hash.insert(29,"");
+*/
+
+   hash.insert( 12," nine(tree_0)");
+   hash.insert( 16," nine(tree_0)");
+   hash.insert( 22," nine(tree_0)");
+   hash.insert( 6," nine(tree_0)");
+   hash.insert( 23," nine(tree_0)");
+   hash.insert( 15," nine(tree_0)");
+   hash.insert( 7," nine(tree_0)");
+
+
+
 
 
 
@@ -37,8 +49,10 @@ public class test_hash{
 
 //   System.out.println(hash.table_size);
 
+   hash.printTable();
    hash.printInOrder();
 
+  
 
 
   }
