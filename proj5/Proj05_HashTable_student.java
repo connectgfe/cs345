@@ -41,6 +41,13 @@ public class Proj05_HashTable_student implements Proj04_Dictionary{
 
     public void insert(int key, String value){
 
+       if(search(key)!=null){
+
+          throw new IllegalArgumentException("Attempt to insert a duplicate key '"+key+"'");
+
+        }else{
+
+
       if(2*cnt==table_size){
 
 //System.out.println("table pre resize, table_size table.size(): "+table_size+" "+table.size());
@@ -80,6 +87,9 @@ public class Proj05_HashTable_student implements Proj04_Dictionary{
        
 
       }
+
+    }
+
 
   }
 
@@ -184,16 +194,63 @@ public class Proj05_HashTable_student implements Proj04_Dictionary{
    * Searches the tree for a given key; returns the associated String
    * if the key is found, or null if it is not found.
    */
-  public String search(int key){ return "";}
 
 
-  /* void delete(int)
-   *
-   * Removes a given node from the tree, found by the key.
-   *
-   * Throws IllegalArgumentException if the key does not exist.
-   */
-  public void   delete(int key){}
+  public String search(int key){ 
+
+
+        for(int i=0;i<table.size();i++){
+
+          Proj05_HashTableEntry cur = table.get(i);
+
+          if(cur!=null){
+
+//    System.out.println("head: "+cur.key);
+            if(key == cur.key){ return cur.value;} 
+           
+             while(cur.next!=null){
+      
+               cur=cur.next;
+
+//    System.out.println(cur.key);
+            if(key == cur.key){ return cur.value;} 
+ 
+             }
+
+           }
+         }
+
+       return null;
+  }
+
+
+
+
+
+
+  public void  delete(int key){
+
+        for(int i=0;i<table.size();i++){
+
+//          Proj05_HashTableEntry cur = table.get(i);
+
+          if(table.get(i)!=null){
+
+            table.set(i,deleteHelper(table.get(i),key));
+
+           }
+         
+        }
+
+  }
+
+
+
+//  public void  delete(int key){}
+
+//  public String search(int key){ return "";}
+
+
 
 
   /* void printInOrder()
@@ -311,6 +368,35 @@ public class Proj05_HashTable_student implements Proj04_Dictionary{
 
 System.out.println();
   
+  }
+
+  public Proj05_HashTableEntry deleteHelper(Proj05_HashTableEntry head, int key){
+
+      if(head == null){
+ 
+          return null;
+
+      }
+/*
+      if(head.key != key){ 
+          head.next= deleteHelper(head.next,key);
+
+       }
+*/
+      if(head.key==key){    
+
+        Proj05_HashTableEntry temp;
+        
+        temp= head.next; 
+        head= null;
+        return temp;
+       
+      }
+
+       head.next=deleteHelper(head.next,key); 
+
+       return head;
+
   }
 
 

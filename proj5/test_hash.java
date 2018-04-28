@@ -31,7 +31,7 @@ public class test_hash{
    hash.insert( 12," nine(tree_0)");
    hash.insert( 16," nine(tree_0)");
    hash.insert( 22," nine(tree_0)");
-   hash.insert( 6," nine(tree_0)");
+   hash.insert( 6," fun(tree_0)");
    hash.insert( 23," nine(tree_0)");
    hash.insert( 15," nine(tree_0)");
    hash.insert( 7," nine(tree_0)");
@@ -49,8 +49,17 @@ public class test_hash{
 
 //   System.out.println(hash.table_size);
 
-   hash.printTable();
+//   hash.printTable();
    hash.printInOrder();
+   System.out.println();
+   hash.delete(16);
+   hash.delete(6);
+
+
+
+   hash.printInOrder();
+   System.out.println();
+ 
 
   
 
