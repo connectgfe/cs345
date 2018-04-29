@@ -1,0 +1,203 @@
+0 insert	140	a
+0 insert	167	b
+0 insert	160	c
+0 insert	127	d
+0 insert	153	e
+0 insert	101	f
+0 insert	102	g
+0 insert	155	h
+0 insert	171	i
+0 insert	196	j
+0 insert	149	k
+0 insert	187	l
+0 insert	147	m
+0 insert	194	n
+0 insert	128	o
+0 insert	178	p
+0 insert	150	q
+0 insert	138	r
+0 insert	174	s
+0 insert	141	t
+0 insert	185	u
+0 insert	154	v
+0 insert	186	w
+0 insert	100	x
+0 insert	133	y
+0 insert	162	z
+0 insert	177	A
+0 insert	179	B
+0 insert	198	C
+0 insert	143	D
+0 insert	190	E
+0 insert	193	F
+0 insert	156	G
+0 insert	168	H
+0 insert	104	I
+0 insert	120	J
+0 insert	161	K
+0 insert	152	L
+0 insert	159	M
+0 insert	130	N
+0 insert	157	O
+0 insert	139	P
+0 insert	170	Q
+0 insert	151	R
+0 insert	188	S
+0 insert	144	T
+0 insert	103	U
+0 insert	199	V
+0 insert	164	W
+0 insert	142	X
+0 insert	182	Y
+0 insert	163	Z
+0 insert	145	%a
+0 insert	172	%b
+0 insert	192	%c
+0 insert	158	%d
+0 insert	134	%e
+0 insert	181	%f
+0 insert	118	%g
+0 insert	125	%h
+0 insert	183	%i
+0 insert	173	%j
+0 insert	116	%k
+0 insert	105	%l
+0 insert	117	%m
+0 insert	109	%n
+0 insert	132	%o
+0 insert	165	%p
+0 insert	108	%q
+0 insert	110	%r
+0 insert	129	%s
+0 insert	175	%t
+0 insert	195	%u
+0 insert	124	%v
+0 insert	200	%w
+0 insert	136	%x
+0 insert	184	%y
+0 insert	191	%z
+0 insert	119	%A
+0 insert	176	%B
+0 insert	113	%C
+0 insert	123	%D
+0 insert	114	%E
+0 insert	148	%F
+0 insert	137	%G
+0 insert	180	%H
+0 insert	126	%I
+0 insert	131	%J
+0 insert	115	%K
+0 insert	122	%L
+0 insert	106	%M
+0 insert	166	%N
+0 insert	135	%O
+0 insert	121	%P
+0 insert	197	%Q
+0 insert	189	%R
+0 insert	146	%S
+0 insert	169	%T
+0 insert	111	%U
+0 insert	107	%V
+0 search	100
+0 search	101
+0 search	102
+0 search	103
+0 search	104
+0 search	105
+0 search	106
+0 search	107
+0 search	108
+0 search	109
+0 search	110
+0 search	111
+0 search	113
+0 search	114
+0 search	115
+0 search	116
+0 search	117
+0 search	118
+0 search	119
+0 search	120
+0 search	121
+0 search	122
+0 search	123
+0 search	124
+0 search	125
+0 search	126
+0 search	127
+0 search	128
+0 search	129
+0 search	130
+0 search	131
+0 search	132
+0 search	133
+0 search	134
+0 search	135
+0 search	136
+0 search	137
+0 search	138
+0 search	139
+0 search	140
+0 search	141
+0 search	142
+0 search	143
+0 search	144
+0 search	145
+0 search	146
+0 search	147
+0 search	148
+0 search	149
+0 search	150
+0 search	151
+0 search	152
+0 search	153
+0 search	154
+0 search	155
+0 search	156
+0 search	157
+0 search	158
+0 search	159
+0 search	160
+0 search	161
+0 search	162
+0 search	163
+0 search	164
+0 search	165
+0 search	166
+0 search	167
+0 search	168
+0 search	169
+0 search	170
+0 search	171
+0 search	172
+0 search	173
+0 search	174
+0 search	175
+0 search	176
+0 search	177
+0 search	178
+0 search	179
+0 search	180
+0 search	181
+0 search	182
+0 search	183
+0 search	184
+0 search	185
+0 search	186
+0 search	187
+0 search	188
+0 search	189
+0 search	190
+0 search	191
+0 search	192
+0 search	193
+0 search	194
+0 search	195
+0 search	196
+0 search	197
+0 search	198
+0 search	199
+0 search	200
+0 inOrder
+0 preOrder
+0 postOrder

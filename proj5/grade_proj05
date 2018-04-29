@@ -161,7 +161,7 @@ do
   LINE_LIMIT=$(( LINE_LIMIT*2 + 10 ))
 
   # run the student code, with all of the safety-checks
-  timeout -k $TIME_LIMIT $TIME_LIMIT java $TEST_DRIVER_NAME $TREETYPE debug <$TESTCASE 2>&1 | head -n${LINE_LIMIT} | cut -c-1000 >$s
+  timeout -k $TIME_LIMIT $TIME_LIMIT java $TEST_DRIVER_NAME $TREETYPE debug <$TESTCASE 2>&1 | head -n${LINE_LIMIT} | cut -c-2000 >$s
 
   RC=$?
 

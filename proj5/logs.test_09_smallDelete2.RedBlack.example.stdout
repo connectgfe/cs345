@@ -1,0 +1,22 @@
+inserted 474:A
+IN   ORDER: (b):474:'A'
+POST ORDER: (b):474:'A'
+inserted 487:B
+IN   ORDER: (b):474:'A' (r):487:'B'
+POST ORDER: (r):487:'B' (b):474:'A'
+inserted 176:C
+IN   ORDER: (r):176:'C' (b):474:'A' (r):487:'B'
+POST ORDER: (r):176:'C' (r):487:'B' (b):474:'A'
+Dumping to the file debug_09_0.dot
+FAILED TO delete key 176: ERROR: delete() is not implemented in the red-black tree.
+IN   ORDER: (r):176:'C' (b):474:'A' (r):487:'B'
+POST ORDER: (r):176:'C' (r):487:'B' (b):474:'A'
+Dumping to the file debug_09_1.dot
+FAILED TO delete key 474: ERROR: delete() is not implemented in the red-black tree.
+IN   ORDER: (r):176:'C' (b):474:'A' (r):487:'B'
+POST ORDER: (r):176:'C' (r):487:'B' (b):474:'A'
+Dumping to the file debug_09_2.dot
+FAILED TO delete key 487: ERROR: delete() is not implemented in the red-black tree.
+IN   ORDER: (r):176:'C' (b):474:'A' (r):487:'B'
+POST ORDER: (r):176:'C' (r):487:'B' (b):474:'A'
+Dumping to the file debug_09_3.dot

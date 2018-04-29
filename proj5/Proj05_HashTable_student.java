@@ -185,17 +185,11 @@ public class Proj05_HashTable_student implements Proj04_Dictionary{
   }
 
 
-
-
-
-
   /* String search(int)
    *
    * Searches the tree for a given key; returns the associated String
    * if the key is found, or null if it is not found.
    */
-
-
   public String search(int key){ 
 
 
@@ -232,8 +226,6 @@ public class Proj05_HashTable_student implements Proj04_Dictionary{
 
         for(int i=0;i<table.size();i++){
 
-//          Proj05_HashTableEntry cur = table.get(i);
-
           if(table.get(i)!=null){
 
             table.set(i,deleteHelper(table.get(i),key));
@@ -246,24 +238,6 @@ public class Proj05_HashTable_student implements Proj04_Dictionary{
 
 
 
-//  public void  delete(int key){}
-
-//  public String search(int key){ return "";}
-
-
-
-
-  /* void printInOrder()
-   *
-   * Performs an in-order traversal of the tree, and prints out all of
-   * the nodes.  It does *not* print out a trailing newline.
-   *
-   * For each node, it prints both the key and the value, separated by
-   * a colon; the various nodes are separated by a space.  (There is
-   * also a space before the first node.)
-   *
-   * If the tree is empty, then it will not print out anything.
-   */
 
 
   public void sort(){
@@ -290,10 +264,7 @@ public class Proj05_HashTable_student implements Proj04_Dictionary{
          }
 
 
-
- Collections.sort(sort, (a, b) -> a.key < b.key ? -1 :  1);
-
-
+      Collections.sort(sort, (a, b) -> a.key < b.key ? -1 :  1);
 
       printList(sort); 
       
@@ -336,10 +307,8 @@ public class Proj05_HashTable_student implements Proj04_Dictionary{
 
     for( Proj05_HashTableEntry r : list ){
     
-//      System.out.println(val.key+" "+val.value);
 
         System.out.print(" "+r.key+":'"+r.value+"'");
-
 
 
     }
@@ -370,6 +339,7 @@ System.out.println();
   
   }
 
+
   public Proj05_HashTableEntry deleteHelper(Proj05_HashTableEntry head, int key){
 
       if(head == null){
@@ -377,12 +347,7 @@ System.out.println();
           return null;
 
       }
-/*
-      if(head.key != key){ 
-          head.next= deleteHelper(head.next,key);
 
-       }
-*/
       if(head.key==key){    
 
         Proj05_HashTableEntry temp;
@@ -426,6 +391,20 @@ System.out.println();
 
     sort();
   }
+
+
+  /* void printInOrder()
+   *
+   * Performs an in-order traversal of the tree, and prints out all of
+   * the nodes.  It does *not* print out a trailing newline.
+   *
+   * For each node, it prints both the key and the value, separated by
+   * a colon; the various nodes are separated by a space.  (There is
+   * also a space before the first node.)
+   *
+   * If the tree is empty, then it will not print out anything.
+   */
+
 
 
   public void printInOrder(){
