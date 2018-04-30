@@ -46,7 +46,8 @@ public class Proj05_RedBlack_student implements Proj04_Dictionary {
 
         }else{
 
-        	Node x = insertHelper(key, value);
+// blank node for insertion
+        	Node val = insertHelper(key, value);
         }
 
     }
@@ -91,54 +92,83 @@ public class Proj05_RedBlack_student implements Proj04_Dictionary {
 *  rotate functions are slightly modified to make use of parent pointer
 *  
 */
-    private void rotateLeft(Node x) {
-    	Node y = x.right;
+    private void rotateLeft(Node rot) {
 
-    	x.right = y.left;
-    	if (y.left != null)
-    	    y.left.parent = x;
+    	Node helper = rot.right;
 
-    	y.parent = x.parent;
-    	if (x.parent == null)
-    		root = y;
+
+    	rot.right = helper.left;
+
+    	if (helper.left != null)
+
+    	    helper.left.parent = rot;
+
+    	helper.parent = rot.parent;
+
+    	if (rot.parent == null)
+
+    		root = helper;
+
+// System.out.println("helper.key ins.key: "+helper.key+" "+ins.key);
     	else {
-    	    if (x == x.parent.left)
-    	        x.parent.left = y;
+
+    	    if (rot == rot.parent.left)
+
+
+    	        rot.parent.left = helper;
+
       	    else
-    	        x.parent.right = y;
+
+    	        rot.parent.right = helper;
     	}
-    	y.left = x;
-    	x.parent = y;
+// System.out.println("helper.key ins.key: "+helper.key+" "+ins.key);
+    	helper.left = rot;
+
+    	rot.parent = helper;
+
+// System.out.println("helper.key ins.key: "+helper.key+" "+ins.key);
     }
 
 
-    private void rotateRight(Node y) {
-    	Node x = y.left;
+    private void rotateRight(Node rot) {
 
-    	y.left = x.right;
+    	Node helper = rot.left;
 
-    	if (x.right != null)
-    	    x.right.parent = y;
+    	rot.left = helper.right;
 
-    	x.parent = y.parent;
+    	if (helper.right != null)
 
-    	if (y.parent == null)
-    	    root = x;
+// System.out.println("helper.key ins.key: "+helper.key+" "+ins.key);
+    	    helper.right.parent = rot;
+
+    	helper.parent = rot.parent;
+
+    	if (rot.parent == null)
+
+    	    root = helper;
     	else {
-    	    if (y == y.parent.left)
-    	        y.parent.left = x;
+// System.out.println("helper.key rot.key: "+helper.key+" "+rot.key);
+
+
+    	    if (rot == rot.parent.left)
+    	        rot.parent.left = helper;
+
     	    else
-    	        y.parent.right = x;
+// System.out.println("helper.key rot.key: "+helper.key+" "+rot.key);
+
+
+
+    	        rot.parent.right = helper;
     	}
 
-    	x.right = y;
-    	y.parent = x;
+    	helper.right = rot;
+    	rot.parent = helper;
     }
 
 
 /*
 *  compare is a baby version of Comparable
-*  uses somewhat convention val= (boolean) ?  x : y  
+*  uses convention val= (boolean) ?  x : y  
 */
     public int compare(int x, int y){
 
@@ -149,11 +179,11 @@ public class Proj05_RedBlack_student implements Proj04_Dictionary {
     }
 
 
-    private int color(Node x) {
-    	if (x == null)
+    private int color(Node val) {
+    	if (val == null)
     	    return BLACK;
     	else
-    	    return (x.color);
+    	    return (val.color);
     }
 
 
@@ -161,29 +191,56 @@ public class Proj05_RedBlack_student implements Proj04_Dictionary {
 *  insert2 places node in bst fashion, assigns parent pointer
 *  
 */
-    private Node insert2(Node z) {
-    	Node x = root;
-    	Node y = null;
+    private Node insert2(Node ins) {
+
+
+    	Node temp = root;
+
+    	Node helper = null;
     	int	i;
 
-    	while (x != null) {
-    	    y = x;
-    	    x = (compare(x.key, z.key) > 0) ? x.left : x.right;
-    	}
-    	z.parent = y;
-    	if (y == null) {
-    	    root = z;
+
+    	while (temp != null) {
+
+    	    helper = temp;
+
+    	    temp = (compare(temp.key, ins.key) > 0) ? temp.left : temp.right;
+// System.out.println("helper.key temp.key: "+helper.key+" "+temp.key);
+
+
+       	}
+  
+
+  	ins.parent = helper;
+     	if (helper == null) {
+
+    	    root = ins;
     	} else {
-    	    i = compare(y.key, z.key);
+
+    	    i = compare(helper.key, ins.key);
+// System.out.println("helper.key ins.key: "+helper.key+" "+ins.key);
+
+
     	    if (i > 0)
-    	        y.left = z;
+    	        helper.left = ins;
+
     	    else if (i < 0)
-        		y.right = z;
+
+ // System.out.println("helper.key ins.key: "+helper.key+" "+ins.key);
+
+       		helper.right = ins;
+
     	    else { 
-        		String t = z.value;		
-        		z.value = y.value;
-        		y.value = t;
-        		return (z);		
+
+        		String t = ins.value;		
+
+        		ins.value = helper.value;
+
+        		helper.value = t;
+// System.out.println("helper.key ins.key: "+helper.key+" "+ins.key);
+
+
+        		return (ins);		
     	    }
     	}
     	return (null);
@@ -195,55 +252,103 @@ public class Proj05_RedBlack_student implements Proj04_Dictionary {
 *  to node.parent and grand
 *
 */
-    private  Node insertHelper(int key, String val) {
-    	Node x = new Node(key, val);
-    	Node y;
-    	Node v = null;
+    private  Node insertHelper(int key, String value) {
 
-    	v = insert2(x);
-    	if (v != null) {
-    	    return (v);
+    	Node val = new Node(key, value);
+// System.out.println("val.key: "+val.key);
+    	Node temp;
+
+
+    	Node temp2 = null;
+
+    	temp2 =insert2(val);
+    	if (temp2 != null) {
+    	    return (temp2);
     	}
-    	x.color = RED;
+    	val.color= RED;
 
-    	while ((x != root) && (x.parent.color == RED)) {
+    	while ((val!= root) && (val.parent.color== RED)) {
 
-    	    if (x.parent == x.parent.parent.left) {
-        		y = x.parent.parent.right;
-        		if ((y != null) && (y.color == RED)) {
-        		    x.parent.color = BLACK;
-        		    y.color = BLACK;
-        		    x.parent.parent.color = RED;
-        		    x = x.parent.parent;
-        		} else {
-        		    if (x == x.parent.right) {
-            			x = x.parent;
-            			rotateLeft(x);
+// System.out.println("val.key temp.key: "+val.key+" "+temp.key);
+ 	    if (val.parent== val.parent.parent.left) {
+ 
+       		temp =val.parent.parent.right;
+// System.out.println("val.key temp.key: "+val.key+" "+temp.key);
+
+      		if ((temp!= null) && (temp.color== RED)) {
+    
+       		    val.parent.color =BLACK;
+
+        		    temp.color =BLACK;
+ // System.out.println("val.key: "+val.key);
+
+ 
+        		    val.parent.parent.color= RED;
+        		    val =val.parent.parent;
+
+      		}else{
+        		  
+           if (val ==val.parent.right) {
+            			val= val.parent;
+            			rotateLeft(val);
         		    }
-        		    x.parent.color = BLACK;
-        		    x.parent.parent.color = RED;
-        		    rotateRight(x.parent.parent);
+
+ // System.out.println("val.key temp.key: "+val.key+" "+temp.key);
+
+      
+   		    val.parent.color =BLACK;
+ 
+  
+      		    val.parent.parent.color= RED;
+
+        		    rotateRight(val.parent.parent);
+
         		}
-    	    } else {
-        		y = x.parent.parent.left;
-        		if ((y != null) && (y.color == RED)) {
-        		    x.parent.color = BLACK;
-        		    y.color = BLACK;
-        		    x.parent.parent.color = RED;
-        		    x = x.parent.parent;
-        		} else {
-        		    if (x == x.parent.left) {
-            			x = x.parent;
-            			rotateRight(x);
+
+    	    }else{
+
+        		temp =val.parent.parent.left;
+// System.out.println("val.key: "+val.key);
+
+
+        		if ((temp!= null) && (temp.color== RED)) {
+ 
+        		    val.parent.color =BLACK;
+
+          		    temp.color =BLACK;
+
+        		    val.parent.parent.color= RED;
+
+        		    val =val.parent.parent;
+
+
+          		}else{
+// System.out.println("val.key: "+val.key);
+
+
+        		    if (val ==val.parent.left) {
+
+            			val =val.parent;
+
+            			rotateRight(val);
         		    }
-        		    x.parent.color = BLACK;
-        		    x.parent.parent.color = RED;
-        		    rotateLeft(x.parent.parent);
-        		}
-    	    }
-    	}
-    	root.color = BLACK;
-    	return null;
+
+        		    val.parent.color =BLACK;
+
+           		    val.parent.parent.color= RED;
+
+        		    rotateLeft(val.parent.parent);
+        		  }
+    	    
+          }
+       	}
+// System.out.println("val.key: "+val.key);
+
+     // recolor root
+             	root.color= BLACK;
+
+      	return null;
+
     }
 
 

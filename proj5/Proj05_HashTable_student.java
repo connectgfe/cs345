@@ -1,3 +1,10 @@
+/* Author: Giulio Esposito
+*  Program: HashTable
+*  Function: HashTable using hash function, core functionality is to resize
+*    to twice size after contents are half full.
+*
+*/
+
 import java.util.LinkedList;
 import java.util.Arrays;
 import java.util.Collections;
@@ -24,7 +31,7 @@ public class Proj05_HashTable_student implements Proj04_Dictionary{
  
    }
 
-
+// resizes table to twice original size
    public void resizeTable(int k){
 
      table = new LinkedList<Proj05_HashTableEntry>();
@@ -38,7 +45,7 @@ public class Proj05_HashTable_student implements Proj04_Dictionary{
 
    }
 
-
+// inserts given pair
     public void insert(int key, String value){
 
        if(search(key)!=null){
